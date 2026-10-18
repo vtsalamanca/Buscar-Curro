@@ -66,7 +66,12 @@ def categories_for(text: str) -> list[str]:
     normal = plain(text)
     if any(term in normal for term in SUSPENDED_TERMS):
         return []
-    return sorted(category for category, terms in ACTIVE_TERMS.items() if any(term in normal for term in terms))
+    def matches(term: str) -> bool:
+        # ATE is an acronym. Substring matching would classify words such as
+        # "maternidad" or "estrategia" as Auxiliar Técnico Educativo.
+        return bool(re.search(r"\bate\b", normal)) if term == "ate" else term in normal
+
+    return sorted(category for category, terms in ACTIVE_TERMS.items() if any(matches(term) for term in terms))
 
 
 def act_type_for(text: str) -> str:

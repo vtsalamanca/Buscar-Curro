@@ -24,6 +24,7 @@ class EmploymentCoreTests(unittest.TestCase):
     def test_active_filter_and_suspended_logistics(self):
         self.assertIn("psicologia", categories_for("Psicólogo para intervención con menores"))
         self.assertIn("intervencion_social", categories_for("Trabajador/a Social"))
+        self.assertNotIn("ate", categories_for("Cobertura por maternidad"))
         self.assertEqual(categories_for("Mozo de almacén y logística"), [])
 
     def test_spanish_dates(self):

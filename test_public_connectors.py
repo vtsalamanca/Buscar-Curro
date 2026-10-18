@@ -28,6 +28,7 @@ class PublicConnectorTests(unittest.TestCase):
         )
         html = '''<section>Educador social
         <a href="/procesos-selectivos/abiertos">Turno libre</a>
+        <a href="/procesos-selectivos/abiertos/turno-discapacidad">Turno discapacidad</a>
         <a href="/procesos-selectivos/abiertos/educador-social">Educador social</a></section>'''
         self.assertEqual(
             parse_listing(spec, html, spec.url),
