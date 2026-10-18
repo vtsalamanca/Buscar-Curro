@@ -294,3 +294,23 @@ Se prosiguió dentro del mismo encargo, sin pedir un nuevo «sigue», sin ejecut
 **Reglas de selección:** verificar fecha de publicación y plazo, comprobar títulos habilitantes obligatorios, distinguir bolsa de vacante, conservar ID/enlace original, deduplicar entre DOCM/BOP/ayuntamientos/empleador. No rastrear logística suspendida. Priorizar fuentes oficiales y catálogos de organizaciones con fichas completas. 
 
 **Siguiente paquete lógico de auditoría (sin ejecutar código):** mapear cobertura de otros ayuntamientos del entorno y completar límites de ACCEM/Cruz Roja/Trama y Empléate; la prueba de lectura automatizada por runners pertenece al bloque Codex ya agrupado y no debe confundirse con comprobaciones web.
+
+## Auditoría lote 4 — fuentes municipales, trazabilidad y deduplicación (18/10/2026)
+Comprobación pública por lectura/búsqueda web, **no prueba de GitHub Actions**. No se ejecutó código, se activaron workflows ni se enviaron candidaturas.
+
+| Fuente | URL pública y observación | Estado automatización |
+|---|---|---|
+| Nambroca sede | https://nambroca.sedelectronica.es/info.0 ; tablón con anuncios de procesos, listados y subsanaciones (ej. mantenimiento 06/10) | Pendiente |
+| Aranjuez empleo público | https://www.aranjuez.es/transparencia/empleo-publico/documentacion-importante/ ; documentación por procesos; https://www.aranjuez.es/transparencia/empleo-publico/trabajador-social/ registra bases, corrección, BOCM, BOE y plazo histórico | Pendiente |
+| Sonseca sede | https://sonseca.sedelectronica.es/info.0 ; sección de empleo público y tablón | Pendiente |
+| Bargas empleo | https://www.bargas.es/empleo/ ; listado de ofertas y noticias, muchas antiguas: no equiparar fecha del índice con vigencia | Pendiente |
+| Toledo Ayuntamiento | https://www.toledo.es/el-ayuntamiento/empleo-publico/ ; acceso libre, bolsas y plazos en fichas | Pendiente |
+| Centro Trama | https://www.trama.org/empleo/ ; catálogo público y fichas por id `oferta.php?id=...`, fecha de cierre y requisitos; aparecen fichas con plazos pasados | Pendiente |
+
+### Ejemplo de deduplicación jurídica entre boletines
+- Illescas, dos plazas de Trabajador/a Social: BOE https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7237 menciona bases BOP Toledo n.º 16 del 27/01/2026 y anuncio BOE 30/03/2026. El registro debe identificar un **proceso** con **varios actos/publicaciones**. No fusionar los documentos en una sola publicación, ni generar varias novedades de la misma vacante.
+- Aranjuez, Trabajador Social: ficha municipal https://www.aranjuez.es/transparencia/empleo-publico/trabajador-social/ lista bases, corrección, BOCM, BOE y plazo histórico 25/06–22/07/2026; demuestra necesidad de enlazar actos.
+- Casos de prueba BT-01: dos boletines sobre mismo proceso, corrección que modifica base/plazo, convocatoria vencida aún indexada, oferta privada sin plazo, anuncio de plaza fuera de sector activo.
+
+### Decisión de arquitectura
+Definir objetos `source_document` (NID/BOE-ID/URL/fecha/organismo) y `selection_process` (organismo, categoría, referencia, municipios, historial actos) con relación muchos-a-uno, conservando trazabilidad y evitando falsas novedades. No inferir plazo abierto por existencia de enlace.
