@@ -254,3 +254,25 @@ Se recuperaron resultados anteriores antes de ampliar fuentes. No hubo ejecució
 - Alertas oficiales DOCM y BOE pueden complementar captación con consentimiento; no están activadas.
 - Fuentes pendientes siguientes: empleo autonómico/local, ayuntamientos, ACTIA, ILUNION/Inserta, entidades restantes, Indeed, Jobijoba, LinkedIn y correo; para cada una registrar método y límites.
 - **Puerta de fase:** las pruebas de automatización se agruparán por familias en Codex sólo después de completar inventario y priorización; no se exigirán credenciales ni se reabrirán pruebas bloqueadas innecesariamente.
+
+## Auditoría de fuentes — Lote 2 y agrupación siguiente (18/10/2026)
+Comprobación web pública puntual; las cifras de anuncios son dinámicas y no constituyen prueba de lectura automatizada ni vigencia futura.
+- **Empleo CLM:** https://empleo.castillalamancha.es/ ; listado público con denominación, municipio, contrato, jornada, salario, filtros por provincia/municipio/CNO. Existen valores posiblemente anómalos; exigir validación y origen por oferta. **Acceso público verificado; runner pendiente.**
+- **Bolsas laborales JCCM:** https://empleopublico.castillalamancha.es/bolsas/personal-laboral ; categorías y subgrupos disponibles. **Acceso público verificado; runner parcial ATE solamente.**
+- **ATE bolsa directa:** https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-auxiliar-tecnico-educativo ; página con modificación 06/10/2026, provincias y PDFs. La fecha de actualización de la página NO significa necesariamente un listado nuevo de Toledo.
+- **ATE proceso selectivo:** https://empleopublico.castillalamancha.es/procesos-selectivos/abiertos/turno-libre/2023-2024-grupo-iii-auxiliar-tecnico-educativo-turno-libre ; documentos de adjudicación, correcciones y destinos, **proceso diferente de ampliación de bolsa de suspensos**.
+- **JCCM últimas modificaciones:** https://empleopublico.castillalamancha.es/ultimas-modificaciones ; útil como fuente incremental, pero filtrar por entidad y tipo y no confundir movimientos de otros cuerpos.
+- **Educación social JCCM:** https://empleopublico.castillalamancha.es/bolsas/personal-funcionario/cuerpo-tecnico-escala-sociosanitaria-educacion-social ; página pública de bolsas por provincia, elegibilidad específica por determinar.
+- **Centro Trama:** https://www.trama.org/empleo/ catalogo accesible; incluye algunas fichas con fecha de cierre pasada pese a aparecer en listado. La oferta no es automáticamente elegible por afinidad; comprobar requisitos formativos.
+- **ACTIA/ILUNION/ACCEM/Inserta/otros:** usar inventario histórico de Seguimiento_empleo_personal.md antes de nuevas consultas; pendientes validación técnica o cobertura selectiva.
+- **Indeed/Jobijoba/LinkedIn/InfoJobs:** acceso parcial documentado; no asumir API libre ni acceso sin interacción. InfoJobs privado aparcado.
+- **Gmail:** seguimiento de candidaturas separado del rastreo de vacantes; requiere conexión autorizada y no se considera automatización GitHub.
+ 
+### Agrupación funcional y técnica por familias
+A) **Administraciones/boletines:** ATE público, JCCM últimas modificaciones, DOCM, BOP Toledo, BOE/Punto de Acceso General.
+B) **Intermediación empleo:** Empleo CLM, Empléate y ayuntamientos; revisar filtros, referencias y paginación.
+C) **Entidades sociales:** Centro Trama, ACCEM, ACTIA, Cruz Roja, ILUNION, Inserta/Portalento, Save the Children y otras. Empezar con catálogos públicos estructurados.
+D) **Portales/privado:** Indeed, Jobijoba, LinkedIn e InfoJobs: tratamiento de acceso limitado, sin bypass de verificación.
+E) **Correspondencia y candidaturas:** Gmail, sin enviar ni cambiar estados sin orden del usuario.
+
+**Puerta de decisión:** primero completar tabla de métodos y limitaciones a partir de antecedentes por familia; después enviar un único encargo Codex por paquete viables, con pruebas y alcance finito. No bloquear la totalidad por fuentes que exigen login o están aparcadas. No activar workflows programados antes de pruebas.
