@@ -1,7 +1,7 @@
 ---
 name: organizaciondeltrabajo
 description: Protocolo reutilizable para organizar proyectos, recuperar decisiones previas, reducir repeticiones y minimizar tiempo, créditos y gasto adicional. Aplicar al planificar, ejecutar, revisar o retomar tareas.
-version: 0.1.3
+version: 0.1.4
 ---
 
 # &organizaciondeltrabajo
@@ -116,3 +116,16 @@ Fuente de verdad: `ESTADO_PROYECTO.md` en el repositorio `vtsalamanca/Buscar-Cur
 7. Evitar frases de cierre del tipo «la próxima vez continuaremos» mientras existan tareas que puedan completarse ahora.
 8. El presupuesto adicional por defecto sigue en cero; no activar Work/Codex ni automatizaciones por esta regla.
 - **0.1.3 — 2026-10-18:** corregir paradas prematuras entre lotes de fuentes; continuar hasta punto de intervención real.
+
+## Escalera de coste de conectores (v0.1.4)
+**Obligatoria antes de pedir código:** seleccionar y justificar el mecanismo menos costoso que devuelva datos correctos y estables.
+1. **API oficial pública, documentada y gratuita** o feed oficial (JSON, XML, RSS), si realmente ofrece los campos requeridos. Revisar autenticación, cuotas, cambios de esquema, términos y cualquier coste de uso.
+2. **HTTP directo** de HTML, JSON, XML, ficheros o endpoints públicos legítimos: buscar listados, enlaces de fichas, paginación, fechas y campos estructurados. JSON público puede ser tan eficiente como una API. No asumir que un endpoint no documentado es estable ni que su acceso permite saltar controles.
+3. **Navegador automatizado local/runner** solo si JavaScript o interacción imprescindible impiden la lectura HTTP; usar pruebas acotadas, no romper controles.
+4. **Agente visual con IA / Work** únicamente para excepciones concretas; evitar su uso recurrente para scraping masivo.
+
+- Registrar por fuente: método preferido, ruta pública, **evidencia** (HTML legible en Web vs verificado con urllib desde runner), datos realmente obtenidos, alternativas más económicas descartadas, paginación, periodicidad, autenticación, riesgos y coste adicional 0 €.
+- La clasificación «parece HTML/HTTP» es hipótesis hasta que un runner reproduce resultados sin navegador; no atribuir API por encontrar un JSON en una página.
+- Optimizar el volumen: comparar IDs/fechas/hashes, no redescargar sin necesidad, reintentos limitados, rate limiting razonable, tiempos/tamaños acotados y sin IA para cada oferta. IA solo para ambigüedad puntual.
+- Cero gasto adicional por defecto y ninguna API tarifada, navegador de pago o evasión de barreras sin aprobación.
+- **0.1.4 — 2026-10-18:** incorporar elección económica de protocolos y evidencia previa a Codex.
