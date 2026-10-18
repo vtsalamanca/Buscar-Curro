@@ -78,7 +78,8 @@ SPECS = (
     ),
     ConnectorSpec(
         "aranjuez", "Ayuntamiento de Aranjuez", "https://www.aranjuez.es/transparencia/empleo-publico/documentacion-importante/", "Ayuntamiento de Aranjuez",
-        ("aranjuez.es",), ("/empleo-publico/", "pdf"), "Madrid", "Aranjuez", detail_limit=2,
+        ("aranjuez.es",), ("/empleo-publico/", "pdf"), "Madrid", "Aranjuez",
+        seed_urls=("https://www.aranjuez.es/transparencia/empleo-publico/trabajador-social/",), detail_limit=2,
     ),
     ConnectorSpec(
         "trama", "Centro Trama", "https://www.trama.org/empleo/", "Asociación Centro Trama",
@@ -117,6 +118,10 @@ def error_code(exc: BaseException) -> str:
         return "tls_error"
     if isinstance(exc, URLError):
         return "timeout" if isinstance(exc.reason, (TimeoutError, socket.timeout)) else "network_error"
+    if isinstance(exc, ValueError) and str(exc) in {
+        "url_not_allowed", "unexpected_redirect", "response_too_large", "unexpected_content_type",
+    }:
+        return f"ValueError:{exc}"
     return type(exc).__name__
 
 
@@ -143,6 +148,7 @@ class Blocks(HTMLParser):
         super().__init__()
         self.base_url = base_url
         self.blocks: list[dict] = []
+        self.all_links: list[tuple[str, str]] = []
         self._depth = 0
         self._texts: list[str] = []
         self._links: list[tuple[str, str]] = []
@@ -168,6 +174,7 @@ class Blocks(HTMLParser):
         if tag == "a" and self._href is not None:
             url = urljoin(self.base_url, self._href)
             label = " ".join(self._link_text).strip()
+            self.all_links.append((url, label))
             self._links.append((url, label))
             self._href = None
         if tag in self.BLOCK_TAGS and self._depth:
@@ -265,6 +272,9 @@ def parse_listing(spec: ConnectorSpec, html: str, final_url: str) -> list[tuple[
         for url, label in block["links"]:
             if relevant_url(spec, url, label) and url.rstrip("/") != final_url.rstrip("/"):
                 candidates[url] = block["text"] or label
+    for url, label in parser.all_links:
+        if relevant_url(spec, url, label) and url.rstrip("/") != final_url.rstrip("/"):
+            candidates.setdefault(url, label)
     return sorted(candidates.items())
 
 

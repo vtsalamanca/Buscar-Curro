@@ -17,6 +17,10 @@ class PublicConnectorTests(unittest.TestCase):
         <li>Contacto <a href="/contact">Ir</a></li></ul>'''
         self.assertEqual(parse_listing(SPEC, html, SPEC.url), [("https://jobs.example.test/job/42", "Psicólogo/a en Toledo Ver oferta")])
 
+    def test_listing_keeps_relevant_anchor_outside_semantic_block(self):
+        html = '<div><a href="/job/43">Trabajador/a social</a></div>'
+        self.assertEqual(parse_listing(SPEC, html, SPEC.url), [("https://jobs.example.test/job/43", "Trabajador/a social")])
+
     def test_document_extracts_fields_and_requirements(self):
         detail = "Requisitos: Grado en Psicología y experiencia con menores. Fecha de cierre: 31 de octubre de 2026"
         item = make_document(SPEC, "https://jobs.example.test/job/42", "Psicólogo/a en Toledo", detail)

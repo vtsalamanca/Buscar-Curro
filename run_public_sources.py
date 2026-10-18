@@ -29,7 +29,20 @@ def render_report(runs, delta) -> str:
         f"Fallos de fuente: **{len(delta['source_failures'])}**.",
         "",
         "Una consulta fallida nunca se presenta como «sin novedades». La vigencia solo se afirma cuando existe una fecha de cierre explícita.",
+        "",
+        "## Documentos detectados",
+        "",
+        "| Fuente | Tipo | Estado | Publicación | Cierre | Título | URL oficial |",
+        "|---|---|---|---|---|---|---|",
     ))
+    for run in runs:
+        for document in run.documents:
+            safe_title = document.title.replace("|", "\\|")
+            lines.append(
+                f"| {document.source} | {document.act_type} | {document.status} | "
+                f"{document.publication_date or '—'} | {document.deadline or '—'} | "
+                f"{safe_title} | {document.official_url} |"
+            )
     return "\n".join(lines) + "\n"
 
 

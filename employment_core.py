@@ -15,7 +15,7 @@ from urllib.parse import parse_qs, urlsplit
 ACTIVE_TERMS = {
     "ate": ("auxiliar tecnico educativo", "auxiliar tecnica educativa", "ate"),
     "psicologia": ("psicolog",),
-    "intervencion_social": ("trabajador social", "trabajadora social", "educador social", "educadora social", "integracion social", "intervencion social"),
+    "intervencion_social": ("trabajador social", "trabajadora social", "trabajador/a social", "educador social", "educadora social", "educador/a social", "integracion social", "intervencion social"),
     "menores": ("menor", "infancia", "juvenil", "acogimiento", "barnahus"),
     "educacion": ("educador", "educadora", "educacion", "docente", "profesor", "monitora", "monitor "),
     "discapacidad": ("discapacidad", "diversidad funcional"),
