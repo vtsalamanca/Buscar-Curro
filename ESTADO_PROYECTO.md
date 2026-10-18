@@ -85,3 +85,11 @@ Actualizado: 2026-10-18. Responsable de decisiones: usuario. Presupuesto adicion
 
 ## Plantilla de avance
 Fecha | Fase | Tarea | Estado (pendiente/en curso/probado/bloqueado) | Evidencia (URL/commit/run) | Problema | Próxima acción | Coste adicional
+
+## Registro de avance — 2026-10-18: configuración local
+- **Estado: comprobado mediante salida de CMD facilitada por el usuario.** Git para Windows 2.56.0.windows.2 funciona mediante `C:\Program Files\Git\cmd\git.exe`; el comando `git` a secas no se encuentra todavía en PATH.
+- **Clonación terminada:** `C:\Users\Usuario\Desktop\Buscar curro` contiene copia del repositorio `vtsalamanca/Buscar-Curro`.
+- **Verificación:** `git remote -v` muestra `origin` para fetch y push; `git status` indica rama `main`, actualizada con `origin/main`, y árbol de trabajo limpio.
+- **Codex:** Work identificó anteriormente que el proyecto Codex apunta a esa carpeta; queda pendiente validarlo visualmente desde Codex, sin ejecutar código.
+- **No realizado:** cambios en código, ejecución de workflows, actualización PATH, eliminación de carpeta antigua `buscar-curro-toledo`.
+- **Próximo paso:** confirmar que Codex abre la carpeta clonada; después retomar fase DOCM siguiendo BT-01.
