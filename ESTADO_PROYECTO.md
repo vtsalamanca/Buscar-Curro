@@ -93,3 +93,14 @@ Fecha | Fase | Tarea | Estado (pendiente/en curso/probado/bloqueado) | Evidencia
 - **Codex:** Work identificó anteriormente que el proyecto Codex apunta a esa carpeta; queda pendiente validarlo visualmente desde Codex, sin ejecutar código.
 - **No realizado:** cambios en código, ejecución de workflows, actualización PATH, eliminación de carpeta antigua `buscar-curro-toledo`.
 - **Próximo paso:** confirmar que Codex abre la carpeta clonada; después retomar fase DOCM siguiendo BT-01.
+
+## Fase DOCM — investigación documental inicial (2026-10-18)
+Estado: **planificación en Chat, sin ejecutar código ni workflows**.
+- Confirmada la existencia de sumarios públicos del DOCM y búsqueda avanzada oficial por fecha, organismo, rango, texto y NID: https://docm.jccm.es/docm/ y https://docm.jccm.es/docm/busquedaAvanzada.do.
+- NID: identificador de disposición publicado por DOCM; candidato principal para deduplicación: https://docm.jccm.es/portaldocm/verificarNID.do.
+- Se observaron documentos HTML individuales oficiales en rutas verArchivoHtml.do; ejemplos publicados en 2026 permiten identificar sección II / Oposiciones y concursos, y correcciones de errores.
+- **Sin verificar aún**: API pública formal, RSS disponible, límites de acceso automatizado y estabilidad del HTML; no suponer que existe API.
+- Diseño propuesto: lectura de sumarios por fecha > extracción de documentos candidatos > filtros por ATE, educación, psicología, intervención social y logística > clasificación de convocatoria/corrección/resolución/plazo > deduplicación por NID > informe con enlace y fecha.
+- Priorizar Toledo y alrededores sin omitir convocatorias autonómicas cuyo destino concreto todavía no figure.
+- Criterios de aceptación para BT-01: recuperar ediciones y disposiciones de fechas conocidas; no duplicar NID; distinguir correcciones; mantener enlace oficial y trazas de error; cubrir días sin publicación y reintentos sin pérdida de datos.
+- Próxima acción en Chat: completar especificación y contrastar contra el inventario real de código y fuentes antes de encomendar el bloque a Codex.
