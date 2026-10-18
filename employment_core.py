@@ -119,6 +119,11 @@ class SourceDocument:
     content_hash: str
     related_ids: list[str] = field(default_factory=list)
     errors: list[str] = field(default_factory=list)
+    agency: str | None = None
+    hiring_organization: str | None = None
+    employment_type: str | None = None
+    salary: str | None = None
+    data_quality: list[str] = field(default_factory=list)
 
     def as_dict(self) -> dict:
         return asdict(self)

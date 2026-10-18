@@ -1,0 +1,47 @@
+name: ETT-01 fuentes publicas y estado persistente
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: ett01-public-sources
+  cancel-in-progress: false
+
+jobs:
+  ett-connectors:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Pruebas unitarias y regresiones existentes
+        run: python3 -m unittest -v
+      - name: Restaurar estado validado de la ejecución anterior
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 restore_previous_state.py --destination data/ett-state.json
+      - name: Diagnosticar y ejecutar conectores ETT públicos
+        run: python3 run_ett_sources.py --state data/ett-state.json --output-dir ett01-output
+      - name: Resumen ETT-01
+        if: always()
+        run: cat ett01-output/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Estado para la siguiente ejecución
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ett01-state
+          path: ett01-output/state.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Evidencia ETT-01
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ett01-results
+          path: ett01-output/
+          if-no-files-found: error
+          retention-days: 7
