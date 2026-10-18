@@ -1,0 +1,24 @@
+name: Prueba manual de acceso ATE
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ate-auth-probe
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Pruebas sin red
+        run: python3 -m unittest -v test_ate_auth.py
+      - name: Autenticación y lectura privada
+        env:
+          AUTH_RUNTIME_APPROVED: '1'
+          ATE_USERNAME: ${{ secrets.ATE_USERNAME }}
+          ATE_PASSWORD: ${{ secrets.ATE_PASSWORD }}
+        run: python3 ate_auth.py
