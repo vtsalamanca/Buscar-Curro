@@ -183,3 +183,15 @@ Estado: **planificación en Chat, sin ejecutar código ni workflows**.
 
 ### Regla de conservación
 Las conversaciones archivadas son respaldo. Está permitido archivarlas; **no recomendar su borrado definitivo** hasta comprobar que no faltan decisiones únicas. Esta fase queda cerrada a efectos de continuar el diseño, con reservas claramente enumeradas.
+
+## Fase 1 — Casos oficiales DOCM y especificación funcional (18/10/2026)
+Investigación en Chat; **no** se ha ejecutado código ni activado automatizaciones.
+- Búsqueda avanzada pública: https://docm.jccm.es/portaldocm/busquedaAvanzada.do — dispone de filtros por fecha de documento/publicación, órgano, rango, NID y texto. Verificada como página pública; **no** se ha validado endpoint apto para extracción automática.
+- Caso base ATE: DOCM 07/07/2026, resolución 2026/5156: https://docm.jccm.es/docm/verArchivoHtml.do?ruta=2026%2F07%2F07%2Fhtml%2F2026_5156.html&tipo=rutaDocm
+- Caso corrección: DOCM 10/07/2026, 2026/5293: https://docm.jccm.es/docm/verArchivoHtml.do?ruta=2026%2F07%2F10%2Fhtml%2F2026_5293.html&tipo=rutaDocm ; nuevo anexo y plazo de diez días hábiles contado desde día siguiente a publicación; **dato histórico, no plazo vigente**.
+- Caso adjudicación: DOCM 03/08/2026, 2026/5762: https://docm.jccm.es/docm/verArchivoHtml.do?ruta=2026%2F08%2F03%2Fhtml%2F2026_5762.html&tipo=rutaDocm .
+- Regla funcional: agrupar 5156, 5293 y 5762 como publicaciones distintas de un proceso, conservar enlaces y NID, y clasificar propuesta, corrección y adjudicación, sin confundir ofertas de destinos de aprobados con ampliación de bolsa de suspensos.
+- Diseño de extracción: buscar sumarios y candidatos por fecha; procesar sólo documentos relevantes, guardar NID y relaciones; distinguir consulta fallida, día sin boletín y boletín sin coincidencias.
+- Pruebas para Codex BT-01: reconocer estos 3 documentos, fechas/tipos, relación de corrección, ausencia de duplicados, plazo expresado tal como consta sin calcular vigencia histórica, anuncio autonómico sin provincia explícita, documento no relevante y error HTTP.
+- Categorías activas: ATE, psicología no sanitaria, menores, educación, discapacidad e intervención social; logística continúa suspendida.
+- Pendiente antes de implementar: identificar ruta oficial estable y política técnica de acceso automatizado; comprobar si existe interfaz de consulta estructurada sin presumir API o RSS.
