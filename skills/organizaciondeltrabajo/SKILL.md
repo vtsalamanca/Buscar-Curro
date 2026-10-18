@@ -1,7 +1,7 @@
 ---
 name: organizaciondeltrabajo
 description: Protocolo reutilizable para organizar proyectos, recuperar decisiones previas, reducir repeticiones y minimizar tiempo, créditos y gasto adicional. Aplicar al planificar, ejecutar, revisar o retomar tareas.
-version: 0.1.0
+version: 0.1.1
 ---
 
 # &organizaciondeltrabajo
@@ -80,3 +80,17 @@ Fuente de verdad: `ESTADO_PROYECTO.md` en el repositorio `vtsalamanca/Buscar-Cur
 
 ## Cambios de la skill
 - **0.1.0 — 2026-10-18:** primera versión; control de costes, continuidad, fases, evidencias, reparto Chat/Codex/Work y mejora iterativa.
+
+## Separación de conversaciones por entorno (v0.1.1)
+- Crear, dentro de cada proyecto, tres hilos con nombres consistentes: `01 · CHAT — Dirección`, `02 · CODEX — Desarrollo`, `03 · WORK — Operaciones`. Son hilos de conversación, no tres procesos simultáneos.
+- CHAT: única coordinación, decisiones, backlog, prioridades, análisis, documentación y asignación de tareas. Consultar siempre el estado maestro.
+- CODEX: solo programación, refactorización, pruebas y depuración justificadas, con tarea y criterios de aceptación entregados desde CHAT.
+- WORK: solo tareas gráficas o de navegador sin alternativa suficiente en Chat o conectores; nunca por rutina.
+- Al cambiar de hilo se entrega una ficha con: ID de tarea, objetivo, estado previo, repositorio/rutas, restricciones, trabajos ya hechos, acciones permitidas, criterios de aceptación y formato de resultados.
+- Al regresar, registrar en GitHub: ID, entorno, evidencia, archivos/commits, resultado, errores, decisiones y tarea siguiente. No cerrar sin verificación.
+- Usar IDs estables (ej. BC-001) en los tres hilos. El archivo maestro en GitHub prevalece sobre recuerdos parciales; no afirmar que los hilos se sincronizan automáticamente.
+- Word, si se trata de documentos .docx, será normalmente un entregable; no confundirlo con Work.
+- Prohibido duplicar trabajo entre hilos o iniciar dos implementaciones de la misma tarea.
+
+## Historial de versiones (continuación)
+- **0.1.1 — 2026-10-18:** convenciones de hilos CHAT/CODEX/WORK y protocolo de traspaso y retorno con registro GitHub.
