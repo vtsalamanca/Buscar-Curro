@@ -64,14 +64,19 @@ def date_from_text(text: str) -> str | None:
 
 def categories_for(text: str) -> list[str]:
     normal = plain(text)
-    if any(term in normal for term in SUSPENDED_TERMS):
-        return []
     def matches(term: str) -> bool:
         # ATE is an acronym. Substring matching would classify words such as
         # "maternidad" or "estrategia" as Auxiliar Técnico Educativo.
         return bool(re.search(r"\bate\b", normal)) if term == "ate" else term in normal
 
-    return sorted(category for category, terms in ACTIVE_TERMS.items() if any(matches(term) for term in terms))
+    categories = sorted(category for category, terms in ACTIVE_TERMS.items() if any(matches(term) for term in terms))
+    # A suspended word does not erase an explicit social/education role (for
+    # example, coordination educativa de transporte escolar). Disability on
+    # its own is an attribute, not enough to reactivate logistics/warehouse.
+    occupational = set(categories) - {"discapacidad"}
+    if any(term in normal for term in SUSPENDED_TERMS) and not occupational:
+        return []
+    return categories
 
 
 def act_type_for(text: str) -> str:

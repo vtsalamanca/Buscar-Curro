@@ -21,6 +21,13 @@ class EttConnectorTests(unittest.TestCase):
         doc = _document_from_job(spec, "https://agenciaempleo.tratem.com/oferta/docente", item, "", "")
         self.assertEqual(doc.status, "cerrada_o_historica")
 
+    def test_old_tratem_ad_without_deadline_is_historical(self):
+        spec = ETT_SPECS[0]
+        item = {"@type": "JobPosting", "title": "Docente", "datePosted": "2025-10-29"}
+        doc = _document_from_job(spec, "https://agenciaempleo.tratem.com/oferta/docente", item, "", "")
+        self.assertEqual(doc.status, "cerrada_o_historica")
+        self.assertIn("anuncio_antiguo_sin_cierre", doc.data_quality)
+
     def test_adecco_contradiction_is_not_silently_resolved(self):
         spec = ETT_SPECS[1]
         item = {"title": "Coordinador educación", "description": "Tiempo completo temporal. 20h fijo discontinuo"}

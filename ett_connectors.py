@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import dataclass
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from html import unescape
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlsplit
@@ -26,7 +26,10 @@ class EttSpec:
 
 
 ETT_SPECS = (
-    EttSpec("tratem", "Tratem", "https://agenciaempleo.tratem.com/ofertas/", ("tratem.com",), ("/oferta/",), detail_limit=5),
+    EttSpec(
+        "tratem", "Tratem", "https://agenciaempleo.tratem.com/ofertas/", ("tratem.com",), ("/oferta/",),
+        ("https://agenciaempleo.tratem.com/oferta/docente-certificado-habilitacion-docencia-ab-y-c",), 5,
+    ),
     EttSpec(
         "adecco", "Adecco", "https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-toledo",
         ("adecco.com",), ("/es-es/ofertas-trabajo/",),
@@ -212,7 +215,7 @@ def _document_from_job(spec: EttSpec, url: str, item: dict, fallback: str, html_
     status = "plazo_desconocido"
     if deadline:
         status = "abierta" if deadline >= date.today().isoformat() else "cerrada_o_historica"
-    elif publication and publication < (date.today().replace(year=date.today().year - 1)).isoformat():
+    elif publication and publication < (date.today() - timedelta(days=180)).isoformat():
         status = "cerrada_o_historica"
         quality.append("anuncio_antiguo_sin_cierre")
     identifier = _text(item.get("identifier"))
@@ -248,9 +251,11 @@ def run_ett_connector(spec: EttSpec) -> SourceRun:
         listing, final_url = fetch(spec.listing_url, spec.hosts)
         candidates = dict(spec.seed_urls and ((url, url) for url in spec.seed_urls) or ())
         candidates.update(dict(listing_links(spec, listing, final_url)))
+        ordered = list(candidates.items())
+        ordered.sort(key=lambda pair: (0 if pair[0] in spec.seed_urls else 1, 0 if categories_for(pair[1]) else 1, pair[0]))
         documents: list[SourceDocument] = []
         notes = [f"candidate_links:{len(candidates)}", f"listing_jobposting:{len(job_postings(listing))}"]
-        for url, fallback in list(candidates.items())[: spec.detail_limit]:
+        for url, fallback in ordered[: spec.detail_limit]:
             try:
                 detail, detail_final = fetch(url, spec.hosts)
                 if spec.key == "gi_group" and "/ofertas-de-trabajo-detalle/" not in urlsplit(detail_final).path:
