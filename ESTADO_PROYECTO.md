@@ -383,3 +383,17 @@ Propuesta del usuario aceptada para **inventario y auditoría pública**; no aut
 Orden recomendado para nueva auditoría de viabilidad gratuita desde GitHub: Tratem, Adecco y Eurofirms; después Randstad y Manpower. Primero confirmar URLs, fichas, paginación y si hacen falta JS/login; programar conectores solo después de prueba runner. Deduplicar frente a otros portales por referencia, empresa, puesto, ubicación y fecha. Registrar que la oferta está gestionada por ETT; no confundir intermediario con empresa contratante.
 
 No se ha ejecutado Codex/Work, prueba runner, candidaturas ni automatizaciones como consecuencia de esta ampliación.
+
+## Auditoría ETT — actualización de accesibilidad web (18/10/2026)
+Ampliación expresamente pedida por el usuario; **aún no existe prueba desde runner GitHub** ni permiso implícito para cron, candidaturas o sesiones privadas.
+- **Tratem** https://agenciaempleo.tratem.com/ofertas/ : listado público legible, fichas «Ver oferta», fecha, localidad, vacantes, estado y requisitos. En prueba web aparecen anuncios industriales/logística **excluidos por filtro de sector**. Alta prioridad técnica.
+- **Adecco** https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-toledo : listado público legible, contiene «Coordinador/a de Transporte Escolar y Acompañantes (20h)», aparentemente relevante, pero no se ha validado fecha, localidad exacta, vigencia o requisitos de la ficha. Alta prioridad técnica.
+- **Eurofirms** https://jobs.eurofirms.com/es/es/trabajo/toledo : página provincial y oferta/categoría visibles; hay ofertas de sectores excluidos, filtros y estructura real pendientes. Alta prioridad técnica.
+- **Randstad** https://www.randstad.es/candidatos/ofertas-empleo/p-toledo/ : listado provincial, múltiples filtros y fichas con fecha y ubicación; la mayoría de las ofertas mostradas no encajan en los sectores activos. Prioridad media.
+- **Manpower** https://www.manpower.es/es/buscar-trabajo/ciudad/toledo/ : catálogo oficial por ciudad con fechas, localidades y fichas visibles. https://oficinas.manpower.es/castilla-la-mancha/toledo/toledo/manpower-toledo confirma oficina física. Prioridad media.
+- **Gi Group** https://es.gigroup.com/ofertas-de-trabajo/castilla-la-mancha-re/toledo-pr/illescas-ci/ : listado público de puestos, localidades, fechas y enlaces de detalle; no implica que sus vacantes sean del ámbito social. Prioridad media-baja.
+
+**Matriz actual:** las seis son `acceso_web_publico_verificado` al listado; ninguna `verificada_desde_runner`. No se presupone ausencia de trabajo social en las ETT por no verlo en la portada.
+**Plan agrupado ETT-01A:** diagnóstico runner manual de seis catálogos y un máximo pequeño de fichas públicas; comprobar HTTP, enlaces, campos, paginación, filtros y posible bloqueo. No hacer scraping intensivo, login o bypass.
+**ETT-01B condicional:** conectores solamente de las viables, con marca de agencia intermediaria, título, localidad, provincia, fecha, requisitos, cierre, id/url, clasificación de sectores, deduplicación con fuentes ya incorporadas, pruebas y regresión ATE.
+**Dependencia previa a operación diaria:** persistir/restaurar entre ejecuciones el JSON de estado; actualmente BT-01B lo genera como artefacto pero su workflow no lo recupera al arrancar, por tanto las alertas de «nuevos» serían incorrectas.
