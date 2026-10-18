@@ -195,3 +195,11 @@ Investigación en Chat; **no** se ha ejecutado código ni activado automatizacio
 - Pruebas para Codex BT-01: reconocer estos 3 documentos, fechas/tipos, relación de corrección, ausencia de duplicados, plazo expresado tal como consta sin calcular vigencia histórica, anuncio autonómico sin provincia explícita, documento no relevante y error HTTP.
 - Categorías activas: ATE, psicología no sanitaria, menores, educación, discapacidad e intervención social; logística continúa suspendida.
 - Pendiente antes de implementar: identificar ruta oficial estable y política técnica de acceso automatizado; comprobar si existe interfaz de consulta estructurada sin presumir API o RSS.
+
+## Fase 1 — Alternativa de captura DOCM (18/10/2026)
+- Descubrimiento confirmado en página oficial indexada: **Servicio gratuito de alertas del DOCM** https://docm.jccm.es/portaldocm/solicitarAltaAlertas.do . Describe envío diario por correo según temas elegidos y opción **Empleo público**, con confirmación por correo. No se ha solicitado alta ni consentimiento. La entrega no está garantizada por el propio servicio.
+- Búsqueda avanzada oficial https://docm.jccm.es/portaldocm/busquedaAvanzada.do : filtros por fecha de publicación, NID, tipo sumario/contenido y otros; páginas accesibles en índice, pero la apertura directa dio timeout en esta comprobación. No inferir una API estable.
+- **Orden de preferencia propuesto:** 1) alertas oficiales como señal gratuita complementaria mediante Gmail autorizado; 2) consulta pública de ediciones/documentos DOCM con extractor cuando se confirme método estable; 3) cotejar ambas vías para detectar omisiones.
+- Un sistema basado solo en alertas no garantiza cobertura histórica, independencia del correo, captación de correcciones o entrega diaria; el extractor sigue justificado para completitud y validación.
+- Antes de implementar: comprobar contenido y opciones reales del correo de alerta y confirmación, con consentimiento del usuario; definir ingesta idempotente por identificador NID, fecha/enlace y registro de ausencia/fallos.
+- No crear cuentas, activar suscripciones, iniciar código ni workflows en esta fase.
