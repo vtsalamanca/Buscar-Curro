@@ -1,0 +1,17 @@
+name: InfoJobs navegador estándar sin credenciales
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Instalar cliente oficial de navegador
+        run: python3 -m pip install --disable-pip-version-check playwright==1.64.0
+      - name: Comprobar página pública con Chrome estándar
+        run: python3 infojobs_browser_probe.py
