@@ -367,3 +367,19 @@ Definir objetos `source_document` (NID/BOE-ID/URL/fecha/organismo) y `selection_
 - Limitaciones abiertas: descubrimiento exhaustivo DOCM/BOE, consulta real del formulario BOP, catálogo dinámico Empleo CLM, redirecciones de Cruz Roja, paginación, cálculo geográfico de 70 km y validación automática de titulaciones. Hasta resolverlas, los documentos son candidatos auditables, no recomendaciones ni ofertas confirmadas como vigentes.
 
 **Puerta siguiente:** revisar estos resultados con el usuario. No activar frecuencia, notificaciones ni integraciones privadas; cualquier siguiente bloque requiere una decisión posterior.
+
+## Ampliación de inventario — ETT y agencias de selección en Toledo (18/10/2026)
+Propuesta del usuario aceptada para **inventario y auditoría pública**; no autoriza por sí sola desarrollo BT-01C, login, alta de perfil, candidaturas ni cron. Se conservan sectores activos (ATE/psicología no sanitaria/educación/menores/intervención social/discapacidad), con logística y almacén suspendidos.
+
+| Agencia | Evidencia oficial accesible desde web | Estado de verificación | Próxima prueba |
+|---|---|---|---|
+| Tratem ETT / Agencia de Colocación | https://agenciaempleo.tratem.com/ con sección «Últimas Ofertas» que muestra fecha, puesto y localidad; https://www.tratem.com/ y https://www.tratem.com/candidatos.html ; oficina Toledo confirmada | **Catálogo público leído desde Chat; NO probado en runner** | Alta: fichas, paginación y permisos, evitar área privada |
+| Adecco | https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-toledo ; fichas/títulos y búsqueda de ofertas Toledo | **Listado público leído desde Chat; NO probado en runner** | Alta: enlaces reales/estructura dinámica y filtros |
+| Eurofirms | https://jobs.eurofirms.com/es/es/trabajo/toledo ; catálogo por provincia, filtros municipio, fecha, discapacidad; las cifras cambian | **Catálogo público leído desde Chat; NO probado en runner** | Alta: extracción de fichas/IDs sin autenticación |
+| Randstad / Fundación Randstad | Ejemplo ficha https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-en-l-nea-con-certificado-de-discapacidad-3005437/ contiene localidad, salario, requisitos, fecha/cierre. Ejemplo fuera del sector activo, solo valida formato | **Ficha pública leída desde Chat; NO probado en runner** | Media: búsqueda por Toledo/área y sectores; no recomendar vacantes con discapacidad exigida sin acreditar |
+| Manpower | Oficina Toledo confirmada por datos de negocio, Plaza Holanda 1 | **Oficina confirmada, no catálogo oficial validado** | Media: localizar URL oficial de ofertas y probar fichas |
+| Gi Group | Delegación en Illescas identificada | **Oficina identificada, no catálogo oficial validado** | Baja: incluir tras primera tanda |
+
+Orden recomendado para nueva auditoría de viabilidad gratuita desde GitHub: Tratem, Adecco y Eurofirms; después Randstad y Manpower. Primero confirmar URLs, fichas, paginación y si hacen falta JS/login; programar conectores solo después de prueba runner. Deduplicar frente a otros portales por referencia, empresa, puesto, ubicación y fecha. Registrar que la oferta está gestionada por ETT; no confundir intermediario con empresa contratante.
+
+No se ha ejecutado Codex/Work, prueba runner, candidaturas ni automatizaciones como consecuencia de esta ampliación.
