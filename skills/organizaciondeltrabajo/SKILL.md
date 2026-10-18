@@ -1,7 +1,7 @@
 ---
 name: organizaciondeltrabajo
 description: Protocolo reutilizable para organizar proyectos, recuperar decisiones previas, reducir repeticiones y minimizar tiempo, créditos y gasto adicional. Aplicar al planificar, ejecutar, revisar o retomar tareas.
-version: 0.1.1
+version: 0.1.2
 ---
 
 # &organizaciondeltrabajo
@@ -94,3 +94,13 @@ Fuente de verdad: `ESTADO_PROYECTO.md` en el repositorio `vtsalamanca/Buscar-Cur
 
 ## Historial de versiones (continuación)
 - **0.1.1 — 2026-10-18:** convenciones de hilos CHAT/CODEX/WORK y protocolo de traspaso y retorno con registro GitHub.
+
+## Puerta obligatoria de fuentes antes de programar (v0.1.2)
+- Antes de implementar recolectores de un proyecto de búsqueda, elaborar inventario exhaustivo razonable de fuentes necesarias y priorizarlas por objetivo.
+- Recuperar pruebas anteriores y NO repetirlas sin justificación; cada fuente debe incluir URL, cobertura, clase de acceso (público/privado), método real, autenticación, estructura/API si consta, limitaciones, fecha y evidencia.
+- Clasificar cada fuente como **verificada**, **parcial**, **bloqueada** o **pendiente**, distinguiendo ver una página en Chat de obtener los datos automáticamente en GitHub Actions.
+- Primero comprobar vías gratuitas/legítimas y diagnosticar bloqueos; Work solo para interacción imprescindible.
+- No comenzar implementación general sin inventario y decisión explícita sobre fuentes viables, limitadas y aplazadas. No exigir resolver absolutamente todas: justificar alcance y dependencias.
+- Agrupar posteriormente la implementación y pruebas de las fuentes viables en Codex; no escribir conectores a ciegas.
+- Documentar decisiones, evidencias y cuestiones abiertas en registro maestro del proyecto.
+- **0.1.2 — 2026-10-18:** incorporar auditoría de fuentes como fase obligatoria previa a desarrollo.
