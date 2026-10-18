@@ -1,0 +1,41 @@
+name: Prueba conjunta ATE e InfoJobs
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: employment-auth-probe
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Pruebas sin red
+        run: python3 -m unittest -v test_ate_auth.py test_infojobs_auth.py
+      - name: Acceso ATE
+        id: ate
+        continue-on-error: true
+        env:
+          AUTH_RUNTIME_APPROVED: '1'
+          ATE_USERNAME: ${{ secrets.ATE_USERNAME }}
+          ATE_PASSWORD: ${{ secrets.ATE_PASSWORD }}
+        run: python3 ate_auth.py
+      - name: Acceso InfoJobs
+        id: infojobs
+        continue-on-error: true
+        env:
+          AUTH_RUNTIME_APPROVED: '1'
+          INFOJOBS_USERNAME: ${{ secrets.INFOJOBS_USERNAME }}
+          INFOJOBS_PASSWORD: ${{ secrets.INFOJOBS_PASSWORD }}
+        run: python3 infojobs_auth.py
+      - name: Comprobar ambos resultados
+        if: always()
+        env:
+          ATE_OUTCOME: ${{ steps.ate.outcome }}
+          INFOJOBS_OUTCOME: ${{ steps.infojobs.outcome }}
+        run: |
+          test "$ATE_OUTCOME" = success && test "$INFOJOBS_OUTCOME" = success
