@@ -1,6 +1,6 @@
 import unittest
 
-from ett_connectors import ETT_SPECS, job_postings, listing_links, _document_from_job
+from ett_connectors import ETT_SPECS, job_postings, listing_links, unrelated_gi_redirect, _document_from_job
 
 
 class EttConnectorTests(unittest.TestCase):
@@ -46,6 +46,11 @@ class EttConnectorTests(unittest.TestCase):
         spec = ETT_SPECS[2]
         item = {"title": "Mozo de almacén con discapacidad", "description": "Logística"}
         self.assertIsNone(_document_from_job(spec, "https://jobs.eurofirms.com/es/es/x", item, "", ""))
+
+    def test_gi_detail_redirect_to_catalogue_is_rejected(self):
+        spec = ETT_SPECS[5]
+        self.assertTrue(unrelated_gi_redirect(spec, "https://es.gigroup.com/ofertas-de-trabajo/"))
+        self.assertFalse(unrelated_gi_redirect(spec, "https://es.gigroup.com/ofertas-de-trabajo-detalle/trabajo-x/"))
 
 
 if __name__ == "__main__":

@@ -4,6 +4,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: bt01b-public-sources
@@ -24,11 +25,30 @@ jobs:
           test_public_connectors.py
           test_source_viability.py
           test_ate_public.py
+      - name: Restaurar estado validado de la ejecución anterior
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 restore_previous_state.py
+          --workflow bt01b-public-sources.yml
+          --artifact-name bt01b-state
+          --destination data/public-source-state.json
       - name: Ejecutar conectores públicos
-        run: python3 run_public_sources.py --output-dir bt01b-output
+        run: >-
+          python3 run_public_sources.py
+          --state data/public-source-state.json
+          --output-dir bt01b-output
       - name: Resumen en la ejecución
         if: always()
         run: cat bt01b-output/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Estado para la siguiente ejecución
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bt01b-state
+          path: bt01b-output/state.json
+          if-no-files-found: error
+          retention-days: 30
       - name: Evidencia BT-01B
         if: always()
         uses: actions/upload-artifact@v4

@@ -23,7 +23,11 @@ jobs:
       - name: Restaurar estado validado de la ejecución anterior
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python3 restore_previous_state.py --destination data/ett-state.json
+        run: >-
+          python3 restore_previous_state.py
+          --workflow ett01.yml
+          --artifact-name ett01-state
+          --destination data/ett-state.json
       - name: Diagnosticar y ejecutar conectores ETT públicos
         run: python3 run_ett_sources.py --state data/ett-state.json --output-dir ett01-output
       - name: Resumen ETT-01

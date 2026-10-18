@@ -250,6 +250,11 @@ def _fallback_item(html: str) -> dict:
     return {"title": title, "description": text, "datePosted": date_from_text(text)}
 
 
+def unrelated_gi_redirect(spec: EttSpec, final_url: str) -> bool:
+    """Reject Gi detail links that silently fall back to a generic catalogue."""
+    return spec.key == "gi_group" and "/ofertas-de-trabajo-detalle/" not in urlsplit(final_url).path
+
+
 def run_ett_connector(spec: EttSpec) -> SourceRun:
     checked_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     try:
@@ -263,7 +268,7 @@ def run_ett_connector(spec: EttSpec) -> SourceRun:
         for url, fallback in ordered[: spec.detail_limit]:
             try:
                 detail, detail_final = fetch(url, spec.hosts)
-                if spec.key == "gi_group" and "/ofertas-de-trabajo-detalle/" not in urlsplit(detail_final).path:
+                if unrelated_gi_redirect(spec, detail_final):
                     notes.append("redirected_to_unrelated_catalog")
                     continue
                 items = job_postings(detail)

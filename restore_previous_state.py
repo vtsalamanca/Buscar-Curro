@@ -75,14 +75,14 @@ def download(url: str, token: str) -> bytes:
     return body
 
 
-def restore(repository: str, workflow: str, current_run: int, token: str, destination: Path) -> bool:
+def restore(repository: str, workflow: str, artifact_name: str, current_run: int, token: str, destination: Path) -> bool:
     base = f"https://api.github.com/repos/{repository}"
     runs = api_json(f"{base}/actions/workflows/{workflow}/runs?event=workflow_dispatch&status=success&per_page=20", token)
     for run in runs.get("workflow_runs", []):
         if int(run.get("id", 0)) == current_run:
             continue
-        artifacts = api_json(f"{base}/actions/runs/{run['id']}/artifacts?name=ett01-state", token)
-        valid = [item for item in artifacts.get("artifacts", []) if not item.get("expired") and item.get("name") == "ett01-state"]
+        artifacts = api_json(f"{base}/actions/runs/{run['id']}/artifacts?name={artifact_name}", token)
+        valid = [item for item in artifacts.get("artifacts", []) if not item.get("expired") and item.get("name") == artifact_name]
         if not valid:
             continue
         raw = extract_state(download(valid[0]["archive_download_url"], token))
@@ -95,12 +95,17 @@ def restore(repository: str, workflow: str, current_run: int, token: str, destin
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--destination", type=Path, default=Path("data/ett-state.json"))
+    parser.add_argument("--workflow", default="ett01.yml")
+    parser.add_argument("--artifact-name", default="ett01-state")
     args = parser.parse_args()
     required = {name: os.environ.get(name, "") for name in ("GITHUB_REPOSITORY", "GITHUB_RUN_ID", "GITHUB_TOKEN")}
     if not all(required.values()):
         print("state_restore=skipped_missing_ci_context")
         return 0
-    restored = restore(required["GITHUB_REPOSITORY"], "ett01.yml", int(required["GITHUB_RUN_ID"]), required["GITHUB_TOKEN"], args.destination)
+    restored = restore(
+        required["GITHUB_REPOSITORY"], args.workflow, args.artifact_name,
+        int(required["GITHUB_RUN_ID"]), required["GITHUB_TOKEN"], args.destination,
+    )
     print("state_restore=restored" if restored else "state_restore=first_run")
     return 0
 
