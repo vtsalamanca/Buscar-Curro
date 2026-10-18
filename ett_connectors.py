@@ -226,12 +226,17 @@ def _document_from_job(spec: EttSpec, url: str, item: dict, fallback: str, html_
     qualifications = _text(item.get("qualifications"))
     if qualifications:
         requirements.append(qualifications[:800])
+    stable_content = stable_hash(
+        title, publication or "", deadline or "", municipality or "", province or "",
+        hiring or "", _text(item.get("employmentType")) or "", _salary(item.get("baseSalary")) or "",
+        " | ".join(sorted(set(requirements))), " | ".join(quality), url,
+    )
     return SourceDocument(
         source=spec.key, document_id=f"{spec.key}:{identifier or stable_hash(url)[:20]}",
         process_id=process_key(hiring or spec.agency, title), title=title[:500], category=categories,
         municipality=municipality, province=province, publication_date=publication, deadline=deadline,
         official_url=url, requirements=sorted(set(requirements)), act_type="oferta", status=status,
-        content_hash=stable_hash(title, description, url, str(item.get("employmentType"))),
+        content_hash=stable_content,
         agency=spec.agency, hiring_organization=hiring,
         employment_type=_text(item.get("employmentType")), salary=_salary(item.get("baseSalary")),
         data_quality=quality,

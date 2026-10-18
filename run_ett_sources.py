@@ -30,7 +30,12 @@ def main() -> int:
     lines = ["# ETT-01 — viabilidad y conectores", "", "| Fuente | Viabilidad | Enlaces | JobPosting | Error |", "|---|---|---:|---:|---|"]
     for item in diagnostics:
         lines.append(f"| {item['source']} | **{item['status']}** | {item.get('candidate_links', 0)} | {item.get('jobposting_count', 0)} | {item.get('error') or '—'} |")
-    lines += ["", f"Nuevos: **{len(delta['new_document_ids'])}**. Cambiados: **{len(delta['changed_document_ids'])}**. Fallos: **{len(delta['source_failures'])}**.", "", "| Fuente | Estado | Documentos | Notas |", "|---|---|---:|---|"]
+    lines += [
+        "", f"Nuevos: **{len(delta['new_document_ids'])}**. Cambiados: **{len(delta['changed_document_ids'])}**. Fallos: **{len(delta['source_failures'])}**.",
+        f"IDs nuevos: `{', '.join(delta['new_document_ids']) or 'ninguno'}`.",
+        f"IDs cambiados: `{', '.join(delta['changed_document_ids']) or 'ninguno'}`.",
+        "", "| Fuente | Estado | Documentos | Notas |", "|---|---|---:|---|",
+    ]
     for run in runs:
         lines.append(f"| {run.source} | **{run.status}** | {len(run.documents)} | {'; '.join(run.notes) if run.notes else '—'} |")
     report = "\n".join(lines) + "\n"

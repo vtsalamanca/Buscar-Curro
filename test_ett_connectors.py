@@ -35,6 +35,13 @@ class EttConnectorTests(unittest.TestCase):
         self.assertIn("datos_contradictorios:jornada", doc.data_quality)
         self.assertIn("datos_contradictorios:contrato", doc.data_quality)
 
+    def test_dynamic_page_chrome_does_not_change_hash(self):
+        spec = ETT_SPECS[0]
+        item = {"title": "Docente", "description": "Requisitos: Grado en Educación."}
+        first = _document_from_job(spec, "https://agenciaempleo.tratem.com/oferta/docente", item, "", "sesión 1")
+        second = _document_from_job(spec, "https://agenciaempleo.tratem.com/oferta/docente", item, "", "sesión 2")
+        self.assertEqual(first.content_hash, second.content_hash)
+
     def test_suspended_logistics_is_filtered(self):
         spec = ETT_SPECS[2]
         item = {"title": "Mozo de almacén con discapacidad", "description": "Logística"}
