@@ -1,0 +1,39 @@
+name: BT-01B conectores de fuentes publicas
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bt01b-public-sources
+  cancel-in-progress: false
+
+jobs:
+  public-connectors:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Pruebas sin red y regresión ATE
+        run: >-
+          python3 -m unittest -v
+          test_employment_core.py
+          test_public_connectors.py
+          test_source_viability.py
+          test_ate_public.py
+      - name: Ejecutar conectores públicos
+        run: python3 run_public_sources.py --output-dir bt01b-output
+      - name: Resumen en la ejecución
+        if: always()
+        run: cat bt01b-output/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Evidencia BT-01B
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bt01b-public-source-results
+          path: bt01b-output/
+          if-no-files-found: error
+          retention-days: 7
