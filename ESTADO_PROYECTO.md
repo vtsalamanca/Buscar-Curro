@@ -229,3 +229,28 @@ Servicio de alertas: gratuito, diario y configurable; solicita consentimiento y 
 
 ### Siguiente paso
 Preparar instrucción única para Codex tras validar coste/cupo y método de lectura pública; conservar pruebas actuales ATE y no tocar autenticaciones privadas. Fase 1 funcional cerrada, **validación técnica del protocolo DOCM pendiente**.
+
+## Fase previa a programación — Auditoría de fuentes, lote 1 (18/10/2026)
+Se recuperaron resultados anteriores antes de ampliar fuentes. No hubo ejecución de scripts, Work, Codex ni Actions. **Prueba web en Chat no equivale a prueba automática en runner**.
+
+| Fuente | URL oficial / evidencia de consulta | Estado de acceso público | Automatización | Acción posterior |
+|---|---|---|---|---|
+| ATE JCCM público | https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39152509426 | Verificado históricamente | Prueba runner positiva, sólo PDF/hash | Reutilizar código, integrar cambios y textos |
+| ATE privado | AUTH_STATUS.md | Autenticación una vez | No repetible verificado | No repetir sin necesidad, sin secretos en informes |
+| DOCM | https://docm.jccm.es/docm/busquedaAvanzada.do | Formulario y filtros públicos identificados | No verificado | Ensayo técnico acotado en BT-01 |
+| BOP Toledo | https://bop.diputoledo.es/webEbop/ebop.jsp | Buscador público por texto, anunciante, fechas y paginación; documentos anteriores a 01/07/2009 no indexados | No verificado | Confirmar URLs de detalle, paginación y cambios |
+| BOE / Mi BOE | https://boe.es/alertas/ ; https://administracion.gob.es/empleopublico/guia-buscador | Alertas gratuitas oficiales; guía de convocatorias accesible; RSS anunciado | No verificado | Priorizar vías estructuradas oficiales y evitar duplicar DOCM/BOP |
+| Empléate | https://empleate.gob.es/empleo/index_nojs.html?JAVASCRIPTSTATUS=NONE | Portada alternativa accesible, búsqueda visible; historial de búsqueda real parcial | No verificado | Revisar salida y criterios sin inferir que catálogo completo es accesible |
+| Centro Trama | https://www.trama.org/empleo/ | Catálogo y fichas originales públicos con fechas de cierre; algunos anuncios vencidos siguen visibles | No verificado | Alto potencial para extractor HTML y descarte por fecha, requisitos de titulación |
+| ACCEM | Seguimiento_empleo_personal.md; catálogo 19 revisado históricamente | Parcial, no todas las vías | No verificado | No repetir recorrido previo sin cambios |
+| Cruz Roja | Seguimiento_empleo_personal.md; https://cruzroja.epreselec.com/Ofertas/Ofertas.aspx | Catálogo con filtros revisado históricamente | No verificado | Revisar parámetros de acceso y requisitos |
+| InfoJobs | AUTH_STATUS.md; HTTP 405/desafío humano en runner | Perfil en Edge local históricamente, sin acceso runner | Bloqueado | Aparcado; usar email autorizado, nunca eludir verificación |
+
+### Decisiones del lote
+- ATE público continúa como fuente funcional parcial; no reescribir.
+- BOE y BOP Toledo se incorporan expresamente al inventario (además de DOCM).
+- Centro Trama pasa a prioridad alta de empleo social, por fichas públicas estructuradas.
+- Empléate se mantiene parcial, no atribuir cobertura total por cargar portada.
+- Alertas oficiales DOCM y BOE pueden complementar captación con consentimiento; no están activadas.
+- Fuentes pendientes siguientes: empleo autonómico/local, ayuntamientos, ACTIA, ILUNION/Inserta, entidades restantes, Indeed, Jobijoba, LinkedIn y correo; para cada una registrar método y límites.
+- **Puerta de fase:** las pruebas de automatización se agruparán por familias en Codex sólo después de completar inventario y priorización; no se exigirán credenciales ni se reabrirán pruebas bloqueadas innecesariamente.
