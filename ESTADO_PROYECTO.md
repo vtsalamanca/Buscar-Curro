@@ -148,3 +148,38 @@ Estado: **planificación en Chat, sin ejecutar código ni workflows**.
 1. Terminar comprobaciones de archivos/workflows no leídos mediante inventario de repositorio, **sin volver a recorrer diagnósticos ya documentados**.
 2. Preparar criterios de aceptación DOCM y tareas agrupadas BT-01 con alcance activo.
 3. Reservar Codex para ese único bloque técnico y Work sólo si aparece un obstáculo que requiera interfaz.
+
+## Fase 0 — Cierre operativo del inventario técnico (18/10/2026)
+**Cierre operativo con reservas**, no una certificación de lectura exhaustiva de todas las conversaciones archivadas. Lo no acreditado permanece como pendiente, nunca como resuelto.
+
+### Inventario verificado de componentes del repositorio
+| Componente | Archivos verificados | Activación / conclusión |
+|---|---|---|
+| ATE fuente pública | `ate_public.py`, `test_ate_public.py`, `.github/workflows/ate-public.yml` | Workflow `workflow_dispatch` o `push` limitado a sus tres archivos; **no schedule**; test + descarga/comprobación PDF |
+| ATE autenticación privada | `ate_auth.py`, `test_ate_auth.py`, `.github/workflows/ate-auth.yml` | **manual**; usa Secrets ATE, no publicar datos |
+| Prueba conjunta de autenticación | `.github/workflows/auth-joint.yml` | **manual**; ATE e InfoJobs, exigencia de éxito de ambos; un fallo global no borra el posible éxito parcial ATE |
+| InfoJobs autenticación | `infojobs_auth.py`, `test_infojobs_auth.py` | Acceso privado no validado desde GitHub |
+| InfoJobs navegador público | `infojobs_browser_probe.py`, `.github/workflows/infojobs-browser.yml` | **manual**, sin credenciales; Chrome estándar; defensa anti-bot observada |
+| InfoJobs conectividad | `infojobs_connectivity.py`, `.github/workflows/infojobs-connectivity.yml` | **manual**; sólo conectividad pública |
+| Documentación | `README.md`, `AUTH_STATUS.md`, `SOURCES_STATUS.md`, `ESTADO_PROYECTO.md`, `skills/organizaciondeltrabajo/SKILL.md` | Fuente de verdad y antecedentes |
+
+**Conclusión:** cinco workflows identificados y leídos. Ninguno contiene programación `schedule`. Sólo el workflow público de ATE tiene disparador por cambios en archivos; los cuatro restantes son manuales. No confundir `push` con revisión diaria automática.
+
+### Contradicciones resueltas
+1. «ATE público funciona» = recupera y valida documento público; **todavía no** clasifica anuncios ni emite alertas por cambios persistentes.
+2. «ATE privado funciona» = constancia histórica de **una** autenticación exitosa; no implica garantía de acceso recurrente.
+3. «InfoJobs perfil accesible» desde Edge local en un momento y «no accesible» desde GitHub/runner no se contradicen: entornos y momentos distintos.
+4. «No hay automatizaciones» se refiere a ausencia de **programación recurrente GitHub** en estos cinco workflows; las tareas programadas de ChatGPT, si existen, se gestionan aparte y no han sido auditadas aquí.
+5. «Logística» aparece en material histórico pero está **suspendida** expresamente desde 16/10; no usarla en el desarrollo DOCM activo.
+
+### Transición a fase 1 — Diseño DOCM en Chat
+- Definir descubrimiento de ediciones/disposiciones oficiales por fecha; documentar formato real sin asumir API/RSS no comprobados.
+- Seleccionar secciones y palabras clave: ATE, bolsas, listas, ampliaciones, psicología no sanitaria, intervención social, protección de menores, educación y discapacidad.
+- Normalizar registro: `fuente`, `nid`, `url_oficial`, `fecha_publicacion`, `organismo`, `provincia`, `tipo`, `titulo`, `plazo`, `estado`, `hash`.
+- Clasificar correcciones y enlaces a resolución original; evitar falsos positivos por coincidencia de términos.
+- Historial y deduplicación persistente; distinguir `sin nueva publicación` de `falló la consulta`.
+- Pruebas previstas: sumario conocido, documento duplicado, corrección, día sin publicación, HTTP fallido, edición sin resultados pertinentes, anuncio autonómico sin provincia explícita y plazo no indicado.
+- Antes de ejecutar BT-01, examinar exclusivamente dependencias necesarias, coste/cupo disponible y seguridad; no activar schedule ni acceso privado.
+
+### Regla de conservación
+Las conversaciones archivadas son respaldo. Está permitido archivarlas; **no recomendar su borrado definitivo** hasta comprobar que no faltan decisiones únicas. Esta fase queda cerrada a efectos de continuar el diseño, con reservas claramente enumeradas.
