@@ -1,7 +1,7 @@
 ---
 name: organizaciondeltrabajo
 description: Protocolo reutilizable para organizar proyectos, recuperar decisiones previas, reducir repeticiones y minimizar tiempo, créditos y gasto adicional. Aplicar al planificar, ejecutar, revisar o retomar tareas.
-version: 0.1.2
+version: 0.1.3
 ---
 
 # &organizaciondeltrabajo
@@ -104,3 +104,15 @@ Fuente de verdad: `ESTADO_PROYECTO.md` en el repositorio `vtsalamanca/Buscar-Cur
 - Agrupar posteriormente la implementación y pruebas de las fuentes viables en Codex; no escribir conectores a ciegas.
 - Documentar decisiones, evidencias y cuestiones abiertas en registro maestro del proyecto.
 - **0.1.2 — 2026-10-18:** incorporar auditoría de fuentes como fase obligatoria previa a desarrollo.
+
+## Continuidad autónoma hasta punto de intervención (v0.1.3)
+**Regla vinculante:** una subtarea completada, un informe intermedio o un commit documental NO justifican finalizar el turno si el objetivo autorizado tiene tareas pendientes ejecutables sin el usuario.
+1. Convertir el objetivo en una cola explícita de tareas ordenadas por dependencias; distinguir meta completa de hitos intermedios.
+2. Tras cada hito, registrar avance y continuar automáticamente con el siguiente, sin preguntas ceremoniales ni «¿sigo?».
+3. Informar mediante mensajes de progreso cuando el trabajo dure, pero no usar el progreso como excusa para detenerse.
+4. Ante fallo: diagnosticar y usar alternativas gratuitas apropiadas; si una fuente está bloqueada, registrarlo y seguir otras independientes.
+5. Parar solo por: objetivo alcanzado; autorización/credencial/decisión realmente imprescindible; riesgo de pago o seguridad; límite técnico real de herramienta, duración o alcance. Explicar exactamente qué impidió terminar y qué queda.
+6. No prometer continuación después de terminar la respuesta; sin tarea programada el asistente no sigue trabajando en segundo plano.
+7. Evitar frases de cierre del tipo «la próxima vez continuaremos» mientras existan tareas que puedan completarse ahora.
+8. El presupuesto adicional por defecto sigue en cero; no activar Work/Codex ni automatizaciones por esta regla.
+- **0.1.3 — 2026-10-18:** corregir paradas prematuras entre lotes de fuentes; continuar hasta punto de intervención real.
