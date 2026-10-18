@@ -10,3 +10,7 @@ Comprobación del 18/10/2026. Repositorio público y ejecutores estándar gratui
 Once pruebas sintéticas superadas. [Prueba conjunta](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39125415412). [Diagnóstico público sin credenciales](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39125527542).
 
 Los valores de Secrets nunca se incluyen en el código ni resultados. No se guardan cookies, tokens, perfiles o HTML como artefactos. No se aceptan ofertas ni se envían candidaturas. Un diagnóstico que termina correctamente no demuestra acceso al servicio.
+
+## Prueba con navegador estándar
+
+[Chrome estándar en GitHub](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39125964900) también recibió HTTP 405. No aparecieron campos de acceso ni CAPTCHA visible. La referencia a CAPTCHA detectada anteriormente en el cuerpo HTTP no demuestra que haya un desafío visible o resoluble. Resultado: acceso no verificado; ninguna credencial de InfoJobs enviada. Sin stealth, proxies ni servicios tarificados.
