@@ -334,3 +334,20 @@ Definir objetos `source_document` (NID/BOE-ID/URL/fecha/organismo) y `selection_
 **BT-01A (Codex, propuesta, NO ejecutado):** pruebas de viabilidad runner exclusivamente públicas y sin login, agrupadas por familias A (DOCM, BOE, BOP, JCCM) y B (Empleo CLM, Empléate, Toledo/Nambroca/Aranjuez) y C (Trama, ILUNION, Cruz Roja, ACCEM cuando enlace directo disponible); guardar códigos de estado, estructura, ejemplo sanitizado, clasificación y errores. Reutilizar ATE público; prohibido activar schedule, rellenar credenciales o modificar datos del usuario. Separar prueba de viabilidad de la programación definitiva.
 **BT-01B (Codex, después de validar fuentes):** implementar extractores viables con estado persistente, deduplicación por proceso y acto, filtros de elegibilidad, pruebas de regresión y reportes. Bloqueadas se registran, no se fuerzan.
 **Fase operativa posterior:** elección de periodicidad, alertas, correo y costes reales para aprobación expresa; sin activación implícita.
+
+## BT-01A — resultado técnico agrupado (18/10/2026)
+
+**Estado: probado y documentado; BT-01B no iniciado.** Autorización recibida para ejecutar exclusivamente BT-01A y comprobar las fuentes públicas desde GitHub Actions, con coste adicional cero.
+
+- Código: `source_viability.py`, `test_source_viability.py` y `.github/workflows/bt01a-source-viability.yml`; commits `feb84c0` y corrección `67cbea0`.
+- Seguridad/alcance: workflow exclusivamente manual (`workflow_dispatch`), runner estándar, `contents: read`, timeout global de 7 minutos, 15 segundos y 1 MiB por fuente, un intento, metadatos públicos sanitizados, sin secretos o autenticaciones. No se modificó `ate_public.py` ni se ejecutaron ATE privado o InfoJobs autenticado.
+- Verificación válida: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39163691686 ; nueve tests superados, todos los pasos correctos, artefacto ID `12149183682` con retención de 7 días y SHA-256 ZIP `86795d842a8c188039de4b5e1d064cab0be518eec9b66e4ccfc7f704c73e36c5`.
+- **Viables para estudiar en BT-01B:** DOCM, BOE documental, BOP Toledo, JCCM últimas modificaciones, Ayuntamiento de Aranjuez e ILUNION VidaSénior (HTTP 200 con estructura/enlaces relevantes detectados).
+- **Parciales:** Empleo CLM, Ayuntamiento de Toledo, Centro Trama y Cruz Roja. Respondieron HTTP 200, pero la prueba estática no confirmó enlaces de resultados o detectó señal de login; necesitan una prueba focalizada de catálogo/fichas antes de programar conectores.
+- **Bloqueadas en este run:** Empléate (`network_error`) y sede de Nambroca (`HTTPError:302`). No se reintentaron ni forzaron.
+- **No probada:** ACCEM, porque no se validó una URL oficial directa de vacantes y su página de programas no es un catálogo.
+- La primera ejecución https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39163408797 se conserva como diagnóstico **descartado para la matriz**: una coincidencia demasiado amplia interpretaba `meta robots` como reto humano. Se corrigió y se añadió test de regresión antes de la ejecución válida.
+- Limitación transversal: `verificada_desde_runner` demuestra acceso público y enlaces relevantes en esa fecha y runner; no prueba todavía paginación, cobertura, vigencia, extracción semántica, deduplicación ni estabilidad futura.
+- Avisos de mantenimiento: actions basadas en Node.js 20 fueron forzadas a Node.js 24 y GitHub anunció migración de `ubuntu-latest`; no afectaron el resultado, pero deberán revisarse antes de una fase operativa.
+
+**Puerta siguiente:** detenerse aquí para revisión del usuario. No comenzar BT-01B, no añadir conectores definitivos, no activar cron ni notificaciones hasta nueva autorización.
