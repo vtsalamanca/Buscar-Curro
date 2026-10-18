@@ -351,3 +351,19 @@ Definir objetos `source_document` (NID/BOE-ID/URL/fecha/organismo) y `selection_
 - Avisos de mantenimiento: actions basadas en Node.js 20 fueron forzadas a Node.js 24 y GitHub anunció migración de `ubuntu-latest`; no afectaron el resultado, pero deberán revisarse antes de una fase operativa.
 
 **Puerta siguiente:** detenerse aquí para revisión del usuario. No comenzar BT-01B, no añadir conectores definitivos, no activar cron ni notificaciones hasta nueva autorización.
+
+## BT-01B — implementación y verificación agrupada (18/10/2026)
+
+**Estado: desarrollado, publicado y verificado; pendiente de revisión funcional antes de cualquier fase operativa.** La autorización posterior permitió ejecutar BT-01B sin ampliar el alcance a autenticaciones, candidaturas, cron o notificaciones.
+
+- Implementación: `employment_core.py`, `public_connectors.py`, `run_public_sources.py`, tests y workflow manual `.github/workflows/bt01b-public-sources.yml`.
+- Funciones: modelo común, filtros de categorías activas y logística suspendida, fechas/plazos conservadores, requisitos presentes en texto, identidad por fuente, hash, relación de actos, estado JSON persistente, detección de nuevos/cambiados, deduplicación y separación de error frente a cero resultados.
+- Conectores con documentos reales desde runner: DOCM 3, BOE 1, JCCM 2, Ayuntamiento de Toledo 2, Aranjuez 1, Trama 10 e ILUNION 10. Son documentos candidatos; plazo desconocido, distancia o titulación pendiente impiden tratarlos automáticamente como recomendación.
+- Acceso parcial sin documentos extraíbles: BOP Toledo 0 (formulario/paginación no implementados), Empleo CLM 0 (catálogo no visible estáticamente) y Cruz Roja 0 (detalle con `HTTPError:302`). No se forzaron ni se ocultaron como “sin novedades”.
+- Verificación válida: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39165959658, commit `b45f02e`, 20 tests en Actions, todos los pasos correctos; artefacto ID `12150139921`, SHA-256 `45909783b7b9d0bb5cff28c6422569263e67c80c1b4465a8fe0ab2db3955c68e`, retención 7 días. Suite local completa: 31 tests correctos, incluidas regresiones ATE.
+- Commits BT-01B: `fa6ac15` (pipeline), `aa1ba83` (evidencias y extracción), `e96cb81` (navegación JCCM) y `b45f02e` (filtros finales).
+- Las ejecuciones `39165252983`, `39165510317` y `39165713985` son diagnósticas; revelaron y permitieron corregir falsos positivos antes de declarar el run final.
+- Coste/seguridad: solo biblioteca estándar de Python y GitHub-hosted runner estándar del repositorio público; sin dependencias tarificadas, secrets, cookies ni datos privados. El código ATE existente no fue modificado.
+- Limitaciones abiertas: descubrimiento exhaustivo DOCM/BOE, consulta real del formulario BOP, catálogo dinámico Empleo CLM, redirecciones de Cruz Roja, paginación, cálculo geográfico de 70 km y validación automática de titulaciones. Hasta resolverlas, los documentos son candidatos auditables, no recomendaciones ni ofertas confirmadas como vigentes.
+
+**Puerta siguiente:** revisar estos resultados con el usuario. No activar frecuencia, notificaciones ni integraciones privadas; cualquier siguiente bloque requiere una decisión posterior.

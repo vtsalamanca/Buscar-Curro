@@ -33,6 +33,8 @@ Una matriz de evidencia reproducible que permita decidir cuáles de las fuentes 
 - Comparar frente a tests ATE existentes; documentar regresiones y reversión.
 - Sin activación diaria ni notificaciones hasta aprobación posterior.
 
+**Ejecución registrada (18/10/2026):** BT-01B fue autorizado después de revisar BT-01A, desarrollado y verificado en https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39165959658. El detalle por fuente, errores y límites se mantiene en `SOURCES_STATUS.md`; esta anotación no autoriza una fase operativa posterior.
+
 ## Traspaso de vuelta a Chat
 Devolver: cambios concretos, tests ejecutados, commits, URLs de evidencias, estado por fuente, bloqueos y próximos pasos. Actualizar `ESTADO_PROYECTO.md` manteniendo estados de evidencia precisos.
 
