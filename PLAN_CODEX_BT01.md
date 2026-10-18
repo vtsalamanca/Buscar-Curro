@@ -37,3 +37,10 @@ Una matriz de evidencia reproducible que permita decidir cuáles de las fuentes 
 Devolver: cambios concretos, tests ejecutados, commits, URLs de evidencias, estado por fuente, bloqueos y próximos pasos. Actualizar `ESTADO_PROYECTO.md` manteniendo estados de evidencia precisos.
 
 **No comenzar BT-01A ni BT-01B por el mero hecho de encontrar este archivo. Es una especificación, no una orden de ejecución.**
+
+## Comprobación económica y puerta de ejecución (18/10/2026)
+- Repositorio identificado como **público** por búsqueda de GitHub; rama principal `main`.
+- Documentación oficial GitHub Actions: los **runners estándar de GitHub en repositorios públicos** son gratuitos; los *larger runners* siempre pueden generar cargos y el almacenamiento de artefactos/caché debe respetar límites del plan: https://docs.github.com/en/billing/concepts/product-billing/github-actions .
+- Diseñar BT-01A con `ubuntu-latest` estándar, temporizador estricto, sin artefactos grandes ni servicios externos de pago. Antes de cada nueva dependencia comprobar que no tiene tarifa por uso.
+- **No confundir presupuesto adicional 0 € con cuota Codex gratuita/infinita:** no se ha verificado cuota de Codex ni se ha consumido para este análisis. El usuario puede abrir el hilo Codex existente y solicitar allí el bloque ya preparado.
+- Requiere operación dentro de Codex para modificar/ensayar código; no afirmar que el acceso automático a nuevas fuentes está probado antes de ver el run real.
