@@ -9,6 +9,8 @@ import os
 import urllib.request
 import zipfile
 from pathlib import Path, PurePosixPath
+from urllib.error import HTTPError
+from urllib.parse import urlsplit
 
 
 MAX_ARCHIVE = 5 * 1024 * 1024
@@ -41,9 +43,32 @@ def api_json(url: str, token: str) -> dict:
         return json.load(response)
 
 
+def allowed_artifact_redirect(location: str) -> bool:
+    parsed = urlsplit(location)
+    return bool(parsed.scheme == "https" and parsed.hostname and (
+        parsed.hostname == "objects.githubusercontent.com"
+        or parsed.hostname.endswith(".blob.core.windows.net")
+    ))
+
+
 def download(url: str, token: str) -> bytes:
+    class NoRedirect(urllib.request.HTTPRedirectHandler):
+        def redirect_request(self, req, fp, code, msg, headers, newurl):  # noqa: ANN001
+            return None
+
     request = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"})
-    with urllib.request.urlopen(request, timeout=20) as response:
+    try:
+        response = urllib.request.build_opener(NoRedirect()).open(request, timeout=20)
+    except HTTPError as exc:
+        if exc.code not in (301, 302, 303, 307, 308) or not exc.headers.get("Location"):
+            raise
+        location = exc.headers["Location"]
+        if not allowed_artifact_redirect(location):
+            raise ValueError("unexpected_artifact_redirect") from exc
+        # The signed Azure/GitHub URL authenticates itself. Forwarding the
+        # repository Bearer token to another host both leaks scope and fails.
+        response = urllib.request.urlopen(urllib.request.Request(location), timeout=20)
+    with response:
         body = response.read(MAX_ARCHIVE + 1)
     if len(body) > MAX_ARCHIVE:
         raise ValueError("archive_too_large")

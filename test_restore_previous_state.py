@@ -3,7 +3,7 @@ import json
 import unittest
 import zipfile
 
-from restore_previous_state import extract_state, validate_state_bytes
+from restore_previous_state import allowed_artifact_redirect, extract_state, validate_state_bytes
 
 
 class RestoreStateTests(unittest.TestCase):
@@ -27,6 +27,12 @@ class RestoreStateTests(unittest.TestCase):
             bundle.writestr("two/state.json", '{}')
         with self.assertRaises(ValueError):
             extract_state(output.getvalue())
+
+    def test_artifact_redirect_allowlist(self):
+        self.assertTrue(allowed_artifact_redirect("https://abc.blob.core.windows.net/results/state.zip?sig=x"))
+        self.assertTrue(allowed_artifact_redirect("https://objects.githubusercontent.com/a.zip"))
+        self.assertFalse(allowed_artifact_redirect("https://evil.example/state.zip"))
+        self.assertFalse(allowed_artifact_redirect("http://abc.blob.core.windows.net/state.zip"))
 
 
 if __name__ == "__main__":
