@@ -276,3 +276,21 @@ D) **Portales/privado:** Indeed, Jobijoba, LinkedIn e InfoJobs: tratamiento de a
 E) **Correspondencia y candidaturas:** Gmail, sin enviar ni cambiar estados sin orden del usuario.
 
 **Puerta de decisión:** primero completar tabla de métodos y limitaciones a partir de antecedentes por familia; después enviar un único encargo Codex por paquete viables, con pruebas y alcance finito. No bloquear la totalidad por fuentes que exigen login o están aparcadas. No activar workflows programados antes de pruebas.
+
+## Auditoría de fuentes — Lote 3 / continuidad sin pausa (18/10/2026)
+Se prosiguió dentro del mismo encargo, sin pedir un nuevo «sigue», sin ejecutar código ni gastar servicios tarificados. Se utilizaron fuentes públicas y antecedentes.
+
+| Fuente | Evidencia pública revisada | Alcance y límites | Prioridad |
+|---|---|---|---|
+| Ayuntamiento Toledo | https://www.toledo.es/el-ayuntamiento/empleo-publico/ | Convocatorias y bolsas con fechas de solicitud y bases. Ejemplo histórico: bolsa Educador/a Social plazo 21–31/08/2026, bolsa Educador/a-Cuidador/a de centro de atención VVG, resolución 22/09/2026. **Listado público verificado, extracción runner pendiente.** | Alta |
+| Diputación Toledo | https://www.diputoledo.es/global/50/304/4664 | Secciones de empleo público, OPE 2026, bolsas y solicitudes; fichas por categorías y varios documentos por proceso. **Acceso público verificado, automatización pendiente.** | Alta |
+| ILUNION | https://empleo.ilunion.com/go/ILUNION-VIDASENIOR/8683602/ | Catálogo y referencias publicadas, ID de vacante (p.ej. 38668 Sonseca) y fecha; fichas con titulación exigida. Anuncio 38668 requiere FP sociosanitaria, no suponer equivalencia con Psicología. **Acceso público verificado, automatización pendiente.** | Media |
+| ACTIA | https://www.actiasocial.org/ubicacion.html ; Hacesfalta en registros anteriores | Sitio institucional aporta servicios y contacto, pero no demuestra catálogo de vacantes. Consulta de Hacesfalta y candidatura ACTIA anterior ya registrada: no repetir envío. **Fuente de empleo parcial.** | Media |
+| Inserta/Portalento | https://www.portalento.es/Candidatos/Ofertas/Default.aspx (histórico) | Filtro Toledo sin resultados en prueba previa; no es evidencia de ausencia general. Comprobar sólo con nuevo alcance justificado. | Media |
+| ACCEM | Historial: catálogo 19 resultados en dos páginas | No repetir recorrido sin cambio o fuente nueva. | Media |
+| Cruz Roja | https://cruzroja.epreselec.com/Ofertas/Ofertas.aspx (histórico) | Catálogos Toledo/Madrid revisados parcialmente; salarios/requisitos deben obtenerse de ficha. | Media |
+| Portales dinámicos (Indeed/Jobijoba/LinkedIn) | Historial `Seguimiento_empleo_personal.md` | Lectura parcial y caducidades; no atribuir automatización ni API. | Baja hasta pruebas focalizadas |
+
+**Reglas de selección:** verificar fecha de publicación y plazo, comprobar títulos habilitantes obligatorios, distinguir bolsa de vacante, conservar ID/enlace original, deduplicar entre DOCM/BOP/ayuntamientos/empleador. No rastrear logística suspendida. Priorizar fuentes oficiales y catálogos de organizaciones con fichas completas. 
+
+**Siguiente paquete lógico de auditoría (sin ejecutar código):** mapear cobertura de otros ayuntamientos del entorno y completar límites de ACCEM/Cruz Roja/Trama y Empléate; la prueba de lectura automatizada por runners pertenece al bloque Codex ya agrupado y no debe confundirse con comprobaciones web.
