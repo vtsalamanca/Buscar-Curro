@@ -1,7 +1,7 @@
 ---
 name: organizaciondeltrabajo
 description: Protocolo reutilizable para organizar proyectos, recuperar decisiones previas, reducir repeticiones y minimizar tiempo, créditos y gasto adicional. Aplicar al planificar, ejecutar, revisar o retomar tareas.
-version: 0.1.4
+version: 0.1.5
 ---
 
 # &organizaciondeltrabajo
@@ -129,3 +129,14 @@ Fuente de verdad: `ESTADO_PROYECTO.md` en el repositorio `vtsalamanca/Buscar-Cur
 - Optimizar el volumen: comparar IDs/fechas/hashes, no redescargar sin necesidad, reintentos limitados, rate limiting razonable, tiempos/tamaños acotados y sin IA para cada oferta. IA solo para ambigüedad puntual.
 - Cero gasto adicional por defecto y ninguna API tarifada, navegador de pago o evasión de barreras sin aprobación.
 - **0.1.4 — 2026-10-18:** incorporar elección económica de protocolos y evidencia previa a Codex.
+
+## Reutilización y descubrimiento de capacidades antes de desarrollar (v0.1.5)
+Antes de programar funcionalidades no triviales:
+1. Inspeccionar repositorio propio y dependencias ya existentes; preferir reutilización y pruebas ya verificadas.
+2. Cuando aporte valor, investigar repositorios/librerías **públicos** de GitHub, contrastar licencia, mantenimiento, compatibilidad, seguridad, peso, dependencias y costes. No copiar código sin revisar permisos/licencias.
+3. Revisar skills disponibles y documentación aplicable; **no asumir** que una skill Markdown almacenada en GitHub está instalada o accesible automáticamente en Codex.
+4. Revisar conectores/plugins efectivamente disponibles en el entorno concreto, sus permisos y límites; no asumir que los conectores de ChatGPT se comparten con Codex.
+5. Comparar explícitamente usar biblioteca, protocolo directo HTTP/API y código estándar propio; preferir el menor coste total y riesgo, no el mínimo código a cualquier precio.
+6. Instalar, conectar o autorizar nuevas herramientas solo cuando sea necesario y con consentimiento si corresponde. Prohibidas dependencias o APIs de pago sin autorización expresa.
+7. Documentar qué se buscó, qué se reutilizó, qué se descartó y por qué; realizar una investigación breve y enfocada, evitando búsquedas interminables que consuman cuota.
+- **0.1.5 — 2026-10-18:** obligar a evaluar GitHub, skills y conectores antes de reinventar implementaciones.
