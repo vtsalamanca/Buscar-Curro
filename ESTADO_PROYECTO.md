@@ -314,3 +314,23 @@ Comprobación pública por lectura/búsqueda web, **no prueba de GitHub Actions*
 
 ### Decisión de arquitectura
 Definir objetos `source_document` (NID/BOE-ID/URL/fecha/organismo) y `selection_process` (organismo, categoría, referencia, municipios, historial actos) con relación muchos-a-uno, conservando trazabilidad y evitando falsas novedades. No inferir plazo abierto por existencia de enlace.
+
+## Auditoría lote 5 — contrastes finales de fuentes públicas (18/10/2026)
+- **Empléate (SEPE):** https://empleate.gob.es/empleo/index_nojs.html?JAVASCRIPTSTATUS=NONE : portada/búsqueda públicas accesibles. Las cifras de su portada cambian y NO prueban cobertura de resultados filtrados ni API pública. Estado **parcial**, runner pendiente.
+- **Diputación Toledo:** https://www.diputoledo.es/global/50/304/6699/destacados-rrhh : destacados cronológicos con fecha y tipo; https://www.diputoledo.es/global/50/1450/5716/opcion : expedientes y actos múltiples por plaza. Estado **público accesible**, extracción/paginación runner pendientes.
+- **Centro Trama:** https://www.trama.org/empleo/ lista activa, pero conserva entradas con fechas de cierre ya pasadas. Fichas individuales https://www.trama.org/empleo/oferta.php?id=1131 y otras contienen requisitos de grado/FP obligatorios; no equiparar Psicología con FP Integración Social. Estado **público accesible**, runner pendiente.
+- **ACCEM:** la página https://www.accem.es/programas contiene actividades y servicios, **no** es un catálogo de empleo. Conservar el catálogo empleador históricamente revisado en InfoJobs (19 fichas) como acceso parcial, sin inventar nueva fuente estructurada.
+- **Inserta/Portalento:** https://www.portalento.es/Candidatos/Ofertas/Default.aspx revisada históricamente con filtros; requerimientos personales para acceso a programas no deben presumirse. Estado parcial, no declarar ausencia total por resultados vacíos en Toledo.
+- **Bargas:** https://www.bargas.es/empleo/ y https://www.bargas.es/empleo/ofertas-de-empleo/ mezclan ofertas recientes/antiguas e información formativa; clasificar antes de alertar.
+- **Nambroca:** https://nambroca.sedelectronica.es/info.0 tablón reciente, incluye anuncios de mantenimiento y otros puestos ajenos a los sectores activos. Seguir las novedades municipales con filtrado, no asumir relevancia.
+- **Aranjuez:** https://www.aranjuez.es/transparencia/empleo-publico/trabajador-social/ muestra secuencia bases-corrección-BOCM-BOE y plazo histórico, caso ideal para prueba de vinculación de actos.
+- **Portales dinámicos/privados:** Indeed, Jobijoba, LinkedIn: cobertura parcial ya documentada; InfoJobs automatización desde runner bloqueada por comprobación humana; no reiniciar diagnósticos idénticos.
+- **Cruz Roja, ILUNION y ACTIA:** mantener rutas documentadas en lotes previos; los bloqueos ocasionales de navegador no equivalen a ausencia de puestos.
+- **Pendientes específicos sin bloqueo para planificación:** boletín BOCM para Aranjuez/Madrid; bolsas y tablones de Illescas y otros municipios (seleccionar por prioridad); cobertura histórica efectiva por familia; verificación automatizada desde runner en Codex.
+
+### Puerta de auditoría y paquete técnico recomendado
+**Inventario funcional suficiente para pasar al diseño técnico agrupado**, con fuentes no verificadas automáticamente clasificadas como tales. No afirmar acceso automático por mera lectura en Chat.
+
+**BT-01A (Codex, propuesta, NO ejecutado):** pruebas de viabilidad runner exclusivamente públicas y sin login, agrupadas por familias A (DOCM, BOE, BOP, JCCM) y B (Empleo CLM, Empléate, Toledo/Nambroca/Aranjuez) y C (Trama, ILUNION, Cruz Roja, ACCEM cuando enlace directo disponible); guardar códigos de estado, estructura, ejemplo sanitizado, clasificación y errores. Reutilizar ATE público; prohibido activar schedule, rellenar credenciales o modificar datos del usuario. Separar prueba de viabilidad de la programación definitiva.
+**BT-01B (Codex, después de validar fuentes):** implementar extractores viables con estado persistente, deduplicación por proceso y acto, filtros de elegibilidad, pruebas de regresión y reportes. Bloqueadas se registran, no se fuerzan.
+**Fase operativa posterior:** elección de periodicidad, alertas, correo y costes reales para aprobación expresa; sin activación implícita.
