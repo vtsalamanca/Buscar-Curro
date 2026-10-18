@@ -203,3 +203,29 @@ Investigación en Chat; **no** se ha ejecutado código ni activado automatizacio
 - Un sistema basado solo en alertas no garantiza cobertura histórica, independencia del correo, captación de correcciones o entrega diaria; el extractor sigue justificado para completitud y validación.
 - Antes de implementar: comprobar contenido y opciones reales del correo de alerta y confirmación, con consentimiento del usuario; definir ingesta idempotente por identificador NID, fecha/enlace y registro de ausencia/fallos.
 - No crear cuentas, activar suscripciones, iniciar código ni workflows en esta fase.
+
+## Fase 1 — Decisión de arquitectura DOCM (18/10/2026)
+**Resultado de comparación documental**. Sin ejecución de código, altas en alertas ni workflows.
+
+| Vía | Ventajas | Riesgos/limitaciones | Decisión |
+|---|---|---|---|
+| Alertas DOCM por correo | Oficial y gratuita; selección de Empleo público y aviso diario; confirmación por email | No garantiza entrega; depende del correo y los criterios configurados; no cubre por sí sola histórico ni garantiza clasificación fina | **Complementaria**, activación sólo con consentimiento del usuario |
+| Búsqueda avanzada y consulta web pública | Filtros por fecha publicación, NID, organismo, texto, sumario/contenido; enlaces oficiales | Interfaz HTML, parámetros de automatización aún no comprobados; no presumir API/RSS estable; vigilar fallos | **Fuente primaria propuesta**, pendiente validar método técnicamente |
+| ELI / NID | Identificador y rutas de disposiciones útiles para trazabilidad | NID identifica documento, no necesariamente el proceso administrativo; ELI no es necesariamente índice completo de todas las ofertas | Usar como identificador documental y vincular correcciones por contenido |
+
+Fuentes oficiales verificadas: https://docm.jccm.es/portaldocm/solicitarAltaAlertas.do ; https://docm.jccm.es/docm/busquedaAvanzada.do ; https://docm.jccm.es/portaldocm/verificarNID.do .
+Servicio de alertas: gratuito, diario y configurable; solicita consentimiento y confirmación por email; no se tramitó.
+
+### Diseño funcional acordado (para paquete técnico BT-01, aún sin autorización de ejecución)
+1. Construir un lector público de ediciones y disposiciones oficiales, con lectura por rango de fechas y control de errores.
+2. Identificar por NID y enlace canónico, registrar fecha, título, organismo, ámbito, tipo de acto y relación con otras disposiciones.
+3. Clasificar ATE, bolsa/ampliación, oposiciones, psicología no sanitaria, protección de menores, discapacidad, educación e intervención social. Logística **excluida** del alcance activo.
+4. Distinguir resolución, corrección, convocatoria, adjudicación, modificación y apertura/cierre de plazos; no calcular automáticamente que los plazos están abiertos sin regla validada.
+5. Persistir NID/documentos vistos y eventos de cambio; no duplicar resultados aunque cambie el enlace; conservar histórico.
+6. Informar sólo novedades relevantes y mantener un informe de fallos separado. «Sin nuevos anuncios» solo si hubo consulta exitosa.
+7. Habilitar opcionalmente contraste con correos de alertas oficiales cuando el usuario autorice el alta y el canal esté disponible. No requerir Gmail para que funcione la fuente primaria.
+8. Pruebas con documentos históricos ATE 07/07, 10/07 y 03/08/2026, documentos no relevantes, fallos/redirecciones, ausencia de sumario, fechas sin publicación, duplicados, correcciones y filtrado autonómico.
+9. La programación recurrente y distribución del informe quedan **fuera del BT-01 inicial** hasta pruebas y autorización; no crear workflow de ejecución diaria por inercia.
+
+### Siguiente paso
+Preparar instrucción única para Codex tras validar coste/cupo y método de lectura pública; conservar pruebas actuales ATE y no tocar autenticaciones privadas. Fase 1 funcional cerrada, **validación técnica del protocolo DOCM pendiente**.
