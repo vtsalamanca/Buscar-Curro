@@ -33,9 +33,9 @@ class PageShape(HTMLParser):
             self.texts.append(data)
 
 def sanitize(text):
-    text = re.sub(r'https?://\\S+|[\\w.+-]+@[\\w.-]+', '[omitted]', text)
-    text = re.sub(r'\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b|\\b[\\da-fA-F]{16,}\\b|\\b\\d{6,}\\b', '[omitted]', text)
-    return re.sub(r'\\s+', ' ', text).strip()[:500]
+    text = re.sub(r'https?://\S+|[\w.+-]+@[\w.-]+', '[omitted]', text)
+    text = re.sub(r'\b(?:\d{1,3}\.){3}\d{1,3}\b|\b[\da-fA-F]{16,}\b|\b\d{6,}\b', '[omitted]', text)
+    return re.sub(r'\s+', ' ', text).strip()[:500]
 
 result = {'phase': 'public_login_page', 'method': 'GET'}
 session = Session()
@@ -65,7 +65,7 @@ try:
             'public_text_sanitized': sanitize(' '.join(parsed.texts)),
             'public_script_hosts': sorted(parsed.external_script_hosts),
             'markers': {k: k in lower for k in ('captcha','akamai','imperva','datadome','kasada','cloudflare','perimeterx','access denied','method not allowed','enable javascript')},
-            'known_security_script_host': any(any(v in host for v in ('captcha','datadome','kasada','perimeterx','hcaptcha','recaptcha')) for host in parsed.external_script_hosts),
+            'known_security_script_host': any(any(v in host for v in ('captcha','datadome','kasada','perimeterx','hcaptcha','recaptcha','geetest')) for host in parsed.external_script_hosts),
             'external_script_count': len(parsed.external_script_hosts),
             'header_signals': {k: k in headers for k in ('Allow','Location','Set-Cookie','Retry-After','X-DataDome','CF-Mitigated')},
         })
