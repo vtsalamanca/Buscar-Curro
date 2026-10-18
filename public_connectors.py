@@ -271,10 +271,16 @@ def parse_listing(spec: ConnectorSpec, html: str, final_url: str) -> list[tuple[
     for block in parser.blocks:
         for url, label in block["links"]:
             if relevant_url(spec, url, label) and url.rstrip("/") != final_url.rstrip("/"):
-                candidates[url] = block["text"] or label
+                # JCCM has large navigation blocks whose surrounding text can
+                # contaminate every link. Other catalogues may keep the role
+                # beside a generic "Ver oferta" anchor, so retain their block.
+                candidate_text = label if spec.key == "jccm" else (block["text"] or label)
+                if spec.key != "jccm" or categories_for(url + " " + candidate_text):
+                    candidates[url] = candidate_text
     for url, label in parser.all_links:
         if relevant_url(spec, url, label) and url.rstrip("/") != final_url.rstrip("/"):
-            candidates.setdefault(url, label)
+            if spec.key != "jccm" or categories_for(url + " " + label):
+                candidates.setdefault(url, label)
     return sorted(candidates.items())
 
 

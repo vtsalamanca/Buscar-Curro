@@ -21,6 +21,19 @@ class PublicConnectorTests(unittest.TestCase):
         html = '<div><a href="/job/43">Trabajador/a social</a></div>'
         self.assertEqual(parse_listing(SPEC, html, SPEC.url), [("https://jobs.example.test/job/43", "Trabajador/a social")])
 
+    def test_jccm_navigation_does_not_inherit_page_relevance(self):
+        spec = ConnectorSpec(
+            "jccm", "JCCM", "https://empleopublico.castillalamancha.es/ultimas-modificaciones", "JCCM",
+            ("castillalamancha.es",), ("/procesos-selectivos/",), "Castilla-La Mancha", detail_limit=0,
+        )
+        html = '''<section>Educador social
+        <a href="/procesos-selectivos/abiertos">Turno libre</a>
+        <a href="/procesos-selectivos/abiertos/educador-social">Educador social</a></section>'''
+        self.assertEqual(
+            parse_listing(spec, html, spec.url),
+            [("https://empleopublico.castillalamancha.es/procesos-selectivos/abiertos/educador-social", "Educador social")],
+        )
+
     def test_document_extracts_fields_and_requirements(self):
         detail = "Requisitos: Grado en Psicología y experiencia con menores. Fecha de cierre: 31 de octubre de 2026"
         item = make_document(SPEC, "https://jobs.example.test/job/42", "Psicólogo/a en Toledo", detail)
