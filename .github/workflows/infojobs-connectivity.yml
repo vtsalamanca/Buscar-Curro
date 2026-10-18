@@ -1,0 +1,14 @@
+name: Diagnóstico público InfoJobs sin credenciales
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: python3 infojobs_connectivity.py
