@@ -98,3 +98,11 @@ Lectura actual de páginas oficiales mediante cliente web, **no captura de HTML 
 - **No se puede confirmar la presencia/ausencia de `JobPosting` JSON-LD a partir de la representación de texto de este lector:** el diagnóstico runner deberá inspeccionar el HTML bruto y analizar scripts. No afirmar APIs/feed encontrados.
 - Para ETT-01A, en lugar de un navegador por portal, ensayar primero `urllib.request` y parser `html.parser`; evaluar en cada URL si devuelve títulos/IDs/fechas de candidatos reales y un JSON-LD JobPosting, respetar redirects y fallos.
 - Añadir pruebas unitarias de exclusión de enlaces de alta/login, de lectura parcial que devuelve HTTP 200 con solo navegación, y de datos contradictorios de Adecco. No activar suscripciones ni enviar candidaturas.
+
+## Puerta de ejecución ETT-01 — cierre de investigación Chat (18/10/2026)
+Se verificó de nuevo rama `main` en `93b5190836d884f33db10d2d06da24a558b9c203`; ETT-01 aún no se ha ejecutado en runner. La fase documental se considera suficiente: **no consumir más turnos ni créditos explorando las mismas URLs sin evidencia nueva**.
+
+Orden de Codex: primero ETT-01A, y ETT-01B únicamente para sitios viables; usar librería estándar/protocolos ligeros por defecto. Probar JSON-LD antes de parser específico, sin presumir que está presente. Incorporar test con 403 Randstad, redirección ajena Gi Group, contradicciones Adecco, anuncios antiguos Tratem, enlaces de inscripción excluidos. No usar browser salvo prueba motivada.
+
+**Bloqueante transversal antes de informar novedades:** el workflow BT-01B actual `.github/workflows/bt01b-public-sources.yml` ejecuta `run_public_sources.py` sin restaurar `data/public-source-state.json`. El estado generado en cada run permanece como artefacto pero no se consume en el siguiente run. Diseñar un mecanismo de recuperación de estado autenticado/validado y persistencia segura sin escritura sobre rama principal en ejecución de solo lectura; contrastar opciones gratuitas (artefacto anterior validado, rama/commit dedicado autorizado u otro almacén gratuito). Evitar estado mutable concurrente; probar primera y segunda ejecución, y fallo en recuperación de estado sin declarar «todo nuevo» falsamente.
+No activar schedule ni avisos. No mandar candidaturas. Documentar fechas y evidencia de cada conector desde runner.
