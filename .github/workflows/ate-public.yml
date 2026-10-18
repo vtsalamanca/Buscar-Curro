@@ -1,0 +1,22 @@
+name: Verificar fuente publica ATE Toledo
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ate_public.py
+      - test_ate_public.py
+      - .github/workflows/ate-public.yml
+permissions:
+  contents: read
+jobs:
+  public-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Pruebas del extractor
+        run: python3 -m unittest -v test_ate_public.py
+      - name: Verificar pagina y PDF de Toledo
+        run: python3 ate_public.py
