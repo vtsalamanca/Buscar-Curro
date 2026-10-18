@@ -18,8 +18,14 @@ class SourceViabilityTests(unittest.TestCase):
         self.assertEqual(classify(200, data, None), ("parcial", "http_200_sin_estructura_relevante_confirmada"))
 
     def test_challenge_is_blocked(self):
-        data = analyse_html(self.source, b"<html>CAPTCHA: eres humano o robot</html>", self.source.url, "text/html")
+        data = analyse_html(self.source, b"<html>Eres humano o un robot</html>", self.source.url, "text/html")
         self.assertEqual(classify(200, data, None), ("bloqueada", "verificacion_humana_detectada"))
+
+    def test_robots_meta_is_not_a_challenge(self):
+        body = b'<meta name="robots" content="index"><h1>Empleo</h1><a href="/oferta/1">Oferta</a>'
+        data = analyse_html(self.source, body, self.source.url, "text/html")
+        self.assertFalse(data["challenge_signal"])
+        self.assertEqual(classify(200, data, None)[0], "verificada_desde_runner")
 
     def test_login_is_partial(self):
         body = "<html>Empleo - Iniciar sesi\u00f3n</html>".encode("utf-8")

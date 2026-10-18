@@ -41,7 +41,7 @@ class Source:
 
 SOURCES = (
     Source("docm", "A", "DOCM", "https://docm.jccm.es/docm/busquedaAvanzada.do", ("búsqueda", "docm"), ("verarchivo", "nid", "sumario")),
-    Source("boe", "A", "BOE", "https://www.boe.es/buscar/empleo.php", ("empleo", "boe"), ("diario_boe", "buscar")),
+    Source("boe", "A", "BOE", "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7237", ("boe", "trabajador"), ("diario_boe", "pdf", "toledo")),
     Source("bop_toledo", "A", "BOP Toledo", "https://bop.diputoledo.es/webEbop/ebop.jsp", ("boletín", "toledo"), ("anuncio", "ebop", "pdf")),
     Source("jccm_modificaciones", "A", "JCCM últimas modificaciones", "https://empleopublico.castillalamancha.es/ultimas-modificaciones", ("últimas", "modificaciones"), ("bolsas", "procesos-selectivos", "document")),
     Source("empleo_clm", "B", "Empleo CLM", "https://empleo.castillalamancha.es/", ("empleo",), ("oferta", "municipio", "provincia")),
@@ -129,7 +129,21 @@ def analyse_html(source: Source, body: bytes, final_url: str, content_type: str)
             relevant_links.append(absolute)
     relevant_links = sorted(set(relevant_links))
     login_signal = bool(re.search(r"\b(iniciar sesi[oó]n|identif[ií]cate|login|contrase[nñ]a)\b", lowered))
-    challenge_signal = any(term in lowered for term in ("captcha", "geetest", "cloudflare", "eres humano", "robot"))
+    # Avoid generic words such as ``robots`` (the normal indexing meta tag)
+    # and passive CAPTCHA libraries.  These phrases indicate an actual access
+    # challenge rather than merely code that could display one on a form.
+    challenge_signal = any(
+        term in lowered
+        for term in (
+            "eres humano o un robot",
+            "are you a human or a robot",
+            "actividad poco habitual",
+            "unusual traffic",
+            "cf-chl-",
+            "challenge-platform",
+            "geetest_challenge",
+        )
+    )
     js_signal = any(term in lowered for term in ("javascriptstatus", "enable javascript", "habilite javascript"))
     return {
         "content_type": content_type.split(";", 1)[0].lower(),
