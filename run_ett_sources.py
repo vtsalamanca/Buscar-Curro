@@ -87,6 +87,7 @@ def main() -> int:
             "unique_candidates_visited": sum(1 for item in queue.values() if item.get("status") == "checked"),
             "pending_candidates": sum(1 for item in queue.values() if item.get("status") == "pending"),
             "preliminarily_filtered": sum(1 for item in queue.values() if item.get("status") == "prefiltered"),
+            "not_listed": sum(1 for item in queue.values() if item.get("status") == "not_listed"),
             "errors": sum(1 for item in queue.values() if item.get("status") == "error"),
             "requests": after["http_requests"] - before["http_requests"],
             "bytes": after["downloaded_bytes"] - before["downloaded_bytes"],

@@ -94,6 +94,14 @@ class EttConnectorTests(unittest.TestCase):
         self.assertEqual(len(first_checked), 1)
         self.assertEqual({url for url, item in queue.items() if item["status"] == "checked"}, set(queue))
 
+    def test_disappeared_pending_candidate_is_not_left_pending(self):
+        spec = EttSpec("demo", "Demo", "https://example.test/jobs", ("example.test",), ("/job/",), detail_limit=1)
+        queue = {"https://example.test/job/old": {"label": "Docente", "status": "pending", "checks": 0}}
+        with patch("ett_connectors.fetch") as mocked:
+            run_ett_connector(spec, ("<html></html>", spec.listing_url), queue)
+        self.assertEqual(queue["https://example.test/job/old"]["status"], "not_listed")
+        mocked.assert_not_called()
+
 
 if __name__ == "__main__":
     unittest.main()
