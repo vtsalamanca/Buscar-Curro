@@ -222,7 +222,7 @@ def _document_from_job(spec: EttSpec, url: str, item: dict, fallback: str, html_
     title = _text(item.get("title")) or fallback or url
     description = _text(item.get("description")) or html_text
     combined = f"{title} {description}"
-    categories = categories_for(combined)
+    categories = categories_for(title) if item.get("_html_fallback") else categories_for(combined)
     if not categories:
         return None
     municipality, province = _location(item)
@@ -269,7 +269,7 @@ def _fallback_item(html: str) -> dict:
     text = _html_text(html)
     title_match = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.I | re.S)
     title = _text(title_match.group(1)) if title_match else None
-    return {"title": title, "description": text, "datePosted": date_from_text(text)}
+    return {"title": title, "description": text, "datePosted": date_from_text(text), "_html_fallback": True}
 
 
 def unrelated_gi_redirect(spec: EttSpec, final_url: str) -> bool:
@@ -311,7 +311,10 @@ def run_ett_connector(
             0 if entries[pair[0]].get("status") == "pending" and categories_for(pair[1]) else 1,
             entries[pair[0]].get("last_checked", ""), pair[0],
         ))
-        ordered = eligible[: spec.detail_limit]
+        pending = [pair for pair in eligible if entries[pair[0]].get("status") == "pending"]
+        refresh_before = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
+        due = [pair for pair in eligible if entries[pair[0]].get("status") in {"checked", "error"} and entries[pair[0]].get("last_checked", "") < refresh_before]
+        ordered = (pending or due)[: spec.detail_limit]
         documents: list[SourceDocument] = []
         notes = [
             f"candidate_links:{len(candidates)}", f"listing_pages:{len(snapshots)}",

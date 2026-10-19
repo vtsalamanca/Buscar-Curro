@@ -17,7 +17,7 @@ ACTIVE_TERMS = {
     "psicologia": ("psicolog",),
     "intervencion_social": ("trabajador social", "trabajadora social", "trabajador/a social", "educador social", "educadora social", "educador/a social", "integracion social", "intervencion social"),
     "menores": ("menor", "infancia", "juvenil", "acogimiento", "barnahus"),
-    "educacion": ("educador", "educadora", "educacion", "docente", "profesor", "monitora", "monitor "),
+    "educacion": ("educador", "educadora", "educacion", "docente", "profesor", "monitora", "monitor ", "escolar"),
     "discapacidad": ("discapacidad", "diversidad funcional"),
 }
 SUSPENDED_TERMS = ("almacen", "carretill", "logistica", "repartidor", "transporte")

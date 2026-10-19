@@ -9,7 +9,7 @@ from dataclasses import replace
 from datetime import datetime, timezone
 from pathlib import Path
 
-from employment_core import apply_runs, load_state
+from employment_core import apply_runs, categories_for, load_state
 from bc02_quality import MunicipalityIndex
 from ett_connectors import ETT_SPECS, diagnose, pagination_links, run_ett_connector
 from public_connectors import error_code, fetch, http_metrics, reset_http_metrics
@@ -25,6 +25,11 @@ def main() -> int:
     args = parser.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
     previous = load_state(args.state)
+    pruned_false_positives = []
+    for document_id, document in list(previous.get("documents", {}).items()):
+        if document.get("source") in {spec.key for spec in ETT_SPECS} and not categories_for(document.get("title", "")):
+            pruned_false_positives.append(document_id)
+            del previous["documents"][document_id]
     municipality_index = MunicipalityIndex.load(args.municipalities)
     bc02 = previous.setdefault("bc02", {"queues": {}, "http_cache": {}})
     queues = bc02.setdefault("queues", {})
@@ -102,6 +107,7 @@ def main() -> int:
         "errors": sum(1 for run in runs if run.status == "consulta_fallida") + sum(1 for run in runs for note in run.notes if note.startswith("detail_error:")),
         "municipalities_loaded": len(municipality_index.rows),
         "conditional_http": "not_enabled_without_verified_etag_or_last_modified_savings",
+        "pruned_false_positive_ids": sorted(pruned_false_positives),
         "per_source": source_metrics,
     }
     metrics["elapsed_seconds"] = round(metrics["elapsed_seconds"], 3)

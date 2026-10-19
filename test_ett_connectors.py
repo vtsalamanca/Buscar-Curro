@@ -56,6 +56,11 @@ class EttConnectorTests(unittest.TestCase):
         item = {"title": "Mozo de almacén con discapacidad", "description": "Logística"}
         self.assertIsNone(_document_from_job(spec, "https://jobs.eurofirms.com/es/es/x", item, "", ""))
 
+    def test_html_navigation_does_not_make_unrelated_title_relevant(self):
+        spec = ETT_SPECS[0]
+        item = {"title": "Camarero de pisos", "description": "Menú: formación, educación y empleo", "_html_fallback": True}
+        self.assertIsNone(_document_from_job(spec, "https://agenciaempleo.tratem.com/oferta/camarero", item, "", item["description"]))
+
     def test_gi_detail_redirect_to_catalogue_is_rejected(self):
         spec = ETT_SPECS[5]
         self.assertTrue(unrelated_gi_redirect(spec, "https://es.gigroup.com/ofertas-de-trabajo/"))
