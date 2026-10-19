@@ -1,0 +1,20 @@
+{
+  "name": "gestor-de-skills",
+  "version": "0.4.4",
+  "description": "Descubre, audita, crea e integra skills; incorpora organizaciondeltrabajo e ingenieria-fiable con desarrollo eficiente, evidencia y presupuesto cero.",
+  "author": {
+    "name": "Pavón Serrano",
+    "email": "vtsalamanca@gmail.com"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Gestor de Skills",
+    "shortDescription": "Gestiona skills y organiza proyectos con coste cero",
+    "longDescription": "Complemento privado con siete habilidades. Organizaciondeltrabajo coordina eficiencia, herramientas y continuidad; ingenieria-fiable profundiza en diagnóstico, pruebas y verificación de software.",
+    "category": "Productivity",
+    "developerName": "Pavón Serrano",
+    "capabilities": [
+      "Read"
+    ]
+  }
+}
