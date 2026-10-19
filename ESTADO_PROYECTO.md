@@ -415,3 +415,6 @@ Ampliación expresamente pedida por el usuario; **aún no existe prueba desde ru
 
 ## BC-02 — Siguiente bloque tras ETT-01 (19/10/2026)
 El usuario solicita avanzar al siguiente bloque. Se preparó `PLAN_BC02_COBERTURA_CALIDAD.md` para mejorar cobertura progresiva/paginación, filtro geográfico de 70 km desde Nambroca, elegibilidad formativa, robustez de histórico de 30 días e informes auditables. Reutilizar ETT-01 y BT-01B; no reabrir estudio documental ya cerrado. **No se ha ejecutado aún desarrollo, workflows ni automatización diaria.** Mantener 0 € adicional, sin candidaturas/credenciales; ejecución técnica en hilo Codex existente.
+
+## Cambio geográfico expreso — 19/10/2026
+El usuario fija **80 km por carretera desde Nambroca como único límite** de búsqueda. Sustituye el anterior radio de 70 km y elimina margen adicional de 75 km. Preparar catálogo local de localidades, con distancias verificadas; cualquier localidad sin medición queda pendiente y no debe descartarse automáticamente. Documento de desarrollo: `PLAN_BC02_COBERTURA_CALIDAD.md`.
