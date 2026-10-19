@@ -399,6 +399,19 @@ No se ha ejecutado Codex/Work, prueba runner, candidaturas ni automatizaciones c
 
 **Limitaciones:** la cobertura es deliberadamente acotada (3–5 fichas por fuente), no hay paginación exhaustiva ni cálculo automático del radio de 70 km. Un catálogo accesible con cero coincidencias no demuestra ausencia de ofertas. Las advertencias deprecación Node.js 20 de actions de terceros no invalidaron los runs, pero quedan como mantenimiento futuro. ETT-01 queda cerrado para revisión; no pasar a operación diaria sin autorización expresa.
 
+## BC-02 — cobertura progresiva y eficiencia (19/10/2026)
+
+**Estado: probado y publicado; pendiente de revisión antes de cualquier operación programada.** Commits `5b7c926`, `1832d6b` y `f08fdd8`.
+
+- 50 pruebas locales y en Actions superadas, incluidas todas las regresiones ATE/BT/ETT.
+- Una única descarga de cada listado evita seis peticiones duplicadas por ejecución. Run final: 19 peticiones, 4.697.241 bytes y 35,802 s HTTP; equivalente anterior medido: 25, 6.686.792 y 48,021 s.
+- Cobertura progresiva: 36 fichas únicas examinadas tras tres runs; cola pendiente 159 → 148 → 137. El código anterior repetía el mismo prefijo de hasta 24 fichas.
+- Radio acordado aplicado mediante `data/municipios_nambroca_80km.csv`: 259 municipios, índice en memoria y sin API. Localidad desconocida o ausente queda pendiente/revisión.
+- Histórico seguro: cola y documentos en artefacto de 30 días, validación estricta y fallo cerrado si un histórico previo deja de estar disponible. Run final: **0 nuevos, 0 cambiados, 0 fallos**.
+- Evidencia final: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39214493868. Runs de progreso: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39213241555 y https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39213963243.
+
+Limitaciones: quedan 137 candidatos por recorrer; no se afirma exhaustividad ni se implementó paginación adicional no demostrada. Los ETag observados no produjeron todavía ahorro `304`, por lo que las peticiones condicionales permanecen desactivadas. No se diseñaron informes de usuario, cron, notificaciones o candidaturas.
+
 ## Auditoría ETT — actualización de accesibilidad web (18/10/2026)
 Ampliación expresamente pedida por el usuario; **aún no existe prueba desde runner GitHub** ni permiso implícito para cron, candidaturas o sesiones privadas.
 - **Tratem** https://agenciaempleo.tratem.com/ofertas/ : listado público legible, fichas «Ver oferta», fecha, localidad, vacantes, estado y requisitos. En prueba web aparecen anuncios industriales/logística **excluidos por filtro de sector**. Alta prioridad técnica.

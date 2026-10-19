@@ -73,3 +73,11 @@ Ejecución final: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174
 La recuperación del estado usa artefactos gratuitos con retención de 30 días, sin escribir en `main`. Valida ZIP, tamaño y esquema, y no reenvía el Bearer token al host firmado de Azure/GitHub. La primera descarga reveló un 401 en https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39169993066; la corrección quedó verificada en los runs posteriores.
 
 La persistencia transversal de BT-01B también quedó demostrada: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174196772 creó una línea base de 40 documentos y https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174265185 restauró el artefacto y devolvió **0 nuevos / 0 cambiados**. Ambos workflows siguen siendo exclusivamente manuales.
+
+## BC-02 — métricas y cobertura progresiva (19/10/2026)
+
+Run final: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39214493868 sobre `f08fdd8`. Resultado: 50 tests, 6 fuentes accesibles, 19 peticiones, 4.697.241 bytes, 35,802 s HTTP, 13 fichas examinadas en esa pasada, 0 errores y 0 nuevos/0 cambiados. El cálculo legado con las mismas respuestas habría requerido 25 peticiones, 6.686.792 bytes y 48,021 s: reducciones del 24,0 %, 29,8 % y 25,4 % respectivamente.
+
+La cola conservó 36 fichas distintas ya comprobadas, 137 pendientes y 107 descartes preliminares de sectores suspendidos. La semilla educativa Adecco se protege del término genérico «transporte»; el run https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39213963243 verificó su recuperación y el run final confirmó que no reaparece como nueva. El índice geográfico validó 259 municipios; datos ausentes o desconocidos permanecen para revisión.
+
+Peticiones condicionales: hubo ETag en 2/19 respuestas finales y ningún `Last-Modified`, sin prueba de `304`. Se mantienen desactivadas hasta acreditar ahorro real. No se modificó ATE, no se añadieron dependencias, navegador, credenciales, programación recurrente o acciones sobre candidaturas.

@@ -64,3 +64,18 @@ E) Condicionales ETag/304 donde servidor soporte y demuestre beneficio.
 F) Política de retención y cadencia en fase operativa separada.
 
 **Criterio de aceptación:** demostrar reducción de tráfico/peticiones/tiempo con comparación A/B bajo condiciones comparables sin reducir cobertura ni perder novedades; errores parciales nunca equivalen a cero vacantes. Presupuesto adicional 0 €. **Informe al usuario aplazado**; solo métricas/artefactos técnicos para diagnóstico. No cron, notificaciones ni candidaturas.
+
+## Resultado técnico BC-02 — 19/10/2026
+
+**Implementado y verificado en GitHub Actions.** Workflow exclusivamente manual `.github/workflows/bc02.yml`; código principal en `bc02_quality.py`, `ett_connectors.py`, `run_ett_sources.py`, `public_connectors.py`, `employment_core.py` y `restore_previous_state.py`.
+
+- Snapshot único por listado: diagnóstico y extracción comparten la misma respuesta. En la ejecución final se realizaron 6 lecturas de listado, frente a 12 del código anterior.
+- Cola persistente por fuente: 36 candidatos distintos quedaron examinados, 137 pendientes y 107 prefiltrados por título claramente suspendido. Los pendientes bajaron 159 → 148 → 137 en tres ejecuciones; las semillas verificadas no se excluyen y tampoco desplazan repetidamente a pendientes nuevos.
+- Catálogo geográfico: 259 municipios/códigos únicos cargados una sola vez. Toledo se clasificó `dentro_80km` a 11,5 km; localidades ausentes quedan `distancia_pendiente`/`localidad_desconocida`, nunca descartadas.
+- Elegibilidad técnica: separación de titulación, habilitación y experiencia; estados `caducada`, `revisar`, `datos_insuficientes`, `apta_probable` y `no_apta_por_requisito_explicito`. Dos anuncios antiguos de Tratem quedaron `caducada`; Adecco quedó dentro del radio y sin cambio falso.
+- Persistencia: el namespace `bc02` sobrevive a `apply_runs`; si existe un run previo pero el artefacto válido ha caducado, falta o está corrupto, la restauración falla cerrada antes de declarar todo nuevo.
+- HTTP condicional: se observaron ETag únicamente en 2/19 respuestas finales y ningún `Last-Modified`; no se verificó ahorro por `304`. No se habilitó condicional por no existir beneficio probado.
+
+Comparación final bajo las mismas respuestas del run `39214493868`: 19 peticiones / 4.697.241 bytes / 35,802 s HTTP frente al equivalente legado 25 / 6.686.792 / 48,021 s. Ahorro: **24,0 % de peticiones, 29,8 % de bytes y 25,4 % de tiempo HTTP**, con 0 fallos y delta 0/0. La cobertura progresiva alcanzó 36 fichas únicas frente al prefijo fijo máximo de 24 que el código anterior repetía entre runs.
+
+Evidencias: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39213241555 (línea base instrumental), https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39213963243 (recuperación de Adecco y avance) y https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39214493868 (cierre 0 nuevos/0 cambiados). No se diseñaron informes de usuario ni se activaron cron, avisos, candidaturas, navegadores o autenticación privada.
