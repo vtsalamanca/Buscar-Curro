@@ -1,0 +1,52 @@
+name: BC-02 cobertura y eficiencia
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: bc02-coverage
+  cancel-in-progress: false
+
+jobs:
+  coverage:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Pruebas completas y regresión ATE
+        run: python3 -m unittest -v
+      - name: Restaurar estado BC-02 validado
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 restore_previous_state.py
+          --workflow bc02.yml
+          --artifact-name bc02-state
+          --destination data/bc02-state.json
+      - name: Ejecutar cobertura progresiva y métricas técnicas
+        run: >-
+          python3 run_ett_sources.py
+          --state data/bc02-state.json
+          --municipalities data/municipios_nambroca_80km.csv
+          --output-dir bc02-output
+      - name: Estado para la siguiente ejecución
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bc02-state
+          path: bc02-output/state.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Registros técnicos BC-02
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bc02-technical-results
+          path: bc02-output/
+          if-no-files-found: error
+          retention-days: 7

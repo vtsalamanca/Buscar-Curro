@@ -129,6 +129,12 @@ class SourceDocument:
     employment_type: str | None = None
     salary: str | None = None
     data_quality: list[str] = field(default_factory=list)
+    geographic_status: str | None = None
+    distance_km: float | None = None
+    eligibility: str | None = None
+    qualification_requirements: list[str] = field(default_factory=list)
+    habilitation_requirements: list[str] = field(default_factory=list)
+    experience_requirements: list[str] = field(default_factory=list)
 
     def as_dict(self) -> dict:
         return asdict(self)
@@ -177,7 +183,9 @@ def apply_runs(previous: dict, runs: list[SourceRun], checked_at: str) -> tuple[
             elif old.get("content_hash") != document.content_hash:
                 changed_ids.append(document.document_id)
             documents[document.document_id] = document.as_dict()
-    state = {"schema_version": 1, "updated_at": checked_at, "documents": documents}
+    # Preserve validated extension namespaces such as BC-02 queues/caches.
+    state = {key: value for key, value in previous.items() if key not in {"updated_at", "documents"}}
+    state.update({"schema_version": 1, "updated_at": checked_at, "documents": documents})
     delta = {
         "checked_at": checked_at,
         "new_document_ids": sorted(new_ids),

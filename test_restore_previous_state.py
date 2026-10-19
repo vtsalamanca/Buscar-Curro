@@ -2,8 +2,10 @@ import io
 import json
 import unittest
 import zipfile
+from pathlib import Path
+from unittest.mock import patch
 
-from restore_previous_state import allowed_artifact_redirect, extract_state, validate_state_bytes
+from restore_previous_state import allowed_artifact_redirect, extract_state, restore, validate_state_bytes
 
 
 class RestoreStateTests(unittest.TestCase):
@@ -33,6 +35,15 @@ class RestoreStateTests(unittest.TestCase):
         self.assertTrue(allowed_artifact_redirect("https://objects.githubusercontent.com/a.zip"))
         self.assertFalse(allowed_artifact_redirect("https://evil.example/state.zip"))
         self.assertFalse(allowed_artifact_redirect("http://abc.blob.core.windows.net/state.zip"))
+
+    def test_prior_success_without_valid_artifact_fails_closed(self):
+        responses = [
+            {"workflow_runs": [{"id": 10}]},
+            {"artifacts": [{"name": "ett01-state", "expired": True}]},
+        ]
+        with patch("restore_previous_state.api_json", side_effect=responses):
+            with self.assertRaisesRegex(ValueError, "prior_state_unavailable"):
+                restore("owner/repo", "ett01.yml", "ett01-state", 11, "token", Path("test-state-unused.json"))
 
 
 if __name__ == "__main__":

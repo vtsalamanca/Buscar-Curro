@@ -10,7 +10,8 @@ from html import unescape
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlsplit
 
-from employment_core import SourceDocument, SourceRun, categories_for, date_from_text, plain, process_key, stable_hash
+from bc02_quality import MunicipalityIndex, requirement_evaluation
+from employment_core import SourceDocument, SourceRun, SUSPENDED_TERMS, categories_for, date_from_text, plain, process_key, stable_hash
 from public_connectors import Blocks, error_code, fetch, requirements_from
 
 
@@ -177,11 +178,11 @@ def listing_links(spec: EttSpec, html: str, final_url: str) -> list[tuple[str, s
     return sorted(links.items())
 
 
-def diagnose(spec: EttSpec) -> dict:
+def diagnose(spec: EttSpec, listing_snapshot: tuple[str, str] | None = None) -> dict:
     checked_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     result = {"source": spec.key, "checked_at": checked_at, "status": "bloqueado", "error": None}
     try:
-        html, final_url = fetch(spec.listing_url, spec.hosts)
+        html, final_url = listing_snapshot or fetch(spec.listing_url, spec.hosts)
         links = listing_links(spec, html, final_url)
         result.update({
             "status": "HTTP_HTML_verificado" if links else "HTTP_parcial",
@@ -255,19 +256,49 @@ def unrelated_gi_redirect(spec: EttSpec, final_url: str) -> bool:
     return spec.key == "gi_group" and "/ofertas-de-trabajo-detalle/" not in urlsplit(final_url).path
 
 
-def run_ett_connector(spec: EttSpec) -> SourceRun:
+def _clear_suspended_title(label: str) -> bool:
+    normal = plain(label)
+    return bool(normal and any(term in normal for term in SUSPENDED_TERMS) and not categories_for(label))
+
+
+def run_ett_connector(
+    spec: EttSpec,
+    listing_snapshot: tuple[str, str] | None = None,
+    queue_state: dict | None = None,
+    municipality_index: MunicipalityIndex | None = None,
+) -> SourceRun:
     checked_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     try:
-        listing, final_url = fetch(spec.listing_url, spec.hosts)
+        listing, final_url = listing_snapshot or fetch(spec.listing_url, spec.hosts)
         candidates = dict(spec.seed_urls and ((url, url) for url in spec.seed_urls) or ())
         candidates.update(dict(listing_links(spec, listing, final_url)))
-        ordered = list(candidates.items())
-        ordered.sort(key=lambda pair: (0 if pair[0] in spec.seed_urls else 1, 0 if categories_for(pair[1]) else 1, pair[0]))
+        entries = queue_state if queue_state is not None else {}
+        for url, label in candidates.items():
+            entry = entries.setdefault(url, {"label": label, "status": "pending", "checks": 0})
+            entry["label"] = label
+            if entry.get("status") == "prefiltered" and not _clear_suspended_title(label):
+                entry["status"] = "pending"
+            elif _clear_suspended_title(label):
+                entry["status"] = "prefiltered"
+        eligible = [(url, item["label"]) for url, item in entries.items() if url in candidates and item.get("status") != "prefiltered"]
+        eligible.sort(key=lambda pair: (
+            0 if pair[0] in spec.seed_urls else 1,
+            0 if entries[pair[0]].get("status") == "pending" and categories_for(pair[1]) else 1,
+            0 if entries[pair[0]].get("status") == "pending" else 1,
+            entries[pair[0]].get("last_checked", ""), pair[0],
+        ))
+        ordered = eligible[: spec.detail_limit]
         documents: list[SourceDocument] = []
-        notes = [f"candidate_links:{len(candidates)}", f"listing_jobposting:{len(job_postings(listing))}"]
-        for url, fallback in ordered[: spec.detail_limit]:
+        notes = [
+            f"candidate_links:{len(candidates)}", f"listing_jobposting:{len(job_postings(listing))}",
+            f"prefiltered:{sum(1 for item in entries.values() if item.get('status') == 'prefiltered')}",
+            f"unvisited_candidates:{sum(1 for item in entries.values() if item.get('status') == 'pending')}",
+            f"already_known_skipped:{max(0, len(eligible) - len(ordered))}",
+        ]
+        for url, fallback in ordered:
             try:
                 detail, detail_final = fetch(url, spec.hosts)
+                entries[url].update(status="checked", last_checked=checked_at, checks=int(entries[url].get("checks", 0)) + 1)
                 if unrelated_gi_redirect(spec, detail_final):
                     notes.append("redirected_to_unrelated_catalog")
                     continue
@@ -278,8 +309,20 @@ def run_ett_connector(spec: EttSpec) -> SourceRun:
                 for item in items:
                     document = _document_from_job(spec, detail_final, item, fallback, _html_text(detail))
                     if document:
+                        if municipality_index:
+                            geo_status, place = municipality_index.classify(document.municipality, document.province)
+                            document.geographic_status = geo_status
+                            document.distance_km = place.distance_km if place else None
+                            evaluation = requirement_evaluation(
+                                " ".join([document.title] + document.requirements), document.status, geo_status,
+                            )
+                            document.eligibility = evaluation["eligibility"]
+                            document.qualification_requirements = evaluation["qualification_requirements"]
+                            document.habilitation_requirements = evaluation["habilitation_requirements"]
+                            document.experience_requirements = evaluation["experience_requirements"]
                         documents.append(document)
             except Exception as exc:
+                entries[url].update(status="error", last_checked=checked_at, checks=int(entries[url].get("checks", 0)) + 1)
                 notes.append(f"detail_error:{error_code(exc)}")
         unique = {document.document_id: document for document in documents}
         status = "ok" if unique else "sin_resultados_relevantes"

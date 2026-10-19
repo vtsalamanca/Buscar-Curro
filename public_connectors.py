@@ -5,6 +5,7 @@ from __future__ import annotations
 import re
 import socket
 import ssl
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from html import unescape
@@ -29,6 +30,15 @@ from employment_core import (
 MAX_BYTES = 2 * 1024 * 1024
 TIMEOUT_SECONDS = 20
 USER_AGENT = "Buscar-Curro-BT-01B/1.0 (+public-employment-monitor)"
+_HTTP_METRICS = {"http_requests": 0, "downloaded_bytes": 0, "elapsed_seconds": 0.0, "etag_responses": 0, "last_modified_responses": 0}
+
+
+def reset_http_metrics() -> None:
+    _HTTP_METRICS.update(http_requests=0, downloaded_bytes=0, elapsed_seconds=0.0, etag_responses=0, last_modified_responses=0)
+
+
+def http_metrics() -> dict:
+    return dict(_HTTP_METRICS)
 
 
 @dataclass(frozen=True)
@@ -130,15 +140,23 @@ def fetch(url: str, host_suffixes: tuple[str, ...]) -> tuple[str, str]:
     if parsed.scheme != "https" or not any(parsed.hostname == suffix or parsed.hostname.endswith("." + suffix) for suffix in host_suffixes):
         raise ValueError("url_not_allowed")
     opener = build_opener(Redirects(host_suffixes))
-    with opener.open(Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml"}), timeout=TIMEOUT_SECONDS) as response:
-        content_type = response.headers.get("Content-Type", "")
-        body = response.read(MAX_BYTES + 1)
-        if len(body) > MAX_BYTES:
-            raise ValueError("response_too_large")
-        if "html" not in content_type.lower():
-            raise ValueError("unexpected_content_type")
-        charset = response.headers.get_content_charset() or "utf-8"
-        return body.decode(charset, errors="replace"), response.geturl()
+    started = time.monotonic()
+    _HTTP_METRICS["http_requests"] += 1
+    try:
+        with opener.open(Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml"}), timeout=TIMEOUT_SECONDS) as response:
+            content_type = response.headers.get("Content-Type", "")
+            _HTTP_METRICS["etag_responses"] += int(bool(response.headers.get("ETag")))
+            _HTTP_METRICS["last_modified_responses"] += int(bool(response.headers.get("Last-Modified")))
+            body = response.read(MAX_BYTES + 1)
+            _HTTP_METRICS["downloaded_bytes"] += len(body)
+            if len(body) > MAX_BYTES:
+                raise ValueError("response_too_large")
+            if "html" not in content_type.lower():
+                raise ValueError("unexpected_content_type")
+            charset = response.headers.get_content_charset() or "utf-8"
+            return body.decode(charset, errors="replace"), response.geturl()
+    finally:
+        _HTTP_METRICS["elapsed_seconds"] += time.monotonic() - started
 
 
 class Blocks(HTMLParser):

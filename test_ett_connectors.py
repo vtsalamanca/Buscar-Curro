@@ -1,6 +1,7 @@
 import unittest
+from unittest.mock import patch
 
-from ett_connectors import ETT_SPECS, job_postings, listing_links, unrelated_gi_redirect, _document_from_job
+from ett_connectors import EttSpec, ETT_SPECS, job_postings, listing_links, run_ett_connector, unrelated_gi_redirect, _document_from_job
 
 
 class EttConnectorTests(unittest.TestCase):
@@ -51,6 +52,22 @@ class EttConnectorTests(unittest.TestCase):
         spec = ETT_SPECS[5]
         self.assertTrue(unrelated_gi_redirect(spec, "https://es.gigroup.com/ofertas-de-trabajo/"))
         self.assertFalse(unrelated_gi_redirect(spec, "https://es.gigroup.com/ofertas-de-trabajo-detalle/trabajo-x/"))
+
+    def test_snapshot_is_reused_and_queue_rotates_pending_details(self):
+        spec = EttSpec("demo", "Demo", "https://example.test/jobs", ("example.test",), ("/job/",), detail_limit=1)
+        listing = '<article><a href="/job/a">Docente A</a></article><article><a href="/job/b">Educador social B</a></article>'
+        queue = {}
+
+        def detail(url, hosts):
+            return f"<h1>{'Docente A' if url.endswith('/a') else 'Educador social B'}</h1>", url
+
+        with patch("ett_connectors.fetch", side_effect=detail) as mocked:
+            run_ett_connector(spec, (listing, spec.listing_url), queue)
+            first_checked = {url for url, item in queue.items() if item["status"] == "checked"}
+            run_ett_connector(spec, (listing, spec.listing_url), queue)
+        self.assertEqual(mocked.call_count, 2)  # one detail per run; listing is never downloaded twice
+        self.assertEqual(len(first_checked), 1)
+        self.assertEqual({url for url, item in queue.items() if item["status"] == "checked"}, set(queue))
 
 
 if __name__ == "__main__":

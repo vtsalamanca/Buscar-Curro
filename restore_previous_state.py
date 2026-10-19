@@ -78,9 +78,11 @@ def download(url: str, token: str) -> bytes:
 def restore(repository: str, workflow: str, artifact_name: str, current_run: int, token: str, destination: Path) -> bool:
     base = f"https://api.github.com/repos/{repository}"
     runs = api_json(f"{base}/actions/workflows/{workflow}/runs?event=workflow_dispatch&status=success&per_page=20", token)
+    prior_success_exists = False
     for run in runs.get("workflow_runs", []):
         if int(run.get("id", 0)) == current_run:
             continue
+        prior_success_exists = True
         artifacts = api_json(f"{base}/actions/runs/{run['id']}/artifacts?name={artifact_name}", token)
         valid = [item for item in artifacts.get("artifacts", []) if not item.get("expired") and item.get("name") == artifact_name]
         if not valid:
@@ -89,6 +91,8 @@ def restore(repository: str, workflow: str, artifact_name: str, current_run: int
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_bytes(raw)
         return True
+    if prior_success_exists:
+        raise ValueError("prior_state_unavailable")
     return False
 
 

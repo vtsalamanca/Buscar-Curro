@@ -21,6 +21,11 @@ def document(document_id="doc:1", title="Convocatoria Educador Social Toledo", c
 
 
 class EmploymentCoreTests(unittest.TestCase):
+    def test_apply_runs_preserves_bc02_queue_namespace(self):
+        previous = {"schema_version": 1, "documents": {}, "bc02": {"queues": {"x": {"u": {"status": "pending"}}}}}
+        state, _ = apply_runs(previous, [], "2026-10-19T00:00:00+00:00")
+        self.assertEqual(state["bc02"], previous["bc02"])
+
     def test_active_filter_and_suspended_logistics(self):
         self.assertIn("psicologia", categories_for("Psicólogo para intervención con menores"))
         self.assertIn("intervencion_social", categories_for("Trabajador/a Social"))
