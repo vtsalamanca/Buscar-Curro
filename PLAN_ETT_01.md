@@ -106,3 +106,16 @@ Orden de Codex: primero ETT-01A, y ETT-01B únicamente para sitios viables; usar
 
 **Bloqueante transversal antes de informar novedades:** el workflow BT-01B actual `.github/workflows/bt01b-public-sources.yml` ejecuta `run_public_sources.py` sin restaurar `data/public-source-state.json`. El estado generado en cada run permanece como artefacto pero no se consume en el siguiente run. Diseñar un mecanismo de recuperación de estado autenticado/validado y persistencia segura sin escritura sobre rama principal en ejecución de solo lectura; contrastar opciones gratuitas (artefacto anterior validado, rama/commit dedicado autorizado u otro almacén gratuito). Evitar estado mutable concurrente; probar primera y segunda ejecución, y fallo en recuperación de estado sin declarar «todo nuevo» falsamente.
 No activar schedule ni avisos. No mandar candidaturas. Documentar fechas y evidencia de cada conector desde runner.
+
+## Resultado de ejecución ETT-01A / ETT-01B (19/10/2026)
+
+**Bloque completado y detenido en la puerta de revisión.** Implementación en `ett_connectors.py`, `run_ett_sources.py`, `restore_previous_state.py`, tests y workflow manual `.github/workflows/ett01.yml`. Commits: `b87d749`, `738a3e5`, `57e83fe`, `ee37c6b`, `215050e`.
+
+- Las seis fuentes fueron accesibles por HTTP desde GitHub Actions; no se necesitó Chromium. El diagnóstico obtuvo 125/9/98/30/3/13 enlaces para Tratem/Adecco/Eurofirms/Randstad/Manpower/Gi Group.
+- Con filtros activos y límites de 3–5 fichas: Tratem 2, Adecco 1 y Randstad 1 documentos; Eurofirms, Manpower y Gi Group 0 relevantes en la muestra. Cero relevante no se interpreta como fallo ni como ausencia total.
+- JSON-LD se intenta antes que HTML: 0 en listados; encontrado en fichas de Adecco, Manpower y Gi Group. Los demás usan fallback HTML.
+- Pruebas específicas superadas para anuncio antiguo Tratem, contradicción Adecco, redirección Gi Group, contenido dinámico sin cambios falsos, filtros suspendidos y estructuras `JobPosting`.
+- El 403 Randstad documentado no se reprodujo (HTTP/HTML correcto en los runs); si reaparece se registra como fallo limpio, sin evasión. La redirección Gi Group ajena se rechaza por ruta final.
+- Histórico resuelto con artefacto anterior validado. ETT final: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174181284, 43 tests, 0 nuevos/0 cambiados. BT transversal: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174196772 y https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174265185, segunda pasada 0/0.
+
+No se habilitaron cron, notificaciones, autenticaciones privadas o candidaturas. No avanzar a otro bloque hasta revisar estos resultados.

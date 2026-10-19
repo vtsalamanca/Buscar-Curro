@@ -1,6 +1,6 @@
 # Buscar-Curro — Estado maestro y hoja de ruta
 
-Actualizado: 2026-10-18. Responsable de decisiones: usuario. Presupuesto adicional autorizado: **0 €**.
+Actualizado: 2026-10-19. Responsable de decisiones: usuario. Presupuesto adicional autorizado: **0 €**.
 
 ## Reglas de continuidad
 1. Antes de iniciar trabajo consultar este documento, README y evidencias recientes del repositorio.
@@ -383,6 +383,21 @@ Propuesta del usuario aceptada para **inventario y auditoría pública**; no aut
 Orden recomendado para nueva auditoría de viabilidad gratuita desde GitHub: Tratem, Adecco y Eurofirms; después Randstad y Manpower. Primero confirmar URLs, fichas, paginación y si hacen falta JS/login; programar conectores solo después de prueba runner. Deduplicar frente a otros portales por referencia, empresa, puesto, ubicación y fecha. Registrar que la oferta está gestionada por ETT; no confundir intermediario con empresa contratante.
 
 No se ha ejecutado Codex/Work, prueba runner, candidaturas ni automatizaciones como consecuencia de esta ampliación.
+
+## ETT-01A / ETT-01B — cierre técnico verificado (19/10/2026)
+
+**Estado: desarrollado, publicado y probado en GitHub Actions.** Se mantuvieron ATE y sus pruebas, no se activó ninguna programación recurrente y no se usaron credenciales privadas, candidaturas, avisos, servicios de pago ni navegador completo para extraer las fuentes.
+
+- Los seis catálogos ETT respondieron desde el runner estándar mediante HTTP/HTML: Tratem 125 enlaces, Adecco 9, Eurofirms 98, Randstad 30, Manpower 3 y Gi Group 13. El `403` observado previamente en Randstad no se reprodujo en estas ejecuciones; el acceso debe seguir considerándose variable, no garantizado.
+- Extracción relevante acotada: Tratem 2 documentos, Adecco 1 y Randstad 1. Eurofirms, Manpower y Gi Group son conectores técnicamente utilizables, pero devolvieron 0 documentos de los sectores activos en la muestra limitada; no se amplió la muestra para inflar resultados.
+- Se implementó prioridad `schema.org/JobPosting` y fallback HTML. En los listados hubo 0 `JobPosting`; en fichas se observaron bloques en Adecco, Manpower y Gi Group. Se conservan agencia, empresa si está explícita, jornada, salario, fechas, requisitos, calidad del dato, URL/ID, hash y estado conservador.
+- Casos problemáticos cubiertos: anuncios Tratem de más de 180 días sin cierre se marcan históricos; las contradicciones Adecco quedan en `data_quality`; una redirección Gi Group a catálogo genérico se rechaza; Randstad registra el error si reaparece un bloqueo sin intentar eludirlo.
+- Persistencia: el estado se restaura desde el artefacto válido de la ejecución anterior mediante `GITHUB_TOKEN`, con validación de esquema/tamaño/ZIP y lista segura del host de descarga. Si la restauración falla, la ejecución termina antes de presentar falsos nuevos. El mismo mecanismo quedó aplicado a ETT-01 y BT-01B.
+- Prueba final ETT-01: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174181284 — commit `215050e`, 43 tests, seis consultas sin fallos, estado restaurado, **0 nuevos y 0 cambiados**.
+- Prueba transversal BT-01B: primera línea base https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174196772 (40 nuevos) y segunda ejecución https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174265185, con **0 nuevos, 0 cambiados y 0 fallos**.
+- Commits ETT-01: `b87d749`, `738a3e5`, `57e83fe`, `ee37c6b` y `215050e`. El run ETT `39169993066` falló de forma segura al detectar un 401 al descargar el artefacto; motivó la corrección de redirección y no produjo un delta falso.
+
+**Limitaciones:** la cobertura es deliberadamente acotada (3–5 fichas por fuente), no hay paginación exhaustiva ni cálculo automático del radio de 70 km. Un catálogo accesible con cero coincidencias no demuestra ausencia de ofertas. Las advertencias deprecación Node.js 20 de actions de terceros no invalidaron los runs, pero quedan como mantenimiento futuro. ETT-01 queda cerrado para revisión; no pasar a operación diaria sin autorización expresa.
 
 ## Auditoría ETT — actualización de accesibilidad web (18/10/2026)
 Ampliación expresamente pedida por el usuario; **aún no existe prueba desde runner GitHub** ni permiso implícito para cron, candidaturas o sesiones privadas.

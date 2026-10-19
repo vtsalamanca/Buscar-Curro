@@ -56,3 +56,20 @@ Ejecución de cierre: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/3
 Las ejecuciones `39165252983`, `39165510317` y `39165713985` se conservan como iteraciones diagnósticas. Permitieron corregir el término ATE para que solo coincida como acrónimo, reconocer `trabajador/a social`, extraer enlaces fuera de bloques semánticos y eliminar menús genéricos de JCCM/Toledo. La ejecución de cierre anterior es la referencia válida.
 
 El workflow `.github/workflows/bt01b-public-sources.yml` solo admite `workflow_dispatch`, usa runner estándar y permisos `contents: read`; no contiene `schedule`, secretos, login ni servicios de pago. Los resultados no activan avisos ni candidaturas. “Sin resultados relevantes” significa que la consulta respondió pero el extractor no obtuvo documentos que pasaran sus reglas; `consulta_fallida` se registra por separado.
+
+## ETT-01 — agencias públicas y persistencia (19/10/2026)
+
+Ejecución final: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174181284 sobre `215050e`. La suite completa superó 43 pruebas y la ejecución restauró el histórico anterior: **0 nuevos, 0 cambiados, 0 fallos**.
+
+| Fuente | Acceso real desde Actions | Resultado del conector acotado |
+|---|---|---|
+| Tratem | **HTTP_HTML_verificado**, 125 enlaces | 2 relevantes; el anuncio antiguo sin cierre se marca histórico. |
+| Adecco | **HTTP_HTML_verificado**, 9 enlaces de listado | 1 relevante; 1 ficha con `JobPosting`; contradicciones de jornada/contrato se conservan como calidad del dato. |
+| Eurofirms | **HTTP_HTML_verificado**, 98 enlaces | 0 relevantes en 4 fichas; no equivale a catálogo vacío. |
+| Randstad | **HTTP_HTML_verificado**, 30 enlaces | 1 relevante en 3 fichas. El 403 previo no apareció en el runner; acceso todavía potencialmente variable. |
+| Manpower | **HTTP_HTML_verificado**, 3 enlaces | 0 relevantes; las 3 fichas contenían `JobPosting`. |
+| Gi Group | **HTTP_HTML_verificado**, 13 enlaces | 0 relevantes; 4 fichas con `JobPosting`; redirecciones a catálogo ajeno se descartan explícitamente. |
+
+La recuperación del estado usa artefactos gratuitos con retención de 30 días, sin escribir en `main`. Valida ZIP, tamaño y esquema, y no reenvía el Bearer token al host firmado de Azure/GitHub. La primera descarga reveló un 401 en https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39169993066; la corrección quedó verificada en los runs posteriores.
+
+La persistencia transversal de BT-01B también quedó demostrada: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174196772 creó una línea base de 40 documentos y https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39174265185 restauró el artefacto y devolvió **0 nuevos / 0 cambiados**. Ambos workflows siguen siendo exclusivamente manuales.
