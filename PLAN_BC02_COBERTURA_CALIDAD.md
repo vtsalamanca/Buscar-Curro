@@ -22,3 +22,6 @@ No borrar o sobrescribir datos; no automatizar login, eludir verificaciones huma
 No declarar BC-02 completado si persisten falsos duplicados, si la paginación no registra límites, si el radio se atribuye sin datos verificados o si los informes presentan cero resultados como ausencia de ofertas. Entregar evidencia reproductible e informar limitaciones sin ocultarlas.
 
 **Nota:** este documento prepara la implementación en Codex; su creación no inicia ejecuciones ni cambia automáticamente la programación.
+
+## Cambio de alcance solicitado por usuario — 19/10/2026
+El diseño de los **informes que recibirá el usuario queda fuera de BC-02**: habrá una fase posterior específica en la que el usuario explicará requisitos y se iterará conjuntamente. Codex NO debe adelantarse con modelos de presentación, formato, prioridades editoriales, correos ni notificaciones. Mantener únicamente `JSON`/logs/artefactos de diagnóstico imprescindibles para pruebas y trazabilidad; no convertirlos en informes finales de empleo.
