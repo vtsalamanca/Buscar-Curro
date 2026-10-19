@@ -23,3 +23,17 @@ Evidencia comparativa antes/después de fichas únicas examinadas, cola pendient
 
 ## Política general aplicable — 19/10/2026
 Leer también `POLITICA_EFICIENCIA_PRESUPUESTO_CERO.md` antes de programar o ejecutar BC-03. Este documento establece como futuros límites operativos un cron al día, 15 minutos máximo, 10 MB totales de artefactos por ejecución, 7 días de diagnósticos y un solo runner operativo simultáneo. **No activar ahora** estos mecanismos ni recortar el histórico de 30 días sin una sustitución segura; validar cada límite y la facturación primero. Las ejecuciones manuales de prueba requieren autorización y esta actualización documental no la concede.
+
+## Resultado técnico — 19/10/2026
+
+**BC-03 ejecutado y verificado.** Se restauró el artefacto de BC-02 sin reiniciar el histórico y se clasificó un universo final de 317 candidatos detectados: 267 fichas únicas descargadas, 30 descartes preliminares seguros, 19 errores conservados para reintento y 1 enlace de Randstad ya ausente del listado. La cola activa quedó en **0 pendientes**; esto significa que no quedan candidatos detectados sin clasificar, no que se haya demostrado la exhaustividad completa de cada portal.
+
+- Paginación pública comprobada: Eurofirms, 2 páginas (101 enlaces y 104 candidatos); Randstad, 2 páginas (60 enlaces y 61 candidatos). Tratem, Adecco, Manpower y Gi Group solo expusieron una página verificable; no se inventaron parámetros.
+- Cobertura final: Tratem 102 visitados y 24 filtrados; Adecco 10 visitados; Eurofirms 79 visitados, 6 filtrados y 19 errores; Randstad 60 visitados y 1 no listado; Manpower 3 visitados; Gi Group 13 visitados.
+- La última ronda idempotente realizó 8 peticiones de listado, 2.876.702 bytes y 17,429 s HTTP, sin descargar fichas conocidas, sin pendientes y con 0 nuevos/0 cambiados. Los 19 errores persistentes se muestran como errores, nunca como ausencia de ofertas.
+- Las siete rondas de diagnóstico y avance consumieron en conjunto 307 peticiones, 62.652.365 bytes y 515,756 s HTTP. La cobertura única pasó de 36 fichas examinadas en BC-02 a 267 en BC-03.
+- Correcciones aplicadas durante las rondas: clasificación HTML basada en título para evitar contaminación de menús; identificador real de Gi Group; refresco de conocidos no antes de siete días; clasificación `not_listed` de enlaces desaparecidos; conservación de errores; y migración automática desde el artefacto BC-02.
+- Commits funcionales: `24998e7`, `45d48c9`, `297c8d8`, `7ff7e69` y `b948d94`.
+- Evidencias Actions: [ronda inicial](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39245609244), [paginación y filtros](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39251098099), [avance amplio](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39253200014), [segunda ronda amplia](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39253677115), [casi agotada](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39254699940), [cola agotada](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39255134235) y [verificación final](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39255609713).
+
+La suite final superó 54 pruebas, incluidas las regresiones ATE, BT-01B y ETT-01. El workflow sigue siendo exclusivamente manual, sin cron, credenciales privadas, navegador, notificaciones, candidaturas ni servicios de pago.

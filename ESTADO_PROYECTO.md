@@ -437,3 +437,16 @@ Por instrucción del usuario, **queda suspendido el traspaso a Codex hasta que t
 
 ## Catálogo municipal 80 km en línea recta terminado (19/10/2026)
 Se reemplazó fichero de 85 candidatos por `data/municipios_nambroca_80km.csv`: 259 municipios seleccionados a partir de INE 2026 + centroides de municipios derivados de IGN mediante https://github.com/ManuelCebreiro/spanish-cities-info . Distancia Haversine desde Nambroca (39.7984,-3.9183), corte <=80 km antes de redondear; Toledo 162, Madrid 73, Ciudad Real 16, Cuenca 3, Ávila 5. Usuario acepta expresamente estimación por línea recta para resolver catálogo; **reemplaza exigencia anterior de carretera**. No representar como kilómetros de conducción, ni excluir barrios/localidades ambiguas sin revisión. Queda desbloqueado el prerrequisito geográfico de BC-02; esta acción no inicia Codex.
+
+## BC-03 — cobertura progresiva y paginación (19/10/2026)
+
+**Estado: completado, publicado y verificado en GitHub Actions; pendiente de revisión del usuario antes de otro bloque.** Commits funcionales `24998e7`, `45d48c9`, `297c8d8`, `7ff7e69` y `b948d94`.
+
+- Estado BC-02 recuperado sin reinicio. La cobertura pasó de 36 a **267 fichas únicas examinadas**. El universo final detectado contiene 317 candidatos: 267 visitados, 30 filtrados preliminarmente, 19 errores persistentes y 1 enlace desaparecido; quedan **0 pendientes activos**.
+- Paginación verificada solamente donde hubo enlaces públicos explícitos: Eurofirms y Randstad, 2 páginas cada una. Las otras cuatro fuentes permanecen en una página demostrada, sin afirmar catálogo completo.
+- Siete rondas: 307 peticiones, 62.652.365 bytes y 515,756 s HTTP. La ronda final estable necesitó 8 peticiones, 2.876.702 bytes, 17,429 s HTTP, 0 fichas conocidas repetidas y produjo 0 nuevos/0 cambiados.
+- Los 19 errores de Eurofirms permanecen registrados para reintento; no se interpretan como ofertas ausentes. Los conocidos se refrescan después del intervalo de siete días, no en cada ejecución.
+- La suite final superó 54 pruebas e incluye ATE, BT-01B, ETT-01, paginación, identificadores, falsos positivos y enlaces desaparecidos.
+- Verificación final: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39255609713. Las rondas anteriores de avance fueron `39245609244`, `39251098099`, `39253200014`, `39253677115`, `39254699940` y `39255134235`.
+
+No se activaron cron, informes personales, notificaciones, candidaturas, autenticación privada, navegador ni servicios de pago. No avanzar a otro bloque hasta revisar estos resultados.

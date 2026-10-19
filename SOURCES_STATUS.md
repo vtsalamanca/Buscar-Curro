@@ -81,3 +81,20 @@ Run final: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39214493868 
 La cola conservó 36 fichas distintas ya comprobadas, 137 pendientes y 107 descartes preliminares de sectores suspendidos. La semilla educativa Adecco se protege del término genérico «transporte»; el run https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39213963243 verificó su recuperación y el run final confirmó que no reaparece como nueva. El índice geográfico validó 259 municipios; datos ausentes o desconocidos permanecen para revisión.
 
 Peticiones condicionales: hubo ETag en 2/19 respuestas finales y ningún `Last-Modified`, sin prueba de `304`. Se mantienen desactivadas hasta acreditar ahorro real. No se modificó ATE, no se añadieron dependencias, navegador, credenciales, programación recurrente o acciones sobre candidaturas.
+
+## BC-03 — cobertura final por fuente (19/10/2026)
+
+Run final: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39255609713 sobre `b948d94`. Superó 54 pruebas y restauró el histórico acumulado con 0 nuevos, 0 cambiados y 0 pendientes activos.
+
+| Fuente | Páginas públicas verificadas | Candidatos | Fichas únicas visitadas | Filtrados | Errores / no listado | Pendientes |
+|---|---:|---:|---:|---:|---:|---:|
+| Tratem | 1 | 126 | 102 | 24 | 0 | 0 |
+| Adecco | 1 | 10 | 10 | 0 | 0 | 0 |
+| Eurofirms | 2 | 104 | 79 | 6 | 19 errores | 0 |
+| Randstad | 2 | 61 | 60 | 0 | 1 no listado | 0 |
+| Manpower | 1 | 3 | 3 | 0 | 0 | 0 |
+| Gi Group | 1 | 13 | 13 | 0 | 0 | 0 |
+
+Total: 317 candidatos clasificados, 267 fichas visitadas, 30 descartes preliminares, 19 errores explícitos y 1 enlace desaparecido. Eurofirms y Randstad son las únicas fuentes con paginación pública realmente demostrada en esta fase. «Pendientes 0» no significa cobertura completa del portal cuando su paginación no está expuesta o quedan errores.
+
+La última ronda realizó 8 peticiones, descargó 2.876.702 bytes y empleó 17,429 s HTTP sin repetir fichas conocidas. Las siete rondas BC-03 sumaron 307 peticiones, 62.652.365 bytes y 515,756 s HTTP. Se conserva el índice de 259 municipios y las ofertas con localidad desconocida no se descartan silenciosamente.
