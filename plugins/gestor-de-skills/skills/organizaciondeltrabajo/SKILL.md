@@ -60,3 +60,5 @@ Se realizaron demasiados ciclos manuales de editar Python en GitHub → commit �
 - 0.2.0 (19 oct 2026): integración en Gestor de Skills; activación proactiva donde sea posible, puerta obligatoria de eficiencia, preferencia local, caso Educamos y enlace a ingenieria-fiable.
 - 0.2.1 (19 oct 2026): unificación de 0.1.6 y 0.2.0; GitHub pasa a ser la fuente única de verdad y las copias empaquetadas deben reproducirla.
 - 0.2.2 (19 oct 2026): la fuente canónica se integra en el paquete completo de GitHub y se distribuye mediante su marketplace.
+
+<!-- SYNC-E2E-20261019-ADIESTRAMIENTO-01 -->
