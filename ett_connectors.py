@@ -276,9 +276,11 @@ def run_ett_connector(
         for url, label in candidates.items():
             entry = entries.setdefault(url, {"label": label, "status": "pending", "checks": 0})
             entry["label"] = label
-            if entry.get("status") == "prefiltered" and not _clear_suspended_title(label):
+            if url in spec.seed_urls and entry.get("status") == "prefiltered":
                 entry["status"] = "pending"
-            elif _clear_suspended_title(label):
+            elif entry.get("status") == "prefiltered" and not _clear_suspended_title(label):
+                entry["status"] = "pending"
+            elif url not in spec.seed_urls and _clear_suspended_title(label):
                 entry["status"] = "prefiltered"
         eligible = [(url, item["label"]) for url, item in entries.items() if url in candidates and item.get("status") != "prefiltered"]
         eligible.sort(key=lambda pair: (
