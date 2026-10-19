@@ -1,19 +1,9 @@
-# Gestor de Skills 0.4.4
+# Gestor de Skills — trasladado
 
-Complemento privado con siete skills especializadas:
-- `descubrir-skills`: búsqueda y comparación de skills públicas.
-- `auditar-skills`: revisión estática y control de seguridad/costes.
-- `integrar-skills`: compatibilidad e integración por plataforma.
-- `inventariar-skills`: versiones, inventario y detección de duplicados.
-- `crear-skills`: diseño y validación de skills propias.
-- `organizaciondeltrabajo`: coordinación general, continuidad y coste total.
-- `ingenieria-fiable`: adaptación práctica para planificar, diagnosticar, probar y verificar software, agentes y automatizaciones.
+Este paquete dejó de mantenerse dentro de `Buscar-Curro` el 19 de octubre de 2026.
 
-## Nueva metodología
-Inspirada en principios generales de Superpowers de Jesse Vincent (MIT): https://github.com/obra/superpowers . Se conserva atribución al proyecto de referencia. Esta adaptación se ha redactado para ChatGPT; no contiene scripts remotos, hooks de arranque, autorizaciones globales, instalación automática, subagentes obligatorios ni permisos de escritura adicionales.
+La fuente canónica y el marketplace activo están ahora en:
 
-## Seguridad y costes
-Presupuesto por defecto: cero euros. Una skill no confiere herramientas ni permisos. Las acciones externas y cualquier uso facturable necesitan aprobación expresa y verificación. El manifiesto sigue declarando solo `Read`.
+https://github.com/vtsalamanca/gestor-de-skills
 
-## Alcance de las pruebas
-Las pruebas de este paquete validan estructura y consistencia; no demuestran acceso a portales, autonomía de GitHub Actions ni ejecución real de un programa de terceros. Requiere verificación independiente al aplicarlo a cada proyecto.
+La copia ejecutable se retiró para evitar dos fuentes editables y dos distribuciones con versiones divergentes. El historial anterior permanece disponible en Git.
