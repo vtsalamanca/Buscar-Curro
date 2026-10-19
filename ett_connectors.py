@@ -284,9 +284,9 @@ def run_ett_connector(
                 entry["status"] = "prefiltered"
         eligible = [(url, item["label"]) for url, item in entries.items() if url in candidates and item.get("status") != "prefiltered"]
         eligible.sort(key=lambda pair: (
-            0 if pair[0] in spec.seed_urls else 1,
-            0 if entries[pair[0]].get("status") == "pending" and categories_for(pair[1]) else 1,
             0 if entries[pair[0]].get("status") == "pending" else 1,
+            0 if entries[pair[0]].get("status") == "pending" and pair[0] in spec.seed_urls else 1,
+            0 if entries[pair[0]].get("status") == "pending" and categories_for(pair[1]) else 1,
             entries[pair[0]].get("last_checked", ""), pair[0],
         ))
         ordered = eligible[: spec.detail_limit]
@@ -295,7 +295,7 @@ def run_ett_connector(
             f"candidate_links:{len(candidates)}", f"listing_jobposting:{len(job_postings(listing))}",
             f"prefiltered:{sum(1 for item in entries.values() if item.get('status') == 'prefiltered')}",
             f"unvisited_candidates:{sum(1 for item in entries.values() if item.get('status') == 'pending')}",
-            f"already_known_skipped:{max(0, len(eligible) - len(ordered))}",
+            f"already_known_skipped:{sum(1 for url, _ in eligible if entries[url].get('status') == 'checked')}",
         ]
         for url, fallback in ordered:
             try:

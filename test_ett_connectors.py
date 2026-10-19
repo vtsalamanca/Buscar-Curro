@@ -54,7 +54,10 @@ class EttConnectorTests(unittest.TestCase):
         self.assertFalse(unrelated_gi_redirect(spec, "https://es.gigroup.com/ofertas-de-trabajo-detalle/trabajo-x/"))
 
     def test_snapshot_is_reused_and_queue_rotates_pending_details(self):
-        spec = EttSpec("demo", "Demo", "https://example.test/jobs", ("example.test",), ("/job/",), detail_limit=1)
+        spec = EttSpec(
+            "demo", "Demo", "https://example.test/jobs", ("example.test",), ("/job/",),
+            seed_urls=("https://example.test/job/a",), detail_limit=1,
+        )
         listing = '<article><a href="/job/a">Docente A</a></article><article><a href="/job/b">Educador social B</a></article>'
         queue = {}
 
