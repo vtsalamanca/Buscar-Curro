@@ -44,6 +44,15 @@ class EttConnectorTests(unittest.TestCase):
         self.assertIn("datos_contradictorios:jornada", doc.data_quality)
         self.assertIn("datos_contradictorios:contrato", doc.data_quality)
 
+    def test_property_value_identifier_uses_unique_value(self):
+        spec = ETT_SPECS[5]
+        item = {
+            "title": "Educador social", "description": "Intervención social",
+            "identifier": {"@type": "PropertyValue", "name": "Gi Group SpA", "value": "103825"},
+        }
+        doc = _document_from_job(spec, "https://es.gigroup.com/ofertas-de-trabajo-detalle/x/103825/", item, "", "")
+        self.assertEqual(doc.document_id, "gi_group:103825")
+
     def test_dynamic_page_chrome_does_not_change_hash(self):
         spec = ETT_SPECS[0]
         item = {"title": "Docente", "description": "Requisitos: Grado en Educación."}

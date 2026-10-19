@@ -240,7 +240,8 @@ def _document_from_job(spec: EttSpec, url: str, item: dict, fallback: str, html_
     elif publication and publication < (date.today() - timedelta(days=180)).isoformat():
         status = "cerrada_o_historica"
         quality.append("anuncio_antiguo_sin_cierre")
-    identifier = _text(item.get("identifier"))
+    raw_identifier = item.get("identifier")
+    identifier = _text(raw_identifier.get("value") or raw_identifier.get("name")) if isinstance(raw_identifier, dict) else _text(raw_identifier)
     if not identifier:
         identifier = urlsplit(url).path.rstrip("/").split("/")[-1]
     hiring = _text(item.get("hiringOrganization"))

@@ -27,7 +27,8 @@ def main() -> int:
     previous = load_state(args.state)
     pruned_false_positives = []
     for document_id, document in list(previous.get("documents", {}).items()):
-        if document.get("source") in {spec.key for spec in ETT_SPECS} and not categories_for(document.get("title", "")):
+        invalid_gi_identifier = document.get("source") == "gi_group" and document_id == "gi_group:Gi Group SpA"
+        if invalid_gi_identifier or (document.get("source") in {spec.key for spec in ETT_SPECS} and not categories_for(document.get("title", ""))):
             pruned_false_positives.append(document_id)
             del previous["documents"][document_id]
     municipality_index = MunicipalityIndex.load(args.municipalities)

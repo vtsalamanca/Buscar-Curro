@@ -36,7 +36,7 @@ jobs:
           --state data/bc03-state.json
           --municipalities data/municipios_nambroca_80km.csv
           --page-budget 2
-          --detail-budget 12
+          --detail-budget 24
           --output-dir bc03-output
       - name: Estado para la siguiente ronda
         if: success()
