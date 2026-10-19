@@ -106,7 +106,7 @@ def main() -> int:
         "docs_examined": sum(item["detail_fetches"] for item in source_metrics.values()),
         "relevant_docs": sum(len(run.documents) for run in runs),
         "unvisited_candidates": sum(1 for queue in queues.values() for item in queue.values() if item.get("status") == "pending"),
-        "errors": sum(1 for run in runs if run.status == "consulta_fallida") + sum(1 for run in runs for note in run.notes if note.startswith("detail_error:")),
+        "errors": sum(item["errors"] for item in source_metrics.values()) + sum(1 for run in runs if run.status == "consulta_fallida"),
         "municipalities_loaded": len(municipality_index.rows),
         "conditional_http": "not_enabled_without_verified_etag_or_last_modified_savings",
         "pruned_false_positive_ids": sorted(pruned_false_positives),
