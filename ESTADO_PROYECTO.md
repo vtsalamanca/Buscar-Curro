@@ -418,3 +418,6 @@ El usuario solicita avanzar al siguiente bloque. Se preparó `PLAN_BC02_COBERTUR
 
 ## Cambio geográfico expreso — 19/10/2026
 El usuario fija **80 km por carretera desde Nambroca como único límite** de búsqueda. Sustituye el anterior radio de 70 km y elimina margen adicional de 75 km. Preparar catálogo local de localidades, con distancias verificadas; cualquier localidad sin medición queda pendiente y no debe descartarse automáticamente. Documento de desarrollo: `PLAN_BC02_COBERTURA_CALIDAD.md`.
+
+## Bloqueo a traspaso de BC-02 — 19/10/2026
+Por instrucción del usuario, **queda suspendido el traspaso a Codex hasta que terminemos aquí el catálogo exhaustivo y verificado de localidades a 80 km por carretera desde Nambroca**. El CSV actual de 85 candidatos no es lista cerrada. Fuentes oficiales identificadas: nomenclátor geográfico IGN/CNIG 2026 en CSV y relación de municipios/códigos INE; para carretera hará falta un motor de rutas fiable con trazabilidad. Distancias sin comprobar quedan en blanco, no inferirlas por línea recta. No cambiar el límite 80 km. No activar workflows ni notificaciones.
