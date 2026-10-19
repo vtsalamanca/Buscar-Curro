@@ -20,3 +20,6 @@ Coste adicional 0 €, priorizar biblioteca estándar y HTTP ligero, sin depende
 
 ## Salida
 Evidencia comparativa antes/después de fichas únicas examinadas, cola pendiente, páginas verificadas, errores, peticiones, bytes y tiempo. Diferenciar 'todos los candidatos detectados procesados' de 'todas las ofertas del portal', que requiere verificar paginación.
+
+## Política general aplicable — 19/10/2026
+Leer también `POLITICA_EFICIENCIA_PRESUPUESTO_CERO.md` antes de programar o ejecutar BC-03. Este documento establece como futuros límites operativos un cron al día, 15 minutos máximo, 10 MB totales de artefactos por ejecución, 7 días de diagnósticos y un solo runner operativo simultáneo. **No activar ahora** estos mecanismos ni recortar el histórico de 30 días sin una sustitución segura; validar cada límite y la facturación primero. Las ejecuciones manuales de prueba requieren autorización y esta actualización documental no la concede.
