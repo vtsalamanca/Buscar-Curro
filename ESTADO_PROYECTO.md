@@ -412,3 +412,6 @@ Ampliación expresamente pedida por el usuario; **aún no existe prueba desde ru
 **Plan agrupado ETT-01A:** diagnóstico runner manual de seis catálogos y un máximo pequeño de fichas públicas; comprobar HTTP, enlaces, campos, paginación, filtros y posible bloqueo. No hacer scraping intensivo, login o bypass.
 **ETT-01B condicional:** conectores solamente de las viables, con marca de agencia intermediaria, título, localidad, provincia, fecha, requisitos, cierre, id/url, clasificación de sectores, deduplicación con fuentes ya incorporadas, pruebas y regresión ATE.
 **Dependencia previa a operación diaria:** persistir/restaurar entre ejecuciones el JSON de estado; actualmente BT-01B lo genera como artefacto pero su workflow no lo recupera al arrancar, por tanto las alertas de «nuevos» serían incorrectas.
+
+## BC-02 — Siguiente bloque tras ETT-01 (19/10/2026)
+El usuario solicita avanzar al siguiente bloque. Se preparó `PLAN_BC02_COBERTURA_CALIDAD.md` para mejorar cobertura progresiva/paginación, filtro geográfico de 70 km desde Nambroca, elegibilidad formativa, robustez de histórico de 30 días e informes auditables. Reutilizar ETT-01 y BT-01B; no reabrir estudio documental ya cerrado. **No se ha ejecutado aún desarrollo, workflows ni automatización diaria.** Mantener 0 € adicional, sin candidaturas/credenciales; ejecución técnica en hilo Codex existente.
