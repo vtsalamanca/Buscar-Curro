@@ -1,0 +1,56 @@
+name: BC-03 cobertura progresiva y paginacion
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: bc03-coverage
+  cancel-in-progress: false
+
+jobs:
+  coverage:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Pruebas completas y regresión ATE
+        run: python3 -m unittest -v
+      - name: Restaurar BC-03 o migrar el último estado BC-02
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 restore_previous_state.py
+          --workflow bc03.yml
+          --artifact-name bc03-state
+          --fallback-workflow bc02.yml
+          --fallback-artifact-name bc02-state
+          --destination data/bc03-state.json
+      - name: Avanzar cola y paginación pública acotada
+        run: >-
+          python3 run_ett_sources.py
+          --state data/bc03-state.json
+          --municipalities data/municipios_nambroca_80km.csv
+          --page-budget 2
+          --detail-budget 12
+          --output-dir bc03-output
+      - name: Estado para la siguiente ronda
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bc03-state
+          path: bc03-output/state.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Registros técnicos BC-03
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bc03-technical-results
+          path: bc03-output/
+          if-no-files-found: error
+          retention-days: 7

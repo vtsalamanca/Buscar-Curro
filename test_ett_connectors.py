@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 
-from ett_connectors import EttSpec, ETT_SPECS, job_postings, listing_links, run_ett_connector, unrelated_gi_redirect, _document_from_job
+from ett_connectors import EttSpec, ETT_SPECS, job_postings, listing_links, pagination_links, run_ett_connector, unrelated_gi_redirect, _document_from_job
 
 
 class EttConnectorTests(unittest.TestCase):
@@ -15,6 +15,14 @@ class EttConnectorTests(unittest.TestCase):
         spec = ETT_SPECS[0]
         html = '<article>Docente <a href="/oferta/docente">Ver oferta</a><a href="/oferta/login">Login</a></article>'
         self.assertEqual(listing_links(spec, html, spec.listing_url), [("https://agenciaempleo.tratem.com/oferta/docente", "Docente Ver oferta Login")])
+
+    def test_pagination_uses_only_explicit_same_host_links(self):
+        spec = ETT_SPECS[3]
+        html = '<a href="/candidatos/ofertas-empleo/p-toledo/pg-2/">Siguiente</a><a href="https://evil.test/page-2">Next</a>'
+        self.assertEqual(
+            pagination_links(spec, html, spec.listing_url),
+            ["https://www.randstad.es/candidatos/ofertas-empleo/p-toledo/pg-2/"],
+        )
 
     def test_expired_jobposting_is_historical(self):
         spec = ETT_SPECS[0]

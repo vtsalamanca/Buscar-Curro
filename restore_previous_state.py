@@ -101,6 +101,8 @@ def main() -> int:
     parser.add_argument("--destination", type=Path, default=Path("data/ett-state.json"))
     parser.add_argument("--workflow", default="ett01.yml")
     parser.add_argument("--artifact-name", default="ett01-state")
+    parser.add_argument("--fallback-workflow")
+    parser.add_argument("--fallback-artifact-name")
     args = parser.parse_args()
     required = {name: os.environ.get(name, "") for name in ("GITHUB_REPOSITORY", "GITHUB_RUN_ID", "GITHUB_TOKEN")}
     if not all(required.values()):
@@ -110,6 +112,11 @@ def main() -> int:
         required["GITHUB_REPOSITORY"], args.workflow, args.artifact_name,
         int(required["GITHUB_RUN_ID"]), required["GITHUB_TOKEN"], args.destination,
     )
+    if not restored and args.fallback_workflow and args.fallback_artifact_name:
+        restored = restore(
+            required["GITHUB_REPOSITORY"], args.fallback_workflow, args.fallback_artifact_name,
+            0, required["GITHUB_TOKEN"], args.destination,
+        )
     print("state_restore=restored" if restored else "state_restore=first_run")
     return 0
 

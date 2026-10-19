@@ -178,19 +178,40 @@ def listing_links(spec: EttSpec, html: str, final_url: str) -> list[tuple[str, s
     return sorted(links.items())
 
 
-def diagnose(spec: EttSpec, listing_snapshot: tuple[str, str] | None = None) -> dict:
+def pagination_links(spec: EttSpec, html: str, final_url: str) -> list[str]:
+    """Return only pagination URLs explicitly linked by the public listing."""
+    parser = Blocks(final_url)
+    parser.feed(html)
+    found: set[str] = set()
+    for url, label in parser.all_links:
+        parsed = urlsplit(url)
+        if parsed.scheme != "https" or not parsed.hostname or not any(
+            parsed.hostname == host or parsed.hostname.endswith("." + host) for host in spec.hosts
+        ):
+            continue
+        marker = plain(f"{parsed.path} {parsed.query} {label}")
+        if any(word in marker for word in ("siguiente", "next", "pagina siguiente", "ver mas resultados")) or re.search(
+            r"(?:^|[/_?&=-])(?:pg|page|pagina)[-_/=]?\d+(?:$|[/&#])", marker,
+        ):
+            if url.rstrip("/") != final_url.rstrip("/"):
+                found.add(url)
+    return sorted(found)
+
+
+def diagnose(spec: EttSpec, listing_snapshot: tuple[str, str] | list[tuple[str, str]] | None = None) -> dict:
     checked_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     result = {"source": spec.key, "checked_at": checked_at, "status": "bloqueado", "error": None}
     try:
-        html, final_url = listing_snapshot or fetch(spec.listing_url, spec.hosts)
-        links = listing_links(spec, html, final_url)
+        snapshots = listing_snapshot if isinstance(listing_snapshot, list) else [listing_snapshot or fetch(spec.listing_url, spec.hosts)]
+        links = {url: label for html, final_url in snapshots for url, label in listing_links(spec, html, final_url)}
         result.update({
             "status": "HTTP_HTML_verificado" if links else "HTTP_parcial",
-            "final_url": final_url,
-            "bytes": len(html.encode("utf-8")),
-            "jobposting_count": len(job_postings(html)),
+            "final_url": snapshots[0][1],
+            "bytes": sum(len(html.encode("utf-8")) for html, _ in snapshots),
+            "jobposting_count": sum(len(job_postings(html)) for html, _ in snapshots),
             "candidate_links": len(links),
-            "sample_urls": [url for url, _ in links[:3]],
+            "listing_pages": len(snapshots),
+            "sample_urls": list(links)[:3],
         })
     except Exception as exc:
         result["error"] = error_code(exc)
@@ -258,20 +279,21 @@ def unrelated_gi_redirect(spec: EttSpec, final_url: str) -> bool:
 
 def _clear_suspended_title(label: str) -> bool:
     normal = plain(label)
-    return bool(normal and any(term in normal for term in SUSPENDED_TERMS) and not categories_for(label))
+    return bool(normal and len(normal) <= 160 and any(term in normal for term in SUSPENDED_TERMS) and not categories_for(label))
 
 
 def run_ett_connector(
     spec: EttSpec,
-    listing_snapshot: tuple[str, str] | None = None,
+    listing_snapshot: tuple[str, str] | list[tuple[str, str]] | None = None,
     queue_state: dict | None = None,
     municipality_index: MunicipalityIndex | None = None,
 ) -> SourceRun:
     checked_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     try:
-        listing, final_url = listing_snapshot or fetch(spec.listing_url, spec.hosts)
+        snapshots = listing_snapshot if isinstance(listing_snapshot, list) else [listing_snapshot or fetch(spec.listing_url, spec.hosts)]
         candidates = dict(spec.seed_urls and ((url, url) for url in spec.seed_urls) or ())
-        candidates.update(dict(listing_links(spec, listing, final_url)))
+        for listing, final_url in snapshots:
+            candidates.update(dict(listing_links(spec, listing, final_url)))
         entries = queue_state if queue_state is not None else {}
         for url, label in candidates.items():
             entry = entries.setdefault(url, {"label": label, "status": "pending", "checks": 0})
@@ -292,7 +314,8 @@ def run_ett_connector(
         ordered = eligible[: spec.detail_limit]
         documents: list[SourceDocument] = []
         notes = [
-            f"candidate_links:{len(candidates)}", f"listing_jobposting:{len(job_postings(listing))}",
+            f"candidate_links:{len(candidates)}", f"listing_pages:{len(snapshots)}",
+            f"listing_jobposting:{sum(len(job_postings(html)) for html, _ in snapshots)}",
             f"prefiltered:{sum(1 for item in entries.values() if item.get('status') == 'prefiltered')}",
             f"unvisited_candidates:{sum(1 for item in entries.values() if item.get('status') == 'pending')}",
             f"already_known_skipped:{sum(1 for url, _ in eligible if entries[url].get('status') == 'checked')}",
