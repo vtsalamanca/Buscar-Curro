@@ -2,7 +2,7 @@
   "event_count": 0,
   "events": [],
   "events_truncated": false,
-  "generated_at": "2026-10-25T22:33:14+00:00",
+  "generated_at": "2026-10-25T22:53:08+00:00",
   "notice": "Candidatos preliminares, no plazas o vigencias confirmadas. Validar requisitos, fechas y ubicación en origen. No se presentan kilómetros por carretera.",
   "overall_status": "partial",
   "project": "Buscar-Curro",
@@ -51,6 +51,7 @@
       "status": "ok"
     },
     {
+      "reason": "http_503",
       "source": "ate",
       "state_preserved": false,
       "status": "failed"
