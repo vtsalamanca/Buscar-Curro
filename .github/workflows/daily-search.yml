@@ -1,0 +1,64 @@
+name: Buscar Curro — consulta diaria pública
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * *'
+      timezone: 'Europe/Madrid'
+  push:
+    branches: [main]
+    paths: ['.github/workflows/daily-search.yml']
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: buscar-curro-daily-search
+  cancel-in-progress: false
+
+jobs:
+  search:
+    if: github.repository == 'vtsalamanca/Buscar-Curro' && (github.event_name != 'push' || github.ref == 'refs/heads/main')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          path: source
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: buscar-curro-resultados
+          path: resultados
+          persist-credentials: true
+      - name: Pruebas unitarias sin acceso de pago
+        run: cd source && python3 -m unittest -q test_daily_pipeline.py
+      - name: Recuperación inicial acotada del histórico BC-03
+        if: ${{ hashFiles('resultados/notices/states/ett.json') == '' }}
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 source/restore_previous_state.py
+          --workflow bc03.yml
+          --artifact-name bc03-state
+          --destination "$RUNNER_TEMP/bc03-bootstrap.json"
+      - name: Cuatro fuentes acotadas; guardar solo proyecciones públicas
+        id: collect
+        run: >-
+          python3 source/daily_pipeline.py
+          --code-dir source
+          --results-dir resultados
+          --bootstrap-ett "$RUNNER_TEMP/bc03-bootstrap.json"
+      - name: Publicar resumen y estado público seguro, incluso con incidencias
+        if: always() && steps.collect.outcome != 'skipped'
+        working-directory: resultados
+        run: |
+          git config user.name 'buscar-curro-bot'
+          git config user.email 'buscar-curro-bot@users.noreply.github.com'
+          git add -A -- notices
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: resultados públicos de consulta diaria'
+            git push origin HEAD:refs/heads/buscar-curro-resultados
+          fi
+          echo "Resultado público: https://github.com/vtsalamanca/Buscar-Curro/blob/buscar-curro-resultados/notices/latest.json" >> "$GITHUB_STEP_SUMMARY"
