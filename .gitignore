@@ -11,3 +11,4 @@ ett01-output/
 *.snapshot.zip
 data/*state.json
 state-backups/
+boe-output*/
