@@ -52,21 +52,46 @@ class MunicipalityIndex:
 
 
 def requirement_evaluation(text: str, deadline_status: str, geographic_status: str) -> dict:
+    """Conservative profile rules: an optional or negated degree is not a blocker."""
     normal = plain(text)
     qualifications: list[str] = []
     habilitations: list[str] = []
     experience: list[str] = []
     patterns = (
         (qualifications, r"(?:grado|licenciatura|diplomatura|fp|tecnico superior)[^.\n;]{0,100}"),
-        (habilitations, r"(?:psicolog[oa] general sanitario|master general sanitario|colegiacion|certificado negativo de delitos sexuales|habilitacion)[^.\n;]{0,120}"),
+        (habilitations, r"(?:psicolog[oa] general sanitario|master (?:en )?(?:psicologia )?general sanitario|master en psicologia general sanitaria|colegiacion|certificado negativo de delitos sexuales|habilitacion)[^.\n;]{0,120}"),
         (experience, r"(?:experiencia (?:minima|de al menos)|\d+ anos? de experiencia)[^.\n;]{0,100}"),
     )
     for target, pattern in patterns:
         target.extend(match.group(0).strip() for match in re.finditer(pattern, normal))
-    explicit_mismatch = any(term in normal for term in (
-        "grado en trabajo social obligatorio", "fp integracion social obligatorio",
-        "psicologo general sanitario obligatorio", "master general sanitario obligatorio",
-    ))
+    restricted = (
+        r"grado en trabajo social|diplomatura en trabajo social|"
+        r"fp (?:de |en )?integracion social|tecnico superior en integracion social|"
+        r"psicolog[oa] general sanitario|master (?:en )?(?:psicologia )?general sanitario|"
+        r"master en psicologia general sanitaria"
+    )
+    required_before = re.compile(
+        r"(?:se exige|se requiere|requisito(?: obligatorio)?|imprescindible|"
+        r"obligatori[oa]|indispensable|necesari[oa]|debe (?:tener|poseer))"
+        r"[^.;\n]{0,35}$"
+    )
+    required_after = re.compile(r"^(?:[^.;\n]{0,16})(?:obligatori[oa]|imprescindible|exigid[oa]|indispensable)\b")
+    optional_context = re.compile(
+        r"(?:no se (?:requiere|exige|necesita)|no es (?:obligatorio|necesario)|"
+        r"se valorara|valorable|preferible|deseable|no obligatorio|no imprescindible)"
+    )
+    explicit_mismatch = False
+    for match in re.finditer(r"(?:" + restricted + r")", normal):
+        before = normal[max(0, match.start() - 75):match.start()]
+        after = normal[match.end():match.end() + 35]
+        # Evaluate in the nearest phrase, not against unrelated requirements.
+        before_clause = re.split(r"[.;\n]", before)[-1]
+        after_clause = re.split(r"[.;\n]", after)[0]
+        if optional_context.search(before_clause) or optional_context.search(after_clause):
+            continue
+        if required_before.search(before_clause) or required_after.search(after_clause):
+            explicit_mismatch = True
+            break
     if deadline_status == "cerrada_o_historica":
         eligibility = "caducada"
     elif explicit_mismatch:

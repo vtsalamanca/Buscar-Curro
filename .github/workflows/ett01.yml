@@ -7,7 +7,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: ett01-public-sources
+  group: buscar-curro-public-collectors
   cancel-in-progress: false
 
 jobs:
@@ -38,14 +38,18 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ett01-state
-          path: ett01-output/state.json
+          path: |
+            ett01-output/
+            !ett01-output/state.jsonstate.json
           if-no-files-found: error
           retention-days: 30
       - name: Evidencia ETT-01
-        if: always()
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: ett01-results
-          path: ett01-output/
+          path: |
+            ett01-output/
+            !ett01-output/state.json
           if-no-files-found: error
           retention-days: 7

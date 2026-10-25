@@ -3,3 +3,11 @@ __pycache__/
 bt01a-output/
 bt01b-output/
 bt01a-local-output/
+
+# Local collector outputs and historical states must never become public commits.
+bc02-output/
+bc03-output/
+ett01-output/
+*.snapshot.zip
+data/*state.json
+state-backups/

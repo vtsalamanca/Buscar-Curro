@@ -12,27 +12,26 @@ from pathlib import Path, PurePosixPath
 from urllib.error import HTTPError
 from urllib.parse import urlsplit
 
+from state_safety import parse_state, atomic_write_bytes, MAX_STATE_BYTES
+
 
 MAX_ARCHIVE = 5 * 1024 * 1024
 
 
 def validate_state_bytes(raw: bytes) -> dict:
-    if len(raw) > MAX_ARCHIVE:
-        raise ValueError("state_too_large")
-    data = json.loads(raw.decode("utf-8"))
-    if data.get("schema_version") != 1 or not isinstance(data.get("documents"), dict):
-        raise ValueError("invalid_state_schema")
-    return data
+    return parse_state(raw)
 
 
 def extract_state(archive: bytes) -> bytes:
     if len(archive) > MAX_ARCHIVE:
         raise ValueError("archive_too_large")
     with zipfile.ZipFile(io.BytesIO(archive)) as bundle:
-        matches = [name for name in bundle.namelist() if PurePosixPath(name).name == "state.json"]
-        if len(matches) != 1 or ".." in PurePosixPath(matches[0]).parts:
+        matches = [item for item in bundle.infolist() if PurePosixPath(item.filename).name == "state.json"]
+        if len(matches) != 1 or ".." in PurePosixPath(matches[0].filename).parts:
             raise ValueError("invalid_archive_layout")
-        raw = bundle.read(matches[0])
+        if matches[0].file_size > MAX_STATE_BYTES:
+            raise ValueError("state_too_large")
+        raw = bundle.read(matches[0], MAX_STATE_BYTES + 1)
     validate_state_bytes(raw)
     return raw
 
@@ -88,8 +87,7 @@ def restore(repository: str, workflow: str, artifact_name: str, current_run: int
         if not valid:
             continue
         raw = extract_state(download(valid[0]["archive_download_url"], token))
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_bytes(raw)
+        atomic_write_bytes(destination, raw)
         return True
     if prior_success_exists:
         raise ValueError("prior_state_unavailable")

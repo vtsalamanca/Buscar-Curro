@@ -9,10 +9,12 @@ from dataclasses import replace
 from datetime import datetime, timezone
 from pathlib import Path
 
-from employment_core import apply_runs, categories_for, load_state
+from employment_core import SourceRun, apply_runs, categories_for, load_state
 from bc02_quality import MunicipalityIndex
 from ett_connectors import ETT_SPECS, diagnose, pagination_links, run_ett_connector
-from public_connectors import error_code, fetch, http_metrics, reset_http_metrics
+from public_connectors import configure_http_budget, error_code, fetch, http_metrics, reset_http_metrics
+from state_safety import atomic_write_json, check_output_budget
+from offer_review import build_review
 
 
 def main() -> int:
@@ -22,7 +24,13 @@ def main() -> int:
     parser.add_argument("--municipalities", type=Path, default=Path("data/municipios_nambroca_80km.csv"))
     parser.add_argument("--page-budget", type=int, default=2)
     parser.add_argument("--detail-budget", type=int, default=12)
+    parser.add_argument("--max-http-requests", type=int, default=70)
+    parser.add_argument("--max-http-bytes", type=int, default=50 * 1024 * 1024)
+    parser.add_argument("--max-http-seconds", type=float, default=600)
     args = parser.parse_args()
+    if min(args.page_budget, args.detail_budget, args.max_http_requests,
+           args.max_http_bytes, args.max_http_seconds) <= 0:
+        parser.error("all budgets must be positive")
     args.output_dir.mkdir(parents=True, exist_ok=True)
     previous = load_state(args.state)
     pruned_false_positives = []
@@ -35,6 +43,8 @@ def main() -> int:
     bc02 = previous.setdefault("bc02", {"queues": {}, "http_cache": {}})
     queues = bc02.setdefault("queues", {})
     reset_http_metrics()
+    configure_http_budget(max_requests=args.max_http_requests, max_bytes=args.max_http_bytes,
+                          max_seconds=args.max_http_seconds)
     wall_started = time.monotonic()
     snapshots: dict[str, list[tuple[str, str]]] = {}
     listing_bytes = 0
@@ -72,10 +82,12 @@ def main() -> int:
             )
             runs.append(run)
         except Exception as exc:
+            failure_time = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
             diagnostics.append({
-                "source": spec.key, "checked_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+                "source": spec.key, "checked_at": failure_time,
                 "status": "bloqueado", "error": error_code(exc),
             })
+            runs.append(SourceRun(spec.key, "consulta_fallida", failure_time, error=error_code(exc)))
         after = http_metrics()
         queue = queues.get(spec.key, {})
         page_count = len(pages)
@@ -109,6 +121,8 @@ def main() -> int:
         "errors": sum(item["errors"] for item in source_metrics.values()) + sum(1 for run in runs if run.status == "consulta_fallida"),
         "municipalities_loaded": len(municipality_index.rows),
         "conditional_http": "not_enabled_without_verified_etag_or_last_modified_savings",
+        "http_limits": {"requests": args.max_http_requests, "bytes": args.max_http_bytes,
+                        "seconds": args.max_http_seconds},
         "pruned_false_positive_ids": sorted(pruned_false_positives),
         "per_source": source_metrics,
     }
@@ -122,7 +136,10 @@ def main() -> int:
     }
     (args.output_dir / "viability.json").write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (args.output_dir / "source-runs.json").write_text(json.dumps([run.as_dict() for run in runs], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (args.output_dir / "state.json").write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    atomic_write_json(args.output_dir / "state.json", state)
+    (args.output_dir / "review-provisional.json").write_text(
+        json.dumps(build_review(state, delta), ensure_ascii=False, indent=2) + "\n", encoding="utf-8",
+    )
     (args.output_dir / "delta.json").write_text(json.dumps(delta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (args.output_dir / "metrics.json").write_text(json.dumps(metrics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     lines = ["# ETT-01 — viabilidad y conectores", "", "| Fuente | Viabilidad | Enlaces | JobPosting | Error |", "|---|---|---:|---:|---|"]
@@ -138,8 +155,15 @@ def main() -> int:
         lines.append(f"| {run.source} | **{run.status}** | {len(run.documents)} | {'; '.join(run.notes) if run.notes else '—'} |")
     report = "\n".join(lines) + "\n"
     (args.output_dir / "report.md").write_text(report, encoding="utf-8")
+    try:
+        check_output_budget(args.output_dir)
+    except ValueError as exc:
+        print(f"output_guard={exc}")
+        return 2
     print(report)
-    return 1 if diagnostics and all(item["status"] == "bloqueado" for item in diagnostics) else 0
+    budget_hit = any("http_budget_exceeded" in str(item.get("error")) for item in diagnostics)
+    budget_hit |= any("http_budget_exceeded" in str(run.notes) for run in runs)
+    return 2 if budget_hit else (1 if diagnostics and all(item["status"] == "bloqueado" for item in diagnostics) else 0)
 
 
 if __name__ == "__main__":

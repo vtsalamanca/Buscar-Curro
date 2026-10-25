@@ -2,3 +2,18 @@
 Búsqueda personal de empleo y autenticación verificable. Sin ejecuciones programadas activas.
 
 BT-01A dispone de una prueba manual y acotada de viabilidad de fuentes públicas. BT-01B incorpora conectores públicos, normalización, filtros, seguimiento de cambios y deduplicación; su ejecución válida está en [GitHub Actions](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39165959658). Consultar `SOURCES_STATUS.md` para la matriz, evidencias y limitaciones. El flujo sigue siendo exclusivamente manual: no hay cron, candidaturas, autenticación privada ni notificaciones.
+
+
+## Mejoras BC-04/BC-05 (fase manual y reversible)
+Se han incorporado límites de consumo, control de errores parciales, snapshots
+locales verificables, restauración atómica y evaluación profesional más prudente.
+El nuevo \`review-provisional.json\` es una vista técnica, **no** el informe final.
+Véase [IMPLEMENTACION_BC04_BC05_2026-10-25.md](IMPLEMENTACION_BC04_BC05_2026-10-25.md).
+
+Para revisar un snapshot offline:
+\`\`\`bash
+python3 state_snapshot_cli.py inspect --archive copia.snapshot.zip
+\`\`\`
+Los datos de colas no deben subirse a repositorios públicos. La retención de
+GitHub Actions sigue limitada a 30 días y no se ha activado ejecución diaria,
+avisos ni candidaturas automáticas. Los 80 km geográficos son en línea recta.

@@ -450,3 +450,21 @@ Se reemplazó fichero de 85 candidatos por `data/municipios_nambroca_80km.csv`: 
 - Verificación final: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39255609713. Las rondas anteriores de avance fueron `39245609244`, `39251098099`, `39253200014`, `39253677115`, `39254699940` y `39255134235`.
 
 No se activaron cron, informes personales, notificaciones, candidaturas, autenticación privada, navegador ni servicios de pago. No avanzar a otro bloque hasta revisar estos resultados.
+
+
+## Implementación BC-04/BC-05 — 25/10/2026
+Retomado desde \`399e3f7\` en rama independiente \`mejora-bc04-bc05\`, sin
+modificar la copia migrada con CRLF. Restaurado como adjunto a la conversación
+el último estado BC-03: 317 enlaces, 267 comprobados, 30 filtrados, 19 errores,
+1 no listado, 0 pendientes; solo cinco documentos normalizados. Archivo
+original GitHub Actions expira 18/11/2026. Protección: snapshot con hash y
+manifest, sin publicación de estado operativo en repo.
+Implementados \`state_safety\`, \`state_snapshot_cli\`, restauración atómica,
+límite HTTP, límite salida, errores parciales, grupo concurrencia compartido,
+filtro corregido para operarios industriales con certificado discapacidad,
+mejor evaluación de títulos sanitarios/sociales, revisión JSON agrupada y
+geografía común. 77 pruebas locales correctas a la redacción; verificar
+publicación e integración remota por separado. Detalles y límites:
+\`IMPLEMENTACION_BC04_BC05_2026-10-25.md\`.
+Sin cron, servicios pagados, cambios privados, candidaturas ni cierre falso
+de BC-06/07/08/09. Persistencia remota duradera y facturación pendientes.
