@@ -66,7 +66,7 @@ class DailyPipelineTests(unittest.TestCase):
             self.assertEqual(result["overall_status"], "failed")
             self.assertEqual(state_file.read_bytes(), before)
             self.assertTrue(all(item["status"] == "failed" for item in result["sources"]))
-            self.assertEqual(json.loads((root / "notices" / "latest.json").read_text())["overall_status"], "partial")
+            self.assertEqual(json.loads((root / "notices" / "latest.json").read_text())["overall_status"], "failed")
             self.assertEqual(run.call_count, 5)
 
     def test_corrupt_persistent_state_does_not_reset(self):
