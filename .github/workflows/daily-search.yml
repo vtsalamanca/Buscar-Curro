@@ -6,7 +6,11 @@ on:
       timezone: 'Europe/Madrid'
   push:
     branches: [main]
-    paths: ['.github/workflows/daily-search.yml']
+    paths:
+      - .github/workflows/daily-search.yml
+      - daily_pipeline.py
+      - ate_public.py
+      - test_daily_pipeline.py
 
 permissions:
   contents: write
@@ -62,3 +66,4 @@ jobs:
             git push origin HEAD:refs/heads/buscar-curro-resultados
           fi
           echo "Resultado público: https://github.com/vtsalamanca/Buscar-Curro/blob/buscar-curro-resultados/notices/latest.json" >> "$GITHUB_STEP_SUMMARY"
+          python3 -c 'import json,pathlib,os; p=pathlib.Path("notices/latest.json"); s=json.loads(p.read_text()) if p.exists() else {}; line="Estado de las fuentes: "+s.get("overall_status","sin_salida")+"; incidencias: "+", ".join(x.get("source","?") for x in s.get("sources",[]) if x.get("status")!="ok"); open(os.environ["GITHUB_STEP_SUMMARY"],"a").write(line+chr(10))'

@@ -2,6 +2,7 @@
 import hashlib
 import json
 import sys
+from urllib.error import HTTPError
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlsplit, unquote
 from urllib.request import Request, urlopen
@@ -60,7 +61,11 @@ def main():
         print(json.dumps({'source':'ate_public_toledo','status':'public_documents_verified','documents':documents,'content_extracted':False}, ensure_ascii=False))
         return 0
     except Exception as exc:
-        print(json.dumps({'source':'ate_public_toledo','status':'access_failed','error_type':type(exc).__name__}))
+        error = {'source': 'ate_public_toledo', 'status': 'access_failed',
+                 'error_type': type(exc).__name__}
+        if isinstance(exc, HTTPError) and 400 <= exc.code <= 599:
+            error['http_status'] = exc.code
+        print(json.dumps(error))
         return 1
 
 if __name__ == '__main__': sys.exit(main())

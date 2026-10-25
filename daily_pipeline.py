@@ -121,11 +121,13 @@ def monitor_ate(code_dir: Path, state_root: Path) -> tuple[dict, list[dict]]:
             [sys.executable, str(code_dir / "ate_public.py")],
             cwd=code_dir, capture_output=True, text=True, timeout=120, check=False,
         )
-        if result.returncode or len(result.stdout) > 40000:
-            return {"source": "ate", "status": "failed", "state_preserved": target.exists()}, []
+        if len(result.stdout) > 40000:
+            return {"source": "ate", "status": "failed", "state_preserved": target.exists(), "reason": "oversized_response"}, []
         payload = json.loads(result.stdout)
-        if payload.get("status") != "public_documents_verified":
-            return {"source": "ate", "status": "failed", "state_preserved": target.exists()}, []
+        if result.returncode or payload.get("status") != "public_documents_verified":
+            status = payload.get("http_status")
+            reason = f"http_{status}" if isinstance(status, int) and 400 <= status <= 599 else "official_source_unavailable"
+            return {"source": "ate", "status": "failed", "state_preserved": target.exists(), "reason": reason}, []
         old = json.loads(target.read_text(encoding="utf-8")) if target.exists() else {"documents": {}}
         existing = old.get("documents")
         if not isinstance(existing, dict):
@@ -159,9 +161,11 @@ def monitor_ate(code_dir: Path, state_root: Path) -> tuple[dict, list[dict]]:
 
 def generate_summary(now: str, reports: list[dict], events: list[dict]) -> dict:
     failure_count = sum(1 for r in reports if r["status"] != "ok")
+    usable_count = sum(1 for r in reports if r["status"] in {"ok", "partial"})
+    status = "failed" if not usable_count else ("partial" if failure_count else "ok")
     return {
         "schema_version": 1, "project": "Buscar-Curro", "generated_at": now,
-        "overall_status": "partial" if failure_count else "ok",
+        "overall_status": status,
         "sources": reports, "events": events[:MAX_EVENTS],
         "event_count": len(events), "events_truncated": len(events) > MAX_EVENTS,
         "notice": "Candidatos preliminares, no plazas o vigencias confirmadas. Validar requisitos, fechas y ubicación en origen. No se presentan kilómetros por carretera.",
@@ -252,7 +256,13 @@ def main() -> int:
     summary = run_all(results_dir=args.results_dir.resolve(), code_dir=args.code_dir.resolve(), bootstrap_ett=args.bootstrap_ett)
     print(json.dumps({"status": summary["overall_status"], "sources": summary["sources"],
                       "event_count": summary["event_count"]}, ensure_ascii=False))
-    return 0 if summary["overall_status"] == "ok" else 2
+    if summary["overall_status"] == "partial":
+        print("::warning::Cobertura parcial: revisar los errores de fuentes en notices/latest.json.")
+    if summary["overall_status"] == "failed":
+        print("::error::No hay ninguna familia de fuentes utilizable; revisar notices/latest.json.")
+    # A degraded source is not a broken collector. Keep its failure explicit
+    # in the public report while letting the daily workflow complete normally.
+    return 2 if summary["overall_status"] == "failed" else 0
 
 
 if __name__ == "__main__":
