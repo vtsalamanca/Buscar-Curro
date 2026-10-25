@@ -1,0 +1,56 @@
+name: BC-06 DOCM último diario (manual)
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: buscar-curro-public-collectors
+  cancel-in-progress: false
+
+jobs:
+  docm-latest:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Pruebas y regresiones
+        run: python3 -m unittest -q
+      - name: Restaurar histórico validado
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 restore_previous_state.py
+          --workflow docm-latest.yml
+          --artifact-name docm-latest-state
+          --destination data/docm-latest-state.json
+      - name: Consultar sumario oficial actual
+        run: >-
+          python3 run_docm_latest.py
+          --state data/docm-latest-state.json
+          --output-dir docm-output
+      - name: Resumen DOCM
+        if: success()
+        run: cat docm-output/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Histórico de continuidad (30 días)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: docm-latest-state
+          path: docm-output/state.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Diagnóstico temporal (7 días)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: docm-latest-results
+          path: |
+            docm-output/
+            !docm-output/state.json
+          if-no-files-found: error
+          retention-days: 7

@@ -23,3 +23,6 @@ El nuevo conector manual run_boe_discovery.py consulta hasta siete sumarios diar
 oficiales, con XML validado, enlaces originales, histórico seguro y falsos
 positivos contrastados. python3 run_boe_discovery.py --days 7 no solicita
 candidaturas ni activa programación. Véase IMPLEMENTACION_BC06_BOE_2026-10-25.md.
+
+## BC-06 DOCM: última edición oficial
+Nuevo conector docm_latest.py + runner manual run_docm_latest.py con validador de sumario, NID, URL y fecha. El flujo docm-latest.yml no tiene cron. Se probó con 32 disposiciones de 23/10/2026; filtros conservadores sin coincidencias. Ver IMPLEMENTACION_BC06_DOCM_2026-10-25.md.
