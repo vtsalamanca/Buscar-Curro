@@ -108,3 +108,6 @@ Nueva ruta oficial https://www.boe.es/datosabiertos/api/boe/sumario/{fecha}
 positivos; se corrigieron antes de incorporar código. Son coincidencias de
 títulos, no cobertura exhaustiva de ofertas. Nuevo workflow solo manual,
 estado 30 días, sin cron. Informe: IMPLEMENTACION_BC06_BOE_2026-10-25.md.
+
+## BC-06 — último diario DOCM (25/10/2026)
+Conector HTML público del sumario más reciente de https://docm.jccm.es/docm/ verificado con HTTP 200, NID/enlaces y fecha oficial: 23/10/2026, 32 documentos, 0 coincidencias profesionales por título. Solo última edición disponible, no histórico exhaustivo. Workflow manual, estado 30 días. Datos privados no publicados. Detalles: IMPLEMENTACION_BC06_DOCM_2026-10-25.md.

@@ -477,3 +477,6 @@ positivos y delta idempotente. 92/92 pruebas locales correctas. Prueba real:
 publicado, cero candidatos tras depurar siete falsos positivos iniciales.
 No implica inexistencia de ofertas ni cierre del resto de BC-06. Ver
 IMPLEMENTACION_BC06_BOE_2026-10-25.md; aún sin cron.
+
+## BC-06 DOCM — último sumario oficial (25/10/2026)
+Nuevo conector manual DOCM: 32 disposiciones con NID validado, fecha 23/10/2026, cero títulos candidatos. No es cobertura de fechas anteriores. Se incorporan validador, 102/102 pruebas totales locales, salida y respaldo manual 30 días, sin activar cron. Ver IMPLEMENTACION_BC06_DOCM_2026-10-25.md.
