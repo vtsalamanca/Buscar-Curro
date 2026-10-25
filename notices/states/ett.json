@@ -1,0 +1,2295 @@
+{
+  "bc02": {
+    "http_cache": {},
+    "queues": {
+      "adecco": {
+        "https://www.adecco.com/es-es/ofertas-trabajo/coordinador-a-de-transporte-escolar-y-acompanantes-20h-toledo-toledo/feff860faf43f8aa1b13e4812d309296": {
+          "checks": 3,
+          "label": "https://www.adecco.com/es-es/ofertas-trabajo/coordinador-a-de-transporte-escolar-y-acompanantes-20h-toledo-toledo/feff860faf43f8aa1b13e4812d309296",
+          "last_checked": "2026-10-19T11:34:54+00:00",
+          "status": "checked"
+        },
+        "https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-a-coruna": {
+          "checks": 1,
+          "label": "Candidatos Descargar App Regístrate / Accede Encuentra trabajo Ofertas destacadas Guía salarial Blog de empleo Preguntas frecuentes Ciudades Empleo en Madrid Em",
+          "last_checked": "2026-10-19T11:34:54+00:00",
+          "status": "checked"
+        },
+        "https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-barcelona": {
+          "checks": 1,
+          "label": "Candidatos Descargar App Regístrate / Accede Encuentra trabajo Ofertas destacadas Guía salarial Blog de empleo Preguntas frecuentes Ciudades Empleo en Madrid Em",
+          "last_checked": "2026-10-19T11:34:54+00:00",
+          "status": "checked"
+        },
+        "https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-bilbao": {
+          "checks": 1,
+          "label": "Candidatos Descargar App Regístrate / Accede Encuentra trabajo Ofertas destacadas Guía salarial Blog de empleo Preguntas frecuentes Ciudades Empleo en Madrid Em",
+          "last_checked": "2026-10-19T11:34:54+00:00",
+          "status": "checked"
+        },
+        "https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-las-palmas-de-gran-canaria": {
+          "checks": 1,
+          "label": "Candidatos Descargar App Regístrate / Accede Encuentra trabajo Ofertas destacadas Guía salarial Blog de empleo Preguntas frecuentes Ciudades Empleo en Madrid Em",
+          "last_checked": "2026-10-19T11:34:54+00:00",
+          "status": "checked"
+        },
+        "https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-madrid": {
+          "checks": 1,
+          "label": "Candidatos Descargar App Regístrate / Accede Encuentra trabajo Ofertas destacadas Guía salarial Blog de empleo Preguntas frecuentes Ciudades Empleo en Madrid Em",
+          "last_checked": "2026-10-19T11:34:54+00:00",
+          "status": "checked"
+        },
+        "https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-san-sebastian-donostia": {
+          "checks": 1,
+          "label": "Candidatos Descargar App Regístrate / Accede Encuentra trabajo Ofertas destacadas Guía salarial Blog de empleo Preguntas frecuentes Ciudades Empleo en Madrid Em",
+          "last_checked": "2026-10-19T11:34:54+00:00",
+          "status": "checked"
+        },
+        "https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-sevilla": {
+          "checks": 1,
+          "label": "Candidatos Descargar App Regístrate / Accede Encuentra trabajo Ofertas destacadas Guía salarial Blog de empleo Preguntas frecuentes Ciudades Empleo en Madrid Em",
+          "last_checked": "2026-10-19T11:34:54+00:00",
+          "status": "checked"
+        },
+        "https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-valencia": {
+          "checks": 1,
+          "label": "Candidatos Descargar App Regístrate / Accede Encuentra trabajo Ofertas destacadas Guía salarial Blog de empleo Preguntas frecuentes Ciudades Empleo en Madrid Em",
+          "last_checked": "2026-10-19T11:34:54+00:00",
+          "status": "checked"
+        },
+        "https://www.adecco.com/es-es/ofertas-trabajo/localizacion/trabajos-en-zaragoza": {
+          "checks": 1,
+          "label": "Candidatos Descargar App Regístrate / Accede Encuentra trabajo Ofertas destacadas Guía salarial Blog de empleo Preguntas frecuentes Ciudades Empleo en Madrid Em",
+          "last_checked": "2026-10-19T11:34:54+00:00",
+          "status": "checked"
+        }
+      },
+      "eurofirms": {
+        "https://connect.eurofirms.com/es/es/Register?offer=https%3A%2F%2Fjobs.eurofirms.com%2Fes%2Fes%2Fcamarena%2Foperario-a-de-alimentacion-130-009164": {
+          "checks": 1,
+          "label": "¿No tienes cuenta? Crea tu perfil en Eurofirms y descubre miles de ofertas adaptadas a ti. Regístrate Iniciar sesión para inscribirte Usuario Contraseña Acceso",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://connect.eurofirms.com/es/es/Register?offer=https%3A%2F%2Fjobs.eurofirms.com%2Fes%2Fes%2Fcasarrubios-del-monte%2Foperario-a-carnico-130-006996": {
+          "checks": 1,
+          "label": "¿No tienes cuenta? Crea tu perfil en Eurofirms y descubre miles de ofertas adaptadas a ti. Regístrate Iniciar sesión para inscribirte Usuario Contraseña Acceso ",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://connect.eurofirms.com/es/es/Register?offer=https%3A%2F%2Fjobs.eurofirms.com%2Fes%2Fes%2Ftrabajo%2Ftoledo": {
+          "checks": 1,
+          "label": "Alerta de empleo Tenemos la oportunidad que buscas y con nuestro sistema de alertas de empleo vas a ser el primero en enterarte. Nueva alerta Para crear una ale",
+          "last_checked": "2026-10-19T07:00:58+00:00",
+          "status": "checked"
+        },
+        "https://connect.eurofirms.com/es/es/RestorePassword": {
+          "checks": 1,
+          "label": "¿No tienes cuenta? Crea tu perfil en Eurofirms y descubre miles de ofertas adaptadas a ti. Regístrate Iniciar sesión para inscribirte Usuario Contraseña Acceso ",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://connect.eurofirms.com/es/es/logout": {
+          "checks": 1,
+          "label": "Cerrar sesión",
+          "last_checked": "2026-10-19T07:00:58+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/": {
+          "checks": 1,
+          "label": "Candidatos Descarga la APP Encuentra trabajo Preguntas Frecuentes",
+          "last_checked": "2026-10-19T07:00:58+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/buscador-Ofertas-Empleo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/camarena/operario-a-de-alimentacion-130-009164": {
+          "checks": 1,
+          "label": "Español",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/casarrubios-del-monte/operario-a-carnico-130-006996": {
+          "checks": 1,
+          "label": "Español",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/corral-de-almaguer/operario-a-de-produccion-130-008626": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/el-toboso/tecnico-a-mantenimiento-130-009424": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/esquivias/electricista-industrial-188-000215": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/esquivias/montador-a-estructuras-metalicas-188-000216": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/illescas/carretillero-a-retractil-154-030027": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/illescas/limpiador-a-de-fachadas-en-altura-illescas-y-madrid-130-009220": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/illescas/mozo-a-almacen-154-032846": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/illescas/preparador-a-de-pedidos-154-030025": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/layos/ayudante-de-cocina-130-007852": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T11:35:28+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/layos/limpiador-a-130-007853": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/ontigola/carretillero-a-retractil-154-032100": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/ontigola/carretillero-a-retractil-ontigola-154-032847": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/ontigola/mozo-a-almacen-154-032470": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/ontigola/preparador-as-de-pedidos-501-000025": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/ontigola/tecnico-a-de-sistemas-informaticos-154-032472": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/ontigola/verificador-a-de-piezas-con-experiencia-154-032980": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/pol--ind--de-toledo/carretillero-a-130-009854": {
+          "checks": 0,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 36 resultados Toledo Borrar filtros 36 resultados Mozo/a almacén santa cruz de la zarza,",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://jobs.eurofirms.com/es/es/pol--ind--de-toledo/mozo-a-almacen-130-009955": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/pol--ind--de-toledo/soldador-a-130-009864": {
+          "checks": 0,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 36 resultados Toledo Borrar filtros 36 resultados Mozo/a almacén santa cruz de la zarza,",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://jobs.eurofirms.com/es/es/santa-cruz-de-la-zarza/mozo-a-almacen-063-005159": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/sesena-nuevo/limpiador-a-de-oficinas-154-033014": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/sesena-nuevo/mozo-a-de-almacen-154-030026": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/sesena-nuevo/tecnico-a-mantenimiento-154-032973": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/toledo/ayudante-de-cocina--extras--130-007905": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/toledo/camarero-a-de-sala-130-007842": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/toledo/camarero-a-de-sala-130-007844": {
+          "checks": 0,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 36 resultados Toledo Borrar filtros 36 resultados Mozo/a almacén santa cruz de la zarza,",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://jobs.eurofirms.com/es/es/toledo/camarero-a-de-sala-130-010093": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/toledo/friegaplatos-130-010094": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/toledo/masajista-130-007868": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/toledo/mozo-a-almacen-130-008232": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/toledo/recepcionista-130-009034": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/alava": {
+          "checks": 1,
+          "label": "Ofertas de empleo en País Vasco",
+          "last_checked": "2026-10-19T07:00:58+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/barcelona": {
+          "checks": 1,
+          "label": "Ofertas de empleo en Barcelona",
+          "last_checked": "2026-10-19T07:07:49+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-ayudante-camarero-a": {
+          "checks": 1,
+          "label": "Ofertas de trabajo de Camarero/a",
+          "last_checked": "2026-10-19T07:07:49+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-ayudante-de-cocina/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:19:20+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-camarero-a-de-barra/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-camarero-a-de-sala/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-camarero-a-pisos": {
+          "checks": 1,
+          "label": "Ofertas de trabajo de Camarero/a de pisos",
+          "last_checked": "2026-10-19T07:07:49+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-carretillero-a": {
+          "checks": 0,
+          "label": "Ofertas de trabajo de Carretillero/a",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-carretillero-a-retractil/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-carretillero-a/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-cocinero-a": {
+          "checks": 1,
+          "label": "Ofertas de trabajo de Cocinero/a",
+          "last_checked": "2026-10-19T07:07:49+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-electricista/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-friegaplatos/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-limpiador-a": {
+          "checks": 1,
+          "label": "Ofertas de trabajo de Limpieza",
+          "last_checked": "2026-10-19T07:12:53+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-manipulador-a": {
+          "checks": 1,
+          "label": "Ofertas de trabajo de Manipulador/a",
+          "last_checked": "2026-10-19T07:12:53+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-mozo-a-almacen/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-mozo-a-de-almacen": {
+          "checks": 0,
+          "label": "Ofertas de trabajo de Mozo/a de almacén",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-operario-a-de-alimentacion/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-operario-a-de-produccion": {
+          "checks": 1,
+          "label": "Ofertas de trabajo de Operario/a",
+          "last_checked": "2026-10-19T07:12:53+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-operario-a-de-produccion/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-repartidor-a": {
+          "checks": 0,
+          "label": "Ofertas de trabajo de Repartidor/a",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-tecnico-a-mantenimiento/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-25T22:26:23+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/de-teleoperador-a-recepcion-de-llamadas": {
+          "checks": 1,
+          "label": "Ofertas de trabajo de Teleoperador/a",
+          "last_checked": "2026-10-19T07:12:53+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-camarena/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-casarrubios-del-monte/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-corral-de-almaguer/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-el-toboso/toledo": {
+          "checks": 0,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-esquivias/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-guadamur/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-illescas/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-layos/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-noblejas/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-ontigola/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-pol--ind--de-toledo/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-santa-cruz-de-la-zarza/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-sesena-nuevo/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-toledo/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-torrijos/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/en-yuncos/toledo": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:35:38+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/girona": {
+          "checks": 1,
+          "label": "Ofertas de empleo en Girona",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/la-coruna": {
+          "checks": 1,
+          "label": "Ofertas de empleo en Galicia",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/madrid": {
+          "checks": 1,
+          "label": "Ofertas de empleo en Madrid",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/navarra": {
+          "checks": 1,
+          "label": "Ofertas de empleo en Navarra",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/sevilla": {
+          "checks": 1,
+          "label": "Ofertas de empleo en Sevilla",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo": {
+          "checks": 1,
+          "label": "Español",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?isTeleworking=False": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?isTeleworking=True": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?minPublicationDate=1": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?minPublicationDate=15": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?minPublicationDate=7": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?page=2": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?type=0": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?type=1": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?type=2": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?workingDayType=1": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/toledo?workingDayType=3": {
+          "checks": 1,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/valencia": {
+          "checks": 1,
+          "label": "Ofertas de empleo en Valencia",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/trabajo/zaragoza": {
+          "checks": 1,
+          "label": "Ofertas de empleo en Zaragoza",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "checked"
+        },
+        "https://jobs.eurofirms.com/es/es/yuncos/operario-a-de-produccion-130-007257": {
+          "checks": 0,
+          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.eurofirms.com/es/es/": {
+          "checks": 1,
+          "label": "",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/app/": {
+          "checks": 1,
+          "label": "Candidatos Descarga la APP Encuentra trabajo Preguntas Frecuentes",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/contacto": {
+          "checks": 1,
+          "label": "Contacta",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/contratacion-de-talento/": {
+          "checks": 1,
+          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/eurofirms-foundation/": {
+          "checks": 1,
+          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
+          "last_checked": "2026-10-19T12:39:13+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/executive-search-professional-recruitment/": {
+          "checks": 1,
+          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/outsourcing/": {
+          "checks": 1,
+          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/preguntas-frecuentes-empresas/": {
+          "checks": 1,
+          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/preguntas-frecuentes/": {
+          "checks": 1,
+          "label": "Candidatos Descarga la APP Encuentra trabajo Preguntas Frecuentes",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/prevencion/": {
+          "checks": 1,
+          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/seleccion-talento/": {
+          "checks": 1,
+          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/sobre-nosotros/": {
+          "checks": 1,
+          "label": "Sobre nosotros People first Nuestra historia Sostenibilidad Nuestras oficinas Únete a nosotros",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/sobre-nosotros/nuestra-historia/": {
+          "checks": 1,
+          "label": "Sobre nosotros People first Nuestra historia Sostenibilidad Nuestras oficinas Únete a nosotros",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/sobre-nosotros/oficinas/": {
+          "checks": 1,
+          "label": "Sobre nosotros People first Nuestra historia Sostenibilidad Nuestras oficinas Únete a nosotros",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/sobre-nosotros/sostenibilidad/": {
+          "checks": 1,
+          "label": "Sobre nosotros People first Nuestra historia Sostenibilidad Nuestras oficinas Únete a nosotros",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        },
+        "https://www.eurofirms.com/es/es/sobre-nosotros/unete-a-nosotros/": {
+          "checks": 1,
+          "label": "Sobre nosotros People first Nuestra historia Sostenibilidad Nuestras oficinas Únete a nosotros",
+          "last_checked": "2026-10-19T12:47:08+00:00",
+          "status": "error"
+        }
+      },
+      "gi_group": {
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/arroyomolinos-madrid-preparador-a-pedidos-sobre-palet-con-recogepedidos/102593/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/fuenlabrada-madrid-oficial-de-primera-de-mantenimiento-mecanico/103647/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-administrativo-a-logistico-a/103611/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-buscamos-cocinero-a-de-produccion-unete-a-nuestro-equipo/102645/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-dependiente-a-getafe/104127/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-25T22:27:19+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-gi-group-feria-de-empleo-27-de-octubre-del-2026/103989/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-25T22:27:19+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-gi-group-feria-de-empleo-28-de-octubre-del-2026/103993/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-25T22:27:19+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-gi-group-feria-de-leganes-27-de-octubre/104065/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-25T22:27:19+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-ingeniero-a-de-produccion-getafe/103009/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-pescadero-a-en-getafe-con-coche/104253/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-25T22:27:19+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-preparador-a-de-pedidos-con-coche-en-getafe/103781/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-repartidor-o-repartidora-en-furgoneta-getafe-madrid/103769/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-segundo-encargado-a-en-tienda-dependiente-jornada-completa-indefinido-getafe/102623/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/getafe-madrid-supervisor-de-almacen/102801/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/humanes-de-madrid-madrid-chofer-con-carne-c/102631/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/humanes-de-madrid-madrid-chofer-con-carne-c/102669/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/illescas-toledo-operario-de-almacen-illescas/103047/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T11:36:27+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/leganes-madrid-promotor-a-comercial-de-ventas/103825/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-19T12:20:25+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/mostoles-madrid-repartidor/104159/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-25T22:27:19+00:00",
+          "status": "checked"
+        },
+        "https://es.gigroup.com/ofertas-de-trabajo-detalle/torrejon-de-la-calzada-madrid-preparador-a-de-pedidos-en-torrejon-de-la-calzada/104175/": {
+          "checks": 1,
+          "label": "#iconLoader{ display:none;} Advanced search filter toggle Filtra las ofertas por Número de ofertas Filtra las ofertas por Sector y profesional Sector Sector ---",
+          "last_checked": "2026-10-25T22:27:19+00:00",
+          "status": "checked"
+        }
+      },
+      "manpower": {
+        "https://www.manpower.es/es/empleos/alimentacion-y-bebidas/operario-de-produccion-sector-alimentacion-h-m-x-/756918": {
+          "checks": 1,
+          "label": "13/10/2026 NEW Manpower Carretillero/a Sector Alimentación (H/M/X) TOLEDO Transporte y Logística PREVIEW 13/10/2026 NEW Manpower Operario de Producción Sector A",
+          "last_checked": "2026-10-19T11:36:22+00:00",
+          "status": "checked"
+        },
+        "https://www.manpower.es/es/empleos/alimentacion-y-bebidas/tecnico-a-de-laboratorio-de-calidad-h-m-x-/755399": {
+          "checks": 1,
+          "label": "13/10/2026 NEW Manpower Carretillero/a Sector Alimentación (H/M/X) TOLEDO Transporte y Logística PREVIEW 13/10/2026 NEW Manpower Operario de Producción Sector A",
+          "last_checked": "2026-10-19T11:36:22+00:00",
+          "status": "checked"
+        },
+        "https://www.manpower.es/es/empleos/transporte-y-logistica/carretillero-a-sector-alimentacion-h-m-x-/756921": {
+          "checks": 1,
+          "label": "13/10/2026 NEW Manpower Carretillero/a Sector Alimentación (H/M/X) TOLEDO Transporte y Logística PREVIEW 13/10/2026 NEW Manpower Operario de Producción Sector A",
+          "last_checked": "2026-10-19T11:36:22+00:00",
+          "status": "checked"
+        }
+      },
+      "randstad": {
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/administrativo-a-rrhh-con-programa-kelio-3013289/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/agente-comercial-sanitas-3015169/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T07:01:04+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/agente-comercial-sanitas-3016046/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/agente-comercial-toledo-3015882/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/agente-telefonico-sector-automocion-3017383/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/analista-financiero-3013317/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/auxiliar-administrativo-3014007/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T07:01:04+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/ayudante-carpintero-a-3014566/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T07:01:04+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/ayudante-mecanico-3014759/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T07:07:54+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/cargas-y-descargas-40h-fijo-manana-6-a-14hs-dhl-sesena-se-trabaja-con-peso-25kg-3016812/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/cargas-y-descargas-40h-fijo-tarde-14-a-22hs-dhl-sesena-se-trabaja-con-peso-25kg-3016842/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carnicero-a-3015066/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T07:07:54+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carnicero-a-3016251/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carpintero-a-madera-especialista-cnc-y-moldes-3013864/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-3015358/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T07:07:54+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-3015833/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-a-retractil-3014411/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T07:12:59+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-3017019/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-32hs-fijo-manana-miercoles-a-sabados-dhl-illescas-3016535/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-40h-fijo-manana-6-a-14hs-dhl-sesena-se-trabaja-con-peso-25kg-3016838/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-40h-fijo-tarde-14-a-22hs-dhl-sesena-se-trabaja-con-peso-25kg-3016841/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-40h-rotativo-manana-y-tarde-dhl-illescas-3013826/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T07:12:59+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-frontal-3015702/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-moto-o-transpaleta-ectrica-sesena-illescas-3015862/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-contrapesada-3013581/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-retractil-3016559/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-25T22:26:45+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carrocero-chapista-automocion-indefinido-3013565/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/charcutero-charcutera-3015066/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/conductor-a-c-y-b-3017393/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/conductor-a-carnet-c-no-requerida-experiencia-3013455/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/dependiente-o-dependienta-torrons-vicens-temporal-3015458/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T07:12:59+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/dispatcher-trafico-3017166/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/encargado-turno-produccion-3013334/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/gestor-a-comercial-bancario-contrato-plantilla-estable-3013360/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/incorporacion-inmediata-mozo-a-almacen-3013522/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/jefe-a-mantenimiento-3013938/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/jefe-obra-civil-3015259/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:19:40+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/limpiador-limpiadora-fabrica-ajofrin-toledo-3015793/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/manipulador-a-sector-carnico-3015708/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/manipulador-manipuladora-huecas-toledo-3016578/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/manipulador-o-manipuladora-devoluciones-40h-fijo-tarde-14-a-22hs-dhl-illescas-3015646/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-almacen-40h-fijo-tarde-14-a-22hs-dhl-illescas-3014854/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-almacen-dhl-ontigola-3015018/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-carga-y-descargas-fijo-manana-o-tardes-dhl-ontigola-3016994/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-carga-y-descargas-fijo-tardes-dhl-ontigola-3015015/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-o-moza-almacen-poligono-toledo-fines-semana-3017013/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-o-moza-logistica-poligono-toledo-3015767/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-y-o-moza-almacen-toledo-3013376/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-alimentacion-olias-del-rey-3014485/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-electricidad-3014567/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-mecanizado-cnc-indefinido-3013374/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-metal-con-carretilla-3016291/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-sector-metal-3015628/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-entrada-picking-turno-manana-3016951/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-entradas-3016865/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-envasado-3017367/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-limpieza-3013909/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operaria-3015756/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operaria-automocion-3015746/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operaria-automocion-jornada-parcial-3016435/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operaria-avicola-3014346/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operaria-carnicas-3013295/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:50:24+00:00",
+          "status": "not_listed"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operaria-industrial-3014853/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operario-industria-del-plastico-3016704/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-produccion-3014261/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-produccion-mozo-3015688/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-u-operaria-carnico-escalonilla-3014911/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-u-operaria-industrial-toledo-3013577/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-u-operaria-produccion-borox-sector-alimentacion-3014983/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operarios-sector-farma-cosmetica-3014868/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:36:14+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/peluquero-peluquera-3016556/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/pescadero-pescadera-burguillos-3015065/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/pescadero-pescadera-torrijos-3015065/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-o-preparadora-pedidos-ontigola-3015230/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-o-preparadora-pedidos-ontigola-3015231/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-preparadora-pedidos-32h-fijo-mananas-j-d-dhl-3013505/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-preparadora-pedidos-40h-fijo-noches-dhl-campana-3014402/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-preparadora-pedidos-40h-rotativo-dhl-3013572/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/promotor-o-promotora-pae-pequeno-electrodomestico-toledo-3017296/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/soldador-a-mig-mag-sector-metal-3015628/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/soldador-armador-taller-indefinido-3014237/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/soldador-soldadora-mig-mag-contrato-indefinido-3017137/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/soldador-soldadora-mig-toledo-contrato-indefinido-3016829/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/soldador-soldadora-poligono-toledo-contrato-indefinido-3013846/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tecnico-a-calidad-3014401/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tecnico-a-cnc-indefinido-toledo-3014340/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tecnico-a-mecanizado-3016785/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tecnico-a-mecanizado-cnc-3017232/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tecnico-estudios-y-licitaciones-3013033/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/veterinario-calidad-3012682/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/fundacion-randstad/empleo-discapacidad/oferta/operario-linea-con-certificado-discapacidad-3013524/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (157) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/fundacion-randstad/empleo-discapacidad/oferta/operario-produccion-con-certificado-discapacidad-3015158/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/unete-al-equipo/ofertas-randstad/oferta/beca-rrhh-ontigola-toledo-3016425/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/unete-al-equipo/ofertas-randstad/oferta/becario-a-administracion-rrhh-toledo-3016524/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/unete-al-equipo/ofertas-randstad/oferta/becario-a-seleccion-personal-toledo-3016476/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/unete-al-equipo/ofertas-randstad/oferta/becario-rrhh-illescas-3015146/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "2026-10-19T12:39:41+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/unete-al-equipo/ofertas-randstad/oferta/tecnico-a-administrativo-rrhh-temporal-illescas-3016734/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        },
+        "https://www.randstad.es/unete-al-equipo/ofertas-randstad/oferta/tecnico-a-rrhh-sesena-3016344/": {
+          "checks": 0,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (162) c",
+          "last_checked": "",
+          "status": "pending"
+        }
+      },
+      "tratem": {
+        "https://agenciaempleo.tratem.com/oferta/administrativ": {
+          "checks": 1,
+          "label": "Administrativ@",
+          "last_checked": "2026-10-19T07:00:52+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/administrativ-de-ventas-y-operaciones-incorporacion-inmediata": {
+          "checks": 1,
+          "label": "Administrativ@ de Ventas y Operaciones Incorporación Inmediata!!",
+          "last_checked": "2026-10-19T07:00:52+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/administrativo-a-compras-1": {
+          "checks": 1,
+          "label": "Administrativo/a Compras",
+          "last_checked": "2026-10-19T07:00:52+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/administrativo-a-logistica": {
+          "checks": 0,
+          "label": "Administrativo/a Logistica",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/administrativo-comercial-1": {
+          "checks": 1,
+          "label": "Administrativo Comercial",
+          "last_checked": "2026-10-19T07:07:43+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/administrativo-contabilidad": {
+          "checks": 1,
+          "label": "Administrativo Contabilidad",
+          "last_checked": "2026-10-19T07:07:43+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/administrativo-facturacion": {
+          "checks": 1,
+          "label": "Administrativo Facturación",
+          "last_checked": "2026-10-19T07:07:43+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/administrativo-laboral-contabilidad-1": {
+          "checks": 1,
+          "label": "Administrativ@ Laboral/Contabilidad",
+          "last_checked": "2026-10-19T07:07:43+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/analista-financiero": {
+          "checks": 1,
+          "label": "Analista Financiero",
+          "last_checked": "2026-10-19T07:12:45+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-a-1": {
+          "checks": 1,
+          "label": "Auxiliar Administrativo/a",
+          "last_checked": "2026-10-19T07:12:45+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-a-1-1": {
+          "checks": 1,
+          "label": "Auxiliar Administrativo/a",
+          "last_checked": "2026-10-19T07:12:45+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-a-contable-1": {
+          "checks": 1,
+          "label": "Auxiliar Administrativo/a",
+          "last_checked": "2026-10-19T07:12:45+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-a-contable-2": {
+          "checks": 1,
+          "label": "Auxiliar Administrativo/a Contable",
+          "last_checked": "2026-10-19T07:12:45+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-contable": {
+          "checks": 1,
+          "label": "Auxiliar Administrativo Contable",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-contable-1": {
+          "checks": 1,
+          "label": "Auxiliar Administrativo/Contable",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-de-contabilidad-1": {
+          "checks": 1,
+          "label": "Auxiliar Administrativo de contabilidad",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-de-taller": {
+          "checks": 1,
+          "label": "Auxiliar Administrativo de Taller",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-zona-polan": {
+          "checks": 1,
+          "label": "Auxiliar Administrativo zona Polán",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/ayudante-de-instalaciones-fotovoltaicas": {
+          "checks": 1,
+          "label": "Ayudante de Instalaciones Fotovoltaicas",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/camarer-de-pisos-casa-rural-toledo": {
+          "checks": 1,
+          "label": "Camarer@ de Pisos Casa Rural Toledo",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/camarers-arenas-de-san-pedro": {
+          "checks": 1,
+          "label": "Camarer@s ARENAS DE SAN PEDRO!!!",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/carretiller-lineas-de-produccion-zona-de-ocana": {
+          "checks": 0,
+          "label": "Carretiller@ líneas de producción zona de Ocaña",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/carretiller-logistica-en-zona-de-ocana": {
+          "checks": 0,
+          "label": "Carretiller@ Logística en zona de Ocaña",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/carretilleros-5-1-1-1-1-1-1": {
+          "checks": 0,
+          "label": "Carretilleros/as",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/carretilleros-as-frontal-y-retractil-toledo-1": {
+          "checks": 0,
+          "label": "Carretilleros/as Frontal y Retráctil TOLEDO",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/carretilleros-as-frontal-y-retractil-toledo-4": {
+          "checks": 0,
+          "label": "Carretilleros/as Frontal y Retráctil TOLEDO",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/carretilleros-as-frontal-y-retractil-toledo-7": {
+          "checks": 0,
+          "label": "Carretilleros/as Frontal 2 y 4 uñas TOLEDO",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/certificacion-calidad": {
+          "checks": 1,
+          "label": "Certificación Calidad",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/cocinera-o": {
+          "checks": 1,
+          "label": "Cocinera/o",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/comercial-2": {
+          "checks": 1,
+          "label": "Comerciales Inmobiliaria",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/comercial-empresa-de-trabajo-temporal": {
+          "checks": 1,
+          "label": "Comercial Empresa de Trabajo Temporal",
+          "last_checked": "2026-10-19T11:34:38+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/comerciales-inmobiliaria": {
+          "checks": 1,
+          "label": "Comerciales Inmobiliaria",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/conductor-camion-c-y-adr-zona-la-sagra": {
+          "checks": 1,
+          "label": "Conductor Camión C y ADR zona LA SAGRA",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/conductor-camion-c-y-adr-zona-la-sagra-1": {
+          "checks": 1,
+          "label": "Conductor Camión C y ADR zona Los Montes de Toledo",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/docente-certificado-habilitacion-docencia-ab-y-c": {
+          "checks": 2,
+          "label": "Docente Certificado de Habilitación para la Docencia A,B y C",
+          "last_checked": "2026-10-19T07:07:43+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/docente-s-certificado-de-profesionalidad-promocion-turistica-local-e-informacion-al-visitante": {
+          "checks": 1,
+          "label": "Docente/s Certificado de Profesionalidad PROMOCION TURISTICA LOCAL  E INFORMACIÓN AL VISITANTE",
+          "last_checked": "2026-10-19T07:00:52+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/electromecanico-a": {
+          "checks": 1,
+          "label": "Electromecánico/a",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/electromecanico-industrial": {
+          "checks": 1,
+          "label": "Electromecánico Industrial",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/formador-a-curso-asesoria-fiscal-120h": {
+          "checks": 1,
+          "label": "Formador/a Curso Asesoría Fiscal (120h)",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/gobernanta-e-hotel": {
+          "checks": 1,
+          "label": "Gobernanta/e Hotel",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/guia-de-turismo": {
+          "checks": 1,
+          "label": "Guía de Turismo",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/informador-turisitic-valladolid-2": {
+          "checks": 1,
+          "label": "Informador@ Turístic@ ALBACETE!! Finales de Mayo",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/ingeniero-a-de-procesos-y-mejora-continua": {
+          "checks": 1,
+          "label": "Ingeniero/a de Procesos y Mejora Continua",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/jefe-equipo-team-leader-zonas-de-illescas-y-casarrubios": {
+          "checks": 1,
+          "label": "Jefe Equipo/ Team Leader zonas de Illescas y Casarrubios",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/mantenimiento-ingeniero-industrial": {
+          "checks": 1,
+          "label": "Mantenimiento, Ingeniero Industrial",
+          "last_checked": "2026-10-19T12:19:07+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/mecanico-a-electricista-electromecanico-a": {
+          "checks": 1,
+          "label": "Mecánico/a Electricista-Electromecánico/a",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/mecanico-a-vehiculos": {
+          "checks": 1,
+          "label": "Mecánico/a Vehículos",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/mecanico-de-camiones-vehiculos-industriales": {
+          "checks": 1,
+          "label": "Mecánic@ de camiones / Vehículos Industriales",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/mecanico-taller-automoviles": {
+          "checks": 1,
+          "label": "Mecánico Taller Automóviles",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/mozo-almacen-3": {
+          "checks": 0,
+          "label": "Mozo Almacén",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/mozo-almacen-toledo": {
+          "checks": 0,
+          "label": "Mozo Almacen Toledo",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/mozo-de-almacen-ideal-estudiantes": {
+          "checks": 0,
+          "label": "Mozo de Almacén Ideal Estudiantes",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/mozos-carga-y-descarga-septiembre-toledo": {
+          "checks": 1,
+          "label": "Mozos Carga y Descarga Septiembre Toledo",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/mozs-zona-talavera-de-la-reina-1": {
+          "checks": 1,
+          "label": "Moz@s zona Talavera de la Reina",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operari-fabrica-alimentaria-media-jornada-toledo-incorporacion-inmediata-2": {
+          "checks": 1,
+          "label": "Operari@ fábrica alimentaria  Toledo",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operario-a-con-carnet-de-carretillera-1-1": {
+          "checks": 0,
+          "label": "Operario/a con carnet de carretilla frontal/retráctil",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operario-artes-graficas-con-manejo-de-ordenador-zona-de-mora-1": {
+          "checks": 1,
+          "label": "Operari@ Artes Gráficas con manejo de ordenador zona de MORA",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operario-con-carnet-de-carretillero-1-1": {
+          "checks": 0,
+          "label": "Operarios/as Toledo con carnet de carretillero",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operario-fabrica-1-1": {
+          "checks": 1,
+          "label": "Operario/a Fábrica",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operario-produccion": {
+          "checks": 1,
+          "label": "Operario Producción",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operarios-almacen-con-manejo-carretilla-zona-illescas-1": {
+          "checks": 0,
+          "label": "Operari@ Almacén con manejo carretilla zona Illescas",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operarios-as-fabrica-alimentaria-2-1-1-1-1-1-1": {
+          "checks": 1,
+          "label": "Operarios/as fábrica Toledo con CFGM/CFGS",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operarios-as-fabrica-alimentaria-7": {
+          "checks": 1,
+          "label": "Operari@ fábrica Toledo con CFGM/CFGS",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operarios-as-lineas-produccion-con-ciclo-formativo-grado-medio-superior-1-1-1-1": {
+          "checks": 1,
+          "label": "Operarios/as Lineas Producción con Ciclo Formativo Grado Medio/Superior",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operarios-con-carnet-de-carretillero-1-1": {
+          "checks": 0,
+          "label": "Operarios/as con carnet de carretillero",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operarios-con-manejo-de-carretilla": {
+          "checks": 0,
+          "label": "Operarios con manejo de carretilla",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operarios-fibra-de-vidrio-zona-illescas": {
+          "checks": 1,
+          "label": "Personal Operario Fibra de Vidrio zona Illescas",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operaris-almacen-zona-de-yuncos": {
+          "checks": 0,
+          "label": "Operari@s almacén zona de Yuncos",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operaris-lineas-de-produccion-3": {
+          "checks": 1,
+          "label": "Operari@s Líneas de Producción",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operaris-lineas-de-produccion-4": {
+          "checks": 1,
+          "label": "Operari@s Líneas de Producción",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/operaris-produccion-zona-de-ocana": {
+          "checks": 1,
+          "label": "Operari@s producción zona de Ocaña",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/peon-bodega-zona-yepes-1": {
+          "checks": 1,
+          "label": "Peón Bodega zona Yepes",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/peon-cadena-produccion": {
+          "checks": 1,
+          "label": "Peón Cadena Producción",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/peon-construccion": {
+          "checks": 1,
+          "label": "Peón Construcción",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/peon-fabrica": {
+          "checks": 1,
+          "label": "Peón fábrica",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/peon-metal-zona-sonseca-2": {
+          "checks": 1,
+          "label": "Oficial 2ª y Peones Sector Metal zona Sonseca",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/peones-fabrica-media-jornada-1": {
+          "checks": 1,
+          "label": "Peones fábrica media jornada",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/peones-montaje-apliques": {
+          "checks": 1,
+          "label": "Peones montaje apliques",
+          "last_checked": "2026-10-19T12:35:15+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/peones-sector-lacteo-2": {
+          "checks": 1,
+          "label": "Peones Sector Lácteo",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/peones-sector-metal-1": {
+          "checks": 1,
+          "label": "Peones Sector Metal",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/peones-taller": {
+          "checks": 1,
+          "label": "Peones taller",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-administrativo-logistica": {
+          "checks": 0,
+          "label": "Personal Administrativo Logística",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-administrativo-para-ejecucion-de-proyecto": {
+          "checks": 1,
+          "label": "Personal Administrativo para ejecución de proyecto",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-almacen-1": {
+          "checks": 0,
+          "label": "Personal Almacén",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-camarera-de-pisos": {
+          "checks": 1,
+          "label": "Personal Camarera/o de Pisos",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-ciencia-y-tecnologia-de-los-alimentos-1-1-1-1": {
+          "checks": 1,
+          "label": "Personal Ciencia y Tecnología de los Alimentos",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-ciencia-y-tecnologia-de-los-alimentos-12": {
+          "checks": 1,
+          "label": "Personal Ciencia y Tecnología de los Alimentos",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-ciencia-y-tecnologia-de-los-alimentos-13": {
+          "checks": 1,
+          "label": "Personal Ciencia y Tecnología de los Alimentos",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-con-manejo-de-transpaleta": {
+          "checks": 1,
+          "label": "Personal con manejo de transpaleta Septiembre Toledo",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-control-de-plagas": {
+          "checks": 1,
+          "label": "Personal Control de Plagas",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-coordinacion-avtividades-culturales": {
+          "checks": 1,
+          "label": "Personal Coordinación Actividades Culturales",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-costura-y-lavanderia": {
+          "checks": 1,
+          "label": "Personal Costura y Lavandería",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-de-control-de-acceso": {
+          "checks": 1,
+          "label": "Personal de Control de Acceso",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-de-entrada-hotel-maletero-botones-bellboy": {
+          "checks": 1,
+          "label": "Personal de Entrada Hotel/ Maletero/Botones/ \"Bell Boy/Girl\"",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-de-limpieza-industrial-1-1-1-1-1-1": {
+          "checks": 1,
+          "label": "Personal de Limpieza Industrial",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-de-sala-y-atencion-publico-1": {
+          "checks": 1,
+          "label": "Personal de Sala y Atención Público",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-fabrica-alimentaria-1-1-1": {
+          "checks": 1,
+          "label": "Personal Fábrica Alimentaria",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-laboratorio-tratamiento-de-aguas": {
+          "checks": 1,
+          "label": "Personal Laboratorio Tratamiento de Aguas",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-lavanderia-2": {
+          "checks": 1,
+          "label": "Personal Lavandería/Planchado en Toledo",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-limpieza-4": {
+          "checks": 1,
+          "label": "Personal Limpieza",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-limpieza-5": {
+          "checks": 1,
+          "label": "Personal Limpieza",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-limpieza-6": {
+          "checks": 1,
+          "label": "Personal Limpieza",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-limpieza-turno-noche-1-1-1-1": {
+          "checks": 1,
+          "label": "Personal Limpieza turno noche",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-limpieza-turno-tarde": {
+          "checks": 1,
+          "label": "Personal Limpieza turno tarde",
+          "last_checked": "2026-10-19T12:38:55+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-limpieza-y-apoyo-sastreria-toledo-comienzo-inmediato": {
+          "checks": 1,
+          "label": "Personal limpieza y apoyo sastrería TOLEDO comienzo inmediato",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-mozo-de-almacen-con-manejo-de-frontal-de-2-unas": {
+          "checks": 0,
+          "label": "Personal Mozo de Almacén con manejo de frontal de 2 uñas",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-mozo-de-almacen-en-torrijos": {
+          "checks": 0,
+          "label": "Personal Mozo de Almacén en Torrijos",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-mozo-de-almacen-en-torrijos-1": {
+          "checks": 0,
+          "label": "Personal Mozo de Almacén en Talavera de la Reina",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-mozo-de-almacen-en-torrijos-7": {
+          "checks": 1,
+          "label": "Personal Producción en Torrijos incorporación inmediata!",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-mozos-carga-y-descarga-proximo-lunes-13-01-2025-toledo-4": {
+          "checks": 1,
+          "label": "Personal Mozos Carga y Descarga",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-para-carga-y-descarga-en-toledo-2": {
+          "checks": 1,
+          "label": "Personal para carga y descarga en Toledo",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/personal-para-departamento-de-calidad": {
+          "checks": 1,
+          "label": "Personal para departamento de calidad",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/pintor-de-carroceria": {
+          "checks": 1,
+          "label": "Pintor de Carrocería",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/pintores-de-obra-civil": {
+          "checks": 1,
+          "label": "Pintores de Obra Civil en Toledo",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/posiciones-de-hornero-palista-y-carretillero": {
+          "checks": 0,
+          "label": "Posiciones de personal  Hornero, Palista  y Manejo de Carretilla",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/programador-a": {
+          "checks": 1,
+          "label": "Programador/a",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/recepcion-oficina-rutas": {
+          "checks": 1,
+          "label": "Recepción Oficina Rutas",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/repartidor-catering": {
+          "checks": 0,
+          "label": "Conductor / Repartidor Catering",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/repartidores-y-almacen": {
+          "checks": 0,
+          "label": "Repartidores y Almacén",
+          "last_checked": "",
+          "status": "prefiltered"
+        },
+        "https://agenciaempleo.tratem.com/oferta/responsable-calidad": {
+          "checks": 1,
+          "label": "Responsable Calidad",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/responsable-fiscal-y-contable": {
+          "checks": 1,
+          "label": "Responsable Fiscal y Contable",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/soldador": {
+          "checks": 1,
+          "label": "Soldador",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/tecnico-a-administrativo-a-1": {
+          "checks": 1,
+          "label": "Auxiliar Administrativo/a",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/tecnico-a-administrativo-a-rrhh": {
+          "checks": 1,
+          "label": "Técnico/a Administrativo/a RRHH",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/tecnico-a-rrhh-2": {
+          "checks": 1,
+          "label": "Auxiliar administrativo Departamento  RRHH",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        },
+        "https://agenciaempleo.tratem.com/oferta/tecnicos-as-de-empleo-1-1-1-1": {
+          "checks": 1,
+          "label": "Técnicos/as de Empleo",
+          "last_checked": "2026-10-19T12:46:47+00:00",
+          "status": "checked"
+        }
+      }
+    }
+  },
+  "documents": {
+    "adecco:feff860faf43f8aa1b13e4812d309296": {
+      "act_type": "oferta",
+      "content_hash": "93a09153ff6e45546735f1f76663c093eb129c54b68f54d8015dc344c7844838",
+      "deadline": "2026-10-25",
+      "document_id": "adecco:feff860faf43f8aa1b13e4812d309296",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "hiring_organization": "adecco",
+      "municipality": "Toledo",
+      "official_url": "https://www.adecco.com/es-es/ofertas-trabajo/coordinador-a-de-transporte-escolar-y-acompanantes-20h-toledo-toledo/feff860faf43f8aa1b13e4812d309296",
+      "province": "Toledo",
+      "publication_date": "2026-10-01",
+      "salary": "700 EUR Mes",
+      "source": "adecco",
+      "status": "abierta",
+      "title": "Coordinador/a de Transporte Escolar y Acompañantes (20h)"
+    },
+    "tratem:docente-certificado-habilitacion-docencia-ab-y-c": {
+      "act_type": "oferta",
+      "content_hash": "e18d6913d5898e2150b2b7819dacc2651d1a0f93314ce607b0c158413fa1dd72",
+      "document_id": "tratem:docente-certificado-habilitacion-docencia-ab-y-c",
+      "eligibility": "caducada",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://agenciaempleo.tratem.com/oferta/docente-certificado-habilitacion-docencia-ab-y-c",
+      "publication_date": "2025-10-29",
+      "source": "tratem",
+      "status": "cerrada_o_historica",
+      "title": "Docente Certificado de Habilitación para la Docencia A,B y C"
+    },
+    "tratem:docente-s-certificado-de-profesionalidad-promocion-turistica-local-e-informacion-al-visitante": {
+      "act_type": "oferta",
+      "content_hash": "584a84a57e41afb8de7e8251d30f549e54b567559c44f145cc7b43268e0a0c9c",
+      "document_id": "tratem:docente-s-certificado-de-profesionalidad-promocion-turistica-local-e-informacion-al-visitante",
+      "eligibility": "caducada",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://agenciaempleo.tratem.com/oferta/docente-s-certificado-de-profesionalidad-promocion-turistica-local-e-informacion-al-visitante",
+      "publication_date": "2024-03-06",
+      "source": "tratem",
+      "status": "cerrada_o_historica",
+      "title": "Docente/s Certificado de Profesionalidad PROMOCION TURISTICA LOCAL E INFORMACIÓN AL VISITANTE"
+    }
+  },
+  "schema_version": 1
+}
