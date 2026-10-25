@@ -7,7 +7,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: bc02-coverage
+  group: buscar-curro-public-collectors
   cancel-in-progress: false
 
 jobs:
@@ -39,14 +39,18 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: bc02-state
-          path: bc02-output/state.json
+          path: |
+            bc02-output/
+            !bc02-output/state.jsonstate.json
           if-no-files-found: error
           retention-days: 30
       - name: Registros técnicos BC-02
-        if: always()
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: bc02-technical-results
-          path: bc02-output/
+          path: |
+            bc02-output/
+            !bc02-output/state.json
           if-no-files-found: error
           retention-days: 7

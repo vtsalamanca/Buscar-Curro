@@ -11,15 +11,23 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 
+from state_safety import parse_state
+
 
 ACTIVE_TERMS = {
     "ate": ("auxiliar tecnico educativo", "auxiliar tecnica educativa", "ate"),
     "psicologia": ("psicolog",),
     "intervencion_social": ("trabajador social", "trabajadora social", "trabajador/a social", "educador social", "educadora social", "educador/a social", "integracion social", "intervencion social"),
     "menores": ("menor", "infancia", "juvenil", "acogimiento", "barnahus"),
-    "educacion": ("educador", "educadora", "educacion", "docente", "profesor", "monitora", "monitor ", "escolar"),
+    "educacion": ("educador", "educadora", "educacion", "docente", "profesor", "monitora", "monitor ", "monitor/a", "escolar"),
     "discapacidad": ("discapacidad", "diversidad funcional"),
 }
+# An equality/eligibility certificate is not, by itself, a disability-care job.
+DISABILITY_CARE_TERMS = (
+    "atencion", "apoyo", "cuidad", "acompan", "inclusion", "accesibilidad",
+    "centro de dia", "residencia", "intervencion", "terapia", "rehabilitacion",
+    "coordinacion", "direccion de centro", "asistencia personal",
+)
 SUSPENDED_TERMS = ("almacen", "carretill", "logistica", "repartidor", "transporte")
 ACT_TYPES = (
     ("correccion", ("correccion", "rectificacion")),
@@ -74,6 +82,10 @@ def categories_for(text: str) -> list[str]:
     # example, coordination educativa de transporte escolar). Disability on
     # its own is an attribute, not enough to reactivate logistics/warehouse.
     occupational = set(categories) - {"discapacidad"}
+    if "discapacidad" in categories and not occupational and not any(
+        term in normal for term in DISABILITY_CARE_TERMS
+    ):
+        return []
     if any(term in normal for term in SUSPENDED_TERMS) and not occupational:
         return []
     return categories
@@ -158,10 +170,9 @@ class SourceRun:
 def load_state(path: Path) -> dict:
     if not path.exists():
         return {"schema_version": 1, "documents": {}}
-    data = json.loads(path.read_text(encoding="utf-8"))
-    if data.get("schema_version") != 1 or not isinstance(data.get("documents"), dict):
-        raise ValueError("invalid_state_schema")
-    return data
+    if path.is_symlink():
+        raise ValueError("state_symlink")
+    return parse_state(path.read_bytes())
 
 
 def apply_runs(previous: dict, runs: list[SourceRun], checked_at: str) -> tuple[dict, dict]:
@@ -172,9 +183,10 @@ def apply_runs(previous: dict, runs: list[SourceRun], checked_at: str) -> tuple[
     seen_ids: list[str] = []
     failures: dict[str, str] = {}
     for run in runs:
-        if run.status == "consulta_fallida":
-            failures[run.source] = run.error or "unknown_error"
-            continue
+        if run.status in {"consulta_fallida", "consulta_parcial"}:
+            failures[run.source] = run.error or "partial_or_unknown_error"
+            if run.status == "consulta_fallida":
+                continue
         for document in run.documents:
             seen_ids.append(document.document_id)
             old = documents.get(document.document_id)

@@ -33,6 +33,12 @@ class EmploymentCoreTests(unittest.TestCase):
         self.assertNotIn("ate", categories_for("Cobertura por maternidad"))
         self.assertEqual(categories_for("Mozo de almacén y logística"), [])
 
+    def test_disability_certificate_in_factory_job_is_not_care_work(self):
+        self.assertEqual(categories_for("Operario en línea con certificado de discapacidad"), [])
+        self.assertEqual(categories_for("Operario de producción con certificado de discapacidad"), [])
+        self.assertIn("discapacidad", categories_for("Auxiliar de atención a personas con discapacidad"))
+        self.assertIn("educacion", categories_for("Monitor/a de ocio inclusivo"))
+
     def test_spanish_dates(self):
         self.assertEqual(date_from_text("hasta el 31 de octubre de 2026"), "2026-10-31")
         self.assertEqual(date_from_text("publicado 7/7/2026"), "2026-07-07")

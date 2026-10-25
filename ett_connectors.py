@@ -358,8 +358,10 @@ def run_ett_connector(
                 entries[url].update(status="error", last_checked=checked_at, checks=int(entries[url].get("checks", 0)) + 1)
                 notes.append(f"detail_error:{error_code(exc)}")
         unique = {document.document_id: document for document in documents}
-        status = "ok" if unique else "sin_resultados_relevantes"
-        return SourceRun(spec.key, status, checked_at, list(unique.values()), notes=notes[:20])
+        had_detail_errors = any(note.startswith("detail_error:") for note in notes)
+        status = "consulta_parcial" if had_detail_errors else ("ok" if unique else "sin_resultados_relevantes")
+        return SourceRun(spec.key, status, checked_at, list(unique.values()),
+                         error="detail_errors" if had_detail_errors else None, notes=notes[:20])
     except Exception as exc:
         return SourceRun(spec.key, "consulta_fallida", checked_at, error=error_code(exc))
 

@@ -7,7 +7,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: bt01b-public-sources
+  group: buscar-curro-public-collectors
   cancel-in-progress: false
 
 jobs:
@@ -46,14 +46,18 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: bt01b-state
-          path: bt01b-output/state.json
+          path: |
+            bt01b-output/
+            !bt01b-output/state.jsonstate.json
           if-no-files-found: error
           retention-days: 30
       - name: Evidencia BT-01B
-        if: always()
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: bt01b-public-source-results
-          path: bt01b-output/
+          path: |
+            bt01b-output/
+            !bt01b-output/state.json
           if-no-files-found: error
           retention-days: 7

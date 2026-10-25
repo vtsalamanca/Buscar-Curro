@@ -31,6 +31,28 @@ MAX_BYTES = 2 * 1024 * 1024
 TIMEOUT_SECONDS = 20
 USER_AGENT = "Buscar-Curro-BT-01B/1.0 (+public-employment-monitor)"
 _HTTP_METRICS = {"http_requests": 0, "downloaded_bytes": 0, "elapsed_seconds": 0.0, "etag_responses": 0, "last_modified_responses": 0}
+_HTTP_BUDGET = {"max_requests": None, "max_bytes": None, "max_seconds": None, "started": None}
+
+
+def configure_http_budget(*, max_requests=None, max_bytes=None, max_seconds=None):
+    """Hard, process-local bounds. Configure after resetting metrics."""
+    for value in (max_requests, max_bytes, max_seconds):
+        if value is not None and (not isinstance(value, (int, float)) or isinstance(value, bool) or value <= 0):
+            raise ValueError("invalid_http_budget")
+    _HTTP_BUDGET.update(max_requests=max_requests, max_bytes=max_bytes,
+                        max_seconds=max_seconds, started=time.monotonic())
+
+
+def _check_http_budget() -> None:
+    if _HTTP_BUDGET["max_requests"] is not None and _HTTP_METRICS["http_requests"] >= _HTTP_BUDGET["max_requests"]:
+        raise ValueError("http_budget_exceeded_requests")
+    if (_HTTP_BUDGET["max_seconds"] is not None and
+            time.monotonic() - _HTTP_BUDGET["started"] >= _HTTP_BUDGET["max_seconds"]):
+        raise ValueError("http_budget_exceeded_seconds")
+    if _HTTP_BUDGET["max_bytes"] is not None and _HTTP_METRICS["downloaded_bytes"] >= _HTTP_BUDGET["max_bytes"]:
+        raise ValueError("http_budget_exceeded_bytes")
+
+
 
 
 def reset_http_metrics() -> None:
@@ -130,6 +152,7 @@ def error_code(exc: BaseException) -> str:
         return "timeout" if isinstance(exc.reason, (TimeoutError, socket.timeout)) else "network_error"
     if isinstance(exc, ValueError) and str(exc) in {
         "url_not_allowed", "unexpected_redirect", "response_too_large", "unexpected_content_type",
+        "http_budget_exceeded_requests", "http_budget_exceeded_seconds", "http_budget_exceeded_bytes",
     }:
         return f"ValueError:{exc}"
     return type(exc).__name__
@@ -139,6 +162,7 @@ def fetch(url: str, host_suffixes: tuple[str, ...]) -> tuple[str, str]:
     parsed = urlsplit(url)
     if parsed.scheme != "https" or not any(parsed.hostname == suffix or parsed.hostname.endswith("." + suffix) for suffix in host_suffixes):
         raise ValueError("url_not_allowed")
+    _check_http_budget()
     opener = build_opener(Redirects(host_suffixes))
     started = time.monotonic()
     _HTTP_METRICS["http_requests"] += 1
@@ -147,10 +171,18 @@ def fetch(url: str, host_suffixes: tuple[str, ...]) -> tuple[str, str]:
             content_type = response.headers.get("Content-Type", "")
             _HTTP_METRICS["etag_responses"] += int(bool(response.headers.get("ETag")))
             _HTTP_METRICS["last_modified_responses"] += int(bool(response.headers.get("Last-Modified")))
-            body = response.read(MAX_BYTES + 1)
+            allowed_bytes = MAX_BYTES
+            if _HTTP_BUDGET["max_bytes"] is not None:
+                allowed_bytes = min(MAX_BYTES, max(0, _HTTP_BUDGET["max_bytes"] - _HTTP_METRICS["downloaded_bytes"]))
+            body = response.read(allowed_bytes + 1)
             _HTTP_METRICS["downloaded_bytes"] += len(body)
+            if len(body) > allowed_bytes and allowed_bytes < MAX_BYTES:
+                raise ValueError("http_budget_exceeded_bytes")
             if len(body) > MAX_BYTES:
                 raise ValueError("response_too_large")
+            if (_HTTP_BUDGET["max_seconds"] is not None and
+                    time.monotonic() - _HTTP_BUDGET["started"] >= _HTTP_BUDGET["max_seconds"]):
+                raise ValueError("http_budget_exceeded_seconds")
             if "html" not in content_type.lower():
                 raise ValueError("unexpected_content_type")
             charset = response.headers.get_content_charset() or "utf-8"
@@ -335,11 +367,16 @@ def run_connector(spec: ConnectorSpec) -> SourceRun:
             if document:
                 documents.append(document)
         unique = {document.document_id: document for document in documents}
-        status = "ok" if unique else "sin_resultados_relevantes"
-        notes = [f"candidate_links:{len(deduped)}", f"relevant_documents:{len(unique)}"] + detail_errors[:10]
+        status = "consulta_parcial" if detail_errors else ("ok" if unique else "sin_resultados_relevantes")
+        notes = [
+            f"candidate_links:{len(deduped)}", f"relevant_documents:{len(unique)}",
+            f"details_attempted:{min(len(deduped), spec.detail_limit)}",
+            f"unfetched_details:{max(0, len(deduped) - spec.detail_limit)}",
+        ] + detail_errors[:10]
         if spec.partial:
             notes.append("source_was_partial_in_bt01a")
-        return SourceRun(spec.key, status, checked_at, list(unique.values()), notes=notes)
+        return SourceRun(spec.key, status, checked_at, list(unique.values()),
+                         error="detail_errors" if detail_errors else None, notes=notes)
     except Exception as exc:
         return SourceRun(spec.key, "consulta_fallida", checked_at, error=error_code(exc))
 
