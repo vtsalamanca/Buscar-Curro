@@ -468,3 +468,12 @@ publicación e integración remota por separado. Detalles y límites:
 \`IMPLEMENTACION_BC04_BC05_2026-10-25.md\`.
 Sin cron, servicios pagados, cambios privados, candidaturas ni cierre falso
 de BC-06/07/08/09. Persistencia remota duradera y facturación pendientes.
+
+## BC-06 — descubrimiento BOE incremental (25/10/2026)
+Conector XML oficial boe_discovery.py, ejecutor manual run_boe_discovery.py,
+workflow manual de fuente, pruebas de fecha, integridad, errores, falsos
+positivos y delta idempotente. 92/92 pruebas locales correctas. Prueba real:
+1539 títulos en seis ediciones válidas de 19–24 octubre, domingo 18 no
+publicado, cero candidatos tras depurar siete falsos positivos iniciales.
+No implica inexistencia de ofertas ni cierre del resto de BC-06. Ver
+IMPLEMENTACION_BC06_BOE_2026-10-25.md; aún sin cron.

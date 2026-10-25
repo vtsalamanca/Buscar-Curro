@@ -17,3 +17,9 @@ python3 state_snapshot_cli.py inspect --archive copia.snapshot.zip
 Los datos de colas no deben subirse a repositorios públicos. La retención de
 GitHub Actions sigue limitada a 30 días y no se ha activado ejecución diaria,
 avisos ni candidaturas automáticas. Los 80 km geográficos son en línea recta.
+
+## BC-06: descubrimiento oficial BOE por fecha
+El nuevo conector manual run_boe_discovery.py consulta hasta siete sumarios diarios
+oficiales, con XML validado, enlaces originales, histórico seguro y falsos
+positivos contrastados. python3 run_boe_discovery.py --days 7 no solicita
+candidaturas ni activa programación. Véase IMPLEMENTACION_BC06_BOE_2026-10-25.md.

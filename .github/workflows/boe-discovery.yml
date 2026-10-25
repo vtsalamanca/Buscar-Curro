@@ -1,0 +1,57 @@
+name: BC-06 BOE discovery por fecha (manual)
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: buscar-curro-public-collectors
+  cancel-in-progress: false
+
+jobs:
+  boe-discovery:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Pruebas de regresion y seguridad sin red
+        run: python3 -m unittest -q
+      - name: Restaurar el estado de la anterior pasada valida
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 restore_previous_state.py
+          --workflow boe-discovery.yml
+          --artifact-name boe-discovery-state
+          --destination data/boe-discovery-state.json
+      - name: Consultar hasta siete sumarios oficiales
+        run: >-
+          python3 run_boe_discovery.py
+          --state data/boe-discovery-state.json
+          --days 7
+          --output-dir boe-output
+      - name: Resumen del intervalo
+        if: success()
+        run: cat boe-output/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Conservar estado para la siguiente pasada
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: boe-discovery-state
+          path: boe-output/state.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Diagnostico acotado del periodo
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: boe-discovery-results
+          path: |
+            boe-output/
+            !boe-output/state.json
+          if-no-files-found: error
+          retention-days: 7

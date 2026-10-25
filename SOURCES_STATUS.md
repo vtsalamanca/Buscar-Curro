@@ -98,3 +98,13 @@ Run final: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39255609713 
 Total: 317 candidatos clasificados, 267 fichas visitadas, 30 descartes preliminares, 19 errores explícitos y 1 enlace desaparecido. Eurofirms y Randstad son las únicas fuentes con paginación pública realmente demostrada en esta fase. «Pendientes 0» no significa cobertura completa del portal cuando su paginación no está expuesta o quedan errores.
 
 La última ronda realizó 8 peticiones, descargó 2.876.702 bytes y empleó 17,429 s HTTP sin repetir fichas conocidas. Las siete rondas BC-03 sumaron 307 peticiones, 62.652.365 bytes y 515,756 s HTTP. Se conserva el índice de 259 municipios y las ofertas con localidad desconocida no se descartan silenciosamente.
+
+## BC-06 — BOE por fechas (25/10/2026)
+Nueva ruta oficial https://www.boe.es/datosabiertos/api/boe/sumario/{fecha}
+(protocolo XML) verificada desde Debian; reemplaza el enfoque dependiente de un
+único BOE histórico para descubrimiento. Consultas locales 18–24/10/2026:
+6 ediciones disponibles, domingo sin publicación, 1539 títulos examinados,
+0 candidatos tras depuración de filtros. Primera versión daba 7 falsos
+positivos; se corrigieron antes de incorporar código. Son coincidencias de
+títulos, no cobertura exhaustiva de ofertas. Nuevo workflow solo manual,
+estado 30 días, sin cron. Informe: IMPLEMENTACION_BC06_BOE_2026-10-25.md.
