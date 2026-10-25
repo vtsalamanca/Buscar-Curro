@@ -27,3 +27,12 @@
 - GitHub documenta ejecutores estándar gratuitos en repositorios públicos. **No se ha podido inspeccionar la configuración privada de facturación de la cuenta desde este conector**; se ha evitado el almacenamiento de artefactos, runners grandes o servicios de pago.
 - Reversión: Actions → «Buscar Curro — consulta diaria pública» → Disable workflow; conservar ambas ramas para auditoría.
 - Hasta la primera ejecución remota real y lectura desde ChatGPT, el sistema está *integrado en código* pero **no verificado de extremo a extremo**.
+
+
+## Verificación operativa de la primera ejecución (25/10/2026)
+- PR #4 fusionada y ejecución real https://github.com/vtsalamanca/Buscar-Curro/actions/runs/40240178767.
+- El runner completó checkouts, pruebas de 8 casos, restauración BC-03 y publicación real de la rama de resultados; comprobado GET HTTP 200 de raw.githubusercontent.com desde Debian.
+- Resultado **parcial, no verde**: 32 candidatos preliminares históricos en el primer catálogo de fuentes públicas, incidencias parciales en Aranjuez/Cruz Roja/JCCM y portal de Empleo Público CLM HTTP 503 (incluida portada).
+- No se ha demostrado una oferta nueva y vigente a raíz de esa pasada. No confundir 32 registros del arranque con nuevas vacantes.
+- Corrección adicional: primer inventario de una fuente sin histórico previo se trata como **línea base, sin eventos notificables**. Se añade prueba de regresión, suite total 111 casos locales superados.
+- Queda por observar la ejecución programada efectiva y la primera entrega real de la tarea de ChatGPT. Se mantienen avisos diarios y resumen semanal configurados, pero sus futuras ejecuciones no se dan por verificadas de antemano.

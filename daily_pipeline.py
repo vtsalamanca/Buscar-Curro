@@ -179,6 +179,8 @@ def run_all(*, results_dir: Path, code_dir: Path, execute: bool = True, bootstra
         temp_root = Path(temp)
         for name, (script, _legacy_output) in SOURCES.items():
             state_path = state_root / f"{name}.json"
+            # Discovering an old indexed document on first use is not a new job.
+            initial_baseline = not state_path.exists()
             previous_path = temp_root / f"{name}-previous.json"
             output = temp_root / f"{name}-out"
             if state_path.is_symlink():
@@ -213,20 +215,22 @@ def run_all(*, results_dir: Path, code_dir: Path, execute: bool = True, bootstra
                 delta = json.loads((output / "delta.json").read_text(encoding="utf-8"))
                 projection = minimal_state(state)
                 source_events = []
-                for kind, ids in (("new", delta["new_document_ids"]), ("changed", delta["changed_document_ids"])):
-                    for doc_id in ids:
-                        doc = projection["documents"].get(doc_id)
-                        if doc:
-                            candidate = document_event(doc, kind)
-                            if candidate:
-                                source_events.append(candidate)
+                if not initial_baseline:
+                    for kind, ids in (("new", delta["new_document_ids"]), ("changed", delta["changed_document_ids"])):
+                        for doc_id in ids:
+                            doc = projection["documents"].get(doc_id)
+                            if doc:
+                                candidate = document_event(doc, kind)
+                                if candidate:
+                                    source_events.append(candidate)
                 atomic_write_bytes(state_path, state_bytes(projection))
                 failures = delta.get("source_failures", {})
                 reports.append({"source": name, "status": "partial" if failures else "ok",
                                 "new": len(delta["new_document_ids"]),
                                 "changed": len(delta["changed_document_ids"]),
                                 "source_failures": sorted(failures),
-                                "state_preserved": True})
+                                "state_preserved": True,
+                                "initial_baseline": initial_baseline})
                 events.extend(source_events)
             except (OSError, KeyError, ValueError, TypeError, json.JSONDecodeError):
                 reports.append({"source": name, "status": "invalid_result", "state_preserved": state_path.exists()})
