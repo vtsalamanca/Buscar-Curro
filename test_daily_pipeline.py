@@ -46,7 +46,8 @@ class DailyPipelineTests(unittest.TestCase):
         self.assertEqual(len(e["document_hash"]), 64)
 
     def test_summary_handles_partial_and_truncation(self):
-        s = generate_summary("2026-10-25T09:00:00+00:00", [{"source": "boe", "status": "failed"}], list(range(121)))
+        s = generate_summary("2026-10-25T09:00:00+00:00", [{"source": "boe", "status": "ok"},
+                                                         {"source": "ate", "status": "failed"}], list(range(121)))
         self.assertEqual(s["overall_status"], "partial")
         self.assertEqual(s["event_count"], 121)
         self.assertEqual(len(s["events"]), 120)
@@ -62,7 +63,7 @@ class DailyPipelineTests(unittest.TestCase):
             with patch("daily_pipeline.subprocess.run") as run:
                 run.return_value.returncode = 1
                 result = run_all(results_dir=root, code_dir=root)
-            self.assertEqual(result["overall_status"], "partial")
+            self.assertEqual(result["overall_status"], "failed")
             self.assertEqual(state_file.read_bytes(), before)
             self.assertTrue(all(item["status"] == "failed" for item in result["sources"]))
             self.assertEqual(json.loads((root / "notices" / "latest.json").read_text())["overall_status"], "partial")
@@ -126,6 +127,33 @@ class DailyPipelineTests(unittest.TestCase):
             self.assertEqual(second["event_count"], 4)
             self.assertTrue(all(not s.get("initial_baseline") for s in second["sources"][:-1]))
 
+    def test_ate_http_503_is_explicit_and_history_is_preserved(self):
+        from unittest.mock import Mock
+        from daily_pipeline import monitor_ate
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            state = root / "ate.json"
+            state.write_text('{"schema_version":1,"documents":{"https://empleopublico.castillalamancha.es/toledo.pdf":"'
+                             + "a" * 64 + '"}}')
+            before = state.read_bytes()
+            error = {"source": "ate_public_toledo", "status": "access_failed",
+                     "error_type": "HTTPError", "http_status": 503}
+            with patch("daily_pipeline.subprocess.run",
+                       return_value=Mock(returncode=1, stdout=json.dumps(error))):
+                status, events = monitor_ate(root, root)
+            self.assertEqual(status["reason"], "http_503")
+            self.assertTrue(status["state_preserved"])
+            self.assertEqual(state.read_bytes(), before)
+            self.assertEqual(events, [])
+
+    def test_status_is_red_only_when_all_source_families_fail(self):
+        failed = [{"source": "ate", "status": "failed"}]
+        self.assertEqual(generate_summary("2026-10-25T00:00:00Z", failed, [])["overall_status"], "failed")
+        self.assertEqual(generate_summary("2026-10-25T00:00:00Z", failed +
+                         [{"source": "boe", "status": "ok"}], [])["overall_status"], "partial")
+        self.assertEqual(generate_summary("2026-10-25T00:00:00Z",
+                         [{"source": "boe", "status": "ok"}], [])["overall_status"], "ok")
+
     def test_seed_is_redacted_before_persisted(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
@@ -133,7 +161,7 @@ class DailyPipelineTests(unittest.TestCase):
             raw = {"schema_version": 1, "documents": {}, "my_private_key": "must-never-publish"}
             seed.write_bytes(state_bytes(raw))
             result = run_all(results_dir=root, code_dir=root, execute=False, bootstrap_ett=seed)
-            self.assertEqual(result["overall_status"], "partial")
+            self.assertEqual(result["overall_status"], "failed")
             self.assertNotIn("must-never-publish", (root / "notices" / "states" / "ett.json").read_text())
 
 
