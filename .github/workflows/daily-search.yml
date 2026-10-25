@@ -43,7 +43,7 @@ jobs:
           --workflow bc03.yml
           --artifact-name bc03-state
           --destination "$RUNNER_TEMP/bc03-bootstrap.json"
-      - name: Cuatro fuentes acotadas; guardar solo proyecciones públicas
+      - name: Cuatro familias de fuentes y huella ATE; proyecciones públicas
         id: collect
         run: >-
           python3 source/daily_pipeline.py

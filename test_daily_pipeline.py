@@ -97,6 +97,35 @@ class DailyPipelineTests(unittest.TestCase):
             self.assertEqual(events[0]["type"], "ate_pdf_changed")
             self.assertNotIn("applicant", (root / "ate.json").read_text())
 
+    def test_first_scan_creates_baseline_not_new_offer_alerts(self):
+        from unittest.mock import Mock
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            ident = "boe:BOE-A-2026-123456"
+            doc = {"document_id": ident, "source": "boe", "content_hash": "c" * 64,
+                   "title": "Auxiliar técnico educativo", "official_url": "https://www.boe.es/x",
+                   "act_type": "convocatoria", "status": "por_verificar"}
+            def fake_run(args, **kwargs):
+                if args[1].endswith("ate_public.py"):
+                    return Mock(returncode=1, stdout="")
+                out = Path(args[args.index("--output-dir") + 1])
+                out.mkdir(parents=True, exist_ok=True)
+                (out / "state.json").write_bytes(state_bytes({
+                    "schema_version": 1, "documents": {ident: doc},
+                }))
+                (out / "delta.json").write_text(json.dumps({
+                    "new_document_ids": [ident], "changed_document_ids": [],
+                    "source_failures": {},
+                }))
+                return Mock(returncode=0)
+            with patch("daily_pipeline.subprocess.run", side_effect=fake_run):
+                first = run_all(results_dir=root, code_dir=root)
+                second = run_all(results_dir=root, code_dir=root)
+            self.assertEqual(first["events"], [])
+            self.assertTrue(all(s.get("initial_baseline") for s in first["sources"][:-1]))
+            self.assertEqual(second["event_count"], 4)
+            self.assertTrue(all(not s.get("initial_baseline") for s in second["sources"][:-1]))
+
     def test_seed_is_redacted_before_persisted(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
