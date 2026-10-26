@@ -26,3 +26,18 @@ candidaturas ni activa programación. Véase IMPLEMENTACION_BC06_BOE_2026-10-25.
 
 ## BC-06 DOCM: última edición oficial
 Nuevo conector docm_latest.py + runner manual run_docm_latest.py con validador de sumario, NID, URL y fecha. El flujo docm-latest.yml no tiene cron. Se probó con 32 disposiciones de 23/10/2026; filtros conservadores sin coincidencias. Ver IMPLEMENTACION_BC06_DOCM_2026-10-25.md.
+
+## Evaluación contra currículo privado (Debian)
+
+El programa admite una revisión adicional **local y confidencial**, leyendo un PDF de CV
+guardado fuera del repositorio público: `~/.local/share/buscar-curro/cv_actual.pdf`.
+Con Python 3 y `pdftotext` disponibles en Debian:
+
+```sh
+python3 private_cv_review.py --refresh-public
+```
+
+Obtiene únicamente el histórico público de GitHub y deja el informe en
+`~/.local/share/buscar-curro/revision_privada.json`. No transfiere el CV a GitHub
+ni confirma vacantes por sí mismo. Consulta los límites y la arquitectura real en
+[CV_PRIVADO_Y_LINUX_2026-10-26.md](CV_PRIVADO_Y_LINUX_2026-10-26.md).
