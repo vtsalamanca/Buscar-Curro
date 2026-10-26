@@ -29,3 +29,11 @@
 Este archivo y la cabecera actualizada del `README.md` prevalecen sobre planes de 18–19 de octubre y apartados históricos del `ESTADO_PROYECTO.md` que mencionan el antiguo clon Windows o un cron todavía no activado. Las referencias antiguas se conservan únicamente como relato histórico y no son instrucciones vigentes.
 
 **Presupuesto adicional autorizado:** 0 €.
+
+## Añadido: login interactivo InfoJobs en Debian
+
+Se incorporó `infojobs_acceso_local.py` y un lanzador local de Firefox.
+Abre la web oficial en ventana privada para que el titular introduzca sus
+credenciales y el código 2FA **directamente en InfoJobs**. No se recuperan
+cookies ni contraseñas de Windows, ni se ha verificado acceso privado desde
+Linux. Detalles y límites: [ACCESO_INFOJOBS_DEBIAN_2026-10-26.md](ACCESO_INFOJOBS_DEBIAN_2026-10-26.md).
