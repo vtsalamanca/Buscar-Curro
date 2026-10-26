@@ -29,7 +29,7 @@ La búsqueda diaria sigue ejecutándose en **GitHub Actions, en Linux**; sus res
 - Debian se ejecuta en **VirtualBox sobre un anfitrión Windows**. Apagar el ordenador anfitrión apaga la VM. No afirmar autonomía física del host.
 - El agente remoto Debian utiliza actualmente un **proxy restringido de salida alojado en Windows**. El proxy es distinto de ejecutar código del proyecto en Windows. La independencia de esa conexión no está verificada.
 - La sesión autenticada de InfoJobs recuperada está abierta en **Chrome de Windows**, no en una sesión de navegador Debian. No copiar cookies ni credenciales entre sistemas ni saltar medidas anti-bot/2FA. Su uso en Linux exigiría una conexión autorizada del navegador Debian y nuevo inicio de sesión seguro.
-- No cambiar la red de la VM, crear puentes, habilitar NAT sin auditoría ni desconectar la recuperación Windows mientras sea el último recurso operativo. Una independencia completa del anfitrión requeriría un equipo que ejecute Linux como sistema principal u otra arquitectura separada que se autorice expresamente.
+- No cambiar la red de la VM, crear puentes, habilitar NAT sin auditoría ni desconectar la recuperación Windows mientras sea el último recurso operativo. La independencia física del anfitrión **no es el objetivo**: Windows sigue siendo el anfitrión de VirtualBox. Lo exigido es desarrollo y procesamiento exclusivo de Buscar Curro en Debian y GitHub Actions Linux, sin carpetas de código operativas en Windows.
 - La privacidad impide publicar el CV o el perfil íntegro en la rama pública; sin una integración segura y aprobada, GitHub Actions no tiene acceso al PDF y no debe afirmar que lo emplea.
 
 ## Validación y reversión
