@@ -1,5 +1,8 @@
 # Fuentes automáticas
 
+> **Estado operativo vigente:** los conectores históricos manuales pueden coexistir con la búsqueda diaria en GitHub Actions Linux. Desarrollo y evaluación del CV en Debian; no utilizar carpetas Windows. Véase [OPERACION_DEBIAN_2026-10-26.md](OPERACION_DEBIAN_2026-10-26.md).
+
+
 ## ATE público Toledo — 18/10/2026
 
 Acceso automático verificado desde GitHub Actions: https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39152509426 . Tres pruebas superadas y descarga pública del PDF de Toledo validada por firma PDF; 865225 bytes, SHA256 e016ae338b95cd8f81179918a2ab12785a89f3c584aa593aab7d3555dfd5f68d. La misma huella se obtuvo en la prueba local independiente.

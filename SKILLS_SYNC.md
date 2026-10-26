@@ -1,5 +1,7 @@
 # Sincronización de skills — auditoría 2026-10-19
 
+**AUDITORÍA HISTÓRICA — 19/10/2026.** No reutilizar procedimientos de desarrollo basados en carpetas Windows de Buscar Curro. Estado vigente: [OPERACION_DEBIAN_2026-10-26.md](OPERACION_DEBIAN_2026-10-26.md).
+
 ## Hallazgo verificado
 - **GitHub**: `skills/organizaciondeltrabajo/SKILL.md` versión **0.1.6** (historial de cambios de desarrollo local y validación remota).
 - **Plugin instalado en ChatGPT**: `gestor-de-skills` versión **0.4.2**, release `pluginrel_6ad5f91ebbcc8191a936456aad661a0a`, incluye una **copia empaquetada** de `skills/organizaciondeltrabajo/SKILL.md` versión **0.2.0**. Se pudo leer la skill desde ChatGPT. **No se actualiza por cambios al repositorio**: la skill forma parte de una release, no un enlace vivo.

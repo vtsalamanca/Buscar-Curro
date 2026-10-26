@@ -1,5 +1,7 @@
 # Buscar-Curro — Estado maestro y hoja de ruta
 
+**ACTUALIZACIÓN VIGENTE — 26/10/2026:** el estado de 19/10 documenta la fase histórica. El clon Windows se eliminó. Trabajar exclusivamente en Debian y GitHub Actions Linux, sin migrar Windows ni cambiar VirtualBox. Véase [OPERACION_DEBIAN_2026-10-26.md](OPERACION_DEBIAN_2026-10-26.md).
+
 Actualizado: 2026-10-19. Responsable de decisiones: usuario. Presupuesto adicional autorizado: **0 €**.
 
 ## Reglas de continuidad

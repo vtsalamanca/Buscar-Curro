@@ -1,7 +1,10 @@
 # Buscar-Curro
-Búsqueda personal de empleo y autenticación verificable. Sin ejecuciones programadas activas.
 
-BT-01A dispone de una prueba manual y acotada de viabilidad de fuentes públicas. BT-01B incorpora conectores públicos, normalización, filtros, seguimiento de cambios y deduplicación; su ejecución válida está en [GitHub Actions](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39165959658). Consultar `SOURCES_STATUS.md` para la matriz, evidencias y limitaciones. El flujo sigue siendo exclusivamente manual: no hay cron, candidaturas, autenticación privada ni notificaciones.
+> **Estado operativo desde 26/10/2026:** código, pruebas y comparación con CV privado en Debian; búsquedas diarias en GitHub Actions Linux. Windows conserva VirtualBox, pero no tiene copia operativa del proyecto. El repositorio de Debian tiene ahora `.git` propio, independiente de la migración inicial. Véase [OPERACION_DEBIAN_2026-10-26.md](OPERACION_DEBIAN_2026-10-26.md).
+
+Búsqueda personal de empleo y autenticación verificable. La consulta pública diaria está programada mediante `.github/workflows/daily-search.yml`; el acceso privado a InfoJobs desde Debian sigue pendiente de verificación.
+
+BT-01A dispone de una prueba manual y acotada de viabilidad de fuentes públicas. BT-01B incorpora conectores públicos, normalización, filtros, seguimiento de cambios y deduplicación; su ejecución válida está en [GitHub Actions](https://github.com/vtsalamanca/Buscar-Curro/actions/runs/39165959658). Consultar `SOURCES_STATUS.md` para la matriz, evidencias y limitaciones. **Nota histórica (BT-01B):** ese flujo específico era manual; posteriormente se incorporó el workflow diario. No se realizan candidaturas automáticas.
 
 
 ## Mejoras BC-04/BC-05 (fase manual y reversible)
@@ -15,8 +18,10 @@ Para revisar un snapshot offline:
 python3 state_snapshot_cli.py inspect --archive copia.snapshot.zip
 \`\`\`
 Los datos de colas no deben subirse a repositorios públicos. La retención de
-GitHub Actions sigue limitada a 30 días y no se ha activado ejecución diaria,
-avisos ni candidaturas automáticas. Los 80 km geográficos son en línea recta.
+Los artefactos temporales de los workflows históricos conservan retención limitada;
+el flujo diario posterior mantiene resultados mínimos versionados en la rama
+`buscar-curro-resultados`. No se presentan candidaturas automáticas.
+Los 80 km geográficos son en línea recta.
 
 ## BC-06: descubrimiento oficial BOE por fecha
 El nuevo conector manual run_boe_discovery.py consulta hasta siete sumarios diarios

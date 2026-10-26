@@ -1,5 +1,7 @@
 # Buscar-Curro — Encargo agrupado para Codex BT-01
 
+**PLAN HISTÓRICO — NO EJECUTAR:** se refiere a un clon Windows ya retirado y a tareas de octubre completadas. Entorno vigente: Debian. Véase [OPERACION_DEBIAN_2026-10-26.md](OPERACION_DEBIAN_2026-10-26.md).
+
 **Estado:** preparado, NO autorizado para ejecución. Fecha: 2026-10-18.
 **Presupuesto adicional:** 0 €. No contratar API, servicios de pago o infraestructura. Revisar límites antes de ejecutar trabajos con cuota.
 **Repositorio:** `vtsalamanca/Buscar-Curro`; carpeta Windows `C:\Users\Usuario\Desktop\Buscar curro`.
