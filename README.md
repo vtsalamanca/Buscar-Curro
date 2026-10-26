@@ -49,9 +49,10 @@ ni confirma vacantes por sí mismo. Consulta los límites y la arquitectura real
 
 ## Acceso interactivo a InfoJobs desde Debian
 
-Hay un lanzador que abre la página **oficial** de InfoJobs en Firefox para que el
-titular inicie sesión y resuelva el 2FA directamente en el portal, sin entregar
-credenciales a scripts ni a ChatGPT. Menú de aplicaciones: «Buscar Curro - acceso InfoJobs».
+Hay un lanzador que abre la página **oficial** de InfoJobs en Firefox con un
+perfil persistente, separado y privado para que el titular pueda guardar su
+contraseña en el gestor propio del navegador y reutilizar la sesión, sin entregar
+credenciales a scripts ni a ChatGPT. Los desafíos 2FA siguen sujetos a InfoJobs. Menú de aplicaciones: «Buscar Curro - acceso InfoJobs».
 También se puede ejecutar `python3 infojobs_acceso_local.py --abrir`.
 **No implica lectura automática del buzón privado.**
 Ver [ACCESO_INFOJOBS_DEBIAN_2026-10-26.md](ACCESO_INFOJOBS_DEBIAN_2026-10-26.md).
