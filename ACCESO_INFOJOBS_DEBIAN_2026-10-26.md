@@ -1,12 +1,22 @@
 # Inicio de sesión legítimo de InfoJobs desde Debian — BC-11
 
-El comando `python3 infojobs_acceso_local.py --abrir` abre **Firefox en ventana privada**, en
-la **web oficial** `https://www.infojobs.net/`. El usuario pulsa «Acceso candidatos» e
-introduce **él mismo** su correo, contraseña y el código 2FA cuando InfoJobs los pida.
-No existe ningún formulario de credenciales dentro del programa Buscar Curro, ni lectura de
-las pulsaciones, ni almacenamiento de contraseñas, cookies, tokens o códigos de verificación
-por el programa. El modo privado de Firefox elimina las cookies de sesión al cerrar
-las ventanas privadas. **Es un acceso interactivo, no un lector automático de mensajes.**
+El comando `python3 infojobs_acceso_local.py --abrir` abre **Firefox en un perfil separado y persistente**, exclusivamente en Debian, en la **web oficial** `https://www.infojobs.net/`. El perfil se guarda en
+`~/.local/share/buscar-curro/firefox-infojobs/`, directorio limitado al usuario Linux
+(permisos `700`). No se guardan claves en el programa ni en GitHub.
+
+En el primer inicio, el usuario podrá introducir las credenciales *directamente en la página de InfoJobs* y **elegir guardarlas en el gestor de contraseñas de Firefox**. A partir de entonces Firefox puede
+autocompletar el inicio de sesión y reutilizar cookies de una sesión vigente. Según
+la configuración y los controles de InfoJobs, todavía pueden ser necesarios confirmación
+de inicio o código de verificación. El programa nunca extrae ni muestra las contraseñas.
+Esta persistencia implica proteger el usuario Linux y su copia de seguridad; puede configurarse
+una contraseña principal de Firefox si se desea protección adicional, aunque requeriría interacción.
+
+**Corrección de BC-11:** la primera versión usaba `--private-window` y destruía
+las cookies al cerrar. BC-12 emplea `--profile` persistente y `--no-remote`
+en lugar de modo privado.
+
+**No se ha probado una identificación real** porque la sesión gráfica XFCE continúa cerrada.
+Este lanzador por sí solo no automatiza la lectura del buzón privado ni resuelve 2FA.
 
 Se añadió el lanzador por usuario en `~/.local/share/applications/buscar-curro-infojobs.desktop`
 con `python3 infojobs_acceso_local.py --instalar-lanzador`; aparece en el menú de
@@ -28,8 +38,8 @@ python3 infojobs_acceso_local.py --comprobar
 python3 infojobs_acceso_local.py --abrir
 ```
 El primer comando verifica exclusivamente sesión gráfica y disponibilidad de Firefox.
-El segundo abre el navegador; **no demuestra** acceso a la cuenta, listado de candidaturas
-ni disponibilidad futura. A 26/10/2026 el agente remoto detectó la sesión gráfica sin
+El segundo abre el navegador y reutiliza el perfil de Firefox; **no demuestra** acceso
+a la cuenta, listado de candidaturas ni disponibilidad futura. A 26/10/2026 el agente remoto detectó la sesión gráfica sin
 iniciar (`graphical_session_unavailable`). En intentos de HTTP anteriores, la web
 respondió 405 por acceso directo, 403 mediante proxy restringido y una prueba headless
 de Firefox no completó la carga. El bloqueo real solo podrá revisarse dentro de una

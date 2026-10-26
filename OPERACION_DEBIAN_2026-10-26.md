@@ -33,7 +33,9 @@ Este archivo y la cabecera actualizada del `README.md` prevalecen sobre planes d
 ## Añadido: login interactivo InfoJobs en Debian
 
 Se incorporó `infojobs_acceso_local.py` y un lanzador local de Firefox.
-Abre la web oficial en ventana privada para que el titular introduzca sus
-credenciales y el código 2FA **directamente en InfoJobs**. No se recuperan
+BC-12 sustituyó la ventana privada por un perfil Firefox persistente exclusivo
+de Buscar Curro (permisos `700`), que puede recordar sesiones y autocompletar
+credenciales introducidas **en la web oficial por el titular**; el código 2FA
+puede requerir intervención. Ninguna contraseña se conserva en el programa. No se recuperan
 cookies ni contraseñas de Windows, ni se ha verificado acceso privado desde
 Linux. Detalles y límites: [ACCESO_INFOJOBS_DEBIAN_2026-10-26.md](ACCESO_INFOJOBS_DEBIAN_2026-10-26.md).
