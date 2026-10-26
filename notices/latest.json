@@ -1,8 +1,24 @@
 {
-  "event_count": 0,
-  "events": [],
+  "event_count": 1,
+  "events": [
+    {
+      "act_type": "oferta",
+      "deadline": null,
+      "document_hash": "e6c467c3fea403281b7f80c8acf749d940c0c1bc35d92087c8fed0b846256cde",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "province": "Madrid",
+      "publication_date": null,
+      "source": "ilunion",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Leñeros (Madrid)",
+      "type": "new",
+      "url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-Le%C3%B1eros-%28Madrid%29-Madr/1375659957/",
+      "verified_offer": false
+    }
+  ],
   "events_truncated": false,
-  "generated_at": "2026-10-25T22:53:08+00:00",
+  "generated_at": "2026-10-26T05:52:15+00:00",
   "notice": "Candidatos preliminares, no plazas o vigencias confirmadas. Validar requisitos, fechas y ubicación en origen. No se presentan kilómetros por carretera.",
   "overall_status": "partial",
   "project": "Buscar-Curro",
@@ -22,7 +38,7 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 0,
+      "new": 1,
       "source": "publicas",
       "source_failures": [
         "aranjuez",

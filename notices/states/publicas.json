@@ -211,6 +211,19 @@
       "status": "plazo_desconocido",
       "title": "disposicion"
     },
+    "ilunion:3dfcb47133ff70cfd8c9": {
+      "act_type": "oferta",
+      "content_hash": "11867a9ed304621c5e1bc0d388450985fd8826229aa7c3653133dc05be8f236a",
+      "document_id": "ilunion:3dfcb47133ff70cfd8c9",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-Le%C3%B1eros-%28Madrid%29-Madr/1375659957/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Leñeros (Madrid)"
+    },
     "ilunion:5cedf1c778a2f16bd038": {
       "act_type": "oferta",
       "content_hash": "60317735f26182a1df62f28135c6ef06066411640b42a33ccbcf753ae6940cd8",
