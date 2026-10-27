@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import {allowedUrl,primitive,privateReport,savePrivate} from './infojobs_browser_bidi.mjs';
+import {allowedUrl,primitive,privateReport,savePrivate,unverifiedDiagnostics} from './infojobs_browser_bidi.mjs';
 test('allowlist HTTPS official host only',()=>{
  assert.equal(allowedUrl('https://www.infojobs.net/candidate/applications/list.xhtml'),true);
  for(const u of ['http://www.infojobs.net/','https://infojobs.net/','https://www.infojobs.net.evil.com/','https://bad:bad@www.infojobs.net/','javascript:1'])assert.equal(allowedUrl(u),false);
@@ -36,4 +36,13 @@ test('refuse symlinked private directory',()=>{
 test('reject empty async loading state without explicit empty marker',()=>{
  assert.throws(()=>privateReport({trusted:true,private:true,items:[]}),/unverified/);
  assert.equal(privateReport({trusted:true,private:true,items:[],emptyKnown:true}).applications_count,0);
+});
+
+test('unverified diagnosis exposes no page contents or secrets',()=>{
+ const d=unverifiedDiagnostics({route_kind:'login',application_links:3,has_login_password:true,
+     has_application_headings:false,password:'TOPSECRET',user:'PII'});
+ assert.deepEqual(d,{route_kind:'login',application_links:3,has_login_password:true,has_application_headings:false});
+ assert.equal(JSON.stringify(d).includes('TOPSECRET'),false);
+ assert.deepEqual(unverifiedDiagnostics({route_kind:'https://malicious.invalid',application_links:1000}),
+ {route_kind:'unknown',application_links:100,has_login_password:false,has_application_headings:false});
 });

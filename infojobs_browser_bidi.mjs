@@ -26,6 +26,13 @@ export function primitive(node) {
   if (['string','number','boolean','null','undefined'].includes(node.type))return node.value;
   return undefined;
 }
+export function unverifiedDiagnostics(snapshot) {
+  const kind=['applications','login','other'].includes(snapshot?.route_kind)?snapshot.route_kind:'unknown';
+  const count=Number.isInteger(snapshot?.application_links)?Math.max(0,Math.min(100,snapshot.application_links)):0;
+  return {route_kind:kind,application_links:count,
+          has_login_password:snapshot?.has_login_password===true,
+          has_application_headings:snapshot?.has_application_headings===true};
+}
 export function sanitizeItem(row) {
   if (!row || typeof row.title!=='string'||!row.title.trim())return null;
   const clean=x=>String(x||'').replace(/[\r\n\t]+/g,' ').replace(/\s+/g,' ').trim().slice(0,MAX_FIELD);
@@ -127,22 +134,29 @@ const DOM_READ=`(()=>{
     return {title,company,status,recent_activity};
   });
   const emptyKnown=/no tienes candidaturas|ninguna candidatura/i.test(text);
+  const route_kind=location.pathname.includes('/candidate/applications/')?'applications':
+    /login|identif|acceso|sign.in/i.test(location.pathname)?'login':'other';
   return {trusted:true,private:isPrivate,requiresLogin,emptyKnown,
-          pathname:location.pathname,items};
+          route_kind,application_links:links.length,
+          has_login_password:!!document.querySelector('input[type="password"]'),
+          has_application_headings:text.includes('Mis ofertas')&&text.includes('CANDIDATURAS'),
+          items};
 })()`;
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function read(browser){
  const context=await browser.context();
+ let diagnostics=unverifiedDiagnostics(null);
  await browser.call('browsingContext.navigate',{context,url:APPLICATIONS_URL,wait:'none'});
  for(let i=0;i<9;i++){
    await sleep(650);
    const r=await browser.evaluate(context,DOM_READ);
    if(!r?.trusted)throw Error('site_origin_unverified');
+   diagnostics=unverifiedDiagnostics(r);
    if(r.private && (r.items?.length>0 || r.emptyKnown))
      return {status:'private_read_verified',report:privateReport(r)};
    if(r.requiresLogin)return {status:'authentication_required'};
  }
- return {status:'private_read_unverified'};
+ return {status:'private_read_unverified',diagnostics};
 }
 async function main() {
  const mode=process.argv[2];
@@ -153,6 +167,7 @@ async function main() {
   const r=await read(browser);
   if(r.report)savePrivate(r.report);
   const summary={status:r.status,applications:r.report?.applications_count??null};
+  if(r.status==='private_read_unverified')summary.diagnostics=r.diagnostics;
   console.log(JSON.stringify(summary));
   process.exitCode=r.status==='private_read_verified'?0:2;
  }finally{await browser.close();}

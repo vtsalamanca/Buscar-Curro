@@ -1,5 +1,17 @@
 # BC-14 — conexión oficial a InfoJobs desde Debian
 
+> **CIERRE DEL PROVEEDOR (27/10/2026):** respuesta por correo del
+> departamento de Privacidad de InfoJobs: la API para desarrolladores
+> ya no está disponible y, por el momento, no se prevé reactivarla.
+> El formulario Manage Apps tampoco permite nuevas altas.
+> **Por tanto, el procedimiento OAuth descrito más abajo es histórico y
+> actualmente INVIABLE**; no solicitar Client ID/Secret ni pedir al
+> usuario que complete pasos que InfoJobs ya no admite.
+> El código se conserva solo como artefacto técnico inactivo. No usar
+> endpoints no documentados, credenciales del candidato ni soluciones
+> de pago como sustitución.
+
+
 Referencia del proveedor:
 - https://developer.infojobs.net/documentation/quick-start/index.xhtml
 - https://developer.infojobs.net/documentation/user-oauth2/index.xhtml

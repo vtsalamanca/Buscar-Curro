@@ -1,3 +1,28 @@
+## Actualización de la revisión del 27/10/2026
+
+La API de InfoJobs ha sido oficialmente deshabilitada, según respuesta de
+su departamento de Privacidad recibida el 27/10/2026. El flujo OAuth descrito
+en BC-14 no constituye ya una opción operativa.
+
+La consulta nueva en Debian devolvió private_read_unverified, mientras que
+una consulta anterior había recuperado **una** candidatura de ILUNION, estado
+Inscrito. Por consiguiente, el resultado antiguo se conserva como histórico,
+no como situación actual comprobada.
+
+La nueva instrumentación de diagnóstico solo devuelve indicadores cerrados
+de estructura de página, sin HTML, URLs completas, contraseñas ni datos del
+candidato. En la segunda consulta, la ruta seguía siendo de candidaturas,
+pero no aparecieron enlaces reconocibles ni las cabeceras esperadas de la
+interfaz; tampoco un campo de contraseña. **Causa no determinada**:
+renderizado/estructura/sesión. No atribuirlo a caducidad sin prueba.
+
+Se ha confirmado el cierre del puerto temporal 9222. El navegador Firefox
+gestiona exclusivamente una sesión autorizada; no se hace login con
+credenciales personales ni se intenta eludir controles de acceso.
+La lectura de Gmail y las tareas programadas en la nube no equivalen
+a acceso actual a los mensajes internos de InfoJobs.
+
+---
 > **ACTUALIZACIÓN BC-14 (27/10/2026):** tras comprobar los términos oficiales
 > de InfoJobs Developers, la vía de rellenar la contraseña del candidato
 > desde GNOME Keyring **se deshabilita** en Buscar Curro. La integración para

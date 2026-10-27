@@ -119,6 +119,15 @@ def run_node(mode:str, credentials:tuple[str,str]|None=None)->dict:
             "login_form_unrecognized","browser_unavailable_or_unverified",
         ):return {"status":"unexpected_output"}
         response={"status":safe_status}
+        if safe_status=="private_read_unverified" and isinstance(result.get("diagnostics"),dict):
+            d=result["diagnostics"]
+            if d.get("route_kind") in {"applications","login","other","unknown"}:
+                response["diagnostics"]={
+                    "route_kind":d["route_kind"],
+                    "application_links":min(100,max(0,d.get("application_links",0))) if type(d.get("application_links")) is int else 0,
+                    "has_login_password":d.get("has_login_password") is True,
+                    "has_application_headings":d.get("has_application_headings") is True
+                }
         if isinstance(result.get("applications"),int) and 0<=result["applications"]<=100:
             response["applications"]=result["applications"]
         if result.get("reason") in ("bidi_session_not_created","script_evaluation_failed",
