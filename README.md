@@ -56,3 +56,19 @@ credenciales a scripts ni a ChatGPT. Los desafíos 2FA siguen sujetos a InfoJobs
 También se puede ejecutar `python3 infojobs_acceso_local.py --abrir`.
 **No implica lectura automática del buzón privado.**
 Ver [ACCESO_INFOJOBS_DEBIAN_2026-10-26.md](ACCESO_INFOJOBS_DEBIAN_2026-10-26.md).
+
+## Revisión privada de InfoJobs desde Debian
+
+El procedimiento BC-13 permite consultar candidaturas desde el Firefox
+autorizado, con informe local privado y acceso opcional al almacén GNOME
+Keyring **solo cuando el navegador requiere iniciar sesión**. No reproduce
+la API HTTP anterior. Ejecutar desde Debian:
+
+```sh
+python3 infojobs_consulta_debian.py --revisar
+```
+
+La consulta y sus limitaciones de autenticación se documentan en
+[INTEGRACION_INFOJOBS_LLAVERO_DEBIAN_2026-10-27.md](INTEGRACION_INFOJOBS_LLAVERO_DEBIAN_2026-10-27.md).
+No confundir la revisión local con el seguimiento automático ya programado
+en ChatGPT/GitHub.
