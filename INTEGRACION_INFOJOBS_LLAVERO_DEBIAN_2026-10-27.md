@@ -1,3 +1,5 @@
+> **Actualización 28/10/2026:** la consulta habitual de candidaturas está recuperada mediante Firefox y AT-SPI2. Véase [BC-16](RECUPERACION_INFOJOBS_ATSPI_2026-10-28.md). La parte BiDi/OAuth que sigue documenta el estado histórico, no la ruta de producción.
+
 ## Actualización de la revisión del 27/10/2026
 
 La API de InfoJobs ha sido oficialmente deshabilitada, según respuesta de

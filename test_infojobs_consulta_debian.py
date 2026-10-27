@@ -1,5 +1,6 @@
 import unittest
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
+import sys
 from infojobs_consulta_debian import review
 
 
@@ -21,6 +22,14 @@ class BrowserOrchestrationTests(unittest.TestCase):
         result=review(fake)
         self.assertEqual(result["status"],"private_read_unverified")
         fake.assert_called_once_with("--revisar")
+
+    def test_cli_review_uses_accessibility_without_restarting_firefox(self):
+        from infojobs_consulta_debian import main
+        with patch.object(sys, "argv", ["infojobs_consulta_debian.py", "--revisar"]), \
+             patch("infojobs_lector_accesible.main", return_value=0) as reader, \
+             patch("infojobs_consulta_debian.run_managed", side_effect=AssertionError("must not restart browser")):
+            self.assertEqual(main(), 0)
+            reader.assert_called_once_with()
 
     def test_reader_does_not_call_raw_password_vault(self):
         from pathlib import Path

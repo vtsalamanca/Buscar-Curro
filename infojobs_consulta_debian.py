@@ -1,9 +1,9 @@
-"""Revisión autorizada de InfoJobs desde Debian con Firefox y GNOME Keyring.
+"""Consulta autorizada de candidaturas de InfoJobs desde Firefox de Debian.
 
-Usa WebDriver BiDi ligado a localhost y un perfil Firefox autorizado.
-Sólo lee candidaturas. Si caduca la sesión, indica que debe utilizarse
-el flujo OAuth oficial; no accede a contraseñas de candidato.
-Cierra el agente de depuración y recupera el Firefox ordinario al terminar.
+La opción habitual --revisar usa la interfaz accesible de Firefox ya
+autenticado; no cierra el navegador, lee contraseñas ni activa WebDriver.
+Las funciones BiDi antiguas se mantienen para pruebas de regresión pero no
+se invocan en la consulta habitual (API oficial de InfoJobs deshabilitada).
 """
 from __future__ import annotations
 
@@ -189,6 +189,10 @@ def main():
     group.add_argument("--revisar",action="store_true")
     group.add_argument("--comprobar",action="store_true")
     args=p.parse_args()
+    if args.revisar:
+        # Standard supported route: existing Firefox session via AT-SPI.
+        from infojobs_lector_accesible import main as accessible_main
+        return accessible_main()
     if args.comprobar:
         response={"status":check_environment(),"browser_open":bool(find_browser_processes())}
     else:
