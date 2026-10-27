@@ -1,8 +1,7 @@
 /**
  * InfoJobs: lectura única de candidaturas desde Firefox/WebDriver BiDi.
  * Solo localhost; sin cookies exportadas, contraseñas ni API privada.
- * --login recibe por STDIN credenciales del programa local (solo si caduca la sesión).
- * No mostrar, persistir ni registrar secretos.
+ * Nunca recibe contraseñas: para autorización nueva, utilizar OAuth oficial.
  */
 import fs from 'node:fs';
 import os from 'node:os';
@@ -131,24 +130,6 @@ const DOM_READ=`(()=>{
   return {trusted:true,private:isPrivate,requiresLogin,emptyKnown,
           pathname:location.pathname,items};
 })()`;
-const DOM_AUTH=`(username,password)=>{
-  if(location.protocol!=='https:'||location.hostname!=='www.infojobs.net'
-     ||!location.pathname.includes('candidate-login'))
-    return 'untrusted_or_not_login';
-  const email=document.querySelector('input[name="email"][type="email"]');
-  const pass=document.querySelector('input[name="password"][type="password"]');
-  const submit=email?.closest('form')?.querySelector('button[type="submit"]')
-    ||document.querySelector('button[type="submit"]');
-  if(!email||!pass||!submit) return 'login_form_unrecognized';
-  for(const [el,val] of [[email,username],[pass,password]]){
-    const setter=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set;
-    setter.call(el,val);
-    el.dispatchEvent(new Event('input',{bubbles:true}));
-    el.dispatchEvent(new Event('change',{bubbles:true}));
-  }
-  submit.click();
-  return 'submitted_once';
-}`;
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function read(browser){
  const context=await browser.context();
@@ -163,41 +144,17 @@ async function read(browser){
  }
  return {status:'private_read_unverified'};
 }
-async function login(browser) {
- const context=await browser.context();
- const preflight=await browser.evaluate(context,"({host:location.hostname,proto:location.protocol,path:location.pathname})");
- if(preflight?.host!=='www.infojobs.net'||preflight?.proto!=='https:'
-    ||!String(preflight.path).includes('candidate-login'))return {status:'login_form_unrecognized'};
- let credentials=null;
- try {
-   const chunks=[];
-   for await(const c of process.stdin) {chunks.push(c);if(chunks.reduce((a,b)=>a+b.length,0)>18000)throw Error('too_much_input')}
-   credentials=JSON.parse(Buffer.concat(chunks).toString('utf8'));
-   if(typeof credentials.username!=='string'||typeof credentials.password!=='string'
-      ||!credentials.username||!credentials.password)throw Error('invalid_input');
-   const result=await browser.call('script.callFunction',{
-     functionDeclaration:DOM_AUTH,
-     arguments:[{type:'string',value:credentials.username},{type:'string',value:credentials.password}],
-     target:{context},awaitPromise:false,resultOwnership:'none'
-   });
-   const status=primitive(result.result);
-   if(status!=='submitted_once')return {status:'login_form_unrecognized'};
-   await sleep(3500);
-   const current=await browser.evaluate(context,DOM_READ);
-   return {status:current?.requiresLogin?'interaction_or_login_required':'login_submitted_check_session'};
- }finally {credentials=null;}
-}
 async function main() {
  const mode=process.argv[2];
- if(!['--revisar','--iniciar-sesion'].includes(mode))throw Error('argument_invalid');
+ if(mode!=='--revisar')throw Error('argument_invalid');
  const browser=new Browser();
  try {
   await browser.open();
-  const r=mode==='--revisar'?await read(browser):await login(browser);
+  const r=await read(browser);
   if(r.report)savePrivate(r.report);
   const summary={status:r.status,applications:r.report?.applications_count??null};
   console.log(JSON.stringify(summary));
-  process.exitCode=r.status==='private_read_verified'||r.status==='login_submitted_check_session'?0:2;
+  process.exitCode=r.status==='private_read_verified'?0:2;
  }finally{await browser.close();}
 }
 if (process.argv[1] && import.meta.url===new URL('file://'+process.argv[1]).href) {

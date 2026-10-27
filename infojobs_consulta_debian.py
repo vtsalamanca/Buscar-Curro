@@ -1,8 +1,8 @@
 """Revisión autorizada de InfoJobs desde Debian con Firefox y GNOME Keyring.
 
-Usa WebDriver BiDi ligado exclusivamente a localhost y al perfil ya consentido.
-Solo lee candidaturas y, si la sesión expiró, puede rellenar una vez el login
-con credenciales del almacén privado de GNOME Keyring. No elude MFA/CAPTCHA.
+Usa WebDriver BiDi ligado a localhost y un perfil Firefox autorizado.
+Sólo lee candidaturas. Si caduca la sesión, indica que debe utilizarse
+el flujo OAuth oficial; no accede a contraseñas de candidato.
 Cierra el agente de depuración y recupera el Firefox ordinario al terminar.
 """
 from __future__ import annotations
@@ -101,12 +101,10 @@ def start_browser(debugging:bool):
 
 
 def run_node(mode:str, credentials:tuple[str,str]|None=None)->dict:
-    if mode not in ("--revisar","--iniciar-sesion"):
+    if mode != "--revisar" or credentials is not None:
         raise ValueError("unsupported_command")
     args=["node",str(BIDI_SCRIPT),mode]
     payload=None
-    if credentials is not None:
-        payload=json.dumps({"username":credentials[0],"password":credentials[1]})
     try:
         p=subprocess.run(args,input=payload,capture_output=True,text=True,
                          timeout=40,env=desktop_env(),check=False)
@@ -131,24 +129,16 @@ def run_node(mode:str, credentials:tuple[str,str]|None=None)->dict:
         return {"status":"local_browser_error"}
 
 
-def review(run=run_node, get_credentials=None)->dict:
+def review(run=run_node)->dict:
+    """Read existing authorized Firefox session; do not request account password.
+
+    For new authentication, register the application and grant OAuth consent
+    using infojobs_oauth_oficial.py, as required by the provider's developer terms.
+    """
     first=run("--revisar")
-    if first["status"]!="authentication_required":
-        return first
-    if get_credentials is None:
-        from infojobs_keyring_client import load_credentials
-        get_credentials=load_credentials
-    credentials=get_credentials()
-    if not credentials:
-        return {"status":"vault_locked_or_missing"}
-    login=run("--iniciar-sesion",credentials)
-    del credentials
-    if login["status"]!="login_submitted_check_session":
-        return {"status":login["status"]}
-    second=run("--revisar")
-    if second["status"]=="authentication_required":
-        return {"status":"second_factor_or_login_required"}
-    return second
+    if first["status"]=="authentication_required":
+        return {"status":"official_oauth_authorization_required"}
+    return first
 
 
 def run_managed()->dict:

@@ -1,3 +1,12 @@
+> **ACTUALIZACIÓN BC-14 (27/10/2026):** tras comprobar los términos oficiales
+> de InfoJobs Developers, la vía de rellenar la contraseña del candidato
+> desde GNOME Keyring **se deshabilita** en Buscar Curro. La integración para
+> accesos nuevos debe utilizar OAuth 2.0 oficial, sin solicitar contraseñas
+> personales; véase `infojobs_oauth_oficial.py` y
+> [OAUTH_INFOJOBS_OFICIAL_2026-10-27.md](OAUTH_INFOJOBS_OFICIAL_2026-10-27.md).
+> Los apartados siguientes describen el estado experimental BC-13 y ya no
+> autorizan el uso de ese mecanismo de contraseña.
+
 # Buscar Curro: lectura de InfoJobs mediante Firefox + almacén de llaves (BC-13)
 
 **Estado verificado el 27/10/2026**. Ejecución exclusivamente en Debian, presupuesto
