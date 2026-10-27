@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
       - name: Pruebas y regresiones
@@ -38,7 +38,7 @@ jobs:
         run: cat docm-output/report.md >> "$GITHUB_STEP_SUMMARY"
       - name: Histórico de continuidad (30 días)
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: docm-latest-state
           path: docm-output/state.json
@@ -46,7 +46,7 @@ jobs:
           retention-days: 30
       - name: Diagnóstico temporal (7 días)
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: docm-latest-results
           path: |

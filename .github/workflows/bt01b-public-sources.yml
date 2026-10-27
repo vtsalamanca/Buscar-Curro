@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
       - name: Pruebas sin red y regresión ATE
@@ -43,7 +43,7 @@ jobs:
         run: cat bt01b-output/report.md >> "$GITHUB_STEP_SUMMARY"
       - name: Estado para la siguiente ejecución
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: bt01b-state
           path: |
@@ -53,7 +53,7 @@ jobs:
           retention-days: 30
       - name: Evidencia BT-01B
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: bt01b-public-source-results
           path: |
