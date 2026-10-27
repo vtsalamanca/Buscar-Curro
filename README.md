@@ -72,3 +72,19 @@ La consulta y sus limitaciones de autenticación se documentan en
 [INTEGRACION_INFOJOBS_LLAVERO_DEBIAN_2026-10-27.md](INTEGRACION_INFOJOBS_LLAVERO_DEBIAN_2026-10-27.md).
 No confundir la revisión local con el seguimiento automático ya programado
 en ChatGPT/GitHub.
+
+
+## Autorización oficial InfoJobs (BC-14)
+
+Tras comprobar la documentación del proveedor, el camino correcto para
+una aplicación propia es **InfoJobs Developers + OAuth 2.0**: la aplicación no
+debe recopilar la contraseña personal. El lector Firefox mantiene consulta
+de sesiones ya autorizadas; si expiran, solicita autorización oficial.
+Preparada una aplicación local `infojobs_oauth_oficial.py --abrir` en Debian
+para registrar un cliente, abrir consentimiento en la web de InfoJobs,
+guardar el token OAuth en GNOME Keyring y consultar candidaturas mediante
+GET de la API, sin enviar contraseñas a ChatGPT ni a GitHub.
+**El acceso OAuth real requiere todavía registrar una aplicación en el
+portal de desarrolladores y obtener Client ID/Secret. No se ha autenticado
+con OAuth aún.** Ver
+[OAUTH_INFOJOBS_OFICIAL_2026-10-27.md](OAUTH_INFOJOBS_OFICIAL_2026-10-27.md).
