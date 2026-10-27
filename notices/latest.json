@@ -1,24 +1,84 @@
 {
-  "event_count": 1,
+  "event_count": 5,
   "events": [
     {
       "act_type": "oferta",
+      "deadline": "2027-01-14",
+      "document_hash": "748c9c510beeab44d03ed69ab7d4ecb195abf303551854d8d9b8bb522573f496",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Leganés",
+      "province": "Madrid",
+      "publication_date": "2026-10-16",
+      "source": "gi_group",
+      "title": "Promotor/a Comercial de Ventas",
+      "type": "new",
+      "url": "https://es.gigroup.com/ofertas-de-trabajo-detalle/leganes-madrid-promotor-a-comercial-de-ventas/103825/",
+      "verified_offer": false
+    },
+    {
+      "act_type": "oferta",
       "deadline": null,
-      "document_hash": "e6c467c3fea403281b7f80c8acf749d940c0c1bc35d92087c8fed0b846256cde",
+      "document_hash": "1442979d34b1d63a6a3b17128a8e3b484cda77788c8a6aca3ff542078984fe91",
       "eligibility": "datos_insuficientes",
       "geographic_status": "dentro_80km",
       "municipality": "Madrid",
       "province": "Madrid",
       "publication_date": null,
       "source": "ilunion",
-      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Leñeros (Madrid)",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Peñagrande (Madrid)",
       "type": "new",
-      "url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-Le%C3%B1eros-%28Madrid%29-Madr/1375659957/",
+      "url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-Pe%C3%B1agrande-%28Madrid%29-Madr/1375780457/",
+      "verified_offer": false
+    },
+    {
+      "act_type": "oferta",
+      "deadline": null,
+      "document_hash": "b88ed98217e655fb69a6c3d26904b5938498200cdcdaff8963ef1e6a4ad8eddf",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "province": "Madrid",
+      "publication_date": null,
+      "source": "ilunion",
+      "title": "Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD La Remonta (Madrid) Población Madrid Fecha 26 oct 2026 Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD La Remonta (Madrid) Población Madrid Fecha 26 oct 2026 Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD La Remonta (Madrid) Poblaci",
+      "type": "new",
+      "url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Psicolog%C3%ADa-consin-discapacidad-%28HMD%29-CD-La-Remonta-%28Madrid%29-Madr/1375803657/",
+      "verified_offer": false
+    },
+    {
+      "act_type": "oferta",
+      "deadline": null,
+      "document_hash": "cfa91fa2b58952d3d44bcd35cb737a7ad9bb2856cc40005e9681ef95c387664a",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "province": "Madrid",
+      "publication_date": null,
+      "source": "ilunion",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD J.M. Bringas (Madrid)",
+      "type": "new",
+      "url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-J_M_-Bringas-%28Madrid%29-Madr/1375779957/",
+      "verified_offer": false
+    },
+    {
+      "act_type": "oferta",
+      "deadline": null,
+      "document_hash": "abbd72a2ae907778121515e36f037d2f9f683d458ac6ea6afc87a809ccd5e30a",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Toledo",
+      "province": "Toledo",
+      "publication_date": null,
+      "source": "ilunion",
+      "title": "Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 26 oct 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 26 oct 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin disca",
+      "type": "new",
+      "url": "https://empleo.ilunion.com/job/Toledo-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-Sonseca-%28Toledo%29-Tole/1375783957/",
       "verified_offer": false
     }
   ],
   "events_truncated": false,
-  "generated_at": "2026-10-26T05:52:15+00:00",
+  "generated_at": "2026-10-27T02:55:41+00:00",
   "notice": "Candidatos preliminares, no plazas o vigencias confirmadas. Validar requisitos, fechas y ubicación en origen. No se presentan kilómetros por carretera.",
   "overall_status": "partial",
   "project": "Buscar-Curro",
@@ -27,9 +87,10 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 0,
+      "new": 1,
       "source": "ett",
       "source_failures": [
+        "adecco",
         "eurofirms"
       ],
       "state_preserved": true,
@@ -38,12 +99,11 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 1,
+      "new": 4,
       "source": "publicas",
       "source_failures": [
         "aranjuez",
-        "cruz_roja",
-        "jccm"
+        "cruz_roja"
       ],
       "state_preserved": true,
       "status": "partial"
@@ -67,10 +127,10 @@
       "status": "ok"
     },
     {
-      "reason": "http_503",
+      "first_baseline": true,
+      "new_or_changed": 0,
       "source": "ate",
-      "state_preserved": false,
-      "status": "failed"
+      "status": "ok"
     }
   ]
 }

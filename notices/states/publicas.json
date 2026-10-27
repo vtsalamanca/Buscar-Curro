@@ -211,6 +211,45 @@
       "status": "plazo_desconocido",
       "title": "disposicion"
     },
+    "ilunion:1fa8b73ea54253312143": {
+      "act_type": "oferta",
+      "content_hash": "b0868d02ade7d4167c686a6db2f65d4053cc3e4a2ac7f073b792ec6577016f48",
+      "document_id": "ilunion:1fa8b73ea54253312143",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-Pe%C3%B1agrande-%28Madrid%29-Madr/1375780457/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Peñagrande (Madrid)"
+    },
+    "ilunion:26cb69914a23ed76a485": {
+      "act_type": "oferta",
+      "content_hash": "a9461c787cc7be7a4c4f17e0da55490a3d560b32c773ac00143016b68354d5d8",
+      "document_id": "ilunion:26cb69914a23ed76a485",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Psicolog%C3%ADa-consin-discapacidad-%28HMD%29-CD-La-Remonta-%28Madrid%29-Madr/1375803657/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD La Remonta (Madrid) Población Madrid Fecha 26 oct 2026 Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD La Remonta (Madrid) Población Madrid Fecha 26 oct 2026 Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD La Remonta (Madrid) Población Madrid Fecha 26 oct 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
+    },
+    "ilunion:3ce369afa05dd73951da": {
+      "act_type": "oferta",
+      "content_hash": "c0205251b081e780ee0a69c1582f8639fa95eef76036a17d3f43565ef177ca64",
+      "document_id": "ilunion:3ce369afa05dd73951da",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-J_M_-Bringas-%28Madrid%29-Madr/1375779957/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD J.M. Bringas (Madrid)"
+    },
     "ilunion:3dfcb47133ff70cfd8c9": {
       "act_type": "oferta",
       "content_hash": "11867a9ed304621c5e1bc0d388450985fd8826229aa7c3653133dc05be8f236a",
@@ -275,6 +314,19 @@
       "source": "ilunion",
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Goya (Madrid)"
+    },
+    "ilunion:f23a58f1d50195c2b85b": {
+      "act_type": "oferta",
+      "content_hash": "c74ac1357e8ded04bcd24f9667badbafa4fe9b8d86f92e0328818502a822e8b2",
+      "document_id": "ilunion:f23a58f1d50195c2b85b",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Toledo",
+      "official_url": "https://empleo.ilunion.com/job/Toledo-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-Sonseca-%28Toledo%29-Tole/1375783957/",
+      "province": "Toledo",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 26 oct 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 26 oct 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 26 oct 2026 Utilice la barra espaciadora para ver el contenido completo de la infor"
     },
     "toledo:3bbb8e2c46201100fbc2": {
       "act_type": "bolsa",
