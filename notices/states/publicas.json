@@ -276,6 +276,19 @@
       "status": "plazo_desconocido",
       "title": "Título ILUNION VidaSénior - Fisioterapeuta con/sin discapacidad (H/M/D) Residencia Parla (Madrid) Población Madrid Fecha 24 oct 2026 Título ILUNION VidaSénior - Fisioterapeuta con/sin discapacidad (H/M/D) Residencia Parla (Madrid) Población Madrid Fecha 24 oct 2026 Título ILUNION VidaSénior - Fisioterapeuta con/sin discapacidad (H/M/D) Residencia Parla (Madrid) Población Madrid Fecha 24 oct 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
     },
+    "ilunion:64d0acda5ffb3a0cb412": {
+      "act_type": "oferta",
+      "content_hash": "a73a51df4a290f301d973757d4711dcaa0b9111291f9448f1c69c2fc5cb7abfd",
+      "document_id": "ilunion:64d0acda5ffb3a0cb412",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-SFR-Aurora-Villa-Madr/1375777557/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) SFR Aurora Villa"
+    },
     "ilunion:72a8913ec3c5fad82688": {
       "act_type": "oferta",
       "content_hash": "d54a85ab794938895fd4b435c5d38a846820909323b53abfbdb78e723aa21283",
@@ -301,6 +314,19 @@
       "source": "ilunion",
       "status": "plazo_desconocido",
       "title": "Título ILUNION VidaSénior - Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 24 oct 2026 Título ILUNION VidaSénior - Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 24 oct 2026 Título ILUNION VidaSénior - Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 24 oct 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
+    },
+    "ilunion:875f167a709496d58ad4": {
+      "act_type": "oferta",
+      "content_hash": "449a6701cabd5c4f583194ae3a9ffddeddb479702716f042666df0a34fca23ff",
+      "document_id": "ilunion:875f167a709496d58ad4",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-Pe%C3%B1agrande-%28Madrid%29-Madr/1375780957/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Peñagrande (Madrid)"
     },
     "ilunion:b8932ca9685ce9a79188": {
       "act_type": "oferta",

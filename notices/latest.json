@@ -1,8 +1,39 @@
 {
-  "event_count": 0,
-  "events": [],
+  "event_count": 2,
+  "events": [
+    {
+      "act_type": "oferta",
+      "deadline": null,
+      "document_hash": "75887947cc7c62ebe0ee5e7293d2a3d62758ffb343dd7ac5551b624caac8531e",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "province": "Madrid",
+      "publication_date": null,
+      "source": "ilunion",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) SFR Aurora Villa",
+      "type": "new",
+      "url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-SFR-Aurora-Villa-Madr/1375777557/",
+      "verified_offer": false
+    },
+    {
+      "act_type": "oferta",
+      "deadline": null,
+      "document_hash": "7cb7d89a3f569fee40ed1b425a2a50cb8391d5b359c381d5703161d57a273d0c",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "province": "Madrid",
+      "publication_date": null,
+      "source": "ilunion",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Peñagrande (Madrid)",
+      "type": "new",
+      "url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-Pe%C3%B1agrande-%28Madrid%29-Madr/1375780957/",
+      "verified_offer": false
+    }
+  ],
   "events_truncated": false,
-  "generated_at": "2026-10-27T05:50:16+00:00",
+  "generated_at": "2026-10-28T05:57:27+00:00",
   "notice": "Candidatos preliminares, no plazas o vigencias confirmadas. Validar requisitos, fechas y ubicación en origen. No se presentan kilómetros por carretera.",
   "overall_status": "partial",
   "project": "Buscar-Curro",
@@ -22,7 +53,7 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 0,
+      "new": 2,
       "source": "publicas",
       "source_failures": [
         "aranjuez",
