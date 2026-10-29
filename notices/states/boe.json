@@ -1,4 +1,15 @@
 {
-  "documents": {},
+  "documents": {
+    "boe:BOE-A-2026-22581": {
+      "act_type": "resolucion",
+      "content_hash": "a7316e2d7ab892729660cc9ff6cc6fe6aa80b2d5c63448de1c3e6115a6d94157",
+      "document_id": "boe:BOE-A-2026-22581",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22581",
+      "publication_date": "2026-10-28",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Resolución de 19 de octubre de 2026, de la Universidad Nacional de Educación a Distancia, por la que se publica la oferta de empleo público de personal técnico, de gestión y de administración y servicios correspondiente al año 2026."
+    }
+  },
   "schema_version": 1
 }

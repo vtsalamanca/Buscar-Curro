@@ -328,6 +328,19 @@
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Peñagrande (Madrid)"
     },
+    "ilunion:acee5562706c9334bdf2": {
+      "act_type": "oferta",
+      "content_hash": "dca64b95ee8a13910375313fd8de676d96f265e10ceb10d4270c8c5a905ba0b3",
+      "document_id": "ilunion:acee5562706c9334bdf2",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Psicolog%C3%ADa-consin-discapacidad-%28HMD%29-CD-Francisco-de-Goya-%28Madrid%29-Madr/1376023757/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD Francisco de Goya (Madrid) Población Madrid Fecha 28 oct 2026 Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD Francisco de Goya (Madrid) Población Madrid Fecha 28 oct 2026 Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD Francisco de Goya (Madrid) Población Madrid Fecha 28 oct 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
+    },
     "ilunion:b8932ca9685ce9a79188": {
       "act_type": "oferta",
       "content_hash": "733642a8f18164278f1bb01ae65eaba670fffa8965308141aaccbcf5efdc5234",
@@ -340,6 +353,19 @@
       "source": "ilunion",
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Goya (Madrid)"
+    },
+    "ilunion:e44ce0618180e5ce93ab": {
+      "act_type": "oferta",
+      "content_hash": "d50f7b805520b888c84437b7d730e3a6354932d40ead319298927c80b0e6b1ef",
+      "document_id": "ilunion:e44ce0618180e5ce93ab",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-Almorox-%28Madrid%29-Madr/1373527657/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Almorox (Madrid)"
     },
     "ilunion:f23a58f1d50195c2b85b": {
       "act_type": "oferta",
@@ -412,17 +438,18 @@
     },
     "trama:1105": {
       "act_type": "oferta",
-      "content_hash": "323b2c8ece462f257d35818496b834490be8fae9bb7f81bbc275a5b6ab8613ed",
+      "content_hash": "92f8026c3ef8007080e5de5170819f59240bc8ba8661e6bacf61433343096f76",
+      "deadline": "2026-12-01",
       "document_id": "trama:1105",
-      "eligibility": "datos_insuficientes",
+      "eligibility": "apta_probable",
       "geographic_status": "dentro_80km",
       "municipality": "Madrid",
       "official_url": "https://www.trama.org/empleo/oferta.php?id=1105",
       "province": "Madrid",
       "publication_date": "2026-12-01",
       "source": "trama",
-      "status": "plazo_desconocido",
-      "title": "TRABAJADOR/A SOCIAL - PROYECTO BARNAHUS (INDEFINIDO) Madrid, Comunidad de Madrid 01 de diciembre de 2026 ver"
+      "status": "abierta",
+      "title": "Ver oferta"
     },
     "trama:1109": {
       "act_type": "oferta",
