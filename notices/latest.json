@@ -1,39 +1,8 @@
 {
-  "event_count": 2,
-  "events": [
-    {
-      "act_type": "oferta",
-      "deadline": null,
-      "document_hash": "36a5ced8b06581c72c284f13c5eb887a1a9cc4cd58cd04073698cd1f899cfec3",
-      "eligibility": "revisar",
-      "geographic_status": "distancia_pendiente",
-      "municipality": null,
-      "province": null,
-      "publication_date": null,
-      "source": "ilunion",
-      "title": "PUESTO: ILUNION VidaSénior - Limpieza/Lavandería (H/M/D) Residencia A Coruña",
-      "type": "new",
-      "url": "https://empleo.ilunion.com/job/A-Coru%C3%B1a-ILUNION-VidaS%C3%A9nior-LimpiezaLavander%C3%ADa-%28HMD%29-Residencia-A-Coru%C3%B1a-A-Co/1349594057/",
-      "verified_offer": false
-    },
-    {
-      "act_type": "convocatoria",
-      "deadline": null,
-      "document_hash": "7f0ea23bea0b990b533e2ca667a1fe855ed38315b35feb35b3bfa84ef3994689",
-      "eligibility": null,
-      "geographic_status": null,
-      "municipality": null,
-      "province": null,
-      "publication_date": "2026-10-31",
-      "source": "boe",
-      "title": "Resolución de 28 de octubre de 2026, de la Subsecretaría, por la que se convoca concurso para la provisión de puestos de personal docente en el exterior.",
-      "type": "new",
-      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22807",
-      "verified_offer": false
-    }
-  ],
+  "event_count": 0,
+  "events": [],
   "events_truncated": false,
-  "generated_at": "2026-11-01T05:58:02+00:00",
+  "generated_at": "2026-11-02T06:17:40+00:00",
   "notice": "Candidatos preliminares, no plazas o vigencias confirmadas. Validar requisitos, fechas y ubicación en origen. No se presentan kilómetros por carretera.",
   "overall_status": "partial",
   "project": "Buscar-Curro",
@@ -53,7 +22,7 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 1,
+      "new": 0,
       "source": "publicas",
       "source_failures": [
         "aranjuez",
@@ -65,7 +34,7 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 1,
+      "new": 0,
       "source": "boe",
       "source_failures": [],
       "state_preserved": true,
