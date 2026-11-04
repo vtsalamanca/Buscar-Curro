@@ -263,6 +263,17 @@
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Leñeros (Madrid)"
     },
+    "ilunion:59a882d991df1b0cfbc1": {
+      "act_type": "oferta",
+      "content_hash": "b36dbb2b7697530e963ea4c32dc08da57b2742899238664a7a929062b1ea04e3",
+      "document_id": "ilunion:59a882d991df1b0cfbc1",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://empleo.ilunion.com/job/C%C3%B3rdoba-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-Baena-%28C%C3%B3rdoba%29-C%C3%B3rd/1376535857/",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Baena (Córdoba) Población Córdoba Fecha 3 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Baena (Córdoba) Población Córdoba Fecha 3 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Baena (Córdoba) Población Córdoba Fecha 3 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la informac"
+    },
     "ilunion:5cedf1c778a2f16bd038": {
       "act_type": "oferta",
       "content_hash": "60317735f26182a1df62f28135c6ef06066411640b42a33ccbcf753ae6940cd8",
@@ -275,6 +286,17 @@
       "source": "ilunion",
       "status": "plazo_desconocido",
       "title": "Título ILUNION VidaSénior - Fisioterapeuta con/sin discapacidad (H/M/D) Residencia Parla (Madrid) Población Madrid Fecha 24 oct 2026 Título ILUNION VidaSénior - Fisioterapeuta con/sin discapacidad (H/M/D) Residencia Parla (Madrid) Población Madrid Fecha 24 oct 2026 Título ILUNION VidaSénior - Fisioterapeuta con/sin discapacidad (H/M/D) Residencia Parla (Madrid) Población Madrid Fecha 24 oct 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
+    },
+    "ilunion:64a753ae3243e7865789": {
+      "act_type": "oferta",
+      "content_hash": "b9417d4c9f5168ac15100c84e8e21ccbf9bd6db96bc99199e288f341112b03d1",
+      "document_id": "ilunion:64a753ae3243e7865789",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://empleo.ilunion.com/job/A-Coru%C3%B1a-ILUNION-VidaS%C3%A9nior-Terapeuta-Ocuapacional-consin-discapacidad-%28HMD%29-Residencia-Eir%C3%ADs-%28A-Coru%C3%B1a%29-A-Co/1374021757/",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Terapeuta Ocuapacional con/sin discapacidad (H/M/D) Residencia Eirís (A Coruña) Población A Coruña Fecha 4 nov 2026 Título ILUNION VidaSénior - Terapeuta Ocuapacional con/sin discapacidad (H/M/D) Residencia Eirís (A Coruña) Población A Coruña Fecha 4 nov 2026 Título ILUNION VidaSénior - Terapeuta Ocuapacional con/sin discapacidad (H/M/D) Residencia Eirís (A Coruña) Población A Coruña Fecha 4 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la in"
     },
     "ilunion:64d0acda5ffb3a0cb412": {
       "act_type": "oferta",
@@ -403,6 +425,34 @@
       "source": "ilunion",
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Limpieza/Lavandería (H/M/D) Residencia A Coruña"
+    },
+    "jccm:30213adf401948a610ec": {
+      "act_type": "bolsa",
+      "content_hash": "b1f52785910764c11459dfc1fe8b2213d29cc292266501628304d0521975dc3d",
+      "document_id": "jccm:30213adf401948a610ec",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Toledo",
+      "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-personal-monitor-jefatura-de-taller",
+      "province": "Toledo",
+      "publication_date": "2026-11-03",
+      "source": "jccm",
+      "status": "plazo_desconocido",
+      "title": "Grupo III - Personal Monitor Jefatura de Taller"
+    },
+    "jccm:d0d6703407da99986d59": {
+      "act_type": "bolsa",
+      "content_hash": "dd59e6d892782f5c09c764d5fb042d92c01ae408d1086e821ca8d3a3a6f8106f",
+      "document_id": "jccm:d0d6703407da99986d59",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Toledo",
+      "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-funcionario/cuerpo-tecnico-escala-sociosanitaria-educacion-social",
+      "province": "Toledo",
+      "publication_date": "2026-11-03",
+      "source": "jccm",
+      "status": "plazo_desconocido",
+      "title": "Cuerpo TÉCNICO - Escala Sociosanitaria, Educación Social"
     },
     "toledo:3bbb8e2c46201100fbc2": {
       "act_type": "bolsa",
