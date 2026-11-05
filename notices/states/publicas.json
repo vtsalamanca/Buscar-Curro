@@ -350,6 +350,19 @@
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Peñagrande (Madrid)"
     },
+    "ilunion:8cc0988f38e17a6c18ea": {
+      "act_type": "oferta",
+      "content_hash": "0ef386de51f3bac79b7435ecb02b64493535bd83a4ef8716d98192c1ea2d417d",
+      "document_id": "ilunion:8cc0988f38e17a6c18ea",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Toledo",
+      "official_url": "https://empleo.ilunion.com/job/Toledo-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-Sonseca-%28Toledo%29-Tole/1369018757/",
+      "province": "Toledo",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 5 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 5 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 5 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la informac"
+    },
     "ilunion:967212c7ddf4a540b8e6": {
       "act_type": "oferta",
       "content_hash": "41b092bfdc74d356e1c8672fd959a06e6a844da245cf1a2e611f2b3c3691c605",
@@ -428,14 +441,14 @@
     },
     "jccm:30213adf401948a610ec": {
       "act_type": "bolsa",
-      "content_hash": "b1f52785910764c11459dfc1fe8b2213d29cc292266501628304d0521975dc3d",
+      "content_hash": "4fcbd6fd06d5a67fe0a6e9572c95536d54498e9c71e613e7eb2227151c68c276",
       "document_id": "jccm:30213adf401948a610ec",
       "eligibility": "datos_insuficientes",
       "geographic_status": "dentro_80km",
       "municipality": "Toledo",
       "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-personal-monitor-jefatura-de-taller",
       "province": "Toledo",
-      "publication_date": "2026-11-03",
+      "publication_date": "2026-11-04",
       "source": "jccm",
       "status": "plazo_desconocido",
       "title": "Grupo III - Personal Monitor Jefatura de Taller"
@@ -602,6 +615,20 @@
       "source": "trama",
       "status": "plazo_desconocido",
       "title": "PSICÓLOGO/A COORDINADOR/A - CENTRO DE ATENCIÓN A LAS FAMILIAS (25h/semana) - SUSTITUCIÓN BAJA IT MÓSTOLES, Comunidad de Madrid 30 de noviembre de 2026 ver"
+    },
+    "trama:1144": {
+      "act_type": "oferta",
+      "content_hash": "9c7da078352227713b7e837bb8c12febfbf8c515b6d4757d00b6e570e4987035",
+      "document_id": "trama:1144",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://www.trama.org/empleo/oferta.php?id=1144",
+      "province": "Madrid",
+      "publication_date": "2027-01-01",
+      "source": "trama",
+      "status": "plazo_desconocido",
+      "title": "EDUCADOR/A en CALLE (Loranca, Fuenlabrada) | Sustitución LORANCA (Fuenlabrada), Comunidad de Madrid 01 de enero de 2027 ver"
     },
     "trama:922": {
       "act_type": "oferta",
