@@ -441,14 +441,14 @@
     },
     "jccm:30213adf401948a610ec": {
       "act_type": "bolsa",
-      "content_hash": "4fcbd6fd06d5a67fe0a6e9572c95536d54498e9c71e613e7eb2227151c68c276",
+      "content_hash": "ad02b66d1cd6dd8fdf7108e79e583f9c3c7c8ca726632481551533afe68f5d3a",
       "document_id": "jccm:30213adf401948a610ec",
       "eligibility": "datos_insuficientes",
       "geographic_status": "dentro_80km",
       "municipality": "Toledo",
       "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-personal-monitor-jefatura-de-taller",
       "province": "Toledo",
-      "publication_date": "2026-11-04",
+      "publication_date": "2026-11-05",
       "source": "jccm",
       "status": "plazo_desconocido",
       "title": "Grupo III - Personal Monitor Jefatura de Taller"
@@ -550,6 +550,20 @@
       "status": "plazo_desconocido",
       "title": "EDUCADOR/A SOCIAL CASA DE LOS NIÑOS VILLAVERDE 01 de diciembre de 2026 ver"
     },
+    "trama:1113": {
+      "act_type": "oferta",
+      "content_hash": "516b0d97f6820845e428acd0ed094f206455f78e55a5a8affcd9145f81c8bc27",
+      "document_id": "trama:1113",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://www.trama.org/empleo/oferta.php?id=1113",
+      "province": "Madrid",
+      "publication_date": "2027-01-03",
+      "source": "trama",
+      "status": "plazo_desconocido",
+      "title": "EDUCADOR/A | Educación en Calle (Jornada Completa, Miércoles a Domingo) LORANCA (Fuenlabrada), Comunidad de Madrid 03 de enero de 2027 ver"
+    },
     "trama:1118": {
       "act_type": "oferta",
       "content_hash": "dc4fd4df35e8bdb23c7def7ea8be8ed3d3963a5fba3954f90811c82de080465f",
@@ -629,6 +643,18 @@
       "source": "trama",
       "status": "plazo_desconocido",
       "title": "EDUCADOR/A en CALLE (Loranca, Fuenlabrada) | Sustitución LORANCA (Fuenlabrada), Comunidad de Madrid 01 de enero de 2027 ver"
+    },
+    "trama:1145": {
+      "act_type": "oferta",
+      "content_hash": "2270429a648f51f653f61a3f5043434b8478868daddaf43e89fe3b157895af29",
+      "document_id": "trama:1145",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://www.trama.org/empleo/oferta.php?id=1145",
+      "publication_date": "2026-12-31",
+      "source": "trama",
+      "status": "plazo_desconocido",
+      "title": "EDUCADOR/A SOCIAL SERVICIO DE APOYO INTERVENCION FAMILIAR GUADALAJARA 31 de diciembre de 2026 ver"
     },
     "trama:922": {
       "act_type": "oferta",
