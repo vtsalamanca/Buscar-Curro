@@ -145,7 +145,7 @@
     },
     "aranjuez:f7a4e98a8c0f82ac4c8b": {
       "act_type": "oferta",
-      "content_hash": "78834a0696ace5c74ea41829d4894433e0714b050f7d44888ef5bc421a76c1e1",
+      "content_hash": "579342b7014318b717ab0d5e1af6980d48c742c64799e02bdaa47f59ca06c280",
       "document_id": "aranjuez:f7a4e98a8c0f82ac4c8b",
       "eligibility": "datos_insuficientes",
       "geographic_status": "dentro_80km",
@@ -263,6 +263,30 @@
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Leñeros (Madrid)"
     },
+    "ilunion:57b27ec4c7d30595d210": {
+      "act_type": "oferta",
+      "content_hash": "0bee65a8418bf107302673e19506443ef093cf6c1942bc6a653f0d18f9af4813",
+      "document_id": "ilunion:57b27ec4c7d30595d210",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Psicolog%C3%ADa-consin-discapacidad-%28HMD%29-CD-Salgado-Alba-%28Madrid%29-Madr/1376877457/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD Salgado Alba (Madrid) Población Madrid Fecha 6 nov 2026 Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD Salgado Alba (Madrid) Población Madrid Fecha 6 nov 2026 Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD Salgado Alba (Madrid) Población Madrid Fecha 6 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
+    },
+    "ilunion:584f8afbb494a6e8097c": {
+      "act_type": "oferta",
+      "content_hash": "ab822b11c8b687e9133e3ffda619e326284f549c46ea180d0467dea29dcd080a",
+      "document_id": "ilunion:584f8afbb494a6e8097c",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://empleo.ilunion.com/job/Ciudad-Real-ILUNION-VidaS%C3%A9nior-Enfermeroa-consin-discapacidad-%28La-Solana%2CCiudad-Real%29-Ciud/1374449557/",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Enfermero/a con/sin discapacidad (La Solana,Ciudad Real)"
+    },
     "ilunion:59a882d991df1b0cfbc1": {
       "act_type": "oferta",
       "content_hash": "b36dbb2b7697530e963ea4c32dc08da57b2742899238664a7a929062b1ea04e3",
@@ -310,6 +334,19 @@
       "source": "ilunion",
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) SFR Aurora Villa"
+    },
+    "ilunion:6d6463397b3e9c6c666e": {
+      "act_type": "oferta",
+      "content_hash": "30583a63e87c35c30139b9bf3d8ae1b267f6df25d0697a6f0c5b80e619826f33",
+      "document_id": "ilunion:6d6463397b3e9c6c666e",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Psicolog%C3%ADa-consin-discapacidad-%28HMD%29-CD-Jos%C3%A9-Villareal-Madr/1376922657/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD José Villareal Población Madrid Fecha 6 nov 2026 Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD José Villareal Población Madrid Fecha 6 nov 2026 Título ILUNION VidaSénior - Psicología con/sin discapacidad (H/M/D) CD José Villareal Población Madrid Fecha 6 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
     },
     "ilunion:72a8913ec3c5fad82688": {
       "act_type": "oferta",
@@ -439,19 +476,56 @@
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Limpieza/Lavandería (H/M/D) Residencia A Coruña"
     },
-    "jccm:30213adf401948a610ec": {
+    "ilunion:fdcde99fbeb86afaf5af": {
+      "act_type": "oferta",
+      "content_hash": "404a5730d1262b14831fbaa90bb0845b27dc9ad8d7a50015b057d28e23a6458b",
+      "document_id": "ilunion:fdcde99fbeb86afaf5af",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://empleo.ilunion.com/job/Ciudad-Real-ILUNION-VidaS%C3%A9nior-M%C3%A9dico-%28HMD%29-%28La-Solana%2C-Ciudad-Real%29-Ciud/1374451657/",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior Médico (H/M/D) (La Solana, Ciudad Real)"
+    },
+    "jccm:2b4f1a8f5cf0ba6e9503": {
       "act_type": "bolsa",
-      "content_hash": "ad02b66d1cd6dd8fdf7108e79e583f9c3c7c8ca726632481551533afe68f5d3a",
-      "document_id": "jccm:30213adf401948a610ec",
+      "content_hash": "c81be0af3e6a2a87b894bedcd7fd43f497073a7bf29c772c1194681d49948eff",
+      "document_id": "jccm:2b4f1a8f5cf0ba6e9503",
       "eligibility": "datos_insuficientes",
       "geographic_status": "dentro_80km",
       "municipality": "Toledo",
-      "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-personal-monitor-jefatura-de-taller",
+      "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-personal-monitor-de-medioambiente",
       "province": "Toledo",
-      "publication_date": "2026-11-05",
+      "publication_date": "2026-11-06",
+      "source": "jccm",
+      "status": "plazo_desconocido",
+      "title": "Grupo III - Personal Monitor de Medioambiente"
+    },
+    "jccm:30213adf401948a610ec": {
+      "act_type": "oferta",
+      "content_hash": "bc81a9ba10a7558a6cd11a5d70c0d7c3a60be626f9d4bbb7f7c3ba35e978daf1",
+      "document_id": "jccm:30213adf401948a610ec",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-personal-monitor-jefatura-de-taller",
+      "province": "Castilla-La Mancha",
       "source": "jccm",
       "status": "plazo_desconocido",
       "title": "Grupo III - Personal Monitor Jefatura de Taller"
+    },
+    "jccm:d045af6cae28fdd622c9": {
+      "act_type": "bolsa",
+      "content_hash": "d57a32fa9c53dd996bbe6d63b8eac06539e3c9e43d452e8b73a963857bb8dbf5",
+      "document_id": "jccm:d045af6cae28fdd622c9",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Toledo",
+      "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-funcionario/cuerpo-tecnico-educacion-social",
+      "province": "Toledo",
+      "publication_date": "2026-11-06",
+      "source": "jccm",
+      "status": "plazo_desconocido",
+      "title": "Cuerpo TÉCNICO - Educación Social"
     },
     "jccm:d0d6703407da99986d59": {
       "act_type": "bolsa",
