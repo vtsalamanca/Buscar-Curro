@@ -4,36 +4,36 @@
     {
       "act_type": "oferta",
       "deadline": null,
-      "document_hash": "94905a486540dd8158aa242e747aa2bf91df8d9ce7f86a8c8ced0a375c43c0ad",
+      "document_hash": "e31f649e8b17b25caf4654d4525a24f71d352f68e85f762779e673ab624ad7ea",
       "eligibility": "revisar",
       "geographic_status": "distancia_pendiente",
       "municipality": null,
       "province": null,
       "publication_date": null,
       "source": "ilunion",
-      "title": "PUESTO: ILUNION VidaSénior - Psicóloga/o con/sin discapacidad ( H/M/D) Residencia (Villarrobledo)",
+      "title": "Título ILUNION VidaSénior - Enfermería con/sin discapacidad (H/M/D) Residencia Calasparra (Murcia) Población Murcia Fecha 9 nov 2026 Título ILUNION VidaSénior - Enfermería con/sin discapacidad (H/M/D) Residencia Calasparra (Murcia) Población Murcia Fecha 9 nov 2026 Título ILUNION VidaSénior - Enfermería con/sin discapacidad (H/M/D) Residencia Calas",
       "type": "new",
-      "url": "https://empleo.ilunion.com/job/Albacete-ILUNION-VidaS%C3%A9nior-Psic%C3%B3logao-consin-discapacidad-%28-HMD%29-Residencia-%28Villarrobledo%29-Alba/1371917057/",
+      "url": "https://empleo.ilunion.com/job/Murcia-ILUNION-VidaS%C3%A9nior-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-Calasparra-%28Murcia%29-Murc/1360047457/",
       "verified_offer": false
     },
     {
       "act_type": "oferta",
       "deadline": null,
-      "document_hash": "7e660d53fda14eec6285cf40278b5ed8fee58a45b8f204abda051b08066dd417",
-      "eligibility": "revisar",
-      "geographic_status": "distancia_pendiente",
-      "municipality": null,
-      "province": null,
+      "document_hash": "9fead75dc5990b1cdbf40802c1ec7afa21fc829bde0ff6c20bbb3d475c4c4ef3",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Toledo",
+      "province": "Toledo",
       "publication_date": null,
       "source": "ilunion",
-      "title": "Título ILUNION VidaSénior - Auxiliar de enfermería con/sin discapacidad (H/M/D) Residencia (Maranchón) Población Guadalajara Fecha 8 nov 2026 Título ILUNION VidaSénior - Auxiliar de enfermería con/sin discapacidad (H/M/D) Residencia (Maranchón) Población Guadalajara Fecha 8 nov 2026 Título ILUNION VidaSénior - Auxiliar de enfermería con/sin discapa",
+      "title": "Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 9 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 9 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapa",
       "type": "new",
-      "url": "https://empleo.ilunion.com/job/Guadalajara-ILUNION-VidaS%C3%A9nior-Auxiliar-de-enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-%28Maranch%C3%B3n%29-Guad/1371955457/",
+      "url": "https://empleo.ilunion.com/job/Toledo-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-Sonseca-%28Toledo%29-Tole/1366782157/",
       "verified_offer": false
     }
   ],
   "events_truncated": false,
-  "generated_at": "2026-11-08T06:01:59+00:00",
+  "generated_at": "2026-11-09T06:23:12+00:00",
   "notice": "Candidatos preliminares, no plazas o vigencias confirmadas. Validar requisitos, fechas y ubicación en origen. No se presentan kilómetros por carretera.",
   "overall_status": "partial",
   "project": "Buscar-Curro",
@@ -72,10 +72,13 @@
       "status": "ok"
     },
     {
-      "exit_code": 2,
+      "changed": 0,
+      "initial_baseline": false,
+      "new": 0,
       "source": "docm",
+      "source_failures": [],
       "state_preserved": true,
-      "status": "failed"
+      "status": "ok"
     },
     {
       "first_baseline": false,
