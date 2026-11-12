@@ -211,6 +211,19 @@
       "status": "plazo_desconocido",
       "title": "disposicion"
     },
+    "ilunion:014c0ed74de6816f393a": {
+      "act_type": "oferta",
+      "content_hash": "0806770873f1fe1b48b2ee7e194e9d14cb5a5c6b7e43fb12e76818481f8b2746",
+      "document_id": "ilunion:014c0ed74de6816f393a",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-Ilunion-Vidas%C3%A9nior-Trabajadora-social-%28HMD%29-%28Parla%2C-Madrid%29-Madr/1374891857/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título Ilunion Vidasénior - Trabajador/a social (H/M/D) (Parla, Madrid) Población Madrid Fecha 12 nov 2026 Título Ilunion Vidasénior - Trabajador/a social (H/M/D) (Parla, Madrid) Población Madrid Fecha 12 nov 2026 Título Ilunion Vidasénior - Trabajador/a social (H/M/D) (Parla, Madrid) Población Madrid Fecha 12 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
+    },
     "ilunion:1fa8b73ea54253312143": {
       "act_type": "oferta",
       "content_hash": "b0868d02ade7d4167c686a6db2f65d4053cc3e4a2ac7f073b792ec6577016f48",
@@ -273,6 +286,17 @@
       "source": "ilunion",
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Leñeros (Madrid)"
+    },
+    "ilunion:53a29487a7a7bdd355e0": {
+      "act_type": "oferta",
+      "content_hash": "b418285a6bd71824290ddafe277af27da302e1f7b51ec6ffc70d538a41f1fa0b",
+      "document_id": "ilunion:53a29487a7a7bdd355e0",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://empleo.ilunion.com/job/C%C3%B3rdoba-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-Baena-%28C%C3%B3rdoba%29-C%C3%B3rd/1377252957/",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Baena (Córdoba)"
     },
     "ilunion:57b27ec4c7d30595d210": {
       "act_type": "oferta",
@@ -446,6 +470,19 @@
       "status": "plazo_desconocido",
       "title": "Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 5 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 5 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 5 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la informac"
     },
+    "ilunion:8fcf37d7a44005c19c6e": {
+      "act_type": "oferta",
+      "content_hash": "c648a087669d52d433bd53cdf617fceacdf257b1fe27a0b99badd6560d863dd3",
+      "document_id": "ilunion:8fcf37d7a44005c19c6e",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Direcci%C3%B3n-Centro-de-D%C3%ADa-Respiro-Familiar-consin-discapacidad-%28HMD%29-Madrid-Madr/1377288157/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Dirección Centro de Día Respiro Familiar con/sin discapacidad (H/M/D) Madrid Población Madrid Fecha 11 nov 2026 Título ILUNION VidaSénior - Dirección Centro de Día Respiro Familiar con/sin discapacidad (H/M/D) Madrid Población Madrid Fecha 11 nov 2026 Título ILUNION VidaSénior - Dirección Centro de Día Respiro Familiar con/sin discapacidad (H/M/D) Madrid Población Madrid Fecha 11 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la información de"
+    },
     "ilunion:967212c7ddf4a540b8e6": {
       "act_type": "oferta",
       "content_hash": "41b092bfdc74d356e1c8672fd959a06e6a844da245cf1a2e611f2b3c3691c605",
@@ -557,6 +594,18 @@
       "status": "plazo_desconocido",
       "title": "Grupo III - Personal Monitor Jefatura de Taller"
     },
+    "jccm:862d18d10d9c41fced18": {
+      "act_type": "oferta",
+      "content_hash": "3efa896f2c9f493c91aaa351ab137964f7512a9f608fb4d678fde2ca8d2f9a21",
+      "document_id": "jccm:862d18d10d9c41fced18",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-personal-tecnico-superior-en-educacion-infantil",
+      "province": "Castilla-La Mancha",
+      "source": "jccm",
+      "status": "plazo_desconocido",
+      "title": "Grupo III - Personal Técnico Superior en Educación Infantil"
+    },
     "jccm:d045af6cae28fdd622c9": {
       "act_type": "bolsa",
       "content_hash": "d57a32fa9c53dd996bbe6d63b8eac06539e3c9e43d452e8b73a963857bb8dbf5",
@@ -584,6 +633,20 @@
       "source": "jccm",
       "status": "plazo_desconocido",
       "title": "Cuerpo TÉCNICO - Escala Sociosanitaria, Educación Social"
+    },
+    "jccm:d647fc6c13c7cf99ceb7": {
+      "act_type": "bolsa",
+      "content_hash": "f0f6107041b0335734a4eb463eade98034598f34d94042cd720b8e18a7a2b888",
+      "document_id": "jccm:d647fc6c13c7cf99ceb7",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Toledo",
+      "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-auxiliar-tecnico-educativo",
+      "province": "Toledo",
+      "publication_date": "2026-11-11",
+      "source": "jccm",
+      "status": "plazo_desconocido",
+      "title": "Grupo III - Auxiliar Técnico Educativo"
     },
     "jccm:d83b5562e72ac713de9a": {
       "act_type": "bolsa",
