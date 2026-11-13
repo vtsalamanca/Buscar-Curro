@@ -522,6 +522,17 @@
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Goya (Madrid)"
     },
+    "ilunion:c2f2a686276a8b1807f0": {
+      "act_type": "oferta",
+      "content_hash": "7e57694b6d310765431e3202fd65dd5f3dd049c0d15d5ca7ff3300867910edcd",
+      "document_id": "ilunion:c2f2a686276a8b1807f0",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://empleo.ilunion.com/job/Guadalajara-ILUNION-VidaS%C3%A9nior-Enfermer%C3%ADa-%28HMD%29-Residencia-Maranch%C3%B3n-%28Guadalajara%29-Guad/1330269857/",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Enfermería (H/M/D) Residencia Maranchón (Guadalajara)"
+    },
     "ilunion:e44ce0618180e5ce93ab": {
       "act_type": "oferta",
       "content_hash": "d50f7b805520b888c84437b7d730e3a6354932d40ead319298927c80b0e6b1ef",
