@@ -862,6 +862,34 @@
       "status": "plazo_desconocido",
       "title": "EDUCADOR/A SOCIAL SERVICIO DE APOYO INTERVENCION FAMILIAR GUADALAJARA 31 de diciembre de 2026 ver"
     },
+    "trama:1149": {
+      "act_type": "oferta",
+      "content_hash": "0cfe4e0713882d5f4ee621872a36276150657aa6ac4f88fd4a44c50e4153d880",
+      "document_id": "trama:1149",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://www.trama.org/empleo/oferta.php?id=1149",
+      "province": "Madrid",
+      "publication_date": "2026-12-01",
+      "source": "trama",
+      "status": "plazo_desconocido",
+      "title": "EDUCADOR/A - EDUCACIÓN DE CALLE PUENTE DE VALLECAS (BAJA PATERNIDAD) Puente de Vallecas, Comunidad de Madrid 01 de diciembre de 2026 ver"
+    },
+    "trama:1151": {
+      "act_type": "oferta",
+      "content_hash": "d8e863bb315231d474776b592cc0b9e697c92ad2be87ddf052f5912e2024c43f",
+      "document_id": "trama:1151",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Aranjuez",
+      "official_url": "https://www.trama.org/empleo/oferta.php?id=1151",
+      "province": "Madrid",
+      "publication_date": "2026-12-31",
+      "source": "trama",
+      "status": "plazo_desconocido",
+      "title": "EDUCADOR/A RESIDENCIA INFANTIL - TURNO DE TARDE (BAJA MATERNIDAD) Aranjuez, Comunidad de Madrid 31 de diciembre de 2026 ver"
+    },
     "trama:922": {
       "act_type": "oferta",
       "content_hash": "8550d4cfdc7c85cedb74191c74dd56280f5758b9b9e026d7e7397b7b2fb7efbc",
