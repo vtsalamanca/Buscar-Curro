@@ -1,39 +1,24 @@
 {
-  "event_count": 2,
+  "event_count": 1,
   "events": [
     {
       "act_type": "oferta",
       "deadline": null,
-      "document_hash": "fe7a7fa7f373886515c14d5c2759bdad9455a05ff3f7fde162c293c2ef5663a2",
-      "eligibility": "datos_insuficientes",
-      "geographic_status": "dentro_80km",
-      "municipality": "Toledo",
-      "province": "Toledo",
-      "publication_date": null,
-      "source": "ilunion",
-      "title": "Título ILUNION VidaSénior - Fisioterapeuta con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 15 nov 2026 Título ILUNION VidaSénior - Fisioterapeuta con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 15 nov 2026 Título ILUNION VidaSénior - Fisioterapeuta con/sin discapacidad (H/M/D) Residenc",
-      "type": "new",
-      "url": "https://empleo.ilunion.com/job/Toledo-ILUNION-VidaS%C3%A9nior-Fisioterapeuta-consin-discapacidad-%28HMD%29-Residencia-Sonseca-%28Toledo%29-Tole/1367334557/",
-      "verified_offer": false
-    },
-    {
-      "act_type": "convocatoria",
-      "deadline": null,
-      "document_hash": "b0ab2a2ebc42a3cc601f28ed2ca7a3a39fe97dde7a98df8ffebddb0c5450fc23",
-      "eligibility": null,
-      "geographic_status": null,
+      "document_hash": "e75651f45fdb2cc832976c19754980d9eca8167489fa6285e90489027a1a6f7e",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
       "municipality": null,
       "province": null,
-      "publication_date": "2026-11-14",
-      "source": "boe",
-      "title": "Resolución de 9 de noviembre de 2026, del Consejo Insular de Menorca (Illes Balears), referente a la convocatoria para proveer una plaza.",
+      "publication_date": null,
+      "source": "ilunion",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de enfermería con/sin discapacidad (H/M/D) Residencia La Solana",
       "type": "new",
-      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23858",
+      "url": "https://empleo.ilunion.com/job/Ciudad-Real-ILUNION-VidaS%C3%A9nior-Auxiliar-de-enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-La-Solana-Ciud/1367497757/",
       "verified_offer": false
     }
   ],
   "events_truncated": false,
-  "generated_at": "2026-11-15T06:06:19+00:00",
+  "generated_at": "2026-11-16T05:22:02+00:00",
   "notice": "Candidatos preliminares, no plazas o vigencias confirmadas. Validar requisitos, fechas y ubicación en origen. No se presentan kilómetros por carretera.",
   "overall_status": "partial",
   "project": "Buscar-Curro",
@@ -44,11 +29,9 @@
       "initial_baseline": false,
       "new": 0,
       "source": "ett",
-      "source_failures": [
-        "eurofirms"
-      ],
+      "source_failures": [],
       "state_preserved": true,
-      "status": "partial"
+      "status": "ok"
     },
     {
       "changed": 0,
@@ -56,8 +39,8 @@
       "new": 1,
       "source": "publicas",
       "source_failures": [
-        "aranjuez",
-        "cruz_roja"
+        "cruz_roja",
+        "empleo_clm"
       ],
       "state_preserved": true,
       "status": "partial"
@@ -65,7 +48,7 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 1,
+      "new": 0,
       "source": "boe",
       "source_failures": [],
       "state_preserved": true,

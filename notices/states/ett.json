@@ -64,878 +64,6 @@
           "status": "checked"
         }
       },
-      "eurofirms": {
-        "https://connect.eurofirms.com/es/es/Register?offer=https%3A%2F%2Fjobs.eurofirms.com%2Fes%2Fes%2Fborox%2Fmanipulador-a-154-033216": {
-          "checks": 1,
-          "label": "¿No tienes cuenta? Crea tu perfil en Eurofirms y descubre miles de ofertas adaptadas a ti. Regístrate Iniciar sesión para inscribirte Usuario Contraseña Acceso ",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://connect.eurofirms.com/es/es/Register?offer=https%3A%2F%2Fjobs.eurofirms.com%2Fes%2Fes%2Fcamarena%2Foperario-a-de-alimentacion-130-009164": {
-          "checks": 1,
-          "label": "¿No tienes cuenta? Crea tu perfil en Eurofirms y descubre miles de ofertas adaptadas a ti. Regístrate Iniciar sesión para inscribirte Usuario Contraseña Acceso",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://connect.eurofirms.com/es/es/Register?offer=https%3A%2F%2Fjobs.eurofirms.com%2Fes%2Fes%2Fcasarrubios-del-monte%2Foperario-a-carnico-130-006996": {
-          "checks": 1,
-          "label": "¿No tienes cuenta? Crea tu perfil en Eurofirms y descubre miles de ofertas adaptadas a ti. Regístrate Iniciar sesión para inscribirte Usuario Contraseña Acceso",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://connect.eurofirms.com/es/es/Register?offer=https%3A%2F%2Fjobs.eurofirms.com%2Fes%2Fes%2Ftrabajo%2Ftoledo": {
-          "checks": 1,
-          "label": "Alerta de empleo Tenemos la oportunidad que buscas y con nuestro sistema de alertas de empleo vas a ser el primero en enterarte. Nueva alerta Para crear una ale",
-          "last_checked": "2026-10-19T07:00:58+00:00",
-          "status": "checked"
-        },
-        "https://connect.eurofirms.com/es/es/RestorePassword": {
-          "checks": 1,
-          "label": "¿No tienes cuenta? Crea tu perfil en Eurofirms y descubre miles de ofertas adaptadas a ti. Regístrate Iniciar sesión para inscribirte Usuario Contraseña Acceso ",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://connect.eurofirms.com/es/es/logout": {
-          "checks": 1,
-          "label": "Cerrar sesión",
-          "last_checked": "2026-10-19T07:00:58+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/": {
-          "checks": 1,
-          "label": "Candidatos Descarga la APP Encuentra trabajo Preguntas Frecuentes",
-          "last_checked": "2026-10-19T07:00:58+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/borox/manipulador-a-154-033216": {
-          "checks": 1,
-          "label": "Español",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/borox/mozo-a-almacen-154-033217": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/buscador-Ofertas-Empleo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/camarena/operario-a-de-alimentacion-130-009164": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/casarrubios-del-monte/operario-a-carnico-130-006996": {
-          "checks": 1,
-          "label": "Español",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/corral-de-almaguer/operario-a-de-produccion-130-008626": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/el-toboso/tecnico-a-mantenimiento-130-009424": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/esquivias/electricista-industrial-188-000215": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 36 resultados Toledo Borrar filtros 36 resultados Mozo/a almacén ontigola, toledo Empresa",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/esquivias/montador-a-estructuras-metalicas-188-000216": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/esquivias/montador-a-estructuras-metalicas-188-000256": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 36 resultados Toledo Borrar filtros 36 resultados Montador/a estructuras metálicas esquiv",
-          "last_checked": "2026-10-30T05:59:09+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/guadamur/operario-a-de-alimentacion-130-009413": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/illescas/carretillero-a-retractil-154-030027": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Mozo/a almacén pol. ind. de toledo, tol",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/illescas/carretillero-a-retractil-154-033222": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/illescas/limpiador-a-de-fachadas-en-altura-illescas-y-madrid-130-009220": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 38 resultados Toledo Borrar filtros 38 resultados Ayudante de maquinista seseña viejo, to",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/illescas/manipulador-a-154-031839": {
-          "checks": 1,
-          "label": "Empleo de Manipulador/a en Seseña Nuevo, Toledo Seseña Nuevo, Toledo Salario A concretar 04/11/2026 Empleo de Manipulador/a en Illescas, Toledo Illescas, Toledo",
-          "last_checked": "2026-11-05T06:16:11+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/illescas/mozo-a-almacen-154-032846": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/illescas/mozo-a-almacen-154-033219": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/illescas/preparador-a-de-pedidos-154-030025": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Mozo/a almacén pol. ind. de toledo, tol",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/layos/ayudante-de-cocina-130-007852": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Mozo/a almacén pol. ind. de toledo, tol",
-          "last_checked": "2026-10-19T11:35:28+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/layos/limpiador-a-130-007853": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/noblejas/carretillero-a-frontal-polivalente-154-033145": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-11-05T06:16:11+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/noblejas/palista-154-033254": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-13T06:17:37+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/ontigola/carretillero-a-retractil-154-032100": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/ontigola/carretillero-a-retractil-154-033165": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-06T06:15:54+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/ontigola/carretillero-a-retractil-ontigola-154-032847": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/ontigola/mozo-a-almacen-154-032470": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/ontigola/mozo-a-almacen-154-033077": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-29T05:58:12+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/ontigola/preparador-as-de-pedidos-501-000025": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Mozo/a almacén pol. ind. de toledo, tol",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/ontigola/tecnico-a-de-sistemas-informaticos-154-032472": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/ontigola/verificador-a-de-piezas-con-experiencia-154-032980": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/pol--ind--de-toledo/carretillero-a-130-009854": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/pol--ind--de-toledo/mozo-a-almacen-130-009705": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 41 resultados Toledo Borrar filtros 41 resultados Mozo/a Almacén toledo, toledo Empresa d",
-          "last_checked": "2026-11-01T05:58:21+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/pol--ind--de-toledo/mozo-a-almacen-130-009955": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/pol--ind--de-toledo/soldador-a-130-009864": {
-          "checks": 0,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 36 resultados Toledo Borrar filtros 36 resultados Mozo/a almacén santa cruz de la zarza,",
-          "last_checked": "",
-          "status": "prefiltered"
-        },
-        "https://jobs.eurofirms.com/es/es/santa-cruz-de-la-zarza/mozo-a-almacen-063-005159": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/sesena-nuevo/carretillero-a-retractil-154-030033": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Mozo/a Almacén villacañas, toledo Empre",
-          "last_checked": "2026-11-05T06:16:11+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/sesena-nuevo/limpiador-a-de-oficinas-154-033014": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Selección Técnico/a mantenimiento el to",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/sesena-nuevo/manipulador-a-154-032134": {
-          "checks": 1,
-          "label": "Empleo de Manipulador/a en Seseña Nuevo, Toledo Seseña Nuevo, Toledo Salario A concretar 04/11/2026 Empleo de Manipulador/a en Illescas, Toledo Illescas, Toledo",
-          "last_checked": "2026-11-05T06:16:11+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/sesena-nuevo/mozo-a-de-almacen-154-030026": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/sesena-nuevo/tecnico-a-mantenimiento-154-032973": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados Selección Panadero/a villafranca de los",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/sesena-viejo/ayudante-de-maquinista-154-033046": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-27T02:56:25+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/toledo/ayudante-de-cocina--extras--130-007905": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Mozo/a almacén pol. ind. de toledo, tol",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/toledo/camarero-a-de-sala-130-007842": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/toledo/camarero-a-de-sala-130-007844": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/toledo/camarero-a-de-sala-130-010093": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/toledo/friegaplatos-130-008221": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/toledo/friegaplatos-130-010094": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/toledo/masajista-130-007868": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/toledo/mozo-a-almacen-130-008232": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/toledo/mozo-a-almacen-154-033239": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 41 resultados Toledo Borrar filtros 41 resultados Mozo/a Almacén toledo, toledo Empresa d",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/toledo/recepcionista-130-009034": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/alava": {
-          "checks": 1,
-          "label": "Ofertas de empleo en País Vasco",
-          "last_checked": "2026-10-19T07:00:58+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/barcelona": {
-          "checks": 1,
-          "label": "Ofertas de empleo en Barcelona",
-          "last_checked": "2026-10-19T07:07:49+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-ayudante-camarero-a": {
-          "checks": 1,
-          "label": "Ofertas de trabajo de Camarero/a",
-          "last_checked": "2026-10-19T07:07:49+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-ayudante-de-cocina/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 37 resultados Toledo Borrar filtros 37 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:19:20+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-camarero-a-de-barra/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-camarero-a-de-sala/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-camarero-a-pisos": {
-          "checks": 1,
-          "label": "Ofertas de trabajo de Camarero/a de pisos",
-          "last_checked": "2026-10-19T07:07:49+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-carretillero-a": {
-          "checks": 0,
-          "label": "Ofertas de trabajo de Carretillero/a",
-          "last_checked": "",
-          "status": "prefiltered"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-carretillero-a-retractil/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-carretillero-a/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-cocinero-a": {
-          "checks": 1,
-          "label": "Ofertas de trabajo de Cocinero/a",
-          "last_checked": "2026-10-19T07:07:49+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-electricista/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 40 resultados Toledo Borrar filtros 40 resultados Mozo/a Almacén villacañas, toledo Empre",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-friegaplatos/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-limpiador-a": {
-          "checks": 1,
-          "label": "Ofertas de trabajo de Limpieza",
-          "last_checked": "2026-10-19T07:12:53+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-limpiador-a-de-cristales/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-11-09T06:23:27+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-limpiador-a/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-07T05:59:49+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-manipulador-a": {
-          "checks": 1,
-          "label": "Ofertas de trabajo de Manipulador/a",
-          "last_checked": "2026-10-19T07:12:53+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-manipulador-a/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-05T06:16:11+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-masajista/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-15T06:06:39+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-montador-a-estructuras-metalicas/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 36 resultados Toledo Borrar filtros 36 resultados Montador/a estructuras metálicas esquiv",
-          "last_checked": "2026-10-30T05:59:09+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-mozo-a-almacen/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-mozo-a-de-almacen": {
-          "checks": 0,
-          "label": "Ofertas de trabajo de Mozo/a de almacén",
-          "last_checked": "",
-          "status": "prefiltered"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-operario-a-de-alimentacion/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-operario-a-de-produccion": {
-          "checks": 1,
-          "label": "Ofertas de trabajo de Operario/a",
-          "last_checked": "2026-10-19T07:12:53+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-operario-a-de-produccion/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-repartidor-a": {
-          "checks": 0,
-          "label": "Ofertas de trabajo de Repartidor/a",
-          "last_checked": "",
-          "status": "prefiltered"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-tecnico-a-mantenimiento/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados Selección Panadero/a villafranca de los",
-          "last_checked": "2026-10-25T22:26:23+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/de-teleoperador-a-recepcion-de-llamadas": {
-          "checks": 1,
-          "label": "Ofertas de trabajo de Teleoperador/a",
-          "last_checked": "2026-10-19T07:12:53+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-borox/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-camarena/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-casarrubios-del-monte/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-corral-de-almaguer/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-el-toboso/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-25T22:33:22+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-esquivias/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-guadamur/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-illescas/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-layos/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-noblejas/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-ontigola/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-pol--ind--de-toledo/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-santa-cruz-de-la-zarza/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 39 resultados Toledo Borrar filtros 39 resultados ¡Nueva! Técnico/a de sistemas informáti",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-sesena-nuevo/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-sesena-viejo/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-27T02:56:25+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-toledo/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-torrijos/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 38 resultados Toledo Borrar filtros 38 resultados Ayudante de maquinista seseña viejo, to",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-villacanas/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-13T06:17:37+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-villafranca-de-los-caballeros/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-05T06:16:11+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/en-yuncos/toledo": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:35:38+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/girona": {
-          "checks": 1,
-          "label": "Ofertas de empleo en Girona",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/la-coruna": {
-          "checks": 1,
-          "label": "Ofertas de empleo en Galicia",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/madrid": {
-          "checks": 1,
-          "label": "Ofertas de empleo en Madrid",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/navarra": {
-          "checks": 1,
-          "label": "Ofertas de empleo en Navarra",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/sevilla": {
-          "checks": 1,
-          "label": "Ofertas de empleo en Sevilla",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo": {
-          "checks": 1,
-          "label": "Español",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?isTeleworking=False": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?isTeleworking=True": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?minPublicationDate=1": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?minPublicationDate=15": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?minPublicationDate=7": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?page=2": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?page=3": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 41 resultados Toledo Borrar filtros 41 resultados Mozo/a Almacén toledo, toledo Empresa d",
-          "last_checked": "2026-11-12T06:18:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?type=0": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?type=1": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?type=2": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?workingDayType=1": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/toledo?workingDayType=3": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/valencia": {
-          "checks": 1,
-          "label": "Ofertas de empleo en Valencia",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/trabajo/zaragoza": {
-          "checks": 1,
-          "label": "Ofertas de empleo en Zaragoza",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/villacanas/mozo-a-almacen-154-033239": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-13T06:17:37+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/villafranca-de-los-caballeros/panadero-a-183-001765": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 35 resultados Toledo Borrar filtros 35 resultados Operario/a de producción corral de alma",
-          "last_checked": "2026-11-05T06:16:11+00:00",
-          "status": "checked"
-        },
-        "https://jobs.eurofirms.com/es/es/yuncos/operario-a-de-produccion-130-007257": {
-          "checks": 1,
-          "label": "Buscar Ofertas de empleo en Toledo Últimas ofertas de empleo en Toledo 31 resultados Toledo Borrar filtros 31 resultados Verificador/a de piezas con experiencia",
-          "last_checked": "2026-10-25T22:33:22+00:00",
-          "status": "checked"
-        },
-        "https://www.eurofirms.com/es/es/": {
-          "checks": 1,
-          "label": "",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/app/": {
-          "checks": 1,
-          "label": "Candidatos Descarga la APP Encuentra trabajo Preguntas Frecuentes",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/contacto": {
-          "checks": 1,
-          "label": "Contacta",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/contratacion-de-talento/": {
-          "checks": 1,
-          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/eurofirms-foundation/": {
-          "checks": 1,
-          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
-          "last_checked": "2026-10-19T12:39:13+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/executive-search-professional-recruitment/": {
-          "checks": 1,
-          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/outsourcing/": {
-          "checks": 1,
-          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/preguntas-frecuentes-empresas/": {
-          "checks": 1,
-          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/preguntas-frecuentes/": {
-          "checks": 1,
-          "label": "Candidatos Descarga la APP Encuentra trabajo Preguntas Frecuentes",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/prevencion/": {
-          "checks": 1,
-          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/seleccion-talento/": {
-          "checks": 1,
-          "label": "Empresas Contratación de talento Outsourcing Selección de talento Prevención y salud laboral Executive search & professional recruitment​ Eurofirms Foundation P",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/sobre-nosotros/": {
-          "checks": 1,
-          "label": "Sobre nosotros People first Nuestra historia Sostenibilidad Nuestras oficinas Únete a nosotros",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/sobre-nosotros/nuestra-historia/": {
-          "checks": 1,
-          "label": "Sobre nosotros People first Nuestra historia Sostenibilidad Nuestras oficinas Únete a nosotros",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/sobre-nosotros/oficinas/": {
-          "checks": 1,
-          "label": "Sobre nosotros People first Nuestra historia Sostenibilidad Nuestras oficinas Únete a nosotros",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/sobre-nosotros/sostenibilidad/": {
-          "checks": 1,
-          "label": "Sobre nosotros People first Nuestra historia Sostenibilidad Nuestras oficinas Únete a nosotros",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        },
-        "https://www.eurofirms.com/es/es/sobre-nosotros/unete-a-nosotros/": {
-          "checks": 1,
-          "label": "Sobre nosotros People first Nuestra historia Sostenibilidad Nuestras oficinas Únete a nosotros",
-          "last_checked": "2026-10-19T12:47:08+00:00",
-          "status": "error"
-        }
-      },
       "gi_group": {
         "https://es.gigroup.com/ofertas-de-trabajo-detalle/arroyomolinos-madrid-preparador-a-pedidos-con-recogepedidos-sobre-palet/104711/": {
           "checks": 2,
@@ -1165,7 +293,7 @@
       "randstad": {
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/administrativo-a-contable-3021853/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-10T06:08:43+00:00",
           "status": "checked"
         },
@@ -1225,7 +353,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/agente-comercial-sanitas-3023158/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-14T06:03:48+00:00",
           "status": "checked"
         },
@@ -1249,7 +377,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/asesor-a-telefonico-sector-logistica-3022453/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-12T06:18:29+00:00",
           "status": "checked"
         },
@@ -1273,7 +401,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/camarero-a-contrato-estable-3023285/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-14T06:03:48+00:00",
           "status": "checked"
         },
@@ -1303,7 +431,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carnicero-carnicera-3022409/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-12T06:18:29+00:00",
           "status": "checked"
         },
@@ -1333,7 +461,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-a-3022442/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-12T06:18:29+00:00",
           "status": "checked"
         },
@@ -1345,7 +473,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-a-toledo-3021524/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-15T06:06:46+00:00",
           "status": "checked"
         },
@@ -1387,7 +515,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-frontal-3022231/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-11T06:15:31+00:00",
           "status": "checked"
         },
@@ -1399,13 +527,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-retractil-3021298/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-15T06:06:46+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-retractil-3022680/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-13T06:17:48+00:00",
           "status": "checked"
         },
@@ -1423,25 +551,25 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-contrapesada-3022134/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-11T06:15:31+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-o-carretillera-dhl-3022901/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-13T06:17:48+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-o-carretillera-illescas-o-sesena-dhl-3022982/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-13T06:17:48+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-o-carretillera-retractil-3022454/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-12T06:18:29+00:00",
           "status": "checked"
         },
@@ -1495,7 +623,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/conductor-a-carnet-c-no-requerida-experiencia-3021890/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-10T06:08:43+00:00",
           "status": "checked"
         },
@@ -1519,7 +647,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/electromecanico-a-industrial-indefinido-3022954/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-13T06:17:48+00:00",
           "status": "checked"
         },
@@ -1579,7 +707,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/jefe-obra-toledo-3022743/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-13T06:17:48+00:00",
           "status": "checked"
         },
@@ -1621,25 +749,25 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/montador-montadora-estructuras-metalicas-toledo-3022273/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-11T06:15:31+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/montador-neumaticos-indefinido-sector-automocion-3021523/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-15T06:06:46+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-a-almacen-incorporacion-inmediata-3020978/": {
-          "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (178) c",
-          "last_checked": "2026-11-06T06:16:02+00:00",
+          "checks": 2,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
+          "last_checked": "2026-11-16T05:22:28+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-a-campa-3022126/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-11T06:15:31+00:00",
           "status": "checked"
         },
@@ -1651,7 +779,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-almacen-incorporacion-inmediata-3022531/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-12T06:18:29+00:00",
           "status": "checked"
         },
@@ -1663,7 +791,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-carretillero-3022654/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-12T06:18:29+00:00",
           "status": "checked"
         },
@@ -1681,7 +809,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-almacen-dhl-descargas-sesena-horario-0600-a-1400-3022645/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-12T06:18:29+00:00",
           "status": "checked"
         },
@@ -1693,7 +821,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-almacen-dhl-descargas-sesena-horario-1400-a-2200-3022612/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-12T06:18:29+00:00",
           "status": "checked"
         },
@@ -1705,7 +833,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-almacen-ontigola-40h-3021147/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-15T06:06:46+00:00",
           "status": "checked"
         },
@@ -1735,7 +863,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-carretillero-3022701/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-13T06:17:48+00:00",
           "status": "checked"
         },
@@ -1777,7 +905,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-o-moza-borox-turno-fijo-tarde-o-noche-jornada-parcial-3023142/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-14T06:03:48+00:00",
           "status": "checked"
         },
@@ -1788,14 +916,14 @@
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-o-moza-logistica-poligono-toledo-3020941/": {
-          "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (176) c",
-          "last_checked": "2026-11-06T06:16:02+00:00",
+          "checks": 2,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
+          "last_checked": "2026-11-16T05:22:28+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-o-mozas-importante-empresa-logistica-ontigola-3020974/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-15T06:06:46+00:00",
           "status": "checked"
         },
@@ -1813,7 +941,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-y-o-moza-almacen-toledo-3021321/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-15T06:06:46+00:00",
           "status": "checked"
         },
@@ -1825,31 +953,31 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/oficial-2a-especialista-sate-construccion-modular-3021214/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-15T06:06:46+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/oficial-2a-pladurista-construccion-modular-3021288/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-15T06:06:46+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/oficial-construccion-especialista-3022950/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-13T06:17:48+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-3023220/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-14T06:03:48+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-alimentacion-3022054/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-10T06:08:43+00:00",
           "status": "checked"
         },
@@ -1867,7 +995,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-carretilla-frontal-contrato-indefinido-3022854/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-13T06:17:48+00:00",
           "status": "checked"
         },
@@ -1885,19 +1013,19 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-electricidad-3021730/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-10T06:08:43+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-linea-produccion-3021625/": {
-          "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
-          "last_checked": "2026-11-07T05:59:57+00:00",
+          "checks": 2,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
+          "last_checked": "2026-11-16T05:22:28+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-linea-produccion-3022494/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-12T06:18:29+00:00",
           "status": "checked"
         },
@@ -1915,19 +1043,19 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-metal-con-carretilla-3022038/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-10T06:08:43+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-produccion-3021855/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-10T06:08:43+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-produccion-embotellado-3022060/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-10T06:08:43+00:00",
           "status": "checked"
         },
@@ -1945,7 +1073,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-sector-climatizacion-3021841/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-10T06:08:43+00:00",
           "status": "checked"
         },
@@ -1981,13 +1109,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-industria-carnica-3023132/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-14T06:03:48+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-industrial-3023326/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-14T06:03:48+00:00",
           "status": "checked"
         },
@@ -2005,13 +1133,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operaria-3022925/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-13T06:17:48+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operaria-alimentacion-disponibilidad-completa-3021733/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-10T06:08:43+00:00",
           "status": "checked"
         },
@@ -2107,7 +1235,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-produccion-3022095/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-11T06:15:31+00:00",
           "status": "checked"
         },
@@ -2137,7 +1265,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-u-operaria-produccion-borox-sector-alimentacion-3022103/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-11T06:15:31+00:00",
           "status": "checked"
         },
@@ -2233,13 +1361,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-o-preparadora-pedidos-ontigola-3020967/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-15T06:06:46+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-pedidos-turno-fijo-tarde-3022000/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-10T06:08:43+00:00",
           "status": "checked"
         },
@@ -2305,13 +1433,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/responsable-produccion-y-operaciones-agricolas-3023029/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-14T06:03:48+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/segundo-a-cocinero-a-3023283/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-14T06:03:48+00:00",
           "status": "checked"
         },
@@ -2346,9 +1474,9 @@
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tec-mantenimiento-electromecanico-3021281/": {
-          "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
-          "last_checked": "2026-11-07T05:59:57+00:00",
+          "checks": 2,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
+          "last_checked": "2026-11-16T05:22:28+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tec-mantenimiento-industrial-junior-temporal-larga-duracion-3020198/": {
@@ -2383,7 +1511,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tecnico-a-mecanizado-cnc-indefinido-3022881/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-13T06:17:48+00:00",
           "status": "checked"
         },
@@ -2413,7 +1541,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tornero-a-cnc-indefinido-3022606/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-12T06:18:29+00:00",
           "status": "checked"
         },
@@ -2425,7 +1553,7 @@
         },
         "https://www.randstad.es/fundacion-randstad/empleo-discapacidad/oferta/auxiliar-administrativo-a-con-certificado-discapacidad-3022958/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-14T06:03:48+00:00",
           "status": "checked"
         },
@@ -2437,7 +1565,7 @@
         },
         "https://www.randstad.es/fundacion-randstad/empleo-discapacidad/oferta/operario-linea-con-certificado-discapacidad-3022879/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-14T06:03:48+00:00",
           "status": "checked"
         },
@@ -2449,7 +1577,7 @@
         },
         "https://www.randstad.es/fundacion-randstad/empleo-discapacidad/oferta/programa-practicas-universitarias-caixabank-2027-red-comercial-con-certificado-discapacidad-3020997/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (172) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (171) c",
           "last_checked": "2026-11-15T06:06:46+00:00",
           "status": "checked"
         },
@@ -2690,21 +1818,21 @@
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/comerciales-inmobiliaria": {
-          "checks": 3,
+          "checks": 4,
           "label": "Comerciales Inmobiliaria",
-          "last_checked": "2026-11-06T06:15:36+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/conductor-camion-c-y-adr-zona-la-sagra": {
-          "checks": 3,
+          "checks": 4,
           "label": "Conductor Camión C y ADR zona LA SAGRA",
-          "last_checked": "2026-11-06T06:15:36+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/conductor-camion-c-y-adr-zona-la-sagra-1": {
-          "checks": 3,
+          "checks": 4,
           "label": "Conductor Camión C y ADR zona Los Montes de Toledo",
-          "last_checked": "2026-11-06T06:15:36+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/docente-certificado-habilitacion-docencia-ab-y-c": {
@@ -2720,39 +1848,39 @@
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/electromecanico-a": {
-          "checks": 3,
+          "checks": 4,
           "label": "Electromecánico/a",
-          "last_checked": "2026-11-06T06:15:36+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/electromecanico-industrial": {
-          "checks": 3,
+          "checks": 4,
           "label": "Electromecánico Industrial",
-          "last_checked": "2026-11-08T06:02:00+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/formador-a-curso-asesoria-fiscal-120h": {
-          "checks": 3,
+          "checks": 4,
           "label": "Formador/a Curso Asesoría Fiscal (120h)",
-          "last_checked": "2026-11-08T06:02:00+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/gobernanta-e-hotel": {
-          "checks": 3,
+          "checks": 4,
           "label": "Gobernanta/e Hotel",
-          "last_checked": "2026-11-08T06:02:00+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/guia-de-turismo": {
-          "checks": 3,
+          "checks": 4,
           "label": "Guía de Turismo",
-          "last_checked": "2026-11-08T06:02:00+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/informador-turisitic-valladolid-2": {
-          "checks": 3,
+          "checks": 4,
           "label": "Informador@ Turístic@ ALBACETE!! Finales de Mayo",
-          "last_checked": "2026-11-08T06:02:00+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/ingeniero-a-de-procesos-y-mejora-continua": {
@@ -2882,9 +2010,9 @@
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/operarios-as-fabrica-alimentaria-8": {
-          "checks": 1,
+          "checks": 2,
           "label": "Operari@ fábrica Toledo con CFGM/CFGS",
-          "last_checked": "2026-11-07T05:59:42+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/operarios-as-lineas-produccion-con-ciclo-formativo-grado-medio-superior-1-1-1-1": {
@@ -3044,9 +2172,9 @@
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/personal-ciencia-y-tecnologia-de-los-alimentos-14": {
-          "checks": 1,
+          "checks": 2,
           "label": "Personal Ciencia y Tecnología de los Alimentos",
-          "last_checked": "2026-11-07T05:59:42+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/personal-con-manejo-de-transpaleta": {
@@ -3200,9 +2328,9 @@
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/personal-para-departamento-de-calidad-1": {
-          "checks": 1,
+          "checks": 2,
           "label": "Personal para departamento de calidad",
-          "last_checked": "2026-11-07T05:59:42+00:00",
+          "last_checked": "2026-11-16T05:22:04+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/pintor-de-carroceria": {
