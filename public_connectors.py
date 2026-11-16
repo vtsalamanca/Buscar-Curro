@@ -241,6 +241,16 @@ def relevant_url(spec: ConnectorSpec, url: str, label: str) -> bool:
         return False
     if not any(parsed.hostname == suffix or parsed.hostname.endswith("." + suffix) for suffix in spec.host_suffixes):
         return False
+    # PDFs are official documents, but this connector only parses HTML.
+    # Do not download PDFs as HTML or mistake navigation for vacancies.
+    if spec.key == "aranjuez" and parsed.path.lower().endswith(".pdf"):
+        return False
+    if spec.key == "cruz_roja":
+        path = parsed.path.lower()
+        if path.endswith("/misofertas.aspx") or parsed.fragment or path.endswith("/ofertas/ofertas.aspx"):
+            return False
+        return ("/ofertas/" in path and
+                any(token in path for token in ("detalle", "oferta.aspx", "veroferta")))
     haystack = plain(url + " " + label)
     return any(plain(pattern) in haystack for pattern in spec.link_patterns)
 
@@ -367,7 +377,10 @@ def run_connector(spec: ConnectorSpec) -> SourceRun:
             if document:
                 documents.append(document)
         unique = {document.document_id: document for document in documents}
-        status = "consulta_parcial" if detail_errors else ("ok" if unique else "sin_resultados_relevantes")
+        # A dynamic or previously partial catalogue with no verifiable offers
+        # cannot be certified as having no vacancies.
+        incomplete = bool(detail_errors) or (spec.partial and not unique)
+        status = "consulta_parcial" if incomplete else ("ok" if unique else "sin_resultados_relevantes")
         notes = [
             f"candidate_links:{len(deduped)}", f"relevant_documents:{len(unique)}",
             f"details_attempted:{min(len(deduped), spec.detail_limit)}",
