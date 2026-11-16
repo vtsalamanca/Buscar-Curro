@@ -35,11 +35,25 @@ class PublicConnectorTests(unittest.TestCase):
             [("https://empleopublico.castillalamancha.es/procesos-selectivos/abiertos/educador-social", "Educador social")],
         )
 
+    def test_aranjuez_skips_pdf_documents_not_html_vacancies(self):
+        from public_connectors import get_spec
+        spec = get_spec("aranjuez")
+        html = '<a href="/images/files/personal/BOCM.pdf">BOCM</a><a href="/transparencia/empleo-publico/trabajador-social/">Trabajador social</a>'
+        links = parse_listing(spec, html, spec.url)
+        self.assertEqual(len(links), 1)
+        self.assertIn("trabajador-social", links[0][0])
+
+    def test_cruz_roja_does_not_treat_account_or_navigation_as_vacancy(self):
+        from public_connectors import get_spec
+        spec = get_spec("cruz_roja")
+        html = '<a href="/MisOfertas/MisOfertas.aspx">Mi cuenta</a><a href="/Ofertas/Ofertas.aspx#top">Volver</a>'
+        self.assertEqual(parse_listing(spec, html, spec.url), [])
+
     def test_document_extracts_fields_and_requirements(self):
-        detail = "Requisitos: Grado en Psicología y experiencia con menores. Fecha de cierre: 31 de octubre de 2026"
+        detail = "Requisitos: Grado en Psicología y experiencia con menores. Fecha de cierre: 31 de octubre de 2027"
         item = make_document(SPEC, "https://jobs.example.test/job/42", "Psicólogo/a en Toledo", detail)
         self.assertIsNotNone(item)
-        self.assertEqual(item.deadline, "2026-10-31")
+        self.assertEqual(item.deadline, "2027-10-31")
         self.assertEqual(item.status, "abierta")
         self.assertIn("psicologia", item.category)
         self.assertTrue(item.requirements)
