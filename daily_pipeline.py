@@ -71,7 +71,7 @@ def minimal_state(state: dict) -> dict:
     if "bc02" in state:
         queues = {}
         for source, queue in state["bc02"].get("queues", {}).items():
-            if source not in {"tratem", "adecco", "eurofirms", "randstad", "manpower", "gi_group"}:
+            if source not in {"tratem", "adecco", "randstad", "manpower", "gi_group"}:
                 continue
             clean_queue = {}
             for url, item in queue.items():
