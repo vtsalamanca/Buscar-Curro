@@ -36,7 +36,6 @@ ETT_SPECS = (
         ("adecco.com",), ("/es-es/ofertas-trabajo/",),
         ("https://www.adecco.com/es-es/ofertas-trabajo/coordinador-a-de-transporte-escolar-y-acompanantes-20h-toledo-toledo/feff860faf43f8aa1b13e4812d309296",), 4,
     ),
-    EttSpec("eurofirms", "Eurofirms", "https://jobs.eurofirms.com/es/es/trabajo/toledo", ("eurofirms.com",), ("/es/es/",), detail_limit=4),
     EttSpec("randstad", "Randstad", "https://www.randstad.es/candidatos/ofertas-empleo/p-toledo/", ("randstad.es",), ("/oferta/",), detail_limit=3),
     EttSpec("manpower", "Manpower", "https://www.manpower.es/es/buscar-trabajo/ciudad/toledo/", ("manpower.es",), ("/es/empleos/",), detail_limit=4),
     EttSpec(
