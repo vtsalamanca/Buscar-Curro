@@ -13,3 +13,7 @@ data/*state.json
 state-backups/
 boe-output*/
 docm-output*/
+
+# Private CV evaluator and its tests: Debian only, never publish.
+/private_cv_review.py
+/test_private_cv_review.py
