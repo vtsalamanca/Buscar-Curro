@@ -17,7 +17,7 @@ class EttConnectorTests(unittest.TestCase):
         self.assertEqual(listing_links(spec, html, spec.listing_url), [("https://agenciaempleo.tratem.com/oferta/docente", "Docente Ver oferta Login")])
 
     def test_pagination_uses_only_explicit_same_host_links(self):
-        spec = ETT_SPECS[3]
+        spec = ETT_SPECS[2]
         html = '<a href="/candidatos/ofertas-empleo/p-toledo/pg-2/">Siguiente</a><a href="https://evil.test/page-2">Next</a>'
         self.assertEqual(
             pagination_links(spec, html, spec.listing_url),
@@ -45,7 +45,7 @@ class EttConnectorTests(unittest.TestCase):
         self.assertIn("datos_contradictorios:contrato", doc.data_quality)
 
     def test_property_value_identifier_uses_unique_value(self):
-        spec = ETT_SPECS[5]
+        spec = ETT_SPECS[4]
         item = {
             "title": "Educador social", "description": "Intervención social",
             "identifier": {"@type": "PropertyValue", "name": "Gi Group SpA", "value": "103825"},
@@ -61,9 +61,9 @@ class EttConnectorTests(unittest.TestCase):
         self.assertEqual(first.content_hash, second.content_hash)
 
     def test_suspended_logistics_is_filtered(self):
-        spec = ETT_SPECS[2]
+        spec = EttSpec("fixture", "Fixture", "https://jobs.example.test/es/es/", ("example.test",), ("/es/es/",))
         item = {"title": "Mozo de almacén con discapacidad", "description": "Logística"}
-        self.assertIsNone(_document_from_job(spec, "https://jobs.eurofirms.com/es/es/x", item, "", ""))
+        self.assertIsNone(_document_from_job(spec, "https://jobs.example.test/es/es/x", item, "", ""))
 
     def test_html_navigation_does_not_make_unrelated_title_relevant(self):
         spec = ETT_SPECS[0]
@@ -71,7 +71,7 @@ class EttConnectorTests(unittest.TestCase):
         self.assertIsNone(_document_from_job(spec, "https://agenciaempleo.tratem.com/oferta/camarero", item, "", item["description"]))
 
     def test_gi_detail_redirect_to_catalogue_is_rejected(self):
-        spec = ETT_SPECS[5]
+        spec = ETT_SPECS[4]
         self.assertTrue(unrelated_gi_redirect(spec, "https://es.gigroup.com/ofertas-de-trabajo/"))
         self.assertFalse(unrelated_gi_redirect(spec, "https://es.gigroup.com/ofertas-de-trabajo-detalle/trabajo-x/"))
 
