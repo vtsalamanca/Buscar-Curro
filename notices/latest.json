@@ -2,23 +2,23 @@
   "event_count": 1,
   "events": [
     {
-      "act_type": "oferta",
+      "act_type": "convocatoria",
       "deadline": null,
-      "document_hash": "e75651f45fdb2cc832976c19754980d9eca8167489fa6285e90489027a1a6f7e",
-      "eligibility": "revisar",
-      "geographic_status": "distancia_pendiente",
+      "document_hash": "8dd0fd85dcdd90ceca28247046426dc8e9e70d228cf2170b8555d1dbd742a068",
+      "eligibility": null,
+      "geographic_status": null,
       "municipality": null,
       "province": null,
-      "publication_date": null,
-      "source": "ilunion",
-      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de enfermería con/sin discapacidad (H/M/D) Residencia La Solana",
+      "publication_date": "2026-11-16",
+      "source": "boe",
+      "title": "Resolución de 3 de noviembre de 2026, de la Universidad Nacional de Educación a Distancia, por la que se corrigen errores en la de 23 de octubre de 2026, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 14 de septiembre de 2026.",
       "type": "new",
-      "url": "https://empleo.ilunion.com/job/Ciudad-Real-ILUNION-VidaS%C3%A9nior-Auxiliar-de-enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-La-Solana-Ciud/1367497757/",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23913",
       "verified_offer": false
     }
   ],
   "events_truncated": false,
-  "generated_at": "2026-11-16T05:22:02+00:00",
+  "generated_at": "2026-11-16T06:47:06+00:00",
   "notice": "Candidatos preliminares, no plazas o vigencias confirmadas. Validar requisitos, fechas y ubicación en origen. No se presentan kilómetros por carretera.",
   "overall_status": "partial",
   "project": "Buscar-Curro",
@@ -36,7 +36,7 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 1,
+      "new": 0,
       "source": "publicas",
       "source_failures": [
         "cruz_roja",
@@ -48,7 +48,7 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 0,
+      "new": 1,
       "source": "boe",
       "source_failures": [],
       "state_preserved": true,
