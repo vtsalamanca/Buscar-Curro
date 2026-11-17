@@ -1,24 +1,39 @@
 {
-  "event_count": 1,
+  "event_count": 2,
   "events": [
+    {
+      "act_type": "oferta",
+      "deadline": null,
+      "document_hash": "9e5ffc399788b2770a23bddbfbeb5082f8ca02a73fb9e64a27d3372fee95dee3",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "municipality": null,
+      "province": null,
+      "publication_date": null,
+      "source": "ilunion",
+      "title": "PUESTO: ILUNION VidaSenior AUXILIAR DE ENFERMERIA con/sin discapacidad (H/M/D) (Villarrobledo, Albacete)",
+      "type": "new",
+      "url": "https://empleo.ilunion.com/job/Albacete-ILUNION-VidaSenior-AUXILIAR-DE-ENFERMERIA-consin-discapacidad-%28HMD%29-%28Villarrobledo%2C-Albacete%29-Alba/1377585457/",
+      "verified_offer": false
+    },
     {
       "act_type": "convocatoria",
       "deadline": null,
-      "document_hash": "8dd0fd85dcdd90ceca28247046426dc8e9e70d228cf2170b8555d1dbd742a068",
+      "document_hash": "07bdc4d87c869404777a30a6f090647b9215cc8223a2a36a64d8468d8fa95f76",
       "eligibility": null,
       "geographic_status": null,
       "municipality": null,
-      "province": null,
-      "publication_date": "2026-11-16",
-      "source": "boe",
-      "title": "Resolución de 3 de noviembre de 2026, de la Universidad Nacional de Educación a Distancia, por la que se corrigen errores en la de 23 de octubre de 2026, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 14 de septiembre de 2026.",
+      "province": "Castilla-La Mancha",
+      "publication_date": "2026-11-17",
+      "source": "docm",
+      "title": "Oposiciones. Resolución de 10/11/2026 , de la Dirección General de Recursos Humanos y Transformación, por la que se aprueba la relación de plazas que se ofertan y se establece el procedimiento para opción a las mismas a las personas aspirantes que han superado el proceso selectivo convocado para el ingreso, por el sistema general de acceso libre, e",
       "type": "new",
-      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23913",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/17/pdf/2026_8146.pdf&tipo=rutaDocm",
       "verified_offer": false
     }
   ],
   "events_truncated": false,
-  "generated_at": "2026-11-16T06:47:06+00:00",
+  "generated_at": "2026-11-17T06:16:54+00:00",
   "notice": "Candidatos preliminares, no plazas o vigencias confirmadas. Validar requisitos, fechas y ubicación en origen. No se presentan kilómetros por carretera.",
   "overall_status": "partial",
   "project": "Buscar-Curro",
@@ -36,11 +51,12 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 0,
+      "new": 1,
       "source": "publicas",
       "source_failures": [
         "cruz_roja",
-        "empleo_clm"
+        "empleo_clm",
+        "jccm"
       ],
       "state_preserved": true,
       "status": "partial"
@@ -48,7 +64,7 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 1,
+      "new": 0,
       "source": "boe",
       "source_failures": [],
       "state_preserved": true,
@@ -57,17 +73,17 @@
     {
       "changed": 0,
       "initial_baseline": false,
-      "new": 0,
+      "new": 1,
       "source": "docm",
       "source_failures": [],
       "state_preserved": true,
       "status": "ok"
     },
     {
-      "first_baseline": false,
-      "new_or_changed": 0,
+      "reason": "official_source_unavailable",
       "source": "ate",
-      "status": "ok"
+      "state_preserved": true,
+      "status": "failed"
     }
   ]
 }
