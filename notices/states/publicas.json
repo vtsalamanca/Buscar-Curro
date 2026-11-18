@@ -311,6 +311,19 @@
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Leñeros (Madrid)"
     },
+    "ilunion:452543405f56fbfe71de": {
+      "act_type": "oferta",
+      "content_hash": "d12e15085ccff6c08d75de7632b59cae055a36bb94632aad1bfd9c67ed7b8b0b",
+      "document_id": "ilunion:452543405f56fbfe71de",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Limpieza-consin-discapacidad-%28HMD%29-Residencia-Parla-%28Madrid%29-Madr/1362126257/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Limpieza con/sin discapacidad (H/M/D) - Residencia Parla (Madrid) Población Madrid Fecha 18 nov 2026 Título ILUNION VidaSénior - Limpieza con/sin discapacidad (H/M/D) - Residencia Parla (Madrid) Población Madrid Fecha 18 nov 2026 Título ILUNION VidaSénior - Limpieza con/sin discapacidad (H/M/D) - Residencia Parla (Madrid) Población Madrid Fecha 18 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
+    },
     "ilunion:53a29487a7a7bdd355e0": {
       "act_type": "oferta",
       "content_hash": "b418285a6bd71824290ddafe277af27da302e1f7b51ec6ffc70d538a41f1fa0b",
@@ -594,6 +607,19 @@
       "status": "plazo_desconocido",
       "title": "Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 26 oct 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 26 oct 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 26 oct 2026 Utilice la barra espaciadora para ver el contenido completo de la infor"
     },
+    "ilunion:fa30805d6394653d00c9": {
+      "act_type": "oferta",
+      "content_hash": "e3358c4e66366aba5f09888aada3d0f9ae0193ae24707bed2305b11b8f155c96",
+      "document_id": "ilunion:fa30805d6394653d00c9",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-Residencia-Parla-Madr/1369407257/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Parla Población Madrid Fecha 18 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Parla Población Madrid Fecha 18 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Parla Población Madrid Fecha 18 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
+    },
     "ilunion:fcbb1669bf089b430eef": {
       "act_type": "oferta",
       "content_hash": "59502245eab3bf4fe33a17ed1ab620eabacd81091c195c2f823cf648ef7863a2",
@@ -629,13 +655,15 @@
       "title": "Grupo III - Personal Monitor de Medioambiente"
     },
     "jccm:30213adf401948a610ec": {
-      "act_type": "oferta",
-      "content_hash": "bc81a9ba10a7558a6cd11a5d70c0d7c3a60be626f9d4bbb7f7c3ba35e978daf1",
+      "act_type": "bolsa",
+      "content_hash": "83ce5ddc40ae25cb14b27e63e46e9000f54d22811e9fe1eb2e743350d20f3f5c",
       "document_id": "jccm:30213adf401948a610ec",
-      "eligibility": "revisar",
-      "geographic_status": "distancia_pendiente",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Toledo",
       "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-personal-monitor-jefatura-de-taller",
-      "province": "Castilla-La Mancha",
+      "province": "Toledo",
+      "publication_date": "2026-11-17",
       "source": "jccm",
       "status": "plazo_desconocido",
       "title": "Grupo III - Personal Monitor Jefatura de Taller"
@@ -682,14 +710,14 @@
     },
     "jccm:d647fc6c13c7cf99ceb7": {
       "act_type": "bolsa",
-      "content_hash": "f0f6107041b0335734a4eb463eade98034598f34d94042cd720b8e18a7a2b888",
+      "content_hash": "b3f9622cff91ba39ceca648cea911ecaa358c407ff92ab4e27bfca7b758526e8",
       "document_id": "jccm:d647fc6c13c7cf99ceb7",
       "eligibility": "datos_insuficientes",
       "geographic_status": "dentro_80km",
       "municipality": "Toledo",
       "official_url": "https://empleopublico.castillalamancha.es/bolsas/personal-laboral/grupo-iii-auxiliar-tecnico-educativo",
       "province": "Toledo",
-      "publication_date": "2026-11-11",
+      "publication_date": "2026-11-17",
       "source": "jccm",
       "status": "plazo_desconocido",
       "title": "Grupo III - Auxiliar Técnico Educativo"
@@ -924,6 +952,18 @@
       "source": "trama",
       "status": "plazo_desconocido",
       "title": "EDUCADOR/A RESIDENCIA INFANTIL - TURNO DE TARDE (BAJA MATERNIDAD) Aranjuez, Comunidad de Madrid 31 de diciembre de 2026 ver"
+    },
+    "trama:1152": {
+      "act_type": "oferta",
+      "content_hash": "092f16a46d1842bfe77d7b35190084a9cd995090242adbc70882b71f6016e74f",
+      "document_id": "trama:1152",
+      "eligibility": "revisar",
+      "geographic_status": "distancia_pendiente",
+      "official_url": "https://www.trama.org/empleo/oferta.php?id=1152",
+      "publication_date": "2026-12-31",
+      "source": "trama",
+      "status": "plazo_desconocido",
+      "title": "EDUCADOR/A SOCIAL - SERVICIO DE INTERVENCIONES TÉCNICAS DE ACOGIMIENTO EN FAMILIA EDUCADORA ALICANTE 31 de diciembre de 2026 ver"
     },
     "trama:922": {
       "act_type": "oferta",

@@ -390,6 +390,56 @@
       "status": "plazo_desconocido",
       "title": "Resolución de 3 de noviembre de 2026, de la Universidad Nacional de Educación a Distancia, por la que se corrigen errores en la de 23 de octubre de 2026, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 14 de septiembre de 2026."
     },
+    "boe:BOE-A-2026-24091": {
+      "act_type": "resolucion",
+      "content_hash": "2b9ac64187cc0016312f2630f529904e7d38cfdb582140fdc09f0971a6bb39d1",
+      "document_id": "boe:BOE-A-2026-24091",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24091",
+      "publication_date": "2026-11-17",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Resolución de 4 de noviembre de 2026, de la Universidad Nacional de Educación a Distancia, por la que se convocan pruebas selectivas para ingreso, por el sistema de promoción interna, en la Escala Administrativa."
+    },
+    "boe:BOE-A-2026-24092": {
+      "act_type": "convocatoria",
+      "content_hash": "45d9a4d4761c9634b8d13ef3d493d1b8fe05298204da9fbacdef2bfc3e162d03",
+      "document_id": "boe:BOE-A-2026-24092",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24092",
+      "publication_date": "2026-11-17",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Resolución de 4 de noviembre de 2026, de la Universidad Nacional de Educación a Distancia, por la que se publica la relación de aspirantes que han superado el proceso selectivo para ingreso, por el sistema de promoción interna, en la Escala de Gestión Universitaria, convocado por Resolución de 28 de julio de 2025."
+    },
+    "boe:BOE-A-2026-24147": {
+      "act_type": "convocatoria",
+      "content_hash": "2828d140d45ced56cdba4b0fa4f80e90f4608670630e19c0bd6e9a238fb8e80e",
+      "document_id": "boe:BOE-A-2026-24147",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24147",
+      "publication_date": "2026-11-18",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Resolución de 16 de noviembre de 2026, de la Dirección General de Profesorado y Personal de Centros Públicos, del Departamento de Educación y Formación Profesional, por la que se publica la convocatoria de concurso oposición para el ingreso y acceso a la función pública docente y adquisición de nuevas especialidades."
+    },
+    "boe:BOE-A-2026-24148": {
+      "act_type": "convocatoria",
+      "content_hash": "f99d37da9d0a4420fe95b4c3c5853c411840f3d6cdedb6a286a6b4b0c576c2ad",
+      "document_id": "boe:BOE-A-2026-24148",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24148",
+      "publication_date": "2026-11-18",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Resolución de 13 de noviembre de 2026, de la Dirección General de Recursos Humanos, de la Consejería de Educación, Ciencia y Universidades, por la que se publica la convocatoria del procedimiento selectivo de ingreso al Cuerpo de Catedráticos de Música y Artes Escénicas."
+    },
+    "boe:BOE-A-2026-24155": {
+      "act_type": "convocatoria",
+      "content_hash": "75cc6e07bdbf38a1a9ec4ebcd8eec0bf4ff9096a1479124ac3281c65823c0853",
+      "document_id": "boe:BOE-A-2026-24155",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24155",
+      "publication_date": "2026-11-18",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Alicante, Patronato Municipal de Educación Infantil, referente a la convocatoria para proveer varias plazas."
+    },
     "boe:BOE-B-2026-36165": {
       "act_type": "resolucion",
       "content_hash": "e1d90f3566287c3aa8f9b791185bac7314617b5ce246ce8048a2a079c09fd561",
@@ -399,6 +449,36 @@
       "source": "boe",
       "status": "plazo_desconocido",
       "title": "Extracto de la Resolución de 22 de octubre de 2026 de la Secretaría de Estado de Educación, por la que se convocan 1.500 plazas para la realización del curso tutorizado en línea: Competencias para el desarrollo de la función directiva."
+    },
+    "boe:BOE-B-2026-37836": {
+      "act_type": "resolucion",
+      "content_hash": "abff4ecaee2f3f3b20f886b65b2f08c0f0f6a3f32b965eca1f6de11eb70d3dab",
+      "document_id": "boe:BOE-B-2026-37836",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-37836",
+      "publication_date": "2026-11-17",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Extracto de la Resolución de la Secretaría de Estado de Educación, de 3 de noviembre de 2026, por la que se convocan plazas de asistencia a eventos de formación dentro del marco de la acción eTwinning para el año 2027 que se celebrarán en los países participantes en el programa y que están dirigidos a profesorado de centros públicos y privados que impartan docencia de enseñanzas oficiales no universitarias."
+    },
+    "boe:BOE-B-2026-37945": {
+      "act_type": "resolucion",
+      "content_hash": "58c17eb50e58894141a427db570338ef814c4edfc84865ece1ab98c73c949b93",
+      "document_id": "boe:BOE-B-2026-37945",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-37945",
+      "publication_date": "2026-11-18",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Extracto de la Resolución de 16 de noviembre de 2026 de la Secretaría de Estado de Educación, por la que se convocan ayudas para participar en el programa nacional \"Centros de Educación Ambiental\" durante el año 2027"
+    },
+    "boe:BOE-B-2026-37946": {
+      "act_type": "resolucion",
+      "content_hash": "73019b5090b28ae91d0b1c2c55013ca42aee0d45ac1f14da581ff8f5c143ff94",
+      "document_id": "boe:BOE-B-2026-37946",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-37946",
+      "publication_date": "2026-11-18",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Extracto de la Resolución de 16 de noviembre de 2026 de la Secretaría de Estado de Educación, por la que se convocan ayudas para participar en el programa nacional \"Recuperación y utilización educativa de pueblos abandonados\" durante el año 2027."
     }
   },
   "schema_version": 1
