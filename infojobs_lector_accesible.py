@@ -72,7 +72,7 @@ def atspi():
     return Atspi
 
 
-def get_accessible_browser(Atspi):
+def get_legacy_accessible_browser(Atspi):
     # Only the locally-authorized dedicated instance, not arbitrary windows.
     from infojobs_consulta_debian import find_browser_processes, agent_reachable
     browser = find_browser_processes()
@@ -91,6 +91,39 @@ def get_accessible_browser(Atspi):
     if len(matches) != 1:
         raise ValueError("accessible_infojobs_window_missing_or_ambiguous")
     return matches[0]
+
+
+def get_accessible_browser(Atspi):
+    """Prefer the isolated local profile created by the keyring procedure."""
+    from urllib.parse import urlsplit
+    trusted=set()
+    prefix=str(Path.home()/".cache/igor-infojobs-")
+    for proc in Path("/proc").iterdir():
+        if not proc.name.isdigit():continue
+        try:
+            if proc.stat().st_uid!=os.getuid():continue
+            args=(proc/"cmdline").read_bytes().decode().split("\0")
+            if Path(args[0]).name not in {"firefox-esr","firefox"}:continue
+            if "--profile" not in args or "--no-remote" not in args:continue
+            profile=Path(args[args.index("--profile")+1])
+            if (str(profile)!=str(Path.home()/".local/share/lab-auth-infojobs/profile") and not str(profile).startswith(prefix)) or profile.is_symlink() or profile.stat().st_uid!=os.getuid():continue
+            trusted.add(int(proc.name))
+        except (OSError,ValueError,IndexError):continue
+    desktop=Atspi.get_desktop(0);matches=[]
+    for i in range(desktop.get_child_count()):
+        app=desktop.get_child_at_index(i)
+        if "firefox" not in (app.get_name() or "").lower() or app.get_process_id() not in trusted:continue
+        for j in range(app.get_child_count()):
+            window=app.get_child_at_index(j)
+            for n in walk_live(window,maximum=1600):
+                try:
+                    if n.get_role_name()!="document web":continue
+                    u=urlsplit(Atspi.Document.get_document_attribute_value(n.get_document_iface(),"DocURL") or "")
+                    if u.scheme=="https" and u.hostname=="www.infojobs.net":matches.append(window);break
+                except (RuntimeError,TypeError):continue
+    if len(matches)==1:return matches[0]
+    if matches:raise ValueError("accessible_infojobs_window_missing_or_ambiguous")
+    return get_legacy_accessible_browser(Atspi)
 
 
 def walk_live(root, maximum=1300):
@@ -200,6 +233,7 @@ def main():
         save_private(report)
         print(json.dumps({
             "status": report["status"],
+            "checked_at_utc": report["checked_at_utc"],
             "applications_count": report["applications_count"],
             "applications": report["applications"],
         }, ensure_ascii=False))
