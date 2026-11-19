@@ -440,6 +440,26 @@
       "status": "plazo_desconocido",
       "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Alicante, Patronato Municipal de Educación Infantil, referente a la convocatoria para proveer varias plazas."
     },
+    "boe:BOE-A-2026-24193": {
+      "act_type": "resolucion",
+      "content_hash": "69064a6d0b4deb2c38a4cd83786ca655421847dbf0d05a32c9252abdec96b132",
+      "document_id": "boe:BOE-A-2026-24193",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24193",
+      "publication_date": "2026-11-19",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Orden EFD/1236/2026, de 6 de noviembre, por la que, a propuesta del Departamento de Educación de la Comunidad Foral de Navarra, se nombran funcionarias de carrera del Cuerpo de Maestros, a aspirantes seleccionadas en el procedimiento selectivo convocado por Resolución 286/2023, de 27 de octubre."
+    },
+    "boe:BOE-A-2026-24211": {
+      "act_type": "convocatoria",
+      "content_hash": "62f8e5df6b732663c4c3271a0089075cc2a4c316570793a9f23d4ca823229b01",
+      "document_id": "boe:BOE-A-2026-24211",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24211",
+      "publication_date": "2026-11-19",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Resolución de 6 de noviembre de 2026, de la Universidad Nacional de Educación a Distancia, por la que se resuelve el concurso específico, convocado por Resolución de 5 de mayo de 2026."
+    },
     "boe:BOE-B-2026-36165": {
       "act_type": "resolucion",
       "content_hash": "e1d90f3566287c3aa8f9b791185bac7314617b5ce246ce8048a2a079c09fd561",
@@ -479,6 +499,16 @@
       "source": "boe",
       "status": "plazo_desconocido",
       "title": "Extracto de la Resolución de 16 de noviembre de 2026 de la Secretaría de Estado de Educación, por la que se convocan ayudas para participar en el programa nacional \"Recuperación y utilización educativa de pueblos abandonados\" durante el año 2027."
+    },
+    "boe:BOE-B-2026-38101": {
+      "act_type": "convocatoria",
+      "content_hash": "3d61eda817af6b30b0acee64d642418ad9864c665a3d9d901280e39cd20cce53",
+      "document_id": "boe:BOE-B-2026-38101",
+      "official_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-38101",
+      "publication_date": "2026-11-19",
+      "source": "boe",
+      "status": "plazo_desconocido",
+      "title": "Anuncio de la Comunidad de Regantes Arco Sur Mar Menor sobre convocatoria de Junta."
     }
   },
   "schema_version": 1

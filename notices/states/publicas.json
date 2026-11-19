@@ -298,6 +298,19 @@
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD J.M. Bringas (Madrid)"
     },
+    "ilunion:3d5c0a8f8134bd56fc79": {
+      "act_type": "oferta",
+      "content_hash": "9d6f9a89e8bc684beded5f36d37068963791b097a791864935379c2ca62e0da7",
+      "document_id": "ilunion:3d5c0a8f8134bd56fc79",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADa-consin-discapacidad-%28HMD%29-CD-Le%C3%B1eros-%28Madrid%29-Madr/1375496957/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) CD Leñeros (Madrid)"
+    },
     "ilunion:3dfcb47133ff70cfd8c9": {
       "act_type": "oferta",
       "content_hash": "11867a9ed304621c5e1bc0d388450985fd8826229aa7c3653133dc05be8f236a",
@@ -581,6 +594,19 @@
       "status": "plazo_desconocido",
       "title": "PUESTO: ILUNION VidaSénior - Enfermería (H/M/D) Residencia Maranchón (Guadalajara)"
     },
+    "ilunion:df14e25ccc0aaa9962e4": {
+      "act_type": "oferta",
+      "content_hash": "03bde1a1a0e9e0f4d740967af1090f446e20fb5977cbea76b7a01858869fa226",
+      "document_id": "ilunion:df14e25ccc0aaa9962e4",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Toledo",
+      "official_url": "https://empleo.ilunion.com/job/Toledo-ILUNION-VidaS%C3%A9nior-Oficial-Mantenimiento-consin-discapacidad-%28HMD%29-Residencia-Sonseca-%28Toledo%29-Tole/1372822857/",
+      "province": "Toledo",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "Título ILUNION VidaSénior Oficial Mantenimiento con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 19 nov 2026 Título ILUNION VidaSénior Oficial Mantenimiento con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 19 nov 2026 Título ILUNION VidaSénior Oficial Mantenimiento con/sin discapacidad (H/M/D) Residencia Sonseca (Toledo) Población Toledo Fecha 19 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la información de"
+    },
     "ilunion:e44ce0618180e5ce93ab": {
       "act_type": "oferta",
       "content_hash": "d50f7b805520b888c84437b7d730e3a6354932d40ead319298927c80b0e6b1ef",
@@ -609,7 +635,7 @@
     },
     "ilunion:fa30805d6394653d00c9": {
       "act_type": "oferta",
-      "content_hash": "e3358c4e66366aba5f09888aada3d0f9ae0193ae24707bed2305b11b8f155c96",
+      "content_hash": "a830af0797ea5d417f2fd28053d5f96e35485eae55fa226ab4b3b630530a4d87",
       "document_id": "ilunion:fa30805d6394653d00c9",
       "eligibility": "datos_insuficientes",
       "geographic_status": "dentro_80km",
@@ -618,7 +644,7 @@
       "province": "Madrid",
       "source": "ilunion",
       "status": "plazo_desconocido",
-      "title": "Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Parla Población Madrid Fecha 18 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Parla Población Madrid Fecha 18 nov 2026 Título ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Parla Población Madrid Fecha 18 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería con/sin discapacidad (H/M/D) Residencia Parla"
     },
     "ilunion:fcbb1669bf089b430eef": {
       "act_type": "oferta",
@@ -964,6 +990,20 @@
       "source": "trama",
       "status": "plazo_desconocido",
       "title": "EDUCADOR/A SOCIAL - SERVICIO DE INTERVENCIONES TÉCNICAS DE ACOGIMIENTO EN FAMILIA EDUCADORA ALICANTE 31 de diciembre de 2026 ver"
+    },
+    "trama:1154": {
+      "act_type": "oferta",
+      "content_hash": "80786e7d3398a6f10e72aff288e4e994adc83b1ffdedf000cb99aadf6b90ca11",
+      "document_id": "trama:1154",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://www.trama.org/empleo/oferta.php?id=1154",
+      "province": "Madrid",
+      "publication_date": "2027-01-04",
+      "source": "trama",
+      "status": "plazo_desconocido",
+      "title": "EDUCADOR/A SOCIAL | Proyecto Barnahus (sustitución) zona Retiro, MADRID 04 de enero de 2027 ver"
     },
     "trama:922": {
       "act_type": "oferta",
