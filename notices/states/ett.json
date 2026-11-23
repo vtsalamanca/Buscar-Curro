@@ -273,19 +273,19 @@
         },
         "https://www.manpower.es/es/empleos/automocion/operario-a-de-montaje-electrico-y-mecanizado-h-m-x-/756984": {
           "checks": 4,
-          "label": "20/11/2026 NEW Manpower 30923 - Mozo almacén TOLEDO (H/M/X) Toledo Transporte y Logística PREVIEW 27/10/2026 NEW Manpower Soldador/a Industrial (H/M/X) TOLEDO A",
+          "label": "20/11/2026 NUEVA Manpower 30923 - Mozo almacén TOLEDO (H/M/X) Toledo Transporte y Logística VISTA PREVIA 27/10/2026 NUEVA Manpower Soldador/a Industrial (H/M/X)",
           "last_checked": "2026-11-19T14:29:59+00:00",
           "status": "checked"
         },
         "https://www.manpower.es/es/empleos/automocion/soldador-a-industrial-h-m-x-/756983": {
           "checks": 4,
-          "label": "20/11/2026 NEW Manpower 30923 - Mozo almacén TOLEDO (H/M/X) Toledo Transporte y Logística PREVIEW 27/10/2026 NEW Manpower Soldador/a Industrial (H/M/X) TOLEDO A",
+          "label": "20/11/2026 NUEVA Manpower 30923 - Mozo almacén TOLEDO (H/M/X) Toledo Transporte y Logística VISTA PREVIA 27/10/2026 NUEVA Manpower Soldador/a Industrial (H/M/X)",
           "last_checked": "2026-11-19T14:29:59+00:00",
           "status": "checked"
         },
         "https://www.manpower.es/es/empleos/transporte-y-logistica/30923-mozo-almacen-toledo-h-m-x-/766694": {
           "checks": 1,
-          "label": "20/11/2026 NEW Manpower 30923 - Mozo almacén TOLEDO (H/M/X) Toledo Transporte y Logística PREVIEW 27/10/2026 NEW Manpower Soldador/a Industrial (H/M/X) TOLEDO A",
+          "label": "20/11/2026 NUEVA Manpower 30923 - Mozo almacén TOLEDO (H/M/X) Toledo Transporte y Logística VISTA PREVIA 27/10/2026 NUEVA Manpower Soldador/a Industrial (H/M/X)",
           "last_checked": "2026-11-20T14:06:43+00:00",
           "status": "checked"
         },
@@ -317,7 +317,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/administrativo-administrativa-3023955/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
@@ -383,8 +383,14 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/agente-comercial-sanitas-3024693/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/agente-comercial-sanitas-3025232/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
+          "last_checked": "2026-11-23T16:05:22+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/agente-comercial-toledo-3015882/": {
@@ -395,7 +401,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/agente-comercial-toledo-3024332/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
@@ -437,14 +443,20 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/ayudante-mecanico-a-proyecto-3024277/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/camarero-a-contrato-estable-3023285/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-22T13:24:49+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/camarero-sala-24-11-3025484/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
+          "last_checked": "2026-11-23T16:05:22+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/cargas-y-descargas-40h-fijo-manana-6-a-14hs-dhl-sesena-se-trabaja-con-peso-25kg-3016812/": {
@@ -455,7 +467,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/cargas-y-descargas-40h-fijo-manana-6-a-14hs-dhl-sesena-se-trabaja-con-peso-25kg-3024369/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
@@ -467,7 +479,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/cargas-y-descargas-40h-fijo-tarde-14-a-22hs-dhl-sesena-se-trabaja-con-peso-25kg-3024364/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
@@ -551,7 +563,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-40h-fijo-manana-6-a-14hs-dhl-sesena-se-trabaja-con-peso-25kg-3024470/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
@@ -563,7 +575,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-40h-fijo-tarde-14-a-22hs-dhl-sesena-se-trabaja-con-peso-25kg-3024468/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
@@ -587,7 +599,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-carretillera-frontal-3023814/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
@@ -659,13 +671,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-retractil-3023769/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/carretillero-retractill-3023607/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-17T06:17:15+00:00",
           "status": "checked"
         },
@@ -693,9 +705,15 @@
           "last_checked": "2026-11-05T06:16:26+00:00",
           "status": "checked"
         },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/charcutero-charcutera-3025650/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
+          "last_checked": "2026-11-23T16:05:22+00:00",
+          "status": "checked"
+        },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/comercial-tecnico-ganaderia-3024532/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
@@ -719,7 +737,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/conductor-carnet-b-3024264/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
@@ -803,7 +821,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/jefe-obra-toledo-3022743/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-22T13:24:49+00:00",
           "status": "checked"
         },
@@ -837,6 +855,12 @@
           "last_checked": "2026-10-27T02:56:35+00:00",
           "status": "checked"
         },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mecanico-3025505/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
+          "last_checked": "2026-11-23T16:05:22+00:00",
+          "status": "checked"
+        },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mecanico-a-vehiculo-industrial-y-maquinaria-agricola-indefinido-3019396/": {
           "checks": 1,
           "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (175) c",
@@ -857,7 +881,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-a-3024649/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
@@ -875,7 +899,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-almacen-incorporacion-23-11-3023883/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
@@ -905,7 +929,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-almacen-3024047/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
@@ -917,7 +941,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-almacen-40h-fijo-tarde-14-a-22hs-dhl-illescas-3023705/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-17T06:17:15+00:00",
           "status": "checked"
         },
@@ -965,7 +989,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-moza-carga-y-descargas-fijo-manana-o-tardes-dhl-3024134/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
@@ -1031,7 +1055,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-o-moza-borox-turno-fijo-tarde-o-noche-jornada-parcial-3023142/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-22T13:24:49+00:00",
           "status": "checked"
         },
@@ -1049,19 +1073,19 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-o-moza-logistica-poligono-toledo-3023751/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-o-moza-logistica-poligono-toledo-3024867/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-o-moza-logistica-poligono-toledo-campana-black-friday-y-navidad-3024935/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
@@ -1073,7 +1097,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-y-o-moza-almacen-ontigola-3023986/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
@@ -1097,7 +1121,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/mozo-y-o-moza-almacen-toledo-3024161/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
@@ -1127,7 +1151,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-3023220/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-22T13:24:49+00:00",
           "status": "checked"
         },
@@ -1157,7 +1181,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-corte-3025042/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
@@ -1181,13 +1205,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-especialista-con-fp-3024842/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-gases-3025044/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
@@ -1229,13 +1253,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-produccion-casarrubios-3024255/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-18T14:09:24+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-produccion-casarrubios-3024936/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
@@ -1247,13 +1271,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-produccion-industrial-3023983/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-produccion-textil-contrato-directo-plantilla-3024983/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
@@ -1289,13 +1313,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-a-transformacion-metalica-3025040/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-archivo-con-carnet-carretillero-3024877/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
@@ -1319,13 +1343,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-industria-carnica-3023132/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-22T13:24:49+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-industrial-3023326/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-22T13:24:49+00:00",
           "status": "checked"
         },
@@ -1349,7 +1373,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operaria-3024273/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
@@ -1397,7 +1421,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/operario-operaria-entradas-3023976/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
@@ -1535,7 +1559,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-a-y-carga-y-descarga-3023388/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-17T06:17:15+00:00",
           "status": "checked"
         },
@@ -1567,6 +1591,12 @@
           "checks": 1,
           "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
+          "status": "checked"
+        },
+        "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-o-preparadora-pedidos-dhl-ontigola-40h-m-t-n-3025316/": {
+          "checks": 1,
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
+          "last_checked": "2026-11-23T16:05:22+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-o-preparadora-pedidos-ontigola-3015230/": {
@@ -1637,7 +1667,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/preparador-preparadora-pedidos-40h-rotativo-dhl-3024132/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-19T14:29:24+00:00",
           "status": "checked"
         },
@@ -1655,7 +1685,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/promotor-a-talavera-3024331/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
@@ -1679,13 +1709,13 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/responsable-produccion-y-operaciones-agricolas-3023029/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-22T13:24:49+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/segundo-a-cocinero-a-3023283/": {
           "checks": 2,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-22T13:24:49+00:00",
           "status": "checked"
         },
@@ -1697,7 +1727,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/soldador-a-termoplastico-3025013/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-20T14:06:13+00:00",
           "status": "checked"
         },
@@ -1709,7 +1739,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/soldador-soldadora-3025096/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-21T13:31:41+00:00",
           "status": "checked"
         },
@@ -1721,7 +1751,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/soldador-soldadora-mig-mag-contrato-indefinido-3023682/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-17T06:17:15+00:00",
           "status": "checked"
         },
@@ -1733,7 +1763,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/soldador-soldadora-mig-toledo-contrato-indefinido-3023599/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-17T06:17:15+00:00",
           "status": "checked"
         },
@@ -1757,7 +1787,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tec-mantenimiento-senior-indefinido-3024186/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-21T13:31:41+00:00",
           "status": "checked"
         },
@@ -1793,7 +1823,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tecnico-a-mecanizado-turno-fijo-l-a-v-3024611/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-21T13:31:41+00:00",
           "status": "checked"
         },
@@ -1817,7 +1847,7 @@
         },
         "https://www.randstad.es/candidatos/ofertas-empleo/oferta/tecnicos-as-reparacion-y-mantenimiento-del-hogar-3024610/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-21T13:31:41+00:00",
           "status": "checked"
         },
@@ -1901,19 +1931,19 @@
         },
         "https://www.randstad.es/unete-al-equipo/ofertas-randstad/oferta/consultor-a-junior-rrhh-toledo-3023920/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-21T13:31:41+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/unete-al-equipo/ofertas-randstad/oferta/especialista-rr-hh-junior-illescas-toledo-3024663/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-21T13:31:41+00:00",
           "status": "checked"
         },
         "https://www.randstad.es/unete-al-equipo/ofertas-randstad/oferta/especialista-rr-hh-junior-illescas-toledo-3024830/": {
           "checks": 1,
-          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (188) c",
+          "label": "encuentra tu próximo trabajo. buscar por buscar ofertas ctx_page.search = { data_term : '', filters_num : 1, is_logged_in : false, } ofertas encontradas (184) c",
           "last_checked": "2026-11-21T13:31:41+00:00",
           "status": "checked"
         },
@@ -2004,45 +2034,45 @@
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-a-contable-2": {
-          "checks": 4,
+          "checks": 5,
           "label": "Auxiliar Administrativo/a Contable",
-          "last_checked": "2026-11-14T06:03:31+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-contable": {
-          "checks": 4,
+          "checks": 5,
           "label": "Auxiliar Administrativo Contable",
-          "last_checked": "2026-11-14T06:03:31+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-contable-1": {
-          "checks": 4,
+          "checks": 5,
           "label": "Auxiliar Administrativo/Contable",
-          "last_checked": "2026-11-14T06:03:31+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-de-contabilidad-1": {
-          "checks": 4,
+          "checks": 5,
           "label": "Auxiliar Administrativo de contabilidad",
-          "last_checked": "2026-11-15T06:06:21+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-de-taller": {
-          "checks": 4,
+          "checks": 5,
           "label": "Auxiliar Administrativo de Taller",
-          "last_checked": "2026-11-15T06:06:21+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/auxiliar-administrativo-zona-polan": {
-          "checks": 4,
+          "checks": 5,
           "label": "Auxiliar Administrativo zona Polán",
-          "last_checked": "2026-11-15T06:06:21+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/ayudante-de-instalaciones-fotovoltaicas": {
-          "checks": 4,
+          "checks": 5,
           "label": "Ayudante de Instalaciones Fotovoltaicas",
-          "last_checked": "2026-11-15T06:06:21+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/ayudante-de-mantenimiento-y-reparacion-de-sistemas-de-alarma-y-seguridad": {
@@ -2058,9 +2088,9 @@
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/camarer-de-pisos-casa-rural-toledo": {
-          "checks": 4,
+          "checks": 5,
           "label": "Camarer@ de Pisos Casa Rural Toledo",
-          "last_checked": "2026-11-15T06:06:21+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/camarers-arenas-de-san-pedro": {
@@ -2718,27 +2748,27 @@
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/tecnico-a-administrativo-a-1": {
-          "checks": 3,
+          "checks": 4,
           "label": "Auxiliar Administrativo/a",
-          "last_checked": "2026-11-14T06:03:31+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/tecnico-a-administrativo-a-rrhh": {
-          "checks": 3,
+          "checks": 4,
           "label": "Técnico/a Administrativo/a RRHH",
-          "last_checked": "2026-11-14T06:03:31+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/tecnico-a-rrhh-2": {
-          "checks": 3,
+          "checks": 4,
           "label": "Auxiliar administrativo Departamento  RRHH",
-          "last_checked": "2026-11-14T06:03:31+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         },
         "https://agenciaempleo.tratem.com/oferta/tecnicos-as-de-empleo-1-1-1-1": {
-          "checks": 3,
+          "checks": 4,
           "label": "Técnicos/as de Empleo",
-          "last_checked": "2026-11-14T06:03:31+00:00",
+          "last_checked": "2026-11-23T16:05:05+00:00",
           "status": "checked"
         }
       }
