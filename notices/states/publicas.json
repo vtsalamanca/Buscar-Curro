@@ -909,17 +909,18 @@
     },
     "trama:1113": {
       "act_type": "oferta",
-      "content_hash": "516b0d97f6820845e428acd0ed094f206455f78e55a5a8affcd9145f81c8bc27",
+      "content_hash": "aeb8b2c788b225b14869470665f2f4d9aeab2ecf7fd28d17a8d82ce372ddf48d",
+      "deadline": "2027-01-03",
       "document_id": "trama:1113",
-      "eligibility": "datos_insuficientes",
+      "eligibility": "apta_probable",
       "geographic_status": "dentro_80km",
       "municipality": "Madrid",
       "official_url": "https://www.trama.org/empleo/oferta.php?id=1113",
       "province": "Madrid",
       "publication_date": "2027-01-03",
       "source": "trama",
-      "status": "plazo_desconocido",
-      "title": "EDUCADOR/A | Educación en Calle (Jornada Completa, Miércoles a Domingo) LORANCA (Fuenlabrada), Comunidad de Madrid 03 de enero de 2027 ver"
+      "status": "abierta",
+      "title": "Ver oferta"
     },
     "trama:1118": {
       "act_type": "oferta",
@@ -937,15 +938,16 @@
     },
     "trama:1129": {
       "act_type": "oferta",
-      "content_hash": "44b1fcada35e4a041fc2dd1dba517c8ffdaa0c5c47f94e4727b0d33bb5484b62",
+      "content_hash": "b5844aa205cd3c36802de0de0e5aaddf61c2e64fbbac0ce96e14a5182044ea7c",
+      "deadline": "2027-01-04",
       "document_id": "trama:1129",
       "eligibility": "revisar",
       "geographic_status": "distancia_pendiente",
       "official_url": "https://www.trama.org/empleo/oferta.php?id=1129",
       "publication_date": "2027-01-04",
       "source": "trama",
-      "status": "plazo_desconocido",
-      "title": "TRABAJADOR/A SOCIAL | Menores en Acogimiento (Baja Maternidad) Elche, Alicante, Comu. Valenciana 04 de enero de 2027 ver"
+      "status": "abierta",
+      "title": "Ver oferta"
     },
     "trama:1135": {
       "act_type": "oferta",
@@ -1106,6 +1108,20 @@
       "source": "trama",
       "status": "plazo_desconocido",
       "title": "PSICÓLOGO/A INFANTOJUVENIL (PMORVG) | Incorporación 01 Diciembre 2026 zona Noreste, Comunidad de Madrid 01 de enero de 2027 ver"
+    },
+    "trama:1161": {
+      "act_type": "oferta",
+      "content_hash": "58b14cb5511e0ea01b01d455c6bc67fb714f38e8961ee6c1c83a5a6664a7232a",
+      "document_id": "trama:1161",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://www.trama.org/empleo/oferta.php?id=1161",
+      "province": "Madrid",
+      "publication_date": "2026-12-31",
+      "source": "trama",
+      "status": "plazo_desconocido",
+      "title": "EDUCADOR/A - CENTRO DE DIA MEDIDAS JUDICIALES (RÉGIMEN MEDIO ABIERTO) – TEMPORAL Puente de Vallecas, Comunidad de Madrid 31 de diciembre de 2026 ver"
     },
     "trama:922": {
       "act_type": "oferta",
