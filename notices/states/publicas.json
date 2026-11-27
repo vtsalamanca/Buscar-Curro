@@ -145,7 +145,7 @@
     },
     "aranjuez:f7a4e98a8c0f82ac4c8b": {
       "act_type": "oferta",
-      "content_hash": "579342b7014318b717ab0d5e1af6980d48c742c64799e02bdaa47f59ca06c280",
+      "content_hash": "0c31ca09a229c81478f665833c54d7170f70f98e63c2dcd67989cb74203a1c81",
       "document_id": "aranjuez:f7a4e98a8c0f82ac4c8b",
       "eligibility": "datos_insuficientes",
       "geographic_status": "dentro_80km",
@@ -223,6 +223,19 @@
       "source": "ilunion",
       "status": "plazo_desconocido",
       "title": "Título Ilunion Vidasénior - Trabajador/a social (H/M/D) (Parla, Madrid) Población Madrid Fecha 12 nov 2026 Título Ilunion Vidasénior - Trabajador/a social (H/M/D) (Parla, Madrid) Población Madrid Fecha 12 nov 2026 Título Ilunion Vidasénior - Trabajador/a social (H/M/D) (Parla, Madrid) Población Madrid Fecha 12 nov 2026 Utilice la barra espaciadora para ver el contenido completo de la información del puesto."
+    },
+    "ilunion:06a1178bed3c14bfb1ee": {
+      "act_type": "oferta",
+      "content_hash": "7fac3aa040df5ccc4c8c97956f64d25ddaeb97bdd2416f80f21e1993b8ae0792",
+      "document_id": "ilunion:06a1178bed3c14bfb1ee",
+      "eligibility": "datos_insuficientes",
+      "geographic_status": "dentro_80km",
+      "municipality": "Madrid",
+      "official_url": "https://empleo.ilunion.com/job/Madrid-ILUNION-VidaS%C3%A9nior-Auxiliar-de-Enfermer%C3%ADaRuta-consin-discapacidad-%28HMD%29-Centros-de-D%C3%ADa-Madrid-Madr/1373527357/",
+      "province": "Madrid",
+      "source": "ilunion",
+      "status": "plazo_desconocido",
+      "title": "PUESTO: ILUNION VidaSénior - Auxiliar de Enfermería/Ruta con/sin discapacidad (H/M/D) Centros de Día Madrid"
     },
     "ilunion:113c5ddd1095d6e4ff47": {
       "act_type": "oferta",
